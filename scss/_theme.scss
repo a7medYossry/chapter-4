@@ -1,0 +1,146 @@
+// scss/_theme.scss
+body.dark-mode {
+  background-color: $dark-bg;
+  color: $dark-text-color;
+
+  a {
+    color: $dark-link-color;
+    &:hover {
+      color: lighten($dark-link-color, 10%);
+    }
+  }
+
+  // Layout overrides for dark mode
+  .navbar {
+    background-color: $dark-card-bg;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid $dark-border-color;
+  }
+
+  .navbar-brand {
+    color: $dark-primary-color !important;
+  }
+
+  .theme-toggle-btn {
+    border-color: $dark-border-color;
+    color: $dark-link-color;
+    &:hover {
+      background-color: lighten($dark-card-bg, 5%);
+    }
+  }
+
+  header.text-center {
+    .page-title {
+      color: lighten($dark-muted-color, 10%);
+    }
+    .translation {
+      color: $dark-muted-color;
+    }
+  }
+
+  .lesson-section.card {
+    border-color: $dark-border-color;
+    background-color: $dark-card-bg;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
+
+    .section-title {
+      color: $dark-primary-color;
+      border-bottom-color: $dark-primary-color;
+    }
+  }
+
+  footer {
+    background-color: darken($dark-bg, 3%);
+    color: $dark-muted-color;
+    border-top-color: $dark-border-color;
+  }
+
+  // Component overrides for dark mode
+  .vocab-item {
+    border-bottom-color: $dark-border-color;
+    .translation {
+      color: $dark-muted-color;
+    }
+    ul li p {
+      color: darken($dark-text-color, 20%); 
+    }
+  }
+
+  .dialogue-line {
+    border-left-color: $dark-primary-color; 
+    background-color: lighten($dark-bg, 3%);
+    
+    .speaker {
+      color: $dark-speaker-color;
+    }
+    .translation .speaker {
+      color: $dark-muted-color;
+    }
+    .translation {
+      color: $dark-muted-color;
+    }
+    .clarification {
+      background-color: lighten($warning-color, 5%); 
+      color: darken($dark-bg, 15%); 
+    }
+  }
+  
+  .image-placeholder {
+    img { border-color: $dark-border-color; }
+    .small { color: $dark-muted-color; }
+  }
+
+  #mcq-dialogue1, #mcq-dialogue2 {
+    .mcq-question {
+      border-color: $dark-border-color;
+      background-color: lighten($dark-bg, 4%);
+    }
+    .feedback {
+      background-color: lighten($dark-card-bg, 2%);
+      border-color: $dark-border-color;
+      
+      .text-success { background-color: darken($success-color, 35%); border-left-color: $success-color; color: lighten($success-color, 40%) !important; }
+      .text-danger { background-color: darken($danger-color, 45%); border-left-color: $danger-color; color: lighten($danger-color, 40%) !important; }
+      .text-warning { background-color: darken($warning-color, 35%); border-left-color: $warning-color; color: lighten($warning-color, 40%) !important; }
+    }
+  }
+
+  .btn-primary {
+    background-color: $dark-primary-color;
+    border-color: $dark-primary-color;
+    &:hover {
+      background-color: lighten($dark-primary-color, 10%);
+      border-color: lighten($dark-primary-color, 10%);
+    }
+  }
+
+  .draggable-item {
+    background-color: darken($dark-primary-color, 20%); 
+    border-color: $dark-primary-color;
+    color: lighten($dark-primary-color, 25%); 
+    &:has(.ar-word){
+        color: lighten($dark-primary-color, 35%); 
+    }
+  }
+
+  .droppable-area {
+    background-color: lighten($dark-bg, 5%);
+    border-color: $dark-border-color;
+
+    &.drag-over {
+      // CORRECTED: Use original $info-color and lighten it for dark mode
+      background-color: lighten($info-color, 15%); 
+      border-color: lighten($info-color, 5%); // Make border slightly different
+    }
+    &.dropped-correct {
+      // CORRECTED: Use original $success-color and lighten it for dark mode
+      background-color: lighten($success-color, 20%); 
+      border-color: lighten($success-color, 10%); // Make border slightly different
+      .draggable-item {
+        background-color: $success-color; // Keep original success color for the item
+        color: $light-card-bg; // Light text on success background
+        border-color: darken($success-color, 10%); 
+      }
+    }
+  }
+}

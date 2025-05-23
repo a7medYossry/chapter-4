@@ -1,0 +1,227 @@
+// scss/_variables.scss
+
+// Font Stacks
+$font-family-sans-serif: 'Roboto', sans-serif;
+$font-family-arabic: 'Noto Naskh Arabic', serif;
+$font-family-base: $font-family-sans-serif;
+
+// Colors - Light Mode
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$success-color: #28a745;
+$danger-color: #dc3545;
+$warning-color: #8a7536;
+$info-color: #17a2b8;
+
+$light-bg: #f8f9fa;
+$light-card-bg: #ffffff;
+$light-text-color: #212529;
+$light-border-color: #dee2e6;
+$light-muted-color: #6c757d;
+$light-link-color: $primary-color;
+$light-speaker-color: #495057;
+
+// Colors - Dark Mode
+$dark-bg: #1a1a2e;
+$dark-card-bg: #162447;
+$dark-text-color: #e0e0e0;
+$dark-border-color: #2a2a57;
+$dark-muted-color: #a0a0c0;
+$dark-link-color: #58a6ff;
+$dark-speaker-color: #c0c0e0;
+$dark-primary-color: $dark-link-color;
+
+// General Chapter/Vocab Word Colors (أمثلة - **تم التأكد من اكتمالها من 1 إلى 5 ومن 16 إلى 27**)
+$ar-color-1: #e94560; $en-color-1: $ar-color-1;
+$ar-color-2: #16c79a; $en-color-2: $ar-color-2;
+$ar-color-3: #a9780f; $en-color-3: $ar-color-3; // كان ناقصًا
+$ar-color-4: #583d72; $en-color-4: $ar-color-4; // كان ناقصًا
+$ar-color-5: #00b8a9; $en-color-5: $ar-color-5; // كان ناقصًا
+
+$ar-color-16: #ff6363; $en-color-16: $ar-color-16;
+$ar-color-17: #f8a5c2; $en-color-17: $ar-color-17;
+$ar-color-18: #7868e6; $en-color-18: $ar-color-18;
+$ar-color-19: #c9d6df; $en-color-19: $ar-color-19;
+$ar-color-20: #6fedd6; $en-color-20: $ar-color-20;
+$ar-color-21: #ff7eb9; $en-color-21: $ar-color-21;
+$ar-color-22: #b71540; $en-color-22: $ar-color-22;
+$ar-color-23: #a79048; $en-color-23: $ar-color-23;
+$ar-color-24: #ff9ff3; $en-color-24: $ar-color-24;
+$ar-color-25: #70a1ff; $en-color-25: $ar-color-25;
+$ar-color-26: #1dd1a1; $en-color-26: $ar-color-26;
+$ar-color-27: #ff6b6b; $en-color-27: $ar-color-27;
+
+
+// Dialogue 1 Specific Colors (يفترض أنها كاملة كما كانت في الأصل)
+$ar-color-a1: #34ace0; $en-color-a1: $ar-color-a1;
+$ar-color-a2: #b58814; $en-color-a2: $ar-color-a2;
+$ar-color-a3: #70a1ff; $en-color-a3: $ar-color-a3;
+$ar-color-a4: #ff7f50; $en-color-a4: $ar-color-a4;
+$ar-color-a5: #32ff7e; $en-color-a5: $ar-color-a5;
+$ar-color-b1: #575fcf; $en-color-b1: $ar-color-b1;
+$ar-color-b2: #0fb9b1; $en-color-b2: $ar-color-b2;
+$ar-color-b3: #fa8231; $en-color-b3: $ar-color-b3;
+$ar-color-b4: #4b4b4b; $en-color-b4: $ar-color-b4;
+$ar-color-b5: #3867d6; $en-color-b5: $ar-color-b5;
+$ar-color-b6: #8e44ad; $en-color-b6: $ar-color-b6;
+$ar-color-b7: #20bf6b; $en-color-b7: $ar-color-b7;
+$ar-color-c1: #a87a15; $en-color-c1: $ar-color-c1;
+$ar-color-c2: #a55eea; $en-color-c2: $ar-color-c2;
+$ar-color-c3: #26de81; $en-color-c3: $ar-color-c3;
+$ar-color-c4: #fc5c65; $en-color-c4: $ar-color-c4;
+$ar-color-c5: #45aaf2; $en-color-c5: $ar-color-c5;
+$ar-color-c6: #4b6584; $en-color-c6: $ar-color-c6;
+$ar-color-c7: #2d98da; $en-color-c7: $ar-color-c7;
+$ar-color-c8: #079992; $en-color-c8: $ar-color-c8;
+$ar-color-c9: #e84393; $en-color-c9: $ar-color-c9;
+$ar-color-d1: #ff9f43; $en-color-d1: $ar-color-d1;
+$ar-color-d2: #0abde3; $en-color-d2: $ar-color-d2;
+$ar-color-d3: #10ac84; $en-color-d3: $ar-color-d3;
+$ar-color-d4: #5f27cd; $en-color-d4: $ar-color-d4;
+$ar-color-d5: #ff6b81; $en-color-d5: $ar-color-d5;
+$ar-color-d6: #3c40c6; $en-color-d6: $ar-color-d6;
+$ar-color-e1: #f53b57; $en-color-e1: $ar-color-e1;
+$ar-color-e2: #3c40c6; $en-color-e2: $ar-color-e2;
+$ar-color-e3: #05c46b; $en-color-e3: $ar-color-e3;
+$ar-color-e4: #00d8d6; $en-color-e4: $ar-color-e4;
+$ar-color-e5: #8c7ae6; $en-color-e5: $ar-color-e5;
+$ar-color-e6: #0be881; $en-color-e6: $ar-color-e6;
+$ar-color-e7: #ffc048; $en-color-e7: $ar-color-e7;
+$ar-color-f1: #b49313; $en-color-f1: $ar-color-f1;
+$ar-color-f2: #30336b; $en-color-f2: $ar-color-f2;
+$ar-color-f3: #ff7979; $en-color-f3: $ar-color-f3;
+$ar-color-f4: #1e90ff; $en-color-f4: $ar-color-f4;
+$ar-color-f5: #38ada9; $en-color-f5: $ar-color-f5;
+$ar-color-f6: #e056fd; $en-color-f6: $ar-color-f6;
+$ar-color-v1: #0097e6; $en-color-v1: $ar-color-v1;
+$ar-color-v2: #8c7ae6; $en-color-v2: $ar-color-v2;
+$ar-color-v3: #e1b12c; $en-color-v3: $ar-color-v3;
+$ar-color-v4: #40739e; $en-color-v4: $ar-color-v4;
+$ar-color-v5: #c44569; $en-color-v5: $ar-color-v5;
+$ar-color-v6: #e84118; $en-color-v6: $ar-color-v6;
+$ar-color-v7: #7f8fa6; $en-color-v7: $ar-color-v7;
+$ar-color-v8: #1e3799; $en-color-v8: $ar-color-v8;
+$ar-color-v9: #be860e; $en-color-v9: $ar-color-v9;
+$ar-color-v10: #596275; $en-color-v10: $ar-color-v10;
+$ar-color-v11: #00a8ff; $en-color-v11: $ar-color-v11;
+$ar-color-v12: #9c88ff; $en-color-v12: $ar-color-v12;
+$ar-color-x1: #b08613; $en-color-x1: $ar-color-x1;
+$ar-color-x2: #4cd137; $en-color-x2: $ar-color-x2;
+$ar-color-x3: #487eb0; $en-color-x3: $ar-color-x3;
+$ar-color-q1: #e84393; $en-color-q1: $ar-color-q1;
+$ar-color-q2: #0097e6; $en-color-q2: $ar-color-q2;
+$ar-color-q3: #e1b12c; $en-color-q3: $ar-color-q3;
+$ar-color-q4: #40739e; $en-color-q4: $ar-color-q4;
+$ar-color-q5: #c44569; $en-color-q5: $ar-color-q5;
+$ar-color-q6: #e84118; $en-color-q6: $ar-color-q6;
+$ar-color-y1: #7f8fa6; $en-color-y1: $ar-color-y1;
+$ar-color-y2: #1e3799; $en-color-y2: $ar-color-y2;
+$ar-color-y3: #f5cd79; $en-color-y3: $ar-color-y3;
+$ar-color-y4: #596275; $en-color-y4: $ar-color-y4;
+$ar-color-q7: #00a8ff; $en-color-q7: $ar-color-q7;
+$ar-color-q8: #9c88ff; $en-color-q8: $ar-color-q8;
+$ar-color-q9: #bd9013; $en-color-q9: $ar-color-q9;
+$ar-color-q10: #4cd137; $en-color-q10: $ar-color-q10;
+$ar-color-q11: #487eb0; $en-color-q11: $ar-color-q11;
+$ar-color-q12: #e84393; $en-color-q12: $ar-color-q12;
+$ar-color-z1: #0097e6; $en-color-z1: $ar-color-z1;
+$ar-color-z2: #bc8f14; $en-color-z2: $ar-color-z2;
+$ar-color-z3: #40739e; $en-color-z3: $ar-color-z3;
+$ar-color-z4: #c44569; $en-color-z4: $ar-color-z4;
+$ar-color-z5: #e84118; $en-color-z5: $ar-color-z5;
+$ar-color-q13: #7f8fa6; $en-color-q13: $ar-color-q13;
+$ar-color-q14: #1e3799; $en-color-q14: $ar-color-q14;
+$ar-color-q15: #b78312; $en-color-q15: $ar-color-q15;
+
+
+// Telling Time
+$ar-color-t1: #00cec9; $en-color-t1: $ar-color-t1;
+$ar-color-t2: #6c5ce7; $en-color-t2: $ar-color-t2;
+$ar-color-t3: #fd79a8; $en-color-t3: $ar-color-t3;
+$ar-color-t4: #00b894; $en-color-t4: $ar-color-t4;
+
+// Dialogue 2 Specific Colors 
+$ar-color-d2-c1: #d63031; $en-color-d2-c1: $ar-color-d2-c1; 
+$ar-color-d2-c2: #0984e3; $en-color-d2-c2: $ar-color-d2-c2; 
+$ar-color-d2-c3: #6ab04c; $en-color-d2-c3: $ar-color-d2-c3; 
+$ar-color-d2-d1: #f0932b; $en-color-d2-d1: $ar-color-d2-d1; 
+$ar-color-d2-d2: #badc58; $en-color-d2-d2: $ar-color-d2-d2; 
+$ar-color-d2-d3: #6D214F; $en-color-d2-d3: $ar-color-d2-d3; 
+$ar-color-d2-e1: #ff7675; $en-color-d2-e1: $ar-color-d2-e1; 
+$ar-color-d2-e2: #00cec9; $en-color-d2-e2: $ar-color-d2-e2; 
+$ar-color-d2-e3: #bb8217; $en-color-d2-e3: $ar-color-d2-e3; 
+$ar-color-d2-e4: #2d3436; $en-color-d2-e4: $ar-color-d2-e4; 
+$ar-color-d2-f1: #6c5ce7; $en-color-d2-f1: $ar-color-d2-f1; 
+$ar-color-d2-f2: #fab1a0; $en-color-d2-f2: $ar-color-d2-f2; 
+$ar-color-d2-f3: #74b9ff; $en-color-d2-f3: $ar-color-d2-f3; 
+$ar-color-d2-g1: #e17055; $en-color-d2-g1: $ar-color-d2-g1; 
+$ar-color-d2-g2: #00b894; $en-color-d2-g2: $ar-color-d2-g2; 
+$ar-color-d2-g3: #c79e18; $en-color-d2-g3: $ar-color-d2-g3; 
+$ar-color-d2-g4: #d63031; $en-color-d2-g4: $ar-color-d2-g4; 
+$ar-color-d2-h1: #a29bfe; $en-color-d2-h1: $ar-color-d2-h1; 
+$ar-color-d2-h2: #fd79a8; $en-color-d2-h2: $ar-color-d2-h2; 
+$ar-color-d2-h3: #55efc4; $en-color-d2-h3: $ar-color-d2-h3; 
+$ar-color-d2-i1: #81ecec; $en-color-d2-i1: $ar-color-d2-i1; 
+$ar-color-d2-i2: #ee5253; $en-color-d2-i2: $ar-color-d2-i2; 
+$ar-color-d2-i3: #ff9f43; $en-color-d2-i3: $ar-color-d2-i3; 
+$ar-color-d2-i4: #0abde3; $en-color-d2-i4: $ar-color-d2-i4; 
+$ar-color-d2-j1: #10ac84; $en-color-d2-j1: $ar-color-d2-j1; 
+$ar-color-d2-j2: #5f27cd; $en-color-d2-j2: $ar-color-d2-j2; 
+$ar-color-d2-k1: #ff6b81; $en-color-d2-k1: $ar-color-d2-k1; 
+$ar-color-d2-k2: #3c40c6; $en-color-d2-k2: $ar-color-d2-k2; 
+$ar-color-d2-k3: #f53b57; $en-color-d2-k3: $ar-color-d2-k3; 
+$ar-color-d2-k4: #3c40c6; $en-color-d2-k4: $ar-color-d2-k4; 
+$ar-color-d2-l1: #05c46b; $en-color-d2-l1: $ar-color-d2-l1; 
+$ar-color-d2-l2: #00d8d6; $en-color-d2-l2: $ar-color-d2-l2; 
+$ar-color-d2-m1: #8c7ae6; $en-color-d2-m1: $ar-color-d2-m1; 
+$ar-color-d2-m2: #0be881; $en-color-d2-m2: $ar-color-d2-m2; 
+$ar-color-d2-m3: #ffc048; $en-color-d2-m3: $ar-color-d2-m3; 
+$ar-color-d2-n1: #c19d0f; $en-color-d2-n1: $ar-color-d2-n1; 
+$ar-color-d2-n2: #30336b; $en-color-d2-n2: $ar-color-d2-n2; 
+$ar-color-d2-n3: #ff7979; $en-color-d2-n3: $ar-color-d2-n3; 
+
+// Dialogue 2 Vocab
+$ar-color-d2-v1: #22a6b3; $en-color-d2-v1: $ar-color-d2-v1;
+$ar-color-d2-v2: #be2edd; $en-color-d2-v2: $ar-color-d2-v2;
+$ar-color-d2-v3: #60a3bc; $en-color-d2-v3: $ar-color-d2-v3;
+$ar-color-d2-v4: #e55039; $en-color-d2-v4: $ar-color-d2-v4;
+$ar-color-d2-v5: #f6b93b; $en-color-d2-v5: $ar-color-d2-v5;
+$ar-color-d2-v6: #EF5777; $en-color-d2-v6: $ar-color-d2-v6;
+$ar-color-d2-v7: #575fcf; $en-color-d2-v7: $ar-color-d2-v7;
+$ar-color-d2-v8: #0fb9b1; $en-color-d2-v8: $ar-color-d2-v8;
+$ar-color-d2-v9: #fa8231; $en-color-d2-v9: $ar-color-d2-v9;
+$ar-color-d2-v10: #4b4b4b; $en-color-d2-v10: $ar-color-d2-v10;
+$ar-color-d2-v11: #eb4d4b; $en-color-d2-v11: $ar-color-d2-v11; 
+
+// Dialogue 2 MCQ
+$ar-color-d2-x1: #f9ca24; $en-color-d2-x1: $ar-color-d2-x1;
+$ar-color-d2-x2: #7ed6df; $en-color-d2-x2: $ar-color-d2-x2;
+$ar-color-d2-x3: #e056fd; $en-color-d2-x3: $ar-color-d2-x3;
+$ar-color-d2-z1: #686de0; $en-color-d2-z1: $ar-color-d2-z1;
+$ar-color-d2-z2: #30336b; $en-color-d2-z2: $ar-color-d2-z2;
+$ar-color-d2-z3: #95afc0; $en-color-d2-z3: $ar-color-d2-z3;
+$ar-color-d2-z4: #222f3e; $en-color-d2-z4: $ar-color-d2-z4;
+$ar-color-d2-z5: #54a0ff; $en-color-d2-z5: $ar-color-d2-z5;
+$ar-color-d2-z6: #ff6b6b; $en-color-d2-z6: $ar-color-d2-z6;
+$ar-color-d2-z7: #1dd1a1; $en-color-d2-z7: $ar-color-d2-z7;
+$ar-color-d2-y1: #feca57; $en-color-d2-y1: $ar-color-d2-y1;
+$ar-color-d2-y2: #ff6b6b; $en-color-d2-y2: $ar-color-d2-y2;
+$ar-color-d2-y3: #48dbfb; $en-color-d2-y3: $ar-color-d2-y3;
+$ar-color-d2-w1: #1dd1a1; $en-color-d2-w1: $ar-color-d2-w1;
+$ar-color-d2-w2: #f368e0; $en-color-d2-w2: $ar-color-d2-w2;
+$ar-color-d2-w3: #ff9f43; $en-color-d2-w3: $ar-color-d2-w3;
+
+
+// Drag and Drop
+$ar-color-dd1: #6a89cc; $en-color-dd1: $ar-color-dd1;
+$ar-color-dd2: #4a69bd; $en-color-dd2: $ar-color-dd2;
+$ar-color-dd3: #1e3799; $en-color-dd3: $ar-color-dd3;
+$ar-color-dd4: #0c2461; $en-color-dd4: $ar-color-dd4;
+
+// Spacing
+$spacer: 1rem;
+$border-radius: 0.25rem;
+$box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+
+// Transitions
+$transition-base: all 0.3s ease-in-out;

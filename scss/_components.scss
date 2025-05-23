@@ -1,0 +1,261 @@
+// scss/_components.scss
+
+// Vocabulary Lists
+.vocab-item {
+  margin-bottom: $spacer;
+  padding-bottom: $spacer * 0.5;
+  border-bottom: 1px dashed $light-border-color;
+
+  &:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  p {
+    margin-bottom: $spacer * 0.25;
+  }
+
+  .translation {
+    color: $light-muted-color;
+    font-size: 1.2em;
+    padding-left: $spacer; // Keep LTR for translation
+  }
+  
+  ul { 
+    margin-top: $spacer * 0.25;
+    li p {
+      font-size: 1.2em;
+      color: lighten($light-text-color, 20%);
+    }
+  }
+}
+
+// Dialogues
+.dialogue-line {
+  margin-bottom: $spacer * 1.2;
+  padding: $spacer * 0.75;
+  // The border side will depend on the paragraph's direction if set directly on p.
+  // For a consistent visual block, the border might be better on .dialogue-line itself.
+  // We will handle text direction within the <p> tags.
+  // Let's apply the border to the .dialogue-line and adjust if needed.
+  border-left: 4px solid $primary-color; 
+  background-color: lighten($light-bg, 2%);
+
+  // Paragraphs containing primarily Arabic text
+  p:not(.translation) { // Target paragraphs that are NOT translations
+    direction: rtl;
+    text-align: right;
+    // If the speaker is part of this <p> and is Arabic, it will inherit RTL
+    // If speaker is English but part of this Arabic <p>, it needs special handling
+  }
+  
+  // Specifically for the speaker if it needs to be LTR within an RTL paragraph
+  p:not(.translation) .speaker {
+    // If speaker name is English/Transliterated and should be LTR:
+    // direction: ltr; 
+    // display: inline-block; // To enforce direction
+    // margin-left: $spacer * 0.5; // Adjust margin for RTL context
+    // margin-right: 0;
+    // For Arabic speaker names like "الأُمُّ:", RTL is fine.
+    // The default .speaker style might be sufficient if it's just text.
+    // If the speaker span itself has LTR content, this is where you'd ensure it displays correctly.
+  }
+  
+  .speaker { // General speaker style
+    font-weight: 700;
+    color: $light-speaker-color;
+    margin-right: $spacer * 0.5; // Default for LTR context (like in translation)
+  }
+
+
+  .translation { // Translation paragraphs are LTR
+    font-size: 1.2em;
+    color: $light-muted-color;
+    margin-top: $spacer * 0.25;
+    direction: ltr; 
+    text-align: left;
+
+    .speaker { // Speaker in LTR translation
+      color: $light-muted-color;
+      // margin-right is correct here due to LTR context
+    }
+  }
+
+  .clarification {
+      font-size: 1.2em;
+      background-color: lighten($warning-color, 35%);
+      padding: $spacer * 0.25 $spacer * 0.5;
+      border-radius: $border-radius;
+      display: inline-block; 
+      // Set direction based on clarification language
+      // Assuming Arabic for now:
+      direction: rtl; 
+      text-align: right;
+  }
+}
+
+
+// Image Placeholders
+.image-placeholder {
+  img {
+    border: 1px solid $light-border-color;
+  }
+  .small {
+    font-size: 1.2em;
+    color: $light-muted-color;
+  }
+}
+
+// MCQ (Check Your Understanding)
+#mcq-dialogue1, #mcq-dialogue2 {
+  .mcq-question {
+    margin-bottom: $spacer * 1.5;
+    padding: $spacer;
+    border: 1px solid $light-border-color;
+    border-radius: $border-radius;
+    background-color: lighten($light-bg, 3%);
+
+    strong {
+      display: block;
+      margin-bottom: $spacer * 0.75;
+      // Arabic questions within strong tag
+      &:has(.ar-word) {
+        direction: rtl;
+        text-align: right;
+      }
+    }
+    .ar-word, .en-word { 
+        font-weight: normal; 
+    }
+     strong .ar-word, strong .en-word {
+         font-weight: bold; 
+     }
+     // Options with Arabic
+     .form-check-label:has(.ar-word) {
+        direction: rtl;
+        text-align: right;
+        display: block; // To make text-align effective for the whole label
+     }
+  }
+
+  .form-check {
+    margin-bottom: $spacer * 0.5;
+  }
+
+  .form-check-label {
+    cursor: pointer;
+    .ar-word, .en-word {
+        font-weight: normal; 
+    }
+  }
+
+  .feedback {
+    margin-top: $spacer;
+    padding: $spacer;
+    border-radius: $border-radius;
+    background-color: lighten($light-bg, 2%);
+    border: 1px solid $light-border-color;
+    
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    li {
+      padding: $spacer * 0.3 $spacer * 0.5;
+      margin-bottom: $spacer * 0.25;
+      border-radius: $border-radius;
+      i { vertical-align: middle; }
+      // For feedback lines that are in Arabic
+      &[lang="ar"] { // You might need to add lang="ar" to these <li> in JS
+        direction: rtl;
+        text-align: right;
+      }
+    }
+    .text-success { background-color: lighten($success-color, 45%); border-left: 4px solid $success-color; color: darken($success-color, 10%) !important; }
+    .text-danger { background-color: lighten($danger-color, 40%); border-left: 4px solid $danger-color; color: darken($danger-color, 10%) !important; }
+    .text-warning { background-color: lighten($warning-color, 40%); border-left: 4px solid $warning-color; color: darken($warning-color, 20%) !important; }
+  }
+}
+
+// Buttons
+.btn-primary { 
+  background-color: $primary-color;
+  border-color: $primary-color;
+  &:hover {
+    background-color: darken($primary-color, 10%);
+    border-color: darken($primary-color, 10%);
+  }
+}
+
+// Drag and Drop
+.drag-drop-container {
+  h4 {
+    color: $secondary-color;
+    margin-bottom: $spacer;
+    &:has(.ar-word){ // If heading is Arabic
+        direction: rtl;
+        text-align: right;
+    }
+  }
+}
+.draggable-item {
+  padding: $spacer * 0.75;
+  margin-bottom: $spacer * 0.5;
+  background-color: lighten($primary-color, 40%);
+  border: 1px dashed $primary-color;
+  color: $primary-color;
+  border-radius: $border-radius;
+  cursor: grab;
+  transition: $transition-base;
+  text-align: center; // Center Arabic text if item is RTL
+  &:has(.ar-word){
+    direction: rtl;
+  }
+  &:active {
+    cursor: grabbing;
+    opacity: 0.7;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+}
+
+.droppable-area {
+  padding: $spacer;
+  margin-bottom: $spacer * 0.5;
+  background-color: lighten($light-bg, 2%);
+  border: 2px dashed $light-border-color;
+  border-radius: $border-radius;
+  min-height: 60px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: $transition-base;
+  &:has(.ar-word){ // If English meaning is Arabic (unlikely but for completeness)
+    direction: rtl;
+    text-align: right;
+  }
+
+  &.drag-over {
+    background-color: lighten($info-color, 35%);
+    border-color: $info-color;
+  }
+  &.dropped-correct {
+    background-color: lighten($success-color, 45%);
+    border-color: $success-color;
+    .draggable-item { 
+      background-color: $success-color;
+      color: white;
+      border-color: darken($success-color, 10%);
+      cursor: default;
+    }
+  }
+   &.dropped-incorrect { 
+    background-color: lighten($danger-color, 40%);
+    border-color: $danger-color;
+  }
+}
+
+#drag-drop-feedback {
+  font-weight: bold;
+  min-height: 1.5em; 
+}

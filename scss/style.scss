@@ -1,0 +1,17 @@
+// 1. Variables
+@import 'variables';
+
+// 2. Base styles (resets, typography, body)
+@import 'base';
+
+// 3. Layout (grid, header, footer, nav, sections)
+@import 'layout';
+
+// 4. Components (buttons, cards, forms, etc.)
+@import 'components';
+
+// 5. Theme (light/dark mode specifics)
+@import 'theme';
+
+// You can also import Bootstrap SCSS components if you're using a custom Bootstrap build.
+// For CDN Bootstrap, these SCSS files will mostly override or add to Bootstrap styles.
