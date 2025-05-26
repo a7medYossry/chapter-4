@@ -1,0 +1,358 @@
+// scss/_base.scss
+@import url("https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;700&family=Roboto:wght@400;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-family-base;
+  line-height: 1.6;
+  margin: 0;
+  background-color: $light-bg;
+  color: $light-text-color;
+  transition: $transition-base;
+  direction: ltr;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: $spacer * 0.5;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.75rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: $spacer;
+  font-size: 1.2rem;
+}
+
+a {
+  color: $light-link-color;
+  text-decoration: none;
+  &:hover {
+    color: darken($light-link-color, 10%);
+    text-decoration: underline;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.ar-word,
+.en-word {
+  display: inline-block;
+  font-weight: bold;
+}
+
+.ar-word {
+  font-family: $font-family-arabic;
+  font-weight: 700;
+}
+
+$all-colors: (
+  "1": $ar-color-1,
+  "2": $ar-color-2,
+  "3": $ar-color-3,
+  "4": $ar-color-4,
+  "5": $ar-color-5,
+  "16": $ar-color-16,
+  "17": $ar-color-17,
+  "18": $ar-color-18,
+  "19": $ar-color-19,
+  "20": $ar-color-20,
+  "21": $ar-color-21,
+  "22": $ar-color-22,
+  "23": $ar-color-23,
+  "24": $ar-color-24,
+  "25": $ar-color-25,
+  "26": $ar-color-26,
+  "27": $ar-color-27,
+  "a1": $ar-color-a1,
+  "a2": $ar-color-a2,
+  "a3": $ar-color-a3,
+  "a4": $ar-color-a4,
+  "a5": $ar-color-a5,
+  "b1": $ar-color-b1,
+  "b2": $ar-color-b2,
+  "b3": $ar-color-b3,
+  "b4": $ar-color-b4,
+  "b5": $ar-color-b5,
+  "b6": $ar-color-b6,
+  "b7": $ar-color-b7,
+  "c1": $ar-color-c1,
+  "c2": $ar-color-c2,
+  "c3": $ar-color-c3,
+  "c4": $ar-color-c4,
+  "c5": $ar-color-c5,
+  "c6": $ar-color-c6,
+  "c7": $ar-color-c7,
+  "c8": $ar-color-c8,
+  "c9": $ar-color-c9,
+  "d1": $ar-color-d1,
+  "d2": $ar-color-d2,
+  "d3": $ar-color-d3,
+  "d4": $ar-color-d4,
+  "d5": $ar-color-d5,
+  "d6": $ar-color-d6,
+  "e1": $ar-color-e1,
+  "e2": $ar-color-e2,
+  "e3": $ar-color-e3,
+  "e4": $ar-color-e4,
+  "e5": $ar-color-e5,
+  "e6": $ar-color-e6,
+  "e7": $ar-color-e7,
+  "f1": $ar-color-f1,
+  "f2": $ar-color-f2,
+  "f3": $ar-color-f3,
+  "f4": $ar-color-f4,
+  "f5": $ar-color-f5,
+  "f6": $ar-color-f6,
+  "v1": $ar-color-v1,
+  "v2": $ar-color-v2,
+  "v3": $ar-color-v3,
+  "v4": $ar-color-v4,
+  "v5": $ar-color-v5,
+  "v6": $ar-color-v6,
+  "v7": $ar-color-v7,
+  "v8": $ar-color-v8,
+  "v9": $ar-color-v9,
+  "v10": $ar-color-v10,
+  "v11": $ar-color-v11, "v12": $ar-color-v12, "x1": $ar-color-x1, "x2": $ar-color-x2,
+  "x3": $ar-color-x3, "q1": $ar-color-q1, "q2": $ar-color-q2, "q3": $ar-color-q3, "q4": $ar-color-q4, "q5": $ar-color-q5,
+  "q6": $ar-color-q6,
+  "y1": $ar-color-y1,
+  "y2": $ar-color-y2,
+  "y3": $ar-color-y3,
+  "y4": $ar-color-y4,
+  "q7": $ar-color-q7,
+  "q8": $ar-color-q8,
+  "q9": $ar-color-q9,
+  "q10": $ar-color-q10,
+  "q11": $ar-color-q11,
+  "q12": $ar-color-q12,
+  "z1": $ar-color-z1,
+  "z2": $ar-color-z2,
+  "z3": $ar-color-z3,
+  "z4": $ar-color-z4,
+  "z5": $ar-color-z5,
+  "q13": $ar-color-q13,
+  "q14": $ar-color-q14,
+  "q15": $ar-color-q15,
+  "t1": $ar-color-t1,
+  "t2": $ar-color-t2,
+  "t3": $ar-color-t3,
+  "t4": $ar-color-t4,
+  // Dialogue 2 Colors - **تمت إضافتها/تحديثها**
+  "d2-c1": $ar-color-d2-c1,
+  "d2-c2": $ar-color-d2-c2,
+  "d2-c3": $ar-color-d2-c3,
+  "d2-d1": $ar-color-d2-d1,
+  "d2-d2": $ar-color-d2-d2,
+  "d2-d3": $ar-color-d2-d3,
+  "d2-e1": $ar-color-d2-e1,
+  "d2-e2": $ar-color-d2-e2,
+  "d2-e3": $ar-color-d2-e3,
+  "d2-e4": $ar-color-d2-e4,
+  "d2-f1": $ar-color-d2-f1,
+  "d2-f2": $ar-color-d2-f2,
+  "d2-f3": $ar-color-d2-f3,
+  "d2-g1": $ar-color-d2-g1,
+  "d2-g2": $ar-color-d2-g2,
+  "d2-g3": $ar-color-d2-g3,
+  "d2-g4": $ar-color-d2-g4,
+  "d2-h1": $ar-color-d2-h1,
+  "d2-h2": $ar-color-d2-h2,
+  "d2-h3": $ar-color-d2-h3,
+  "d2-i1": $ar-color-d2-i1,
+  "d2-i2": $ar-color-d2-i2,
+  "d2-i3": $ar-color-d2-i3,
+  "d2-i4": $ar-color-d2-i4,
+  "d2-j1": $ar-color-d2-j1,
+  "d2-j2": $ar-color-d2-j2,
+  "d2-k1": $ar-color-d2-k1,
+  "d2-k2": $ar-color-d2-k2,
+  "d2-k3": $ar-color-d2-k3,
+  "d2-k4": $ar-color-d2-k4,
+  "d2-l1": $ar-color-d2-l1,
+  "d2-l2": $ar-color-d2-l2,
+  "d2-m1": $ar-color-d2-m1,
+  "d2-m2": $ar-color-d2-m2,
+  "d2-m3": $ar-color-d2-m3,
+  "d2-n1": $ar-color-d2-n1,
+  "d2-n2": $ar-color-d2-n2,
+  "d2-n3": $ar-color-d2-n3,
+  "d2-v1": $ar-color-d2-v1,
+  "d2-v2": $ar-color-d2-v2,
+  "d2-v3": $ar-color-d2-v3,
+  "d2-v4": $ar-color-d2-v4,
+  "d2-v5": $ar-color-d2-v5,
+  "d2-v6": $ar-color-d2-v6,
+  "d2-v7": $ar-color-d2-v7,
+  "d2-v8": $ar-color-d2-v8,
+  "d2-v9": $ar-color-d2-v9,
+  "d2-v10": $ar-color-d2-v10,
+  "d2-v11": $ar-color-d2-v11,
+  "d2-x1": $ar-color-d2-x1,
+  "d2-x2": $ar-color-d2-x2,
+  "d2-x3": $ar-color-d2-x3,
+  "d2-z1": $ar-color-d2-z1,
+  "d2-z2": $ar-color-d2-z2,
+  "d2-z3": $ar-color-d2-z3,
+  "d2-z4": $ar-color-d2-z4,
+  "d2-z5": $ar-color-d2-z5,
+  "d2-z6": $ar-color-d2-z6,
+  "d2-z7": $ar-color-d2-z7,
+  "d2-y1": $ar-color-d2-y1,
+  "d2-y2": $ar-color-d2-y2,
+  "d2-y3": $ar-color-d2-y3,
+  "d2-w1": $ar-color-d2-w1,
+  "d2-w2": $ar-color-d2-w2,
+  "d2-w3": $ar-color-d2-w3,
+  "dd1": $ar-color-dd1,
+  "dd2": $ar-color-dd2,
+  "dd3": $ar-color-dd3,
+  "dd4": $ar-color-dd4, // Dialogue 3
+  "d3-a1": $ar-color-d3-a1,
+  "d3-a2": $ar-color-d3-a2,
+  "d3-a3": $ar-color-d3-a3,
+  "d3-a4": $ar-color-d3-a4,
+  "d3-b1": $ar-color-d3-b1,
+  "d3-b2": $ar-color-d3-b2,
+  "d3-c1": $ar-color-d3-c1,
+  "d3-c2": $ar-color-d3-c2,
+  "d3-c3": $ar-color-d3-c3,
+  "d3-d1": $ar-color-d3-d1,
+  "d3-d2": $ar-color-d3-d2,
+  "d3-e1": $ar-color-d3-e1,
+  "d3-e2": $ar-color-d3-e2,
+  "d3-e3": $ar-color-d3-e3,
+  "d3-e4": $ar-color-d3-e4,
+  "d3-f1": $ar-color-d3-f1,
+  "d3-f2": $ar-color-d3-f2,
+  "d3-g1": $ar-color-d3-g1,
+  "d3-g2": $ar-color-d3-g2,
+  "d3-g3": $ar-color-d3-g3,
+  "d3-h1": $ar-color-d3-h1,
+  "d3-h2": $ar-color-d3-h2,
+  "d3-h3": $ar-color-d3-h3,
+  "d3-h4": $ar-color-d3-h4,
+  "d3-i1": $ar-color-d3-i1,
+  "d3-i2": $ar-color-d3-i2,
+  "d3-i3": $ar-color-d3-i3,
+  "d3-j1": $ar-color-d3-j1,
+  "d3-j2": $ar-color-d3-j2,
+  "d3-j3": $ar-color-d3-j3,
+  "d3-j4": $ar-color-d3-j4,
+  "d3-j5": $ar-color-d3-j5,
+  "d3-k1": $ar-color-d3-k1,
+  "d3-k2": $ar-color-d3-k2,
+  "d3-k3": $ar-color-d3-k3,
+  "d3-l1": $ar-color-d3-l1,
+  "d3-l2": $ar-color-d3-l2,
+  "d3-l3": $ar-color-d3-l3,
+  "d3-l4": $ar-color-d3-l4,
+  "d3-l5": $ar-color-d3-l5,
+  "d3-v1": $ar-color-d3-v1,
+  "d3-v2": $ar-color-d3-v2,
+  "d3-v3": $ar-color-d3-v3,
+  "d3-v4": $ar-color-d3-v4,
+  "d3-v5": $ar-color-d3-v5,
+  "d3-v6": $ar-color-d3-v6,
+  "d3-v7": $ar-color-d3-v7,
+  "d3-v8": $ar-color-d3-v8,
+  "d3-v9": $ar-color-d3-v9,
+  "d3-v10": $ar-color-d3-v10,
+  "d3-v11": $ar-color-d3-v11,
+  "d3-x1": $ar-color-d3-x1,
+  "d3-x2": $ar-color-d3-x2,
+  "d3-x3": $ar-color-d3-x3,
+  "d3-x4": $ar-color-d3-x4,
+  "d3-x5": $ar-color-d3-x5,
+  "d3-q1": $ar-color-d3-q1,
+  "d3-q2": $ar-color-d3-q2,
+  "d3-q3": $ar-color-d3-q3,
+  "d3-q4": $ar-color-d3-q4,
+  "d3-y1": $ar-color-d3-y1,
+  "d3-y2": $ar-color-d3-y2,
+  "d3-y3": $ar-color-d3-y3,
+  "d3-y4": $ar-color-d3-y4,
+  "d3-y5": $ar-color-d3-y5,
+  "d3-q5": $ar-color-d3-q5,
+  "d3-q6": $ar-color-d3-q6,
+  "d3-q7": $ar-color-d3-q7,
+  "d3-q8": $ar-color-d3-q8,
+  "d3-q9": $ar-color-d3-q9,
+  "d3-q10": $ar-color-d3-q10,
+  "d3-q11": $ar-color-d3-q11,
+  "d3-q12": $ar-color-d3-q12,
+  "d3-q13": $ar-color-d3-q13,
+  "d3-q14": $ar-color-d3-q14,
+  "d3-z1": $ar-color-d3-z1,
+  "d3-z2": $ar-color-d3-z2,
+  "d3-z3": $ar-color-d3-z3,
+  "d3-z4": $ar-color-d3-z4,
+  "d3-q15": $ar-color-d3-q15,
+  "d3-q16": $ar-color-d3-q16,
+  "d3-q17": $ar-color-d3-q17,
+  "d3-q18": $ar-color-d3-q18,
+  "d3-q19": $ar-color-d3-q19,
+  "d3-q20": $ar-color-d3-q20,
+  "d3-q21": $ar-color-d3-q21,
+  "d3-q22": $ar-color-d3-q22,
+
+  // More on Telling Time
+  "tt1": $ar-color-tt1,
+  "tt2": $ar-color-tt2,
+  "tt3": $ar-color-tt3,
+  "tt4": $ar-color-tt4,
+  "tt5": $ar-color-tt5,
+  "tt6": $ar-color-tt6,
+  "tt7": $ar-color-tt7,
+  "tt8": $ar-color-tt8,
+  "tt9": $ar-color-tt9,
+  "tt10": $ar-color-tt10,
+  "tt11": $ar-color-tt11,
+  "tt12": $ar-color-tt12,
+  "tt13": $ar-color-tt13,
+  "tt-ex1": $ar-color-tt-ex1,
+  "tt-ex2": $ar-color-tt-ex2,
+  "tt-ex3": $ar-color-tt-ex3,
+  "tt-ex4": $ar-color-tt-ex4,
+  "tt-ex5": $ar-color-tt-ex5,
+);
+
+@each $key, $color-value in $all-colors {
+  .ar-color-#{$key} {
+    color: $color-value;
+  }
+  .en-color-#{$key} {
+    color: $color-value;
+  }
+}
