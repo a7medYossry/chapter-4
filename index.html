@@ -1,398 +1,1767 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Arabic Lesson: The Daily Life</title>
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <!-- Animate.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <!-- Custom CSS (compiled from SCSS) -->
-    <link rel="stylesheet" href="scss/style.css"> <!--  تأكد أن المسار صحيح css/style.css -->
+    <link rel="stylesheet" href="scss/style.css" />
+    <!--  تأكد أن المسار صحيح css/style.css -->
     <!-- Google Fonts (Optional for better typography) -->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- Progress Bar (If you have one, ensure it's here) -->
     <div class="progress-container">
-        <div class="progress-bar" id="myBar"></div>
+      <div class="progress-bar" id="myBar"></div>
     </div>
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg sticky-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">العربية بين يديك</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <button id="theme-toggle" class="btn theme-toggle-btn">
-                            <i class="fas fa-sun"></i> <!-- Sun icon for light mode default -->
-                        </button>
-                    </li>
-                </ul>
-            </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">العربية بين يديك</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <button id="theme-toggle" class="btn theme-toggle-btn">
+                <i class="fas fa-sun"></i>
+                <!-- Sun icon for light mode default -->
+              </button>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <!-- Main Content -->
     <main class="container mt-5">
-        <header class="text-center mb-5 animate__animated animate__fadeInDown">
-            <h1 class="display-4 page-title">Book I - Part I: Chapter 4</h1>
-            <h2 class="chapter-title"><span class="ar-word ar-color-2">الْيَوْمِيَّةُ</span><span class="ar-word ar-color-1">الْحَيَاةُ</span> </h2>
-            <p class="translation lead"><span class="en-word en-color-1">The Daily</span> <span class="en-word en-color-2">Life</span></p>
-        </header>
+      <header class="text-center mb-5 animate__animated animate__fadeInDown">
+        <h1 class="display-4 page-title">Book I - Part I: Chapter 4</h1>
+        <h2 class="chapter-title">
+          <span class="ar-word ar-color-2">الْيَوْمِيَّةُ</span
+          ><span class="ar-word ar-color-1">الْحَيَاةُ</span>
+        </h2>
+        <p class="translation lead">
+          <span class="en-word en-color-1">The Daily</span>
+          <span class="en-word en-color-2">Life</span>
+        </p>
+      </header>
 
-        <!-- Chapter Overview Vocabulary -->
-        <section id="chapter-vocab" class="lesson-section card mt-4 animate__animated animate__fadeInUp">
-            <div class="card-body">
-                <h3 class="section-title">Chapter Vocabulary - مُفْرَدَاتُ الْوَحْدَة</h3>
-                <ul class="list-unstyled">
-                    <li class="vocab-item">
-                        <p><span class="ar-word ar-color-16">حَيَاة</span> (<span class="ar-word ar-color-17">ḥayāh</span>)</p>
-                        <p class="translation"><span class="en-word en-color-16">Life</span></p>
-                        <ul class="list-unstyled ms-3">
-                            <li><p><span class="ar-word ar-color-18">المَوْت</span> (<span class="ar-word ar-color-19">al-mawt</span>) - <span class="en-word en-color-18">Death</span> (opposite)</p></li>
-                            <li><p><span class="ar-word ar-color-20">حَيّ</span> (<span class="ar-word ar-color-21">ḥayy</span>) - <span class="en-word en-color-20">Alive / Living</span></p></li>
-                            <li><p><span class="ar-word ar-color-22">مَيِّت</span> (<span class="ar-word ar-color-23">mayyit</span>) - <span class="en-word en-color-22">Dead</span></p></li>
-                        </ul>
-                    </li>
-                    <li class="vocab-item">
-                        <p><span class="ar-word ar-color-24">يَوْم</span> (<span class="ar-word ar-color-25">yawm</span>)</p>
-                        <p class="translation"><span class="en-word en-color-24">Day</span></p>
-                    </li>
-                    <li class="vocab-item">
-                        <p><span class="ar-word ar-color-26">الْيَوْمِيَّة</span> (<span class="ar-word ar-color-27">al-yawmiyyah</span>)</p>
-                        <p class="translation"><span class="en-word en-color-26">Daily</span></p>
-                    </li>
-                </ul>
+      <!-- Chapter Overview Vocabulary -->
+      <section
+        id="chapter-vocab"
+        class="lesson-section card mt-4 animate__animated animate__fadeInUp"
+      >
+        <div class="card-body">
+          <h3 class="section-title">
+            Chapter Vocabulary - مُفْرَدَاتُ الْوَحْدَة
+          </h3>
+          <ul class="list-unstyled">
+            <li class="vocab-item">
+              <p>
+                <span class="ar-word ar-color-16">حَيَاة</span> (<span
+                  class="ar-word ar-color-17"
+                  >ḥayāh</span
+                >)
+              </p>
+              <p class="translation">
+                <span class="en-word en-color-16">Life</span>
+              </p>
+              <ul class="list-unstyled ms-3">
+                <li>
+                  <p>
+                    <span class="ar-word ar-color-18">المَوْت</span> (<span
+                      class="ar-word ar-color-19"
+                      >al-mawt</span
+                    >) -
+                    <span class="en-word en-color-18">Death</span> (opposite)
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span class="ar-word ar-color-20">حَيّ</span> (<span
+                      class="ar-word ar-color-21"
+                      >ḥayy</span
+                    >) - <span class="en-word en-color-20">Alive / Living</span>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span class="ar-word ar-color-22">مَيِّت</span> (<span
+                      class="ar-word ar-color-23"
+                      >mayyit</span
+                    >) - <span class="en-word en-color-22">Dead</span>
+                  </p>
+                </li>
+              </ul>
+            </li>
+            <li class="vocab-item">
+              <p>
+                <span class="ar-word ar-color-24">يَوْم</span> (<span
+                  class="ar-word ar-color-25"
+                  >yawm</span
+                >)
+              </p>
+              <p class="translation">
+                <span class="en-word en-color-24">Day</span>
+              </p>
+            </li>
+            <li class="vocab-item">
+              <p>
+                <span class="ar-word ar-color-26">الْيَوْمِيَّة</span> (<span
+                  class="ar-word ar-color-27"
+                  >al-yawmiyyah</span
+                >)
+              </p>
+              <p class="translation">
+                <span class="en-word en-color-26">Daily</span>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Dialogue 1 Section -->
+      <section
+        id="dialogue1"
+        class="lesson-section card mt-4 animate__animated animate__fadeInUp"
+      >
+        <div class="card-body">
+          <h3 class="section-title">Dialogue 1 - الْحِوَارُ الأَوَّلُ</h3>
+          <p class="text-muted text-center">
+            Between طَارِق (Tariq) and طَاهِر (Tahir)
+          </p>
+          <div class="image-placeholder my-3 text-center">
+            <img
+              src="./photos/talking.png"
+              alt="Dialogue 1 Characters placeholder"
+              class="img-fluid rounded"
+            />
+          </div>
+
+          <div class="dialogue-line">
+            <p>
+              <span class="speaker">طَارِق:</span>
+              <span class="ar-word ar-color-a1">مَتَى</span>
+              <span class="ar-word ar-color-a2">تَسْتَيْقِظُ</span>؟
+            </p>
+            <p class="translation">
+              <span class="speaker">Tariq:</span>
+              <span class="en-word en-color-a1">When</span>
+              <span class="en-word en-color-a2">do you wake up</span>?
+            </p>
+          </div>
+          <div class="dialogue-line">
+            <p>
+              <span class="speaker">طَاهِر:</span>
+              <span class="ar-word ar-color-a3">أَسْتَيْقِظُ</span>
+              <span class="ar-word ar-color-a4">عِنْدَ</span>
+              <span class="ar-word ar-color-a5">الْفَجْرِ</span>.
+            </p>
+            <p class="translation">
+              <span class="speaker">Tahir:</span>
+              <span class="en-word en-color-a3">I wake up</span>
+              <span class="en-word en-color-a4">at</span>
+              <span class="en-word en-color-a5">dawn</span>.
+            </p>
+          </div>
+          <div class="dialogue-line">
+            <p>
+              <span class="speaker">طَارِق:</span>
+              <span class="ar-word ar-color-b1">أَيْنَ</span>
+              <span class="ar-word ar-color-b2">تُصَلِّي</span>
+              <span class="ar-word ar-color-b3">الْفَجْرَ</span>؟
+            </p>
+            <p class="translation">
+              <span class="speaker">Tariq:</span>
+              <span class="en-word en-color-b1">Where</span>
+              <span class="en-word en-color-b2">do you pray</span>
+              <span class="en-word en-color-b3">Fajr</span>?
+            </p>
+          </div>
+          <div class="dialogue-line">
+            <p>
+              <span class="speaker">طَاهِر:</span>
+              <span class="ar-word ar-color-b4">أُصَلِّي</span>
+              <span class="ar-word ar-color-b5">الْفَجْرَ</span>
+              <span class="ar-word ar-color-b6">فِي</span>
+              <span class="ar-word ar-color-b7">الْمَسْجِدِ</span>.
+            </p>
+            <p class="translation">
+              <span class="speaker">Tahir:</span>
+              <span class="en-word en-color-b4">I pray</span>
+              <span class="en-word en-color-b5">Fajr</span>
+              <span class="en-word en-color-b6">in</span>
+              <span class="en-word en-color-b7">the mosque</span>.
+            </p>
+          </div>
+          <div class="dialogue-line">
+            <p>
+              <span class="speaker">طَارِق:</span>
+              <span class="ar-word ar-color-c1">هَلْ</span>
+              <span class="ar-word ar-color-c2">تَنَامُ</span>
+              <span class="ar-word ar-color-c3">بَعْدَ</span>
+              <span class="ar-word ar-color-c4">الصَّلاةِ</span>؟
+            </p>
+            <p class="translation">
+              <span class="speaker">Tariq:</span>
+              <span class="en-word en-color-c1">Do you</span>
+              <span class="en-word en-color-c2">sleep</span>
+              <span class="en-word en-color-c3">after</span>
+              <span class="en-word en-color-c4">the prayer</span>?
+            </p>
+          </div>
+          <div class="dialogue-line">
+            <p>
+              <span class="speaker">طَاهِر:</span>
+              <span class="ar-word ar-color-c5">لا</span>،
+              <span class="ar-word ar-color-c6">لا</span>
+              <span class="ar-word ar-color-c7">أَنَامُ</span>
+              <span class="ar-word ar-color-c8">بَعْدَ</span>
+              <span class="ar-word ar-color-c9">الصَّلاةِ</span>.
+            </p>
+            <p class="translation">
+              <span class="speaker">Tahir:</span>
+              <span class="en-word en-color-c5">No</span>,
+              <span class="en-word en-color-c6">I do not</span>
+              <span class="en-word en-color-c7">sleep</span>
+              <span class="en-word en-color-c8">after</span>
+              <span class="en-word en-color-c9">the prayer</span>.
+            </p>
+            <p class="clarification small text-muted mt-1">
+              * (Clarification: The first "لا" means "No." The second "لا"
+              negates the present tense verb "أَنَامُ" (I sleep) to mean "I do
+              not sleep.")
+            </p>
+          </div>
+          <div class="dialogue-line">
+            <p>
+              <span class="speaker">طَارِق:</span>
+              <span class="ar-word ar-color-d1">مَاذَا</span>
+              <span class="ar-word ar-color-d2">تَفْعَلُ</span>
+              <span class="ar-word ar-color-d3">بَعْدَ</span>
+              <span class="ar-word ar-color-d4">الصَّلاةِ</span>؟
+            </p>
+            <p class="translation">
+              <span class="speaker">Tariq:</span>
+              <span class="en-word en-color-d1">What</span>
+              <span class="en-word en-color-d2">do you do</span>
+              <span class="en-word en-color-d3">after</span>
+              <span class="en-word en-color-d4">the prayer</span>?
+            </p>
+          </div>
+          <div class="dialogue-line">
+            <p>
+              <span class="speaker">طَاهِر:</span>
+              <span class="ar-word ar-color-d5">أَقْرَأُ</span>
+              <span class="ar-word ar-color-d6">الْقُرْآنَ</span>.
+            </p>
+            <p class="translation">
+              <span class="speaker">Tahir:</span>
+              <span class="en-word en-color-d5">I read</span>
+              <span class="en-word en-color-d6">the Quran</span>.
+            </p>
+          </div>
+          <div class="dialogue-line">
+            <p>
+              <span class="speaker">طَارِق:</span>
+              <span class="ar-word ar-color-e1">وَمَتَى</span>
+              <span class="ar-word ar-color-e2">تَذْهَبُ</span>
+              <span class="ar-word ar-color-e3">إِلَى</span>
+              <span class="ar-word ar-color-e4">الْمَدْرَسَةِ</span>؟
+            </p>
+            <p class="translation">
+              <span class="speaker">Tariq:</span>
+              <span class="en-word en-color-e1">And when</span>
+              <span class="en-word en-color-e2">do you go</span>
+              <span class="en-word en-color-e3">to</span>
+              <span class="en-word en-color-e4">school</span>?
+            </p>
+          </div>
+          <div class="dialogue-line">
+            <p>
+              <span class="speaker">طَاهِر:</span>
+              <span class="ar-word ar-color-e5">أَذْهَبُ</span>
+              <span class="ar-word ar-color-e6">السَّاعَةَ</span>
+              <span class="ar-word ar-color-e7">السَّابِعَةَ</span>.
+            </p>
+            <p class="translation">
+              <span class="speaker">Tahir:</span>
+              <span class="en-word en-color-e5">I go</span>
+              <span class="en-word en-color-e6">at seven</span>
+              <span class="en-word en-color-e7">o'clock</span>.
+            </p>
+          </div>
+          <div class="dialogue-line">
+            <p>
+              <span class="speaker">طَارِق:</span>
+              <span class="ar-word ar-color-f1">هَلْ</span>
+              <span class="ar-word ar-color-f2">تَذْهَبُ</span>
+              <span class="ar-word ar-color-f3">بِالسَّيَّارَةِ</span>؟
+            </p>
+            <p class="translation">
+              <span class="speaker">Tariq:</span>
+              <span class="en-word en-color-f1">Do you</span>
+              <span class="en-word en-color-f2">go</span>
+              <span class="en-word en-color-f3">by car</span>?
+            </p>
+          </div>
+          <div class="dialogue-line">
+            <p>
+              <span class="speaker">طَاهِر:</span>
+              <span class="ar-word ar-color-f4">لا</span>،
+              <span class="ar-word ar-color-f5">أَذْهَبُ</span>
+              <span class="ar-word ar-color-f6">بِالْحَافِلَةِ</span>.
+            </p>
+            <p class="translation">
+              <span class="speaker">Tahir:</span>
+              <span class="en-word en-color-f4">No</span>,
+              <span class="en-word en-color-f5">I go</span>
+              <span class="en-word en-color-f6">by bus</span>.
+            </p>
+          </div>
+
+          <h4 class="mt-4">
+            Vocabulary from Dialogue 1 - مُفْرَدَاتُ الْحِوَارِ الأَوَّل
+          </h4>
+          <ul class="list-unstyled">
+            <li class="vocab-item">
+              <p>
+                <span class="ar-word ar-color-v1">يَسْتَيْقِظُ</span> -
+                <span class="en-word en-color-v1">To wake up</span> (verb)
+              </p>
+            </li>
+            <li class="vocab-item">
+              <p>
+                <span class="ar-word ar-color-v2">يُصَلِّي</span> -
+                <span class="en-word en-color-v2">To pray</span> (verb)
+              </p>
+            </li>
+            <li class="vocab-item">
+              <p>
+                <span class="ar-word ar-color-v3">يَنَامُ</span> -
+                <span class="en-word en-color-v3">To sleep</span> (verb)
+              </p>
+            </li>
+            <li class="vocab-item">
+              <p>
+                <span class="ar-word ar-color-v4">يَذْهَبُ</span> -
+                <span class="en-word en-color-v4">To go</span> (verb)
+              </p>
+            </li>
+            <li class="vocab-item">
+              <p>
+                <span class="ar-word ar-color-v5">الْمَسْجِد</span> -
+                <span class="en-word en-color-v5">Mosque</span> (noun)
+              </p>
+            </li>
+            <li class="vocab-item">
+              <p>
+                <span class="ar-word ar-color-v6">الْمَدْرَسَة</span> -
+                <span class="en-word en-color-v6">School</span> (noun)
+              </p>
+            </li>
+            <li class="vocab-item">
+              <p>
+                <span class="ar-word ar-color-v7">بَعْدَ</span> -
+                <span class="en-word en-color-v7">After</span>
+                (preposition/adverb)
+              </p>
+            </li>
+            <li class="vocab-item">
+              <p>
+                <span class="ar-word ar-color-v8">الْقُرْآن</span> -
+                <span class="en-word en-color-v8">The Quran</span> (noun)
+              </p>
+            </li>
+            <li class="vocab-item">
+              <p>
+                <span class="ar-word ar-color-v9">حَافِلَة</span> -
+                <span class="en-word en-color-v9">Bus</span> (noun)
+              </p>
+            </li>
+            <li class="vocab-item">
+              <p>
+                <span class="ar-word ar-color-v10">سَيَّارَة</span> -
+                <span class="en-word en-color-v10">Car</span> (noun)
+              </p>
+            </li>
+            <li class="vocab-item">
+              <p>
+                <span class="ar-word ar-color-v11">عِنْدَ</span> -
+                <span class="en-word en-color-v11">At</span>
+              </p>
+            </li>
+            <li class="vocab-item">
+              <p>
+                <span class="ar-word ar-color-v12">سَاعَة</span> -
+                <span class="en-word en-color-v12">Hour / Clock / Watch</span>
+              </p>
+            </li>
+          </ul>
+
+          <h4 class="mt-4">Check Your Understanding - اخْتَبِرْ فَهْمَكَ</h4>
+          <div id="mcq-dialogue1">
+            <div class="mcq-question mb-3">
+              <p>
+                <strong
+                  >1. <span class="ar-word ar-color-x1">مَتَى</span>
+                  <span class="ar-word ar-color-x2">يَسْتَيْقِظُ</span>
+                  <span class="ar-word ar-color-x3">طَاهِرٌ</span>؟</strong
+                >
+                ( <span class="en-word en-color-x1">When</span>
+                <span class="en-word en-color-x2">does Tahir</span>
+                <span class="en-word en-color-x3">wake up</span>? )
+              </p>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="q1_d1"
+                  id="q1_d1_opt1"
+                  value="a"
+                />
+                <label class="form-check-label" for="q1_d1_opt1">
+                  <span class="ar-word ar-color-q1">بَعْدَ</span>
+                  <span class="ar-word ar-color-q2">الظُّهْرِ</span> (<span
+                    class="en-word en-color-q1"
+                    >After</span
+                  >
+                  <span class="en-word en-color-q2">noon</span>)
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="q1_d1"
+                  id="q1_d1_opt2"
+                  value="b"
+                />
+                <label class="form-check-label" for="q1_d1_opt2">
+                  <span class="ar-word ar-color-q3">عِنْدَ</span>
+                  <span class="ar-word ar-color-q4">الْفَجْرِ</span> (<span
+                    class="en-word en-color-q3"
+                    >At</span
+                  >
+                  <span class="en-word en-color-q4">dawn</span>)
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="q1_d1"
+                  id="q1_d1_opt3"
+                  value="c"
+                />
+                <label class="form-check-label" for="q1_d1_opt3">
+                  <span class="ar-word ar-color-q5">فِي</span>
+                  <span class="ar-word ar-color-q6">الْمَسَاءِ</span> (<span
+                    class="en-word en-color-q5"
+                    >In</span
+                  >
+                  <span class="en-word en-color-q6">the evening</span>)
+                </label>
+              </div>
             </div>
-        </section>
-
-        <!-- Dialogue 1 Section -->
-        <section id="dialogue1" class="lesson-section card mt-4 animate__animated animate__fadeInUp">
-            <div class="card-body">
-                <h3 class="section-title">Dialogue 1 - الْحِوَارُ الأَوَّلُ</h3>
-                <p class="text-muted text-center">Between طَارِق (Tariq) and طَاهِر (Tahir)</p>
-                <div class="image-placeholder my-3 text-center">
-                     <img src="./photos/talking.png" alt="Dialogue 1 Characters placeholder" class="img-fluid rounded">
-                </div>
-        
-                <div class="dialogue-line">
-                    <p><span class="speaker">طَارِق:</span> <span class="ar-word ar-color-a1">مَتَى</span> <span class="ar-word ar-color-a2">تَسْتَيْقِظُ</span>؟</p>
-                    <p class="translation"><span class="speaker">Tariq:</span> <span class="en-word en-color-a1">When</span> <span class="en-word en-color-a2">do you wake up</span>?</p>
-                </div>
-                <div class="dialogue-line">
-                    <p><span class="speaker">طَاهِر:</span> <span class="ar-word ar-color-a3">أَسْتَيْقِظُ</span> <span class="ar-word ar-color-a4">عِنْدَ</span> <span class="ar-word ar-color-a5">الْفَجْرِ</span>.</p>
-                    <p class="translation"><span class="speaker">Tahir:</span> <span class="en-word en-color-a3">I wake up</span> <span class="en-word en-color-a4">at</span> <span class="en-word en-color-a5">dawn</span>.</p>
-                </div>
-                <div class="dialogue-line">
-                    <p><span class="speaker">طَارِق:</span> <span class="ar-word ar-color-b1">أَيْنَ</span> <span class="ar-word ar-color-b2">تُصَلِّي</span> <span class="ar-word ar-color-b3">الْفَجْرَ</span>؟</p>
-                    <p class="translation"><span class="speaker">Tariq:</span> <span class="en-word en-color-b1">Where</span> <span class="en-word en-color-b2">do you pray</span> <span class="en-word en-color-b3">Fajr</span>?</p>
-                </div>
-                <div class="dialogue-line">
-                    <p><span class="speaker">طَاهِر:</span> <span class="ar-word ar-color-b4">أُصَلِّي</span> <span class="ar-word ar-color-b5">الْفَجْرَ</span> <span class="ar-word ar-color-b6">فِي</span> <span class="ar-word ar-color-b7">الْمَسْجِدِ</span>.</p>
-                    <p class="translation"><span class="speaker">Tahir:</span> <span class="en-word en-color-b4">I pray</span> <span class="en-word en-color-b5">Fajr</span> <span class="en-word en-color-b6">in</span> <span class="en-word en-color-b7">the mosque</span>.</p>
-                </div>
-                <div class="dialogue-line">
-                    <p><span class="speaker">طَارِق:</span> <span class="ar-word ar-color-c1">هَلْ</span> <span class="ar-word ar-color-c2">تَنَامُ</span> <span class="ar-word ar-color-c3">بَعْدَ</span> <span class="ar-word ar-color-c4">الصَّلاةِ</span>؟</p>
-                    <p class="translation"><span class="speaker">Tariq:</span> <span class="en-word en-color-c1">Do you</span> <span class="en-word en-color-c2">sleep</span> <span class="en-word en-color-c3">after</span> <span class="en-word en-color-c4">the prayer</span>?</p>
-                </div>
-                <div class="dialogue-line">
-                    <p><span class="speaker">طَاهِر:</span> <span class="ar-word ar-color-c5">لا</span>، <span class="ar-word ar-color-c6">لا</span> <span class="ar-word ar-color-c7">أَنَامُ</span> <span class="ar-word ar-color-c8">بَعْدَ</span> <span class="ar-word ar-color-c9">الصَّلاةِ</span>.</p>
-                    <p class="translation"><span class="speaker">Tahir:</span> <span class="en-word en-color-c5">No</span>, <span class="en-word en-color-c6">I do not</span> <span class="en-word en-color-c7">sleep</span> <span class="en-word en-color-c8">after</span> <span class="en-word en-color-c9">the prayer</span>.</p>
-                    <p class="clarification small text-muted mt-1">* (Clarification: The first "لا" means "No." The second "لا" negates the present tense verb "أَنَامُ" (I sleep) to mean "I do not sleep.")</p>
-                </div>
-                <div class="dialogue-line">
-                    <p><span class="speaker">طَارِق:</span> <span class="ar-word ar-color-d1">مَاذَا</span> <span class="ar-word ar-color-d2">تَفْعَلُ</span> <span class="ar-word ar-color-d3">بَعْدَ</span> <span class="ar-word ar-color-d4">الصَّلاةِ</span>؟</p>
-                    <p class="translation"><span class="speaker">Tariq:</span> <span class="en-word en-color-d1">What</span> <span class="en-word en-color-d2">do you do</span> <span class="en-word en-color-d3">after</span> <span class="en-word en-color-d4">the prayer</span>?</p>
-                </div>
-                <div class="dialogue-line">
-                    <p><span class="speaker">طَاهِر:</span> <span class="ar-word ar-color-d5">أَقْرَأُ</span> <span class="ar-word ar-color-d6">الْقُرْآنَ</span>.</p>
-                    <p class="translation"><span class="speaker">Tahir:</span> <span class="en-word en-color-d5">I read</span> <span class="en-word en-color-d6">the Quran</span>.</p>
-                </div>
-                <div class="dialogue-line">
-                    <p><span class="speaker">طَارِق:</span> <span class="ar-word ar-color-e1">وَمَتَى</span> <span class="ar-word ar-color-e2">تَذْهَبُ</span> <span class="ar-word ar-color-e3">إِلَى</span> <span class="ar-word ar-color-e4">الْمَدْرَسَةِ</span>؟</p>
-                    <p class="translation"><span class="speaker">Tariq:</span> <span class="en-word en-color-e1">And when</span> <span class="en-word en-color-e2">do you go</span> <span class="en-word en-color-e3">to</span> <span class="en-word en-color-e4">school</span>?</p>
-                </div>
-                <div class="dialogue-line">
-                    <p><span class="speaker">طَاهِر:</span> <span class="ar-word ar-color-e5">أَذْهَبُ</span> <span class="ar-word ar-color-e6">السَّاعَةَ</span> <span class="ar-word ar-color-e7">السَّابِعَةَ</span>.</p>
-                    <p class="translation"><span class="speaker">Tahir:</span> <span class="en-word en-color-e5">I go</span> <span class="en-word en-color-e6">at seven</span> <span class="en-word en-color-e7">o'clock</span>.</p>
-                </div>
-                <div class="dialogue-line">
-                    <p><span class="speaker">طَارِق:</span> <span class="ar-word ar-color-f1">هَلْ</span> <span class="ar-word ar-color-f2">تَذْهَبُ</span> <span class="ar-word ar-color-f3">بِالسَّيَّارَةِ</span>؟</p>
-                    <p class="translation"><span class="speaker">Tariq:</span> <span class="en-word en-color-f1">Do you</span> <span class="en-word en-color-f2">go</span> <span class="en-word en-color-f3">by car</span>?</p>
-                </div>
-                <div class="dialogue-line">
-                    <p><span class="speaker">طَاهِر:</span> <span class="ar-word ar-color-f4">لا</span>، <span class="ar-word ar-color-f5">أَذْهَبُ</span> <span class="ar-word ar-color-f6">بِالْحَافِلَةِ</span>.</p>
-                    <p class="translation"><span class="speaker">Tahir:</span> <span class="en-word en-color-f4">No</span>, <span class="en-word en-color-f5">I go</span> <span class="en-word en-color-f6">by bus</span>.</p>
-                </div>
-        
-                <h4 class="mt-4">Vocabulary from Dialogue 1 - مُفْرَدَاتُ الْحِوَارِ الأَوَّل</h4>
-                <ul class="list-unstyled">
-                    <li class="vocab-item"><p><span class="ar-word ar-color-v1">يَسْتَيْقِظُ</span> - <span class="en-word en-color-v1">To wake up</span> (verb)</p></li>
-                    <li class="vocab-item"><p><span class="ar-word ar-color-v2">يُصَلِّي</span> - <span class="en-word en-color-v2">To pray</span> (verb)</p></li>
-                    <li class="vocab-item"><p><span class="ar-word ar-color-v3">يَنَامُ</span> - <span class="en-word en-color-v3">To sleep</span> (verb)</p></li>
-                    <li class="vocab-item"><p><span class="ar-word ar-color-v4">يَذْهَبُ</span> - <span class="en-word en-color-v4">To go</span> (verb)</p></li>
-                    <li class="vocab-item"><p><span class="ar-word ar-color-v5">الْمَسْجِد</span> - <span class="en-word en-color-v5">Mosque</span> (noun)</p></li>
-                    <li class="vocab-item"><p><span class="ar-word ar-color-v6">الْمَدْرَسَة</span> - <span class="en-word en-color-v6">School</span> (noun)</p></li>
-                    <li class="vocab-item"><p><span class="ar-word ar-color-v7">بَعْدَ</span> - <span class="en-word en-color-v7">After</span> (preposition/adverb)</p></li>
-                    <li class="vocab-item"><p><span class="ar-word ar-color-v8">الْقُرْآن</span> - <span class="en-word en-color-v8">The Quran</span> (noun)</p></li>
-                    <li class="vocab-item"><p><span class="ar-word ar-color-v9">حَافِلَة</span> - <span class="en-word en-color-v9">Bus</span> (noun)</p></li>
-                    <li class="vocab-item"><p><span class="ar-word ar-color-v10">سَيَّارَة</span> - <span class="en-word en-color-v10">Car</span> (noun)</p></li>
-                    <li class="vocab-item"><p><span class="ar-word ar-color-v11">عِنْدَ</span> - <span class="en-word en-color-v11">At</span></p></li>
-                    <li class="vocab-item"><p><span class="ar-word ar-color-v12">سَاعَة</span> - <span class="en-word en-color-v12">Hour / Clock / Watch</span></p></li>
-                </ul>
-        
-                <h4 class="mt-4">Check Your Understanding - اخْتَبِرْ فَهْمَكَ</h4>
-                <div id="mcq-dialogue1">
-                    <div class="mcq-question mb-3">
-                         <p><strong>1. <span class="ar-word ar-color-x1">مَتَى</span> <span class="ar-word ar-color-x2">يَسْتَيْقِظُ</span> <span class="ar-word ar-color-x3">طَاهِرٌ</span>؟</strong> ( <span class="en-word en-color-x1">When</span> <span class="en-word en-color-x2">does Tahir</span> <span class="en-word en-color-x3">wake up</span>? )</p>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="q1_d1" id="q1_d1_opt1" value="a">
-                            <label class="form-check-label" for="q1_d1_opt1">
-                                <span class="ar-word ar-color-q1">بَعْدَ</span> <span class="ar-word ar-color-q2">الظُّهْرِ</span> (<span class="en-word en-color-q1">After</span> <span class="en-word en-color-q2">noon</span>)
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="q1_d1" id="q1_d1_opt2" value="b">
-                            <label class="form-check-label" for="q1_d1_opt2">
-                                <span class="ar-word ar-color-q3">عِنْدَ</span> <span class="ar-word ar-color-q4">الْفَجْرِ</span> (<span class="en-word en-color-q3">At</span> <span class="en-word en-color-q4">dawn</span>)
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="q1_d1" id="q1_d1_opt3" value="c">
-                            <label class="form-check-label" for="q1_d1_opt3">
-                                <span class="ar-word ar-color-q5">فِي</span> <span class="ar-word ar-color-q6">الْمَسَاءِ</span> (<span class="en-word en-color-q5">In</span> <span class="en-word en-color-q6">the evening</span>)
-                            </label>
-                        </div>
-                    </div>
-                    <div class="mcq-question mb-3">
-                         <p><strong>2. <span class="ar-word ar-color-y1">أَيْنَ</span> <span class="ar-word ar-color-y2">يُصَلِّي</span> <span class="ar-word ar-color-y3">طَاهِرٌ</span> <span class="ar-word ar-color-y4">الْفَجْرَ</span>؟</strong> ( <span class="en-word en-color-y1">Where</span> <span class="en-word en-color-y2">does Tahir pray</span> <span class="en-word en-color-y3">Fajr</span>? )</p>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="q2_d1" id="q2_d1_opt1" value="a">
-                            <label class="form-check-label" for="q2_d1_opt1">
-                                <span class="ar-word ar-color-q7">فِي</span> <span class="ar-word ar-color-q8">الْبَيْتِ</span> (<span class="en-word en-color-q7">In the</span> <span class="en-word en-color-q8">house</span>)
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="q2_d1" id="q2_d1_opt2" value="b">
-                            <label class="form-check-label" for="q2_d1_opt2">
-                                <span class="ar-word ar-color-q9">فِي</span> <span class="ar-word ar-color-q10">الْمَدْرَسَةِ</span> (<span class="en-word en-color-q9">In the</span> <span class="en-word en-color-q10">school</span>)
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="q2_d1" id="q2_d1_opt3" value="c">
-                            <label class="form-check-label" for="q2_d1_opt3">
-                                <span class="ar-word ar-color-q11">فِي</span> <span class="ar-word ar-color-q12">الْمَسْجِدِ</span> (<span class="en-word en-color-q11">In the</span> <span class="en-word en-color-q12">mosque</span>)
-                            </label>
-                        </div>
-                    </div>
-                    <div class="mcq-question mb-3">
-                         <p><strong>3. <span class="ar-word ar-color-z1">كَيْفَ</span> <span class="ar-word ar-color-z2">يَذْهَبُ</span> <span class="ar-word ar-color-z3">طَاهِرٌ</span> <span class="ar-word ar-color-z4">إِلَى</span> <span class="ar-word ar-color-z5">الْمَدْرَسَةِ</span>؟</strong> ( <span class="en-word en-color-z1">How</span> <span class="en-word en-color-z2">does Tahir go</span> <span class="en-word en-color-z3">to</span> <span class="en-word en-color-z4">school</span>? )</p>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="q3_d1" id="q3_d1_opt1" value="a">
-                            <label class="form-check-label" for="q3_d1_opt1">
-                                <span class="ar-word ar-color-q13">بِالسَّيَّارَةِ</span> (<span class="en-word en-color-q13">By car</span>)
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="q3_d1" id="q3_d1_opt2" value="b">
-                            <label class="form-check-label" for="q3_d1_opt2">
-                                <span class="ar-word ar-color-q14">بِالْحَافِلَةِ</span> (<span class="en-word en-color-q14">By bus</span>)
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="q3_d1" id="q3_d1_opt3" value="c">
-                            <label class="form-check-label" for="q3_d1_opt3">
-                                <span class="ar-word ar-color-q15">بِالْقِطَارِ</span> (<span class="en-word en-color-q15">By train</span>)
-                            </label>
-                        </div>
-                    </div>
-                    <button class="btn btn-primary check-answers-btn" data-mcq-id="dialogue1">Check Answers</button>
-                    <div class="feedback mt-2"></div>
-                </div>
+            <div class="mcq-question mb-3">
+              <p>
+                <strong
+                  >2. <span class="ar-word ar-color-y1">أَيْنَ</span>
+                  <span class="ar-word ar-color-y2">يُصَلِّي</span>
+                  <span class="ar-word ar-color-y3">طَاهِرٌ</span>
+                  <span class="ar-word ar-color-y4">الْفَجْرَ</span>؟</strong
+                >
+                ( <span class="en-word en-color-y1">Where</span>
+                <span class="en-word en-color-y2">does Tahir pray</span>
+                <span class="en-word en-color-y3">Fajr</span>? )
+              </p>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="q2_d1"
+                  id="q2_d1_opt1"
+                  value="a"
+                />
+                <label class="form-check-label" for="q2_d1_opt1">
+                  <span class="ar-word ar-color-q7">فِي</span>
+                  <span class="ar-word ar-color-q8">الْبَيْتِ</span> (<span
+                    class="en-word en-color-q7"
+                    >In the</span
+                  >
+                  <span class="en-word en-color-q8">house</span>)
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="q2_d1"
+                  id="q2_d1_opt2"
+                  value="b"
+                />
+                <label class="form-check-label" for="q2_d1_opt2">
+                  <span class="ar-word ar-color-q9">فِي</span>
+                  <span class="ar-word ar-color-q10">الْمَدْرَسَةِ</span> (<span
+                    class="en-word en-color-q9"
+                    >In the</span
+                  >
+                  <span class="en-word en-color-q10">school</span>)
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="q2_d1"
+                  id="q2_d1_opt3"
+                  value="c"
+                />
+                <label class="form-check-label" for="q2_d1_opt3">
+                  <span class="ar-word ar-color-q11">فِي</span>
+                  <span class="ar-word ar-color-q12">الْمَسْجِدِ</span> (<span
+                    class="en-word en-color-q11"
+                    >In the</span
+                  >
+                  <span class="en-word en-color-q12">mosque</span>)
+                </label>
+              </div>
             </div>
-        </section>
-
-        <!-- Telling Time Section -->
-        <section id="telling-time" class="lesson-section card mt-4 animate__animated animate__fadeInUp">
-            <div class="card-body">
-                <h3 class="section-title">Telling Time - السَّاعَة</h3>
-                <ul class="list-unstyled">
-                    <li class="vocab-item"><p> <span class="ar-word ar-color-t2">الْوَاحِدَةُ</span> <span class="ar-word ar-color-t1">السَّاعَةُ</span> - <span class="en-word en-color-t1">One</span> <span class="en-word en-color-t2">o'clock</span></p></li>
-                    <li class="vocab-item"><p> <span class="ar-word ar-color-t4">الثَّانِيَةُ</span> <span class="ar-word ar-color-t3">السَّاعَةُ</span> - <span class="en-word en-color-t3">Two</span> <span class="en-word en-color-t4">o'clock</span></p></li>
-                    <li class="vocab-item"><p> <span class="ar-word ar-color-t3">وَالنِّصْفُ</span> <span class="ar-word ar-color-t2">الثَّالِثَةُ</span> <span class="ar-word ar-color-t1">السَّاعَةُ</span> - <span class="en-word en-color-t1">Half</span> <span class="en-word en-color-t2">past</span> <span class="en-word en-color-t3">three</span></p></li>
-                </ul>
+            <div class="mcq-question mb-3">
+              <p>
+                <strong
+                  >3. <span class="ar-word ar-color-z1">كَيْفَ</span>
+                  <span class="ar-word ar-color-z2">يَذْهَبُ</span>
+                  <span class="ar-word ar-color-z3">طَاهِرٌ</span>
+                  <span class="ar-word ar-color-z4">إِلَى</span>
+                  <span class="ar-word ar-color-z5">الْمَدْرَسَةِ</span
+                  >؟</strong
+                >
+                ( <span class="en-word en-color-z1">How</span>
+                <span class="en-word en-color-z2">does Tahir go</span>
+                <span class="en-word en-color-z3">to</span>
+                <span class="en-word en-color-z4">school</span>? )
+              </p>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="q3_d1"
+                  id="q3_d1_opt1"
+                  value="a"
+                />
+                <label class="form-check-label" for="q3_d1_opt1">
+                  <span class="ar-word ar-color-q13">بِالسَّيَّارَةِ</span>
+                  (<span class="en-word en-color-q13">By car</span>)
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="q3_d1"
+                  id="q3_d1_opt2"
+                  value="b"
+                />
+                <label class="form-check-label" for="q3_d1_opt2">
+                  <span class="ar-word ar-color-q14">بِالْحَافِلَةِ</span>
+                  (<span class="en-word en-color-q14">By bus</span>)
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="q3_d1"
+                  id="q3_d1_opt3"
+                  value="c"
+                />
+                <label class="form-check-label" for="q3_d1_opt3">
+                  <span class="ar-word ar-color-q15">بِالْقِطَارِ</span> (<span
+                    class="en-word en-color-q15"
+                    >By train</span
+                  >)
+                </label>
+              </div>
             </div>
-        </section>
+            <button
+              class="btn btn-primary check-answers-btn"
+              data-mcq-id="dialogue1"
+            >
+              Check Answers
+            </button>
+            <div class="feedback mt-2"></div>
+          </div>
+        </div>
+      </section>
 
+      <!-- Telling Time Section -->
+      <section
+        id="telling-time"
+        class="lesson-section card mt-4 animate__animated animate__fadeInUp"
+      >
+        <div class="card-body">
+          <h3 class="section-title">Telling Time - السَّاعَة</h3>
+          <ul class="list-unstyled">
+            <li class="vocab-item">
+              <p>
+                <span class="ar-word ar-color-t2">الْوَاحِدَةُ</span>
+                <span class="ar-word ar-color-t1">السَّاعَةُ</span> -
+                <span class="en-word en-color-t1">One</span>
+                <span class="en-word en-color-t2">o'clock</span>
+              </p>
+            </li>
+            <li class="vocab-item">
+              <p>
+                <span class="ar-word ar-color-t4">الثَّانِيَةُ</span>
+                <span class="ar-word ar-color-t3">السَّاعَةُ</span> -
+                <span class="en-word en-color-t3">Two</span>
+                <span class="en-word en-color-t4">o'clock</span>
+              </p>
+            </li>
+            <li class="vocab-item">
+              <p>
+                <span class="ar-word ar-color-t3">وَالنِّصْفُ</span>
+                <span class="ar-word ar-color-t2">الثَّالِثَةُ</span>
+                <span class="ar-word ar-color-t1">السَّاعَةُ</span> -
+                <span class="en-word en-color-t1">Half</span>
+                <span class="en-word en-color-t2">past</span>
+                <span class="en-word en-color-t3">three</span>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-        <!-- Dialogue 2 Section -->
-        <section id="dialogue2" class="lesson-section card mt-4 animate__animated animate__fadeInUp">
-            <div class="card-body">
-                <h3 class="section-title">Dialogue 2 - الْحِوَارُ الثَّانِي</h3>
-                <p class="text-muted text-center">Between family members - بَيْنَ أَفْرَادِ الأُسْرَةِ</p>
-                 <div class="image-placeholder my-3 text-center">
-                     <img src="./photos/sweeping.png" alt="Family Dialogue Image" class="img-fluid rounded">
-                </div>
-                
-                <div class="dialogue-line">
-                    <p><span class="speaker">الأُمُّ:</span> <span class="ar-word ar-color-d2-c1">هَذَا</span> <span class="ar-word ar-color-d2-c2">يَوْمُ</span> <span class="ar-word ar-color-d2-c3">الْعُطْلَةِ</span>.</p>
-                    <p class="translation"><span class="speaker">The Mother:</span> <span class="en-word en-color-d2-c1">This is</span> <span class="en-word en-color-d2-c2">the day</span> <span class="en-word en-color-d2-c3">off (holiday)</span>.</p>
-                </div>
-                <div class="dialogue-line">
-                    <p><span class="speaker">الأَبُ:</span> <span class="ar-word ar-color-d2-d1">هَذَا</span> <span class="ar-word ar-color-d2-d2">يَوْمُ</span> <span class="ar-word ar-color-d2-d3">الْعَمَلِ</span>.</p>
-                    <p class="translation"><span class="speaker">The Father:</span> <span class="en-word en-color-d2-d1">This is</span> <span class="en-word en-color-d2-d2">the work</span> <span class="en-word en-color-d2-d3">day</span>.</p>
-                </div>
-                <div class="dialogue-line">
-                    <p><span class="speaker">الأُمُّ:</span> <span class="ar-word ar-color-d2-e1">مَاذَا</span> <span class="ar-word ar-color-d2-e2">سَتَفْعَلُ</span> <span class="ar-word ar-color-d2-e3">يَا</span> <span class="ar-word ar-color-d2-e4">طَارِقُ</span>؟</p>
-                    <p class="translation"><span class="speaker">The Mother:</span> <span class="en-word en-color-d2-e1">What</span> <span class="en-word en-color-d2-e2">will you do</span>, <span class="en-word en-color-d2-e3">O</span> <span class="en-word en-color-d2-e4">Tariq</span>?</p>
-                </div>
-                <div class="dialogue-line">
-                    <p><span class="speaker">طَارِقٌ:</span> <span class="ar-word ar-color-d2-f1">سَأَكْنُسُ</span> <span class="ar-word ar-color-d2-f2">غُرْفَةَ</span> <span class="ar-word ar-color-d2-f3">الْجُلُوسِ</span>.</p>
-                    <p class="translation"><span class="speaker">Tariq:</span> <span class="en-word en-color-d2-f1">I will sweep</span> <span class="en-word en-color-d2-f2">the living</span> <span class="en-word en-color-d2-f3">room</span>.</p>
-                </div>
-                <div class="dialogue-line">
-                    <p><span class="speaker">الأُمُّ:</span> <span class="ar-word ar-color-d2-g1">وَمَاذَا</span> <span class="ar-word ar-color-d2-g2">سَتَفْعَلِينَ</span> <span class="ar-word ar-color-d2-g3">يَا</span> <span class="ar-word ar-color-d2-g4">فَاطِمَةُ</span>؟</p>
-                    <p class="translation"><span class="speaker">The Mother:</span> <span class="en-word en-color-d2-g1">And what</span> <span class="en-word en-color-d2-g2">will you (f.) do</span>, <span class="en-word en-color-d2-g3">O</span> <span class="en-word en-color-d2-g4">Fatimah</span>?</p>
-                </div>
-                <div class="dialogue-line">
-                    <p><span class="speaker">فَاطِمَةُ:</span> <span class="ar-word ar-color-d2-h1">سَأَكْنُسُ</span> <span class="ar-word ar-color-d2-h2">غُرْفَةَ</span> <span class="ar-word ar-color-d2-h3">النَّوْمِ</span>.</p>
-                    <p class="translation"><span class="speaker">Fatimah:</span> <span class="en-word en-color-d2-h1">I will sweep</span> <span class="en-word en-color-d2-h2">the bed</span> <span class="en-word en-color-d2-h3">room</span>.</p>
-                </div>
-                <div class="dialogue-line">
-                    <p><span class="speaker">الأُمُّ:</span> <span class="ar-word ar-color-d2-i1">وَمَاذَا</span> <span class="ar-word ar-color-d2-i2">سَتَفْعَلُ</span> <span class="ar-word ar-color-d2-i3">يَا</span> <span class="ar-word ar-color-d2-i4">أَحْمَدُ</span>؟</p>
-                    <p class="translation"><span class="speaker">The Mother:</span> <span class="en-word en-color-d2-i1">And what</span> <span class="en-word en-color-d2-i2">will you do</span>, <span class="en-word en-color-d2-i3">O</span> <span class="en-word en-color-d2-i4">Ahmad</span>?</p>
-                </div>
-                <div class="dialogue-line">
-                    <p><span class="speaker">أَحْمَدُ:</span> <span class="ar-word ar-color-d2-j1">سَأَغْسِلُ</span> <span class="ar-word ar-color-d2-j2">الْمَلابِسَ</span>.</p>
-                    <p class="translation"><span class="speaker">Ahmad:</span> <span class="en-word en-color-d2-j1">I will wash</span> <span class="en-word en-color-d2-j2">the clothes</span>.</p>
-                </div>
-                <div class="dialogue-line">
-                    <p><span class="speaker">الأُمُّ:</span> <span class="ar-word ar-color-d2-k1">وَمَاذَا</span> <span class="ar-word ar-color-d2-k2">سَتَفْعَلِينَ</span> <span class="ar-word ar-color-d2-k3">يَا</span> <span class="ar-word ar-color-d2-k4">لَطِيفَةُ</span>؟</p>
-                    <p class="translation"><span class="speaker">The Mother:</span> <span class="en-word en-color-d2-k1">And what</span> <span class="en-word en-color-d2-k2">will you (f.) do</span>, <span class="en-word en-color-d2-k3">O</span> <span class="en-word en-color-d2-k4">Latifah</span>?</p>
-                </div>
-                <div class="dialogue-line">
-                    <p><span class="speaker">لَطِيفَةُ:</span> <span class="ar-word ar-color-d2-l1">سَأَكْوِي</span> <span class="ar-word ar-color-d2-l2">الْمَلابِسَ</span>.</p>
-                    <p class="translation"><span class="speaker">Latifah:</span> <span class="en-word en-color-d2-l1">I will iron</span> <span class="en-word en-color-d2-l2">the clothes</span>.</p>
-                </div>
-                <div class="dialogue-line">
-                    <p><span class="speaker">الْجَدَّةُ:</span> <span class="ar-word ar-color-d2-m1">أَنَا</span> <span class="ar-word ar-color-d2-m2">سَأَغْسِلُ</span> <span class="ar-word ar-color-d2-m3">الأَطْبَاقَ</span>.</p>
-                    <p class="translation"><span class="speaker">The Grandmother:</span> <span class="en-word en-color-d2-m1">I</span> <span class="en-word en-color-d2-m2">will wash</span> <span class="en-word en-color-d2-m3">the dishes</span>.</p>
-                </div>
-                <div class="dialogue-line">
-                    <p><span class="speaker">الْجَدُّ:</span> <span class="ar-word ar-color-d2-n1">وَأَنَا</span> <span class="ar-word ar-color-d2-n2">سَأَقْرَأُ</span> <span class="ar-word ar-color-d2-n3">الْقُرْآنَ</span>.</p>
-                    <p class="translation"><span class="speaker">The Grandfather:</span> <span class="en-word en-color-d2-n1">And I</span> <span class="en-word en-color-d2-n2">will read</span> <span class="en-word en-color-d2-n3">the Quran</span>.</p>
-                </div>
-        
-                <h4 class="mt-4">Vocabulary from Dialogue 2 - مُفْرَدَاتُ الْحِوَارِ الثَّانِي</h4>
-                <ul class="list-unstyled">
-                    <li class="vocab-item"><p><span class="ar-word ar-color-d2-v1">الْعَمَل</span> - <span class="en-word en-color-d2-v1">Work</span> (noun)</p></li>
-                    <li class="vocab-item"><p><span class="ar-word ar-color-d2-v2">الْعُطْلَة</span> - <span class="en-word en-color-d2-v2">Holiday / Day off</span> (noun)</p></li>
-                    <li class="vocab-item"><p><span class="ar-word ar-color-d2-v3">يَكْنُسُ</span> - <span class="en-word en-color-d2-v3">To sweep / hoover</span> (verb)</p></li>
-                    <li class="vocab-item"><p><span class="ar-word ar-color-d2-v4">غُرْفَةُ الْجُلُوسِ</span> - <span class="en-word en-color-d2-v4">Living room</span> (noun phrase)</p></li>
-                    <li class="vocab-item"><p><span class="ar-word ar-color-d2-v5">غُرْفَةُ النَّوْمِ</span> - <span class="en-word en-color-d2-v5">Bedroom</span> (noun phrase)</p></li>
-                    <li class="vocab-item"><p><span class="ar-word ar-color-d2-v6">يَغْسِلُ</span> - <span class="en-word en-color-d2-v6">To wash</span> (verb)</p></li>
-                    <li class="vocab-item"><p><span class="ar-word ar-color-d2-v7">مَلابِس</span> - <span class="en-word en-color-d2-v7">Clothes</span> (noun)</p></li>
-                    <li class="vocab-item"><p><span class="ar-word ar-color-d2-v8">يَكْوِي</span> - <span class="en-word en-color-d2-v8">To iron</span> (verb)</p></li>
-                    <li class="vocab-item"><p><span class="ar-word ar-color-d2-v9">أَطْبَاق</span> - <span class="en-word en-color-d2-v9">Dishes</span> (noun)</p></li>
-                    <li class="vocab-item"><p><span class="ar-word ar-color-d2-v10">يَقْرَأُ</span> - <span class="en-word en-color-d2-v10">To read</span> (verb)</p></li>
-                    <li class="vocab-item"><p><span class="ar-word ar-color-d2-v11">الْقُرْآن</span> - <span class="en-word en-color-d2-v11">The Quran</span> (noun)</p></li>
-                </ul>
-        
-                <h4 class="mt-4">Check Your Understanding - اخْتَبِرْ فَهْمَكَ</h4>
-                <div id="mcq-dialogue2">
-                    <div class="mcq-question mb-3">
-                         <p><strong>1. <span class="ar-word ar-color-d2-x1">مَاذَا</span> <span class="ar-word ar-color-d2-x2">سَيَفْعَلُ</span> <span class="ar-word ar-color-d2-x3">طَارِقٌ</span>؟</strong> ( <span class="en-word en-color-d2-x1">What</span> <span class="en-word en-color-d2-x2">will Tariq</span> <span class="en-word en-color-d2-x3">do</span>? )</p>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="q1_d2" id="q1_d2_opt1" value="a">
-                            <label class="form-check-label" for="q1_d2_opt1">
-                                <span class="ar-word ar-color-d2-z1">سَيَغْسِلُ</span> <span class="ar-word ar-color-d2-z2">الأَطْبَاقَ</span> (<span class="en-word en-color-d2-z1">He will wash</span> <span class="en-word en-color-d2-z2">the dishes</span>)
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="q1_d2" id="q1_d2_opt2" value="b">
-                            <label class="form-check-label" for="q1_d2_opt2">
-                                <span class="ar-word ar-color-d2-z3">سَيَكْنُسُ</span> <span class="ar-word ar-color-d2-z4">غُرْفَةَ</span> <span class="ar-word ar-color-d2-z5">الْجُلُوسِ</span> (<span class="en-word en-color-d2-z3">He will sweep</span> <span class="en-word en-color-d2-z4">the living</span> <span class="en-word en-color-d2-z5">room</span>)
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="q1_d2" id="q1_d2_opt3" value="c">
-                            <label class="form-check-label" for="q1_d2_opt3">
-                                <span class="ar-word ar-color-d2-z6">سَيَكْوِي</span> <span class="ar-word ar-color-d2-z7">الْمَلابِسَ</span> (<span class="en-word en-color-d2-z6">He will iron</span> <span class="en-word en-color-d2-z7">the clothes</span>)
-                            </label>
-                        </div>
-                    </div>
-                    <div class="mcq-question mb-3">
-                        <p><strong>2. <span class="ar-word ar-color-d2-y1">مَنْ</span> <span class="ar-word ar-color-d2-y2">سَيَغْسِلُ</span> <span class="ar-word ar-color-d2-y3">الأَطْبَاقَ</span>؟</strong> ( <span class="en-word en-color-d2-y1">Who</span> <span class="en-word en-color-d2-y2">will wash</span> <span class="en-word en-color-d2-y3">the dishes</span>? )</p>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="q2_d2" id="q2_d2_opt1" value="a">
-                            <label class="form-check-label" for="q2_d2_opt1">
-                                <span class="ar-word ar-color-d2-w1">طَارِقٌ</span> (<span class="en-word en-color-d2-w1">Tariq</span>)
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="q2_d2" id="q2_d2_opt2" value="b">
-                            <label class="form-check-label" for="q2_d2_opt2">
-                                <span class="ar-word ar-color-d2-w2">لَطِيفَةُ</span> (<span class="en-word en-color-d2-w2">Latifah</span>)
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="q2_d2" id="q2_d2_opt3" value="c">
-                            <label class="form-check-label" for="q2_d2_opt3">
-                                <span class="ar-word ar-color-d2-w3">الْجَدَّةُ</span> (<span class="en-word en-color-d2-w3">The Grandmother</span>)
-                            </label>
-                        </div>
-                    </div>
-                    <button class="btn btn-primary check-answers-btn" data-mcq-id="dialogue2">Check Answers</button>
-                    <div class="feedback mt-2"></div>
-                </div>
-        
+      <!-- Dialogue 2 Section -->
+      <section
+        id="dialogue2"
+        class="lesson-section card mt-4 animate__animated animate__fadeInUp"
+      >
+        <div class="card-body">
+          <h3 class="section-title">Dialogue 2 - الْحِوَارُ الثَّانِي</h3>
+          <p class="text-muted text-center">
+            Between family members - بَيْنَ أَفْرَادِ الأُسْرَةِ
+          </p>
+          <div class="image-placeholder my-3 text-center">
+            <img
+              src="./photos/sweeping.png"
+              alt="Family Dialogue Image"
+              class="img-fluid rounded"
+            />
+          </div>
+
+          <div class="dialogue-line">
+            <p>
+              <span class="speaker">الأُمُّ:</span>
+              <span class="ar-word ar-color-d2-c1">هَذَا</span>
+              <span class="ar-word ar-color-d2-c2">يَوْمُ</span>
+              <span class="ar-word ar-color-d2-c3">الْعُطْلَةِ</span>.
+            </p>
+            <p class="translation">
+              <span class="speaker">The Mother:</span>
+              <span class="en-word en-color-d2-c1">This is</span>
+              <span class="en-word en-color-d2-c2">the day</span>
+              <span class="en-word en-color-d2-c3">off (holiday)</span>.
+            </p>
+          </div>
+          <div class="dialogue-line">
+            <p>
+              <span class="speaker">الأَبُ:</span>
+              <span class="ar-word ar-color-d2-d1">هَذَا</span>
+              <span class="ar-word ar-color-d2-d2">يَوْمُ</span>
+              <span class="ar-word ar-color-d2-d3">الْعَمَلِ</span>.
+            </p>
+            <p class="translation">
+              <span class="speaker">The Father:</span>
+              <span class="en-word en-color-d2-d1">This is</span>
+              <span class="en-word en-color-d2-d2">the work</span>
+              <span class="en-word en-color-d2-d3">day</span>.
+            </p>
+          </div>
+          <div class="dialogue-line">
+            <p>
+              <span class="speaker">الأُمُّ:</span>
+              <span class="ar-word ar-color-d2-e1">مَاذَا</span>
+              <span class="ar-word ar-color-d2-e2">سَتَفْعَلُ</span>
+              <span class="ar-word ar-color-d2-e3">يَا</span>
+              <span class="ar-word ar-color-d2-e4">طَارِقُ</span>؟
+            </p>
+            <p class="translation">
+              <span class="speaker">The Mother:</span>
+              <span class="en-word en-color-d2-e1">What</span>
+              <span class="en-word en-color-d2-e2">will you do</span>,
+              <span class="en-word en-color-d2-e3">O</span>
+              <span class="en-word en-color-d2-e4">Tariq</span>?
+            </p>
+          </div>
+          <div class="dialogue-line">
+            <p>
+              <span class="speaker">طَارِقٌ:</span>
+              <span class="ar-word ar-color-d2-f1">سَأَكْنُسُ</span>
+              <span class="ar-word ar-color-d2-f2">غُرْفَةَ</span>
+              <span class="ar-word ar-color-d2-f3">الْجُلُوسِ</span>.
+            </p>
+            <p class="translation">
+              <span class="speaker">Tariq:</span>
+              <span class="en-word en-color-d2-f1">I will sweep</span>
+              <span class="en-word en-color-d2-f2">the living</span>
+              <span class="en-word en-color-d2-f3">room</span>.
+            </p>
+          </div>
+          <div class="dialogue-line">
+            <p>
+              <span class="speaker">الأُمُّ:</span>
+              <span class="ar-word ar-color-d2-g1">وَمَاذَا</span>
+              <span class="ar-word ar-color-d2-g2">سَتَفْعَلِينَ</span>
+              <span class="ar-word ar-color-d2-g3">يَا</span>
+              <span class="ar-word ar-color-d2-g4">فَاطِمَةُ</span>؟
+            </p>
+            <p class="translation">
+              <span class="speaker">The Mother:</span>
+              <span class="en-word en-color-d2-g1">And what</span>
+              <span class="en-word en-color-d2-g2">will you (f.) do</span>,
+              <span class="en-word en-color-d2-g3">O</span>
+              <span class="en-word en-color-d2-g4">Fatimah</span>?
+            </p>
+          </div>
+          <div class="dialogue-line">
+            <p>
+              <span class="speaker">فَاطِمَةُ:</span>
+              <span class="ar-word ar-color-d2-h1">سَأَكْنُسُ</span>
+              <span class="ar-word ar-color-d2-h2">غُرْفَةَ</span>
+              <span class="ar-word ar-color-d2-h3">النَّوْمِ</span>.
+            </p>
+            <p class="translation">
+              <span class="speaker">Fatimah:</span>
+              <span class="en-word en-color-d2-h1">I will sweep</span>
+              <span class="en-word en-color-d2-h2">the bed</span>
+              <span class="en-word en-color-d2-h3">room</span>.
+            </p>
+          </div>
+          <div class="dialogue-line">
+            <p>
+              <span class="speaker">الأُمُّ:</span>
+              <span class="ar-word ar-color-d2-i1">وَمَاذَا</span>
+              <span class="ar-word ar-color-d2-i2">سَتَفْعَلُ</span>
+              <span class="ar-word ar-color-d2-i3">يَا</span>
+              <span class="ar-word ar-color-d2-i4">أَحْمَدُ</span>؟
+            </p>
+            <p class="translation">
+              <span class="speaker">The Mother:</span>
+              <span class="en-word en-color-d2-i1">And what</span>
+              <span class="en-word en-color-d2-i2">will you do</span>,
+              <span class="en-word en-color-d2-i3">O</span>
+              <span class="en-word en-color-d2-i4">Ahmad</span>?
+            </p>
+          </div>
+          <div class="dialogue-line">
+            <p>
+              <span class="speaker">أَحْمَدُ:</span>
+              <span class="ar-word ar-color-d2-j1">سَأَغْسِلُ</span>
+              <span class="ar-word ar-color-d2-j2">الْمَلابِسَ</span>.
+            </p>
+            <p class="translation">
+              <span class="speaker">Ahmad:</span>
+              <span class="en-word en-color-d2-j1">I will wash</span>
+              <span class="en-word en-color-d2-j2">the clothes</span>.
+            </p>
+          </div>
+          <div class="dialogue-line">
+            <p>
+              <span class="speaker">الأُمُّ:</span>
+              <span class="ar-word ar-color-d2-k1">وَمَاذَا</span>
+              <span class="ar-word ar-color-d2-k2">سَتَفْعَلِينَ</span>
+              <span class="ar-word ar-color-d2-k3">يَا</span>
+              <span class="ar-word ar-color-d2-k4">لَطِيفَةُ</span>؟
+            </p>
+            <p class="translation">
+              <span class="speaker">The Mother:</span>
+              <span class="en-word en-color-d2-k1">And what</span>
+              <span class="en-word en-color-d2-k2">will you (f.) do</span>,
+              <span class="en-word en-color-d2-k3">O</span>
+              <span class="en-word en-color-d2-k4">Latifah</span>?
+            </p>
+          </div>
+          <div class="dialogue-line">
+            <p>
+              <span class="speaker">لَطِيفَةُ:</span>
+              <span class="ar-word ar-color-d2-l1">سَأَكْوِي</span>
+              <span class="ar-word ar-color-d2-l2">الْمَلابِسَ</span>.
+            </p>
+            <p class="translation">
+              <span class="speaker">Latifah:</span>
+              <span class="en-word en-color-d2-l1">I will iron</span>
+              <span class="en-word en-color-d2-l2">the clothes</span>.
+            </p>
+          </div>
+          <div class="dialogue-line">
+            <p>
+              <span class="speaker">الْجَدَّةُ:</span>
+              <span class="ar-word ar-color-d2-m1">أَنَا</span>
+              <span class="ar-word ar-color-d2-m2">سَأَغْسِلُ</span>
+              <span class="ar-word ar-color-d2-m3">الأَطْبَاقَ</span>.
+            </p>
+            <p class="translation">
+              <span class="speaker">The Grandmother:</span>
+              <span class="en-word en-color-d2-m1">I</span>
+              <span class="en-word en-color-d2-m2">will wash</span>
+              <span class="en-word en-color-d2-m3">the dishes</span>.
+            </p>
+          </div>
+          <div class="dialogue-line">
+            <p>
+              <span class="speaker">الْجَدُّ:</span>
+              <span class="ar-word ar-color-d2-n1">وَأَنَا</span>
+              <span class="ar-word ar-color-d2-n2">سَأَقْرَأُ</span>
+              <span class="ar-word ar-color-d2-n3">الْقُرْآنَ</span>.
+            </p>
+            <p class="translation">
+              <span class="speaker">The Grandfather:</span>
+              <span class="en-word en-color-d2-n1">And I</span>
+              <span class="en-word en-color-d2-n2">will read</span>
+              <span class="en-word en-color-d2-n3">the Quran</span>.
+            </p>
+          </div>
+
+          <h4 class="mt-4">
+            Vocabulary from Dialogue 2 - مُفْرَدَاتُ الْحِوَارِ الثَّانِي
+          </h4>
+          <ul class="list-unstyled">
+            <li class="vocab-item">
+              <p>
+                <span class="ar-word ar-color-d2-v1">الْعَمَل</span> -
+                <span class="en-word en-color-d2-v1">Work</span> (noun)
+              </p>
+            </li>
+            <li class="vocab-item">
+              <p>
+                <span class="ar-word ar-color-d2-v2">الْعُطْلَة</span> -
+                <span class="en-word en-color-d2-v2">Holiday / Day off</span>
+                (noun)
+              </p>
+            </li>
+            <li class="vocab-item">
+              <p>
+                <span class="ar-word ar-color-d2-v3">يَكْنُسُ</span> -
+                <span class="en-word en-color-d2-v3">To sweep / hoover</span>
+                (verb)
+              </p>
+            </li>
+            <li class="vocab-item">
+              <p>
+                <span class="ar-word ar-color-d2-v4">غُرْفَةُ الْجُلُوسِ</span>
+                - <span class="en-word en-color-d2-v4">Living room</span> (noun
+                phrase)
+              </p>
+            </li>
+            <li class="vocab-item">
+              <p>
+                <span class="ar-word ar-color-d2-v5">غُرْفَةُ النَّوْمِ</span> -
+                <span class="en-word en-color-d2-v5">Bedroom</span> (noun
+                phrase)
+              </p>
+            </li>
+            <li class="vocab-item">
+              <p>
+                <span class="ar-word ar-color-d2-v6">يَغْسِلُ</span> -
+                <span class="en-word en-color-d2-v6">To wash</span> (verb)
+              </p>
+            </li>
+            <li class="vocab-item">
+              <p>
+                <span class="ar-word ar-color-d2-v7">مَلابِس</span> -
+                <span class="en-word en-color-d2-v7">Clothes</span> (noun)
+              </p>
+            </li>
+            <li class="vocab-item">
+              <p>
+                <span class="ar-word ar-color-d2-v8">يَكْوِي</span> -
+                <span class="en-word en-color-d2-v8">To iron</span> (verb)
+              </p>
+            </li>
+            <li class="vocab-item">
+              <p>
+                <span class="ar-word ar-color-d2-v9">أَطْبَاق</span> -
+                <span class="en-word en-color-d2-v9">Dishes</span> (noun)
+              </p>
+            </li>
+            <li class="vocab-item">
+              <p>
+                <span class="ar-word ar-color-d2-v10">يَقْرَأُ</span> -
+                <span class="en-word en-color-d2-v10">To read</span> (verb)
+              </p>
+            </li>
+            <li class="vocab-item">
+              <p>
+                <span class="ar-word ar-color-d2-v11">الْقُرْآن</span> -
+                <span class="en-word en-color-d2-v11">The Quran</span> (noun)
+              </p>
+            </li>
+          </ul>
+
+          <h4 class="mt-4">Check Your Understanding - اخْتَبِرْ فَهْمَكَ</h4>
+          <div id="mcq-dialogue2">
+            <div class="mcq-question mb-3">
+              <p>
+                <strong
+                  >1. <span class="ar-word ar-color-d2-x1">مَاذَا</span>
+                  <span class="ar-word ar-color-d2-x2">سَيَفْعَلُ</span>
+                  <span class="ar-word ar-color-d2-x3">طَارِقٌ</span>؟</strong
+                >
+                ( <span class="en-word en-color-d2-x1">What</span>
+                <span class="en-word en-color-d2-x2">will Tariq</span>
+                <span class="en-word en-color-d2-x3">do</span>? )
+              </p>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="q1_d2"
+                  id="q1_d2_opt1"
+                  value="a"
+                />
+                <label class="form-check-label" for="q1_d2_opt1">
+                  <span class="ar-word ar-color-d2-z1">سَيَغْسِلُ</span>
+                  <span class="ar-word ar-color-d2-z2">الأَطْبَاقَ</span> (<span
+                    class="en-word en-color-d2-z1"
+                    >He will wash</span
+                  >
+                  <span class="en-word en-color-d2-z2">the dishes</span>)
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="q1_d2"
+                  id="q1_d2_opt2"
+                  value="b"
+                />
+                <label class="form-check-label" for="q1_d2_opt2">
+                  <span class="ar-word ar-color-d2-z3">سَيَكْنُسُ</span>
+                  <span class="ar-word ar-color-d2-z4">غُرْفَةَ</span>
+                  <span class="ar-word ar-color-d2-z5">الْجُلُوسِ</span> (<span
+                    class="en-word en-color-d2-z3"
+                    >He will sweep</span
+                  >
+                  <span class="en-word en-color-d2-z4">the living</span>
+                  <span class="en-word en-color-d2-z5">room</span>)
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="q1_d2"
+                  id="q1_d2_opt3"
+                  value="c"
+                />
+                <label class="form-check-label" for="q1_d2_opt3">
+                  <span class="ar-word ar-color-d2-z6">سَيَكْوِي</span>
+                  <span class="ar-word ar-color-d2-z7">الْمَلابِسَ</span> (<span
+                    class="en-word en-color-d2-z6"
+                    >He will iron</span
+                  >
+                  <span class="en-word en-color-d2-z7">the clothes</span>)
+                </label>
+              </div>
             </div>
-        </section>
-
-        <!-- Drag and Drop Exercise (Simple Example) -->
-        <section id="drag-drop-exercise" class="lesson-section card mt-4 animate__animated animate__fadeInUp">
-            <div class="card-body">
-                <h3 class="section-title">Vocabulary Match - مُطَابَقَةُ الْمُفْرَدَات</h3>
-                <p>Drag the Arabic word to its English meaning.</p>
-                <div class="drag-drop-container row">
-                    <div class="col-md-6">
-                        <h4>Arabic Words (الْكَلِمَاتُ الْعَرَبِيَّة)</h4>
-                        <div id="ar-word1" class="draggable-item" draggable="true"><span class="ar-word ar-color-dd1">سَيَّارَة</span></div>
-                        <div id="ar-word2" class="draggable-item" draggable="true"><span class="ar-word ar-color-dd2">يَكْنُسُ</span></div>
-                        <div id="ar-word3" class="draggable-item" draggable="true"><span class="ar-word ar-color-dd3">مَلابِس</span></div>
-                         <div id="ar-word4" class="draggable-item" draggable="true"><span class="ar-word ar-color-dd4">أَطْبَاق</span></div>
-                    </div>
-                    <div class="col-md-6">
-                        <h4>English Meanings (الْمَعَانِي الإِنْجِلِيزِيَّة)</h4>
-                        <div id="en-meaning1" class="droppable-area" data-match="ar-word3"><span class="en-word en-color-dd3">Clothes</span></div>
-                        <div id="en-meaning2" class="droppable-area" data-match="ar-word1"><span class="en-word en-color-dd1">Car</span></div>
-                        <div id="en-meaning3" class="droppable-area" data-match="ar-word2"><span class="en-word en-color-dd2">To sweep/hoover</span></div>
-                        <div id="en-meaning4" class="droppable-area" data-match="ar-word4"><span class="en-word en-color-dd4">Dishes</span></div>
-                    </div>
-                </div>
-                <p id="drag-drop-feedback" class="mt-3"></p>
+            <div class="mcq-question mb-3">
+              <p>
+                <strong
+                  >2. <span class="ar-word ar-color-d2-y1">مَنْ</span>
+                  <span class="ar-word ar-color-d2-y2">سَيَغْسِلُ</span>
+                  <span class="ar-word ar-color-d2-y3">الأَطْبَاقَ</span
+                  >؟</strong
+                >
+                ( <span class="en-word en-color-d2-y1">Who</span>
+                <span class="en-word en-color-d2-y2">will wash</span>
+                <span class="en-word en-color-d2-y3">the dishes</span>? )
+              </p>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="q2_d2"
+                  id="q2_d2_opt1"
+                  value="a"
+                />
+                <label class="form-check-label" for="q2_d2_opt1">
+                  <span class="ar-word ar-color-d2-w1">طَارِقٌ</span> (<span
+                    class="en-word en-color-d2-w1"
+                    >Tariq</span
+                  >)
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="q2_d2"
+                  id="q2_d2_opt2"
+                  value="b"
+                />
+                <label class="form-check-label" for="q2_d2_opt2">
+                  <span class="ar-word ar-color-d2-w2">لَطِيفَةُ</span> (<span
+                    class="en-word en-color-d2-w2"
+                    >Latifah</span
+                  >)
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="q2_d2"
+                  id="q2_d2_opt3"
+                  value="c"
+                />
+                <label class="form-check-label" for="q2_d2_opt3">
+                  <span class="ar-word ar-color-d2-w3">الْجَدَّةُ</span> (<span
+                    class="en-word en-color-d2-w3"
+                    >The Grandmother</span
+                  >)
+                </label>
+              </div>
             </div>
-        </section>
+            <button
+              class="btn btn-primary check-answers-btn"
+              data-mcq-id="dialogue2"
+            >
+              Check Answers
+            </button>
+            <div class="feedback mt-2"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Drag and Drop Exercise (Simple Example) -->
+      <section
+        id="drag-drop-exercise"
+        class="lesson-section card mt-4 animate__animated animate__fadeInUp"
+      >
+        <div class="card-body">
+          <h3 class="section-title">
+            Vocabulary Match - مُطَابَقَةُ الْمُفْرَدَات
+          </h3>
+          <p>Drag the Arabic word to its English meaning.</p>
+          <div class="drag-drop-container row">
+            <div class="col-md-6">
+              <h4>Arabic Words (الْكَلِمَاتُ الْعَرَبِيَّة)</h4>
+              <div id="ar-word1" class="draggable-item" draggable="true">
+                <span class="ar-word ar-color-dd1">سَيَّارَة</span>
+              </div>
+              <div id="ar-word2" class="draggable-item" draggable="true">
+                <span class="ar-word ar-color-dd2">يَكْنُسُ</span>
+              </div>
+              <div id="ar-word3" class="draggable-item" draggable="true">
+                <span class="ar-word ar-color-dd3">مَلابِس</span>
+              </div>
+              <div id="ar-word4" class="draggable-item" draggable="true">
+                <span class="ar-word ar-color-dd4">أَطْبَاق</span>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <h4>English Meanings (الْمَعَانِي الإِنْجِلِيزِيَّة)</h4>
+              <div
+                id="en-meaning1"
+                class="droppable-area"
+                data-match="ar-word3"
+              >
+                <span class="en-word en-color-dd3">Clothes</span>
+              </div>
+              <div
+                id="en-meaning2"
+                class="droppable-area"
+                data-match="ar-word1"
+              >
+                <span class="en-word en-color-dd1">Car</span>
+              </div>
+              <div
+                id="en-meaning3"
+                class="droppable-area"
+                data-match="ar-word2"
+              >
+                <span class="en-word en-color-dd2">To sweep/hoover</span>
+              </div>
+              <div
+                id="en-meaning4"
+                class="droppable-area"
+                data-match="ar-word4"
+              >
+                <span class="en-word en-color-dd4">Dishes</span>
+              </div>
+            </div>
+          </div>
+          <p id="drag-drop-feedback" class="mt-3"></p>
+        </div>
+      </section>
+      <!-- Dialogue 3 Section -->
+      <section
+        id="dialogue3"
+        class="lesson-section card mt-4 animate__animated animate__fadeInUp"
+      >
+        <div class="card-body">
+          <h3 class="section-title">Dialogue 3 - الْحِوَارُ الثَّالِثُ</h3>
+          <p class="text-muted text-center">
+            Between عَادِل (Adil) and فَيْصَل (Faisal) - بَيْنَ عَادِلٍ
+            وَفَيْصَلٍ
+          </p>
+          <div class="image-placeholder my-3 text-center">
+            <img
+              src="./photos/faisl-talks-to-adel.jpg"
+              alt="Dialogue 3 Characters placeholder"
+              class="img-fluid rounded"
+            />
+            <!-- يمكنك تغيير الصورة -->
+          </div>
+
+          <div class="dialogue-line">
+            <p>
+              <span class="speaker">عَادِل:</span>
+              <span class="ar-word ar-color-d3-a1">مَتَى</span>
+              <span class="ar-word ar-color-d3-a2">تَسْتَيْقِظُ</span>
+              <span class="ar-word ar-color-d3-a3">يَوْمَ</span>
+              <span class="ar-word ar-color-d3-a4">الْعُطْلَةِ</span>؟
+            </p>
+            <p class="translation">
+              <span class="speaker">Adil:</span>
+              <span class="en-word en-color-d3-a1">When</span>
+              <span class="en-word en-color-d3-a2">do you wake up</span>
+              <span class="en-word en-color-d3-a3">on the</span>
+              <span class="en-word en-color-d3-a4">holiday/day off</span>?
+            </p>
+          </div>
+          <div class="dialogue-line">
+            <p>
+              <span class="speaker">فَيْصَل:</span>
+              <span class="ar-word ar-color-d3-b1">أَسْتَيْقِظُ</span>
+              <span class="ar-word ar-color-d3-b2">مُبَكِّرًا</span>.
+            </p>
+            <p class="translation">
+              <span class="speaker">Faisal:</span>
+              <span class="en-word en-color-d3-b1">I wake up</span>
+              <span class="en-word en-color-d3-b2">early</span>.
+            </p>
+          </div>
+          <div class="dialogue-line">
+            <p>
+              <span class="speaker">فَيْصَل:</span>
+              <span class="ar-word ar-color-d3-c1">وَمَتَى</span>
+              <span class="ar-word ar-color-d3-c2">تَسْتَيْقِظُ</span>
+              <span class="ar-word ar-color-d3-c3">أَنْتَ</span>؟
+            </p>
+            <p class="translation">
+              <span class="speaker">Faisal:</span>
+              <span class="en-word en-color-d3-c1">And when</span>
+              <span class="en-word en-color-d3-c2">do you wake up</span>?
+            </p>
+          </div>
+          <div class="dialogue-line">
+            <p>
+              <span class="speaker">عَادِل:</span>
+              <span class="ar-word ar-color-d3-d1">أَسْتَيْقِظُ</span>
+              <span class="ar-word ar-color-d3-d2">مُتَأَخِّرًا</span>.
+            </p>
+            <p class="translation">
+              <span class="speaker">Adil:</span>
+              <span class="en-word en-color-d3-d1">I wake up</span>
+              <span class="en-word en-color-d3-d2">late</span>.
+            </p>
+          </div>
+
+          <div class="dialogue-line mt-3">
+            <!-- فاصل بسيط للجزء التالي من الحوار -->
+            <p>
+              <span class="speaker">فَيْصَل:</span>
+              <span class="ar-word ar-color-d3-e1">مَاذَا</span>
+              <span class="ar-word ar-color-d3-e2">تَفْعَلُ</span>
+              <span class="ar-word ar-color-d3-e3">فِي</span>
+              <span class="ar-word ar-color-d3-e4">الصَّبَاحِ</span>؟
+            </p>
+            <p class="translation">
+              <span class="speaker">Faisal:</span>
+              <span class="en-word en-color-d3-e1">What</span>
+              <span class="en-word en-color-d3-e2">do you do</span>
+              <span class="en-word en-color-d3-e3">in</span>
+              <span class="en-word en-color-d3-e4">the morning</span>?
+            </p>
+          </div>
+          <div class="dialogue-line">
+            <p>
+              <span class="speaker">عَادِل:</span>
+              <span class="ar-word ar-color-d3-f1">أُشَاهِدُ</span>
+              <span class="ar-word ar-color-d3-f2">التِّلْفَازَ</span>.
+            </p>
+            <p class="translation">
+              <span class="speaker">Adil:</span>
+              <span class="en-word en-color-d3-f1">I watch</span>
+              <span class="en-word en-color-d3-f2">the television</span>.
+            </p>
+          </div>
+          <div class="dialogue-line">
+            <p>
+              <span class="speaker">عَادِل:</span>
+              <span class="ar-word ar-color-d3-g1">وَمَاذَا</span>
+              <span class="ar-word ar-color-d3-g2">تَفْعَلُ</span>
+              <span class="ar-word ar-color-d3-g3">أَنْتَ</span>؟
+            </p>
+            <p class="translation">
+              <span class="speaker">Adil:</span>
+              <span class="en-word en-color-d3-g1">And what</span>
+              <span class="en-word en-color-d3-g2">do you do</span>?
+            </p>
+          </div>
+          <div class="dialogue-line">
+            <p>
+              <span class="speaker">فَيْصَل:</span>
+              <span class="ar-word ar-color-d3-h1">أَقْرَأُ</span>
+              <span class="ar-word ar-color-d3-h2">صَحِيفَةً</span>
+              <span class="ar-word ar-color-d3-h3">أَوْ</span>
+              <span class="ar-word ar-color-d3-h4">كِتَابًا</span>.
+            </p>
+            <p class="translation">
+              <span class="speaker">Faisal:</span>
+              <span class="en-word en-color-d3-h1">I read</span>
+              <span class="en-word en-color-d3-h2">a newspaper</span>
+              <span class="en-word en-color-d3-h3">or</span>
+              <span class="en-word en-color-d3-h4">a book</span>.
+            </p>
+          </div>
+
+          <div class="dialogue-line mt-3">
+            <!-- فاصل بسيط للجزء التالي من الحوار -->
+            <p>
+              <span class="speaker">عَادِل:</span>
+              <span class="ar-word ar-color-d3-i1">أَيْنَ</span>
+              <span class="ar-word ar-color-d3-i2">تُصَلِّي</span>
+              <span class="ar-word ar-color-d3-i3">الْجُمُعَةَ</span>؟
+            </p>
+            <p class="translation">
+              <span class="speaker">Adil:</span>
+              <span class="en-word en-color-d3-i1">Where</span>
+              <span class="en-word en-color-d3-i2">do you pray</span>
+              <span class="en-word en-color-d3-i3">the Jumu'ah</span>?
+            </p>
+          </div>
+          <div class="dialogue-line">
+            <p>
+              <span class="speaker">فَيْصَل:</span>
+              <span class="ar-word ar-color-d3-j1">أُصَلِّي</span>
+              <span class="ar-word ar-color-d3-j2">الْجُمُعَةَ</span>
+              <span class="ar-word ar-color-d3-j3">فِي</span>
+              <span class="ar-word ar-color-d3-j4">الْمَسْجِدِ</span>
+              <span class="ar-word ar-color-d3-j5">الْكَبِيرِ</span>.
+            </p>
+            <p class="translation">
+              <span class="speaker">Faisal:</span>
+              <span class="en-word en-color-d3-j1">I pray</span>
+              <span class="en-word en-color-d3-j2">Jumu'ah</span>
+              <span class="en-word en-color-d3-j3">in</span>
+              <span class="en-word en-color-d3-j4">the big</span>
+              <span class="en-word en-color-d3-j5">mosque</span>.
+            </p>
+          </div>
+          <div class="dialogue-line">
+            <p>
+              <span class="speaker">فَيْصَل:</span>
+              <span class="ar-word ar-color-d3-k1">وَأَيْنَ</span>
+              <span class="ar-word ar-color-d3-k2">تُصَلِّى</span>
+              <span class="ar-word ar-color-d3-k3">أَنْتَ</span>؟
+            </p>
+            <p class="translation">
+              <span class="speaker">Faisal:</span>
+              <span class="en-word en-color-d3-k1">And where</span>
+              <span class="en-word en-color-d3-k2">do you pray</span>?
+            </p>
+          </div>
+          <div class="dialogue-line">
+            <p>
+              <span class="speaker">عَادِل:</span>
+              <span class="ar-word ar-color-d3-l1">أُصَلِّي</span>
+              <span class="ar-word ar-color-d3-l2">فِي</span>
+              <span class="ar-word ar-color-d3-l3">الْمَسْجِدِ</span>
+              <span class="ar-word ar-color-d3-l4">الْكَبِيرِ</span>
+              <span class="ar-word ar-color-d3-l5">أَيْضًا</span>.
+            </p>
+            <p class="translation">
+              <span class="speaker">Adil:</span>
+              <span class="en-word en-color-d3-l1">I pray</span>
+              <span class="en-word en-color-d3-l2">in</span>
+              <span class="en-word en-color-d3-l3">the big</span>
+              <span class="en-word en-color-d3-l4">mosque</span>
+              <span class="en-word en-color-d3-l5">as well</span>.
+            </p>
+          </div>
+
+          <h4 class="mt-4">
+            Vocabulary from Dialogue 3 - مُفْرَدَاتُ الْحِوَارِ الثَّالِث
+          </h4>
+          <ul class="list-unstyled">
+            <li class="vocab-item">
+              <p>
+                <span class="ar-word ar-color-d3-v1">مُبَكِّرًا</span> -
+                <span class="en-word en-color-d3-v1">Early</span>
+              </p>
+            </li>
+            <li class="vocab-item">
+              <p>
+                <span class="ar-word ar-color-d3-v2">مُتَأَخِّرًا</span> -
+                <span class="en-word en-color-d3-v2">Late</span>
+              </p>
+            </li>
+            <li class="vocab-item">
+              <p>
+                <span class="ar-word ar-color-d3-v3">الصَّبَاح</span> -
+                <span class="en-word en-color-d3-v3">Morning</span>
+              </p>
+            </li>
+            <li class="vocab-item">
+              <p>
+                <span class="ar-word ar-color-d3-v4">أُشَاهِدُ</span> -
+                <span class="en-word en-color-d3-v4">I watch/view</span> (verb)
+              </p>
+            </li>
+            <li class="vocab-item">
+              <p>
+                <span class="ar-word ar-color-d3-v5">التِّلْفَاز</span> -
+                <span class="en-word en-color-d3-v5">Television (TV)</span>
+                (noun)
+              </p>
+            </li>
+            <li class="vocab-item">
+              <p>
+                <span class="ar-word ar-color-d3-v6">صَحِيفَة</span> -
+                <span class="en-word en-color-d3-v6">Newspaper / Journal</span>
+                (noun)
+              </p>
+            </li>
+            <li class="vocab-item">
+              <p>
+                <span class="ar-word ar-color-d3-v7">كِتَاب</span> (<span
+                  class="ar-word ar-color-d3-v8"
+                  >ج. كُتُب</span
+                >) - <span class="en-word en-color-d3-v7">Book</span> (<span
+                  class="en-word en-color-d3-v8"
+                  >pl. books</span
+                >)
+              </p>
+            </li>
+            <li class="vocab-item">
+              <p>
+                <span class="ar-word ar-color-d3-v9">الْجُمُعَة</span> -
+                <span class="en-word en-color-d3-v9"
+                  >Jumu'ah (Friday prayer)</span
+                >
+                (noun)
+              </p>
+            </li>
+            <li class="vocab-item">
+              <p>
+                <span class="ar-word ar-color-d3-v10">الْكَبِير</span> -
+                <span class="en-word en-color-d3-v10">Big</span> (adjective,
+                opposite: <span class="ar-word">صَغِير</span> - small)
+              </p>
+            </li>
+            <li class="vocab-item">
+              <p>
+                <span class="ar-word ar-color-d3-v11">أَيْضًا</span> -
+                <span class="en-word en-color-d3-v11">Also / As well</span>
+              </p>
+            </li>
+          </ul>
+
+          <h4 class="mt-4" >  Check Your Understanding - اخْتَبِرْ فَهْمَكَ</h4>
+          <div id="mcq-dialogue3">
+            <div class="mcq-question mb-3">
+              <p>
+                <strong dir="rtl"> <!-- <--- إضافة dir هنا -->
+                  1. <span class="ar-word ar-color-d3-x1">مَتَى</span>
+                  <span class="ar-word ar-color-d3-x2">يَسْتَيْقِظُ</span>
+                  <span class="ar-word ar-color-d3-x3">فَيْصَلٌ</span>
+                  <span class="ar-word ar-color-d3-x4">يَوْمَ</span>
+                  <span class="ar-word ar-color-d3-x5">الْعُطْلَةِ</span>؟
+                </strong>
+                ( <span class="en-word en-color-d3-x1">When</span>
+                <span class="en-word en-color-d3-x2">does Faisal wake up</span>
+                <span class="en-word en-color-d3-x3">on the holiday</span>? )
+              </p>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="q1_d3"
+                  id="q1_d3_opt1"
+                  value="a"
+                />
+                <label class="form-check-label" for="q1_d3_opt1" dir="rtl"> <!-- <--- إضافة dir للخيارات -->
+                  <span class="ar-word ar-color-d3-q1">مُتَأَخِّرًا</span>
+                  (<span class="en-word en-color-d3-q1" dir="ltr">Late</span>)
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="q1_d3"
+                  id="q1_d3_opt2"
+                  value="b"
+                />
+                <label class="form-check-label" for="q1_d3_opt2" dir="rtl"> <!-- <--- إضافة dir للخيارات -->
+                  <span class="ar-word ar-color-d3-q2">مُبَكِّرًا</span> (<span
+                    class="en-word en-color-d3-q2" dir="ltr"
+                    >Early</span
+                  >)
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="q1_d3"
+                  id="q1_d3_opt3"
+                  value="c"
+                />
+                <label class="form-check-label" for="q1_d3_opt3" dir="rtl"> <!-- <--- إضافة dir للخيارات -->
+                  <span class="ar-word ar-color-d3-q3">عِنْدَ</span>
+                  <span class="ar-word ar-color-d3-q4">الظُّهْرِ</span> (<span
+                    class="en-word en-color-d3-q3" dir="ltr"
+                    >At</span
+                  >
+                  <span class="en-word en-color-d3-q4" dir="ltr">noon</span>)
+                </label>
+              </div>
+            </div>
+            <div class="mcq-question mb-3">
+              <p>
+                <strong dir="rtl"> <!-- <--- إضافة dir هنا -->
+                  2. <span class="ar-word ar-color-d3-y1">مَاذَا</span>
+                  <span class="ar-word ar-color-d3-y2">يَفْعَلُ</span>
+                  <span class="ar-word ar-color-d3-y3">عَادِلٌ</span>
+                  <span class="ar-word ar-color-d3-y4">فِي</span>
+                  <span class="ar-word ar-color-d3-y5">الصَّبَاحِ</span>؟
+                </strong>
+                ( <span class="en-word en-color-d3-y1">What</span>
+                <span class="en-word en-color-d3-y2">does Adil do</span>
+                <span class="en-word en-color-d3-y3">in the morning</span>? )
+              </p>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="q2_d3"
+                  id="q2_d3_opt1"
+                  value="a"
+                />
+                <label class="form-check-label" for="q2_d3_opt1" dir="rtl"> <!-- <--- إضافة dir للخيارات -->
+                  <span class="ar-word ar-color-d3-q5">يَقْرَأُ</span>
+                  <span class="ar-word ar-color-d3-q6">كِتَابًا</span>
+                  <span class="ar-word ar-color-d3-q7">وَيُشَاهِدُ</span>
+                  <span class="ar-word ar-color-d3-q8">التِّلْفَازَ</span>
+                  (<span class="en-word en-color-d3-q5" dir="ltr">He reads</span>
+                  <span class="en-word en-color-d3-q6" dir="ltr">a book</span>
+                  <span class="en-word en-color-d3-q7" dir="ltr">and watches</span>
+                  <span class="en-word en-color-d3-q8" dir="ltr">TV</span>)
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="q2_d3"
+                  id="q2_d3_opt2"
+                  value="b"
+                />
+                <label class="form-check-label" for="q2_d3_opt2" dir="rtl"> <!-- <--- إضافة dir للخيارات -->
+                  <span class="ar-word ar-color-d3-q9">يُشَاهِدُ</span>
+                  <span class="ar-word ar-color-d3-q10">التِّلْفَازَ</span>
+                  (<span class="en-word en-color-d3-q9" dir="ltr">He watches</span>
+                  <span class="en-word en-color-d3-q10" dir="ltr">TV</span>)
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="q2_d3"
+                  id="q2_d3_opt3"
+                  value="c"
+                />
+                <label class="form-check-label" for="q2_d3_opt3" dir="rtl"> <!-- <--- إضافة dir للخيارات -->
+                  <span class="ar-word ar-color-d3-q11">يَقْرَأُ</span>
+                  <span class="ar-word ar-color-d3-q12">صَحِيفَةً</span>
+                  <span class="ar-word ar-color-d3-q13">أَوْ</span>
+                  <span class="ar-word ar-color-d3-q14">كِتَابًا</span> (<span
+                    class="en-word en-color-d3-q11" dir="ltr"
+                    >He reads</span
+                  >
+                  <span class="en-word en-color-d3-q12" dir="ltr">a newspaper</span>
+                  <span class="en-word en-color-d3-q13" dir="ltr">or</span>
+                  <span class="en-word en-color-d3-q14" dir="ltr">a book</span>)
+                </label>
+              </div>
+            </div>
+            <div class="mcq-question mb-3">
+              <p>
+                <strong dir="rtl"> <!-- <--- إضافة dir هنا -->
+                  3. <span class="ar-word ar-color-d3-z1">أَيْنَ</span>
+                  <span class="ar-word ar-color-d3-z2">يُصَلِّي</span>
+                  <span class="ar-word ar-color-d3-z3">فَيْصَلٌ</span>
+                  <span class="ar-word ar-color-d3-z4">الْجُمُعَةَ</span>؟
+                </strong>
+                ( <span class="en-word en-color-d3-z1">Where</span>
+                <span class="en-word en-color-d3-z2">does Faisal pray</span>
+                <span class="en-word en-color-d3-z3">Jumu'ah</span>? )
+              </p>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="q3_d3"
+                  id="q3_d3_opt1"
+                  value="a"
+                />
+                <label class="form-check-label" for="q3_d3_opt1" dir="rtl"> <!-- <--- إضافة dir للخيارات -->
+                  <span class="ar-word ar-color-d3-q15">فِي</span>
+                  <span class="ar-word ar-color-d3-q16">الْمَسْجِدِ</span>
+                  <span class="ar-word ar-color-d3-q17">الصَّغِيرِ</span> (<span
+                    class="en-word en-color-d3-q15" dir="ltr"
+                    >In the</span
+                  >
+                  <span class="en-word en-color-d3-q16" dir="ltr">small</span>
+                  <span class="en-word en-color-d3-q17" dir="ltr">mosque</span>)
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="q3_d3"
+                  id="q3_d3_opt2"
+                  value="b"
+                />
+                <label class="form-check-label" for="q3_d3_opt2" dir="rtl"> <!-- <--- إضافة dir للخيارات -->
+                  <span class="ar-word ar-color-d3-q18">فِي</span>
+                  <span class="ar-word ar-color-d3-q19">الْمَسْجِدِ</span>
+                  <span class="ar-word ar-color-d3-q20">الْكَبِيرِ</span> (<span
+                    class="en-word en-color-d3-q18" dir="ltr"
+                    >In the</span
+                  >
+                  <span class="en-word en-color-d3-q19" dir="ltr">big</span>
+                  <span class="en-word en-color-d3-q20" dir="ltr">mosque</span>)
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="q3_d3"
+                  id="q3_d3_opt3"
+                  value="c"
+                />
+                <label class="form-check-label" for="q3_d3_opt3" dir="rtl"> <!-- <--- إضافة dir للخيارات -->
+                  <span class="ar-word ar-color-d3-q21">فِي</span>
+                  <span class="ar-word ar-color-d3-q22">الْبَيْتِ</span> (<span
+                    class="en-word en-color-d3-q21" dir="ltr"
+                    >In the</span
+                  >
+                  <span class="en-word en-color-d3-q22" dir="ltr">house</span>)
+                </label>
+              </div>
+            </div>
+            <button
+              class="btn btn-primary check-answers-btn"
+              data-mcq-id="dialogue3"
+            >
+              Check Answers
+            </button>
+            <div class="feedback mt-2"></div>
+          </div>
+      </section>
+
+      <!-- Telling Time (Advanced) Section -->
+      <section
+      id="telling-time-advanced"
+      class="lesson-section card mt-4 animate__animated animate__fadeInUp"
+    >
+      <div class="card-body">
+        <h3 class="section-title">
+          More on Telling Time - <span dir="rtl">الْمَزِيدُ عَنِ السَّاعَة</span> <!-- تطبيق dir هنا للعنوان أيضًا -->
+        </h3>
+        <div class="image-placeholder my-3 text-center">
+          <img
+            src="./photos/clock.jpg"
+            alt="Clock Image"
+            class="img-fluid rounded"
+            style="max-width: 300px"
+          />
+        </div>
+        <ul class="list-unstyled">
+          <li class="vocab-item">
+            <p>
+              <strong dir="rtl"> <!-- <--- تعديل هنا -->
+                <span class="ar-word ar-color-tt1">كَمِ</span>
+                <span class="ar-word ar-color-tt2">السَّاعَةُ؟</span>
+              </strong>
+            </p>
+            <p class="translation">
+              <span class="en-word en-color-tt1">What's</span>
+              <span class="en-word en-color-tt2">the time?</span>
+            </p>
+          </li>
+          <li class="vocab-item">
+            <p dir="rtl"> <!-- <--- تعديل هنا، يمكن وضعه على الـ p مباشرة -->
+              <span class="ar-word ar-color-tt3">السَّاعَةُ</span>
+              <span class="ar-word ar-color-tt4">الثَّالِثَةُ</span>
+              <span class="ar-word ar-color-tt5">وَ</span> ... /
+              <span class="ar-word ar-color-tt6">إِلَّا</span> ...
+            </p>
+            <p class="translation">
+              <span class="en-word en-color-tt3">The time is</span>
+              <span class="en-word en-color-tt4">three</span>
+              <span class="en-word en-color-tt5">and (past)</span> ... /
+              <span class="en-word en-color-tt6">except (to)</span> ...
+            </p>
+          </li>
+          <li class="vocab-item">
+            <p dir="rtl"> <!-- <--- تعديل هنا -->
+              <span class="ar-word ar-color-tt7">نِصْف</span> =
+              <span class="en-word en-color-tt7" dir="ltr">half</span> <!-- ضمان أن الكلمة الإنجليزية تبقى LTR -->
+            </p>
+          </li>
+          <li class="vocab-item">
+            <p dir="rtl"> <!-- <--- تعديل هنا -->
+              <span class="ar-word ar-color-tt8">رُبْع</span> =
+              <span class="en-word en-color-tt8" dir="ltr">quarter</span>
+            </p>
+          </li>
+          <li class="vocab-item">
+            <p dir="rtl"> <!-- <--- تعديل هنا -->
+              <span class="ar-word ar-color-tt9">ثُلُث</span> =
+              <span class="en-word en-color-tt9" dir="ltr">one third (20 minutes)</span>
+            </p>
+          </li>
+          <li class="vocab-item">
+            <p dir="rtl"> <!-- <--- تعديل هنا -->
+              <span class="ar-word ar-color-tt10">دَقِيقَة</span> (<span
+                class="ar-word ar-color-tt11"
+                >ج. دَقَائِق</span
+              >) = <span class="en-word en-color-tt10" dir="ltr">minute</span> (<span
+                class="en-word en-color-tt11" dir="ltr"
+                >pl. minutes</span
+              >)
+            </p>
+          </li>
+          <li class="vocab-item">
+            <p dir="rtl"> <!-- <--- تعديل هنا -->
+              <span class="ar-word ar-color-tt12">ثَانِيَة</span> (<span
+                class="ar-word ar-color-tt13"
+                >ج. ثَوَانٍ</span
+              >) = <span class="en-word en-color-tt12" dir="ltr">second</span> (<span
+                class="en-word en-color-tt13" dir="ltr"
+                >pl. seconds</span
+              >)
+            </p>
+          </li>
+        </ul>
+        <h5 class="mt-3">Examples - أَمْثِلَة:</h5> <!-- تعديل اتجاه العنوان الفرعي -->
+        <ul class="list-unstyled">
+          <li>
+            <p dir="rtl"> <!-- <--- تعديل هنا -->
+              <span class="ar-word ar-color-tt-ex1"
+                >السَّاعَةُ الْوَاحِدَةُ وَالرُّبْعُ.</span
+              >
+              (<span class="en-word en-color-tt-ex1" dir="ltr"
+                >1:15 - One and a quarter / Quarter past one.</span
+              >)
+            </p>
+          </li>
+          <li>
+            <p dir="rtl"> <!-- <--- تعديل هنا -->
+              <span class="ar-word ar-color-tt-ex2"
+                >السَّاعَةُ الثَّانِيَةُ وَالنِّصْفُ.</span
+              >
+              (<span class="en-word en-color-tt-ex2" dir="ltr"
+                >2:30 - Two and a half / Half past two.</span
+              >)
+            </p>
+          </li>
+          <li>
+            <p dir="rtl"> <!-- <--- تعديل هنا -->
+              <span class="ar-word ar-color-tt-ex3"
+                >السَّاعَةُ الثَّالِثَةُ إِلَّا رُبْعًا.</span
+              >
+              (<span class="en-word en-color-tt-ex3" dir="ltr"
+                >2:45 - Three except a quarter / Quarter to three.</span
+              >)
+            </p>
+          </li>
+          <li>
+            <p dir="rtl"> <!-- <--- تعديل هنا -->
+              <span class="ar-word ar-color-tt-ex4"
+                >السَّاعَةُ الرَّابِعَةُ وَعَشْرُ دَقَائِقَ.</span
+              >
+              (<span class="en-word en-color-tt-ex4" dir="ltr"
+                >4:10 - Four and ten minutes / Ten past four.</span
+              >)
+            </p>
+          </li>
+          <li>
+            <p dir="rtl"> <!-- <--- تعديل هنا -->
+              <span class="ar-word ar-color-tt-ex5"
+                >السَّاعَةُ الْخَامِسَةُ إِلَّا خَمْسَ دَقَائِقَ.</span
+              >
+              (<span class="en-word en-color-tt-ex5" dir="ltr"
+                >4:55 - Five except five minutes / Five to five.</span
+              >)
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
 
 
     </main>
 
     <footer class="text-center py-4 mt-5">
-        <p>©2025 Ahmed Yossry Arabic Learning. All rights reserved.</p>
+      <p>©2025 Ahmed Yossry Arabic Learning. All rights reserved.</p>
     </footer>
 
     <!-- Bootstrap JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Custom JS -->
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
