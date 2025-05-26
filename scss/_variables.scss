@@ -218,6 +218,125 @@ $ar-color-dd2: #4a69bd; $en-color-dd2: $ar-color-dd2;
 $ar-color-dd3: #1e3799; $en-color-dd3: $ar-color-dd3;
 $ar-color-dd4: #0c2461; $en-color-dd4: $ar-color-dd4;
 
+// Dialogue 3 Specific Colors
+// يمكنك نسخ الألوان من الحوار الثاني إذا أردت، أو اختيار ألوان جديدة
+// مثال على استخدام نفس ألوان الحوار الثاني مع تغيير البادئة:
+
+$ar-color-d3-a1: $ar-color-d2-c1; $en-color-d3-a1: $ar-color-d3-a1; // مَتَى
+$ar-color-d3-a2: $ar-color-d2-c2; $en-color-d3-a2: $ar-color-d3-a2; // تَسْتَيْقِظُ
+$ar-color-d3-a3: $ar-color-d2-c3; $en-color-d3-a3: $ar-color-d3-a3; // يَوْمَ
+$ar-color-d3-a4: $ar-color-d2-d1; $en-color-d3-a4: $ar-color-d3-a4; // الْعُطْلَةِ
+$ar-color-d3-b1: $ar-color-d2-d2; $en-color-d3-b1: $ar-color-d3-b1; // أَسْتَيْقِظُ
+$ar-color-d3-b2: $ar-color-d2-d3; $en-color-d3-b2: $ar-color-d3-b2; // مُبَكِّرًا
+$ar-color-d3-c1: $ar-color-d2-e1; $en-color-d3-c1: $ar-color-d3-c1; // وَمَتَى
+$ar-color-d3-c2: $ar-color-d2-e2; $en-color-d3-c2: $ar-color-d3-c2; // تَسْتَيْقِظُ
+$ar-color-d3-c3: $ar-color-d2-e3; $en-color-d3-c3: $ar-color-d3-c3; // أَنْتَ
+$ar-color-d3-d1: $ar-color-d2-f1; $en-color-d3-d1: $ar-color-d3-d1; // أَسْتَيْقِظُ
+$ar-color-d3-d2: $ar-color-d2-f2; $en-color-d3-d2: $ar-color-d3-d2; // مُتَأَخِّرًا
+
+$ar-color-d3-e1: $ar-color-d2-g1; $en-color-d3-e1: $ar-color-d3-e1; // مَاذَا
+$ar-color-d3-e2: $ar-color-d2-g2; $en-color-d3-e2: $ar-color-d3-e2; // تَفْعَلُ
+$ar-color-d3-e3: $ar-color-d2-g3; $en-color-d3-e3: $ar-color-d3-e3; // فِي
+$ar-color-d3-e4: $ar-color-d2-g4; $en-color-d3-e4: $ar-color-d3-e4; // الصَّبَاحِ
+$ar-color-d3-f1: $ar-color-d2-h1; $en-color-d3-f1: $ar-color-d3-f1; // أُشَاهِدُ
+$ar-color-d3-f2: $ar-color-d2-h2; $en-color-d3-f2: $ar-color-d3-f2; // التِّلْفَازَ
+$ar-color-d3-g1: $ar-color-d2-i1; $en-color-d3-g1: $ar-color-d3-g1; // وَمَاذَا
+$ar-color-d3-g2: $ar-color-d2-i2; $en-color-d3-g2: $ar-color-d3-g2; // تَفْعَلُ
+$ar-color-d3-g3: $ar-color-d2-i3; $en-color-d3-g3: $ar-color-d3-g3; // أَنْتَ
+$ar-color-d3-h1: $ar-color-d2-j1; $en-color-d3-h1: $ar-color-d3-h1; // أَقْرَأُ
+$ar-color-d3-h2: $ar-color-d2-j2; $en-color-d3-h2: $ar-color-d3-h2; // صَحِيفَةً
+$ar-color-d3-h3: $ar-color-d2-k1; $en-color-d3-h3: $ar-color-d3-h3; // أَوْ
+$ar-color-d3-h4: $ar-color-d2-k2; $en-color-d3-h4: $ar-color-d3-h4; // كِتَابًا
+
+$ar-color-d3-i1: $ar-color-d2-k3; $en-color-d3-i1: $ar-color-d3-i1; // أَيْنَ
+$ar-color-d3-i2: $ar-color-d2-k4; $en-color-d3-i2: $ar-color-d3-i2; // تُصَلِّي
+$ar-color-d3-i3: $ar-color-d2-l1; $en-color-d3-i3: $ar-color-d3-i3; // الْجُمُعَةَ
+$ar-color-d3-j1: $ar-color-d2-l2; $en-color-d3-j1: $ar-color-d3-j1; // أُصَلِّي
+$ar-color-d3-j2: $ar-color-d2-m1; $en-color-d3-j2: $ar-color-d3-j2; // الْجُمُعَةَ
+$ar-color-d3-j3: $ar-color-d2-m2; $en-color-d3-j3: $ar-color-d3-j3; // فِي
+$ar-color-d3-j4: $ar-color-d2-m3; $en-color-d3-j4: $ar-color-d3-j4; // الْمَسْجِدِ
+$ar-color-d3-j5: $ar-color-d2-n1; $en-color-d3-j5: $ar-color-d3-j5; // الْكَبِيرِ
+$ar-color-d3-k1: $ar-color-d2-n2; $en-color-d3-k1: $ar-color-d3-k1; // وَأَيْنَ
+$ar-color-d3-k2: $ar-color-d2-n3; $en-color-d3-k2: $ar-color-d3-k2; // تُصَلِّى
+$ar-color-d3-k3: $ar-color-d2-c1; $en-color-d3-k3: $ar-color-d3-k3; // أَنْتَ
+$ar-color-d3-l1: $ar-color-d2-d1; $en-color-d3-l1: $ar-color-d3-l1; // أُصَلِّي
+$ar-color-d3-l2: $ar-color-d2-e1; $en-color-d3-l2: $ar-color-d3-l2; // فِي
+$ar-color-d3-l3: $ar-color-d2-f1; $en-color-d3-l3: $ar-color-d3-l3; // الْمَسْجِدِ
+$ar-color-d3-l4: $ar-color-d2-g1; $en-color-d3-l4: $ar-color-d3-l4; // الْكَبِيرِ
+$ar-color-d3-l5: $ar-color-d2-h1; $en-color-d3-l5: $ar-color-d3-l5; // أَيْضًا
+
+// Dialogue 3 Vocab
+$ar-color-d3-v1: #00b894; $en-color-d3-v1: $ar-color-d3-v1; // مُبَكِّرًا
+$ar-color-d3-v2: #d63031; $en-color-d3-v2: $ar-color-d3-v2; // مُتَأَخِّرًا
+$ar-color-d3-v3: #e17055; $en-color-d3-v3: $ar-color-d3-v3; // الصَّبَاح
+$ar-color-d3-v4: #0984e3; $en-color-d3-v4: $ar-color-d3-v4; // أُشَاهِدُ
+$ar-color-d3-v5: #6c5ce7; $en-color-d3-v5: $ar-color-d3-v5; // التِّلْفَاز
+$ar-color-d3-v6: #fdcb6e; $en-color-d3-v6: $ar-color-d3-v6; // صَحِيفَة
+$ar-color-d3-v7: #a29bfe; $en-color-d3-v7: $ar-color-d3-v7; // كِتَاب
+$ar-color-d3-v8: #55efc4; $en-color-d3-v8: $ar-color-d3-v8; // كُتُب
+$ar-color-d3-v9: #74b9ff; $en-color-d3-v9: $ar-color-d3-v9; // الْجُمُعَة
+$ar-color-d3-v10: #fab1a0; $en-color-d3-v10: $ar-color-d3-v10; // الْكَبِير
+$ar-color-d3-v11: #00cec9; $en-color-d3-v11: $ar-color-d3-v11; // أَيْضًا
+
+// Dialogue 3 MCQ
+$ar-color-d3-x1: $ar-color-d2-x1; $en-color-d3-x1: $ar-color-d3-x1;
+$ar-color-d3-x2: $ar-color-d2-x2; $en-color-d3-x2: $ar-color-d3-x2;
+$ar-color-d3-x3: $ar-color-d2-x3; $en-color-d3-x3: $ar-color-d3-x3;
+$ar-color-d3-x4: $ar-color-d2-z1; $en-color-d3-x4: $ar-color-d3-x4;
+$ar-color-d3-x5: $ar-color-d2-z2; $en-color-d3-x5: $ar-color-d3-x5;
+$ar-color-d3-q1: $ar-color-d2-z3; $en-color-d3-q1: $ar-color-d3-q1;
+$ar-color-d3-q2: $ar-color-d2-z4; $en-color-d3-q2: $ar-color-d3-q2;
+$ar-color-d3-q3: $ar-color-d2-z5; $en-color-d3-q3: $ar-color-d3-q3;
+$ar-color-d3-q4: $ar-color-d2-z6; $en-color-d3-q4: $ar-color-d3-q4;
+$ar-color-d3-y1: $ar-color-d2-y1; $en-color-d3-y1: $ar-color-d3-y1;
+$ar-color-d3-y2: $ar-color-d2-y2; $en-color-d3-y2: $ar-color-d3-y2;
+$ar-color-d3-y3: $ar-color-d2-y3; $en-color-d3-y3: $ar-color-d3-y3;
+$ar-color-d3-y4: $ar-color-d2-w1; $en-color-d3-y4: $ar-color-d3-y4;
+$ar-color-d3-y5: $ar-color-d2-w2; $en-color-d3-y5: $ar-color-d3-y5;
+$ar-color-d3-q5: $ar-color-d2-w3; $en-color-d3-q5: $ar-color-d3-q5;
+$ar-color-d3-q6: $ar-color-d2-d1; $en-color-d3-q6: $ar-color-d3-q6;
+$ar-color-d3-q7: $ar-color-d2-e1; $en-color-d3-q7: $ar-color-d3-q7;
+$ar-color-d3-q8: $ar-color-d2-f1; $en-color-d3-q8: $ar-color-d3-q8;
+$ar-color-d3-q9: $ar-color-d2-g1; $en-color-d3-q9: $ar-color-d3-q9;
+$ar-color-d3-q10: $ar-color-d2-h1; $en-color-d3-q10: $ar-color-d3-q10;
+$ar-color-d3-q11: $ar-color-d2-i1; $en-color-d3-q11: $ar-color-d3-q11;
+$ar-color-d3-q12: $ar-color-d2-j1; $en-color-d3-q12: $ar-color-d3-q12;
+$ar-color-d3-q13: $ar-color-d2-k1; $en-color-d3-q13: $ar-color-d3-q13;
+$ar-color-d3-q14: $ar-color-d2-l1; $en-color-d3-q14: $ar-color-d3-q14;
+$ar-color-d3-z1: $ar-color-d2-m1; $en-color-d3-z1: $ar-color-d3-z1;
+$ar-color-d3-z2: $ar-color-d2-n1; $en-color-d3-z2: $ar-color-d3-z2;
+$ar-color-d3-z3: $ar-color-d2-c2; $en-color-d3-z3: $ar-color-d3-z3;
+$ar-color-d3-z4: $ar-color-d2-d2; $en-color-d3-z4: $ar-color-d3-z4;
+$ar-color-d3-q15: $ar-color-d2-e2; $en-color-d3-q15: $ar-color-d3-q15;
+$ar-color-d3-q16: $ar-color-d2-f2; $en-color-d3-q16: $ar-color-d3-q16;
+$ar-color-d3-q17: $ar-color-d2-g2; $en-color-d3-q17: $ar-color-d3-q17;
+$ar-color-d3-q18: $ar-color-d2-h2; $en-color-d3-q18: $ar-color-d3-q18;
+$ar-color-d3-q19: $ar-color-d2-i2; $en-color-d3-q19: $ar-color-d3-q19;
+$ar-color-d3-q20: $ar-color-d2-j2; $en-color-d3-q20: $ar-color-d3-q20;
+$ar-color-d3-q21: $ar-color-d2-k2; $en-color-d3-q21: $ar-color-d3-q21;
+$ar-color-d3-q22: $ar-color-d2-l2; $en-color-d3-q22: $ar-color-d3-q22;
+
+// More on Telling Time
+$ar-color-tt1: #2ecc71; $en-color-tt1: $ar-color-tt1;
+$ar-color-tt2: #3498db; $en-color-tt2: $ar-color-tt2;
+$ar-color-tt3: #9b59b6; $en-color-tt3: $ar-color-tt3;
+$ar-color-tt4: #e67e22; $en-color-tt4: $ar-color-tt4;
+$ar-color-tt5: #e74c3c; $en-color-tt5: $ar-color-tt5;
+$ar-color-tt6: #1abc9c; $en-color-tt6: $ar-color-tt6;
+$ar-color-tt7: #f1c40f; $en-color-tt7: $ar-color-tt7;
+$ar-color-tt8: #27ae60; $en-color-tt8: $ar-color-tt8;
+$ar-color-tt9: #2980b9; $en-color-tt9: $ar-color-tt9;
+$ar-color-tt10: #8e44ad; $en-color-tt10: $ar-color-tt10;
+$ar-color-tt11: #d35400; $en-color-tt11: $ar-color-tt11;
+$ar-color-tt12: #c0392b; $en-color-tt12: $ar-color-tt12;
+$ar-color-tt13: #16a085; $en-color-tt13: $ar-color-tt13;
+$ar-color-tt-ex1: #34495e; $en-color-tt-ex1: $ar-color-tt-ex1;
+$ar-color-tt-ex2: #2c3e50; $en-color-tt-ex2: $ar-color-tt-ex2;
+$ar-color-tt-ex3: #7f8c8d; $en-color-tt-ex3: $ar-color-tt-ex3;
+$ar-color-tt-ex4: #95a5a6; $en-color-tt-ex4: $ar-color-tt-ex4;
+$ar-color-tt-ex5: #bdc3c7; $en-color-tt-ex5: $ar-color-tt-ex5;
+
+
 // Spacing
 $spacer: 1rem;
 $border-radius: 0.25rem;
