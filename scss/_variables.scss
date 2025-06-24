@@ -5,6 +5,19 @@ $font-family-sans-serif: 'Roboto', sans-serif;
 $font-family-arabic: 'Noto Naskh Arabic', serif;
 $font-family-base: $font-family-sans-serif;
 
+// Gray palette (يمكنك تعديل هذه القيم)
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d; // <--- هذا هو المتغير المفقود
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+$white:    #fff;
+
 // Colors - Light Mode
 $primary-color: #007bff;
 $secondary-color: #6c757d;
@@ -335,6 +348,57 @@ $ar-color-tt-ex2: #2c3e50; $en-color-tt-ex2: $ar-color-tt-ex2;
 $ar-color-tt-ex3: #7f8c8d; $en-color-tt-ex3: $ar-color-tt-ex3;
 $ar-color-tt-ex4: #95a5a6; $en-color-tt-ex4: $ar-color-tt-ex4;
 $ar-color-tt-ex5: #bdc3c7; $en-color-tt-ex5: $ar-color-tt-ex5;
+
+
+// Command Verb Lesson Colors (ألوان درس فعل الأمر)
+$command-verb-title-color: #4a4a4a; // لون عنوان القسم الرئيسي
+$command-verb-subtitle-color: #5a5a5a; // لون العناوين الفرعية
+$command-verb-text-color: #333; // لون النص العادي
+
+// Colors for Arabic command verb examples (يمكنك تخصيصها كما تشاء)
+$ar-color-cmd1: #007bff;         // Example: يَقْرَأُ
+$ar-color-cmd-step1: #0069d9;    // Example: قْرَأُ
+$ar-color-cmd-step1-hamza: #005cbf; // Example: ا + قْرَأُ
+$ar-color-cmd1-final: #28a745;   // Example: اِقْرَأْ (Masculine command)
+$ar-color-cmd1-fem: #218838;     // Example: اِقْرَئِي (Feminine command)
+
+$ar-color-cmd2: #17a2b8;
+$ar-color-cmd-step2: #138496;
+$ar-color-cmd-step2-hamza: #117a8b;
+$ar-color-cmd2-final: #ffc107;
+$ar-color-cmd2-fem: #e0a800;
+
+$ar-color-cmd3: #dc3545;
+$ar-color-cmd-step3: #c82333;
+$ar-color-cmd-step3-hamza: #bd2130;
+$ar-color-cmd3-final: #6f42c1;
+$ar-color-cmd3-fem: #5a349c;
+
+$ar-color-cmd4: #fd7e14;
+$ar-color-cmd-step4: #e66a0a;
+$ar-color-cmd-step4-hamza: #d96109;
+$ar-color-cmd4-final: #20c997;
+$ar-color-cmd4-fem: #1ba97f;
+
+$ar-color-cmd5: #6610f2;
+$ar-color-cmd-step5: #580dd6;
+$ar-color-cmd5-final: #e83e8c;
+$ar-color-cmd5-fem: #d2307a;
+
+// Other command verb examples
+$ar-color-cmd-other1: #6c757d;
+$ar-color-cmd-other1-fem: #5a6268;
+$ar-color-cmd-other2: #343a40;
+$ar-color-cmd-other2-fem: #23272b;
+
+// Emphasis and vowel colors
+$ar-color-emphasis: #d9534f; // لون للتركيز على الحرف الثالث
+$ar-color-cmd-vowel: #5cb85c; // لون لحركة همزة الوصل
+
+// Code (for harakat and terms)
+$code-background-color: #f8f9fa;
+$code-text-color: #e83e8c;
+$code-border-color: #dee2e6;
 
 
 // Spacing
