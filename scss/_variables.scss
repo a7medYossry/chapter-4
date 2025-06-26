@@ -329,6 +329,168 @@ $ar-color-d3-q20: $ar-color-d2-j2; $en-color-d3-q20: $ar-color-d3-q20;
 $ar-color-d3-q21: $ar-color-d2-k2; $en-color-d3-q21: $ar-color-d3-q21;
 $ar-color-d3-q22: $ar-color-d2-l2; $en-color-d3-q22: $ar-color-d3-q22;
 
+
+
+
+// START: Chapter 5 - Food and Drink Colors (الوحدة الخامسة: الطعام والشراب)
+// --------------------------------------------------------------------
+
+// Dialogue Colors for Chapter 5 (ألوان حوار الفصل الخامس)
+$ar-color-ch5-a1: #4CAF50; $en-color-ch5-a1: $ar-color-ch5-a1; // أَيْنَ
+$ar-color-ch5-a2: #FFC107; $en-color-ch5-a2: $ar-color-ch5-a2; // تَذْهَبُ
+$ar-color-ch5-a3: #2196F3; $en-color-ch5-a3: $ar-color-ch5-a3; // يَا
+$ar-color-ch5-a4: #9C27B0; $en-color-ch5-a4: $ar-color-ch5-a4; // سَالِمُ
+$ar-color-ch5-b1: #E91E63; $en-color-ch5-b1: $ar-color-ch5-b1; // إِلَى
+$ar-color-ch5-b2: #3F51B5; $en-color-ch5-b2: $ar-color-ch5-b2; // الْمَطْعَمِ
+$ar-color-ch5-c1: #00BCD4; $en-color-ch5-c1: $ar-color-ch5-c1; // كَمْ
+$ar-color-ch5-c2: #8BC34A; $en-color-ch5-c2: $ar-color-ch5-c2; // وَجْبَةً
+$ar-color-ch5-c3: #FF9800; $en-color-ch5-c3: $ar-color-ch5-c3; // تَأْكُلُ
+$ar-color-ch5-c4: #03A9F4; $en-color-ch5-c4: $ar-color-ch5-c4; // فِي
+$ar-color-ch5-c5: #673AB7; $en-color-ch5-c5: $ar-color-ch5-c5; // الْيَوْمِ
+$ar-color-ch5-d1: #F44336; $en-color-ch5-d1: $ar-color-ch5-d1; // آكُلُ
+$ar-color-ch5-d2: #4CAF50; $en-color-ch5-d2: $ar-color-ch5-d2; // ثَلَاثَ
+$ar-color-ch5-d3: #FFEB3B; $en-color-ch5-d3: $ar-color-ch5-d3; // وَجَبَاتٍ
+$ar-color-ch5-d4: #2196F3; $en-color-ch5-d4: $ar-color-ch5-d4; // الْفَطُورَ
+$ar-color-ch5-d5: #9C27B0; $en-color-ch5-d5: $ar-color-ch5-d5; // وَالْغَدَاءَ
+$ar-color-ch5-d6: #E91E63; $en-color-ch5-d6: $ar-color-ch5-d6; // وَالْعَشَاءَ
+$ar-color-ch5-e1: #3F51B5; $en-color-ch5-e1: $ar-color-ch5-e1; // هَذَا
+$ar-color-ch5-e2: #00BCD4; $en-color-ch5-e2: $ar-color-ch5-e2; // كَثِيرٌ
+$ar-color-ch5-e3: #8BC34A; $en-color-ch5-e3: $ar-color-ch5-e3; // جِدًّا
+$ar-color-ch5-e4: #FF9800; $en-color-ch5-e4: $ar-color-ch5-e4; // أَنَا
+$ar-color-ch5-e5: #03A9F4; $en-color-ch5-e5: $ar-color-ch5-e5; // آكُلُ
+$ar-color-ch5-e6: #673AB7; $en-color-ch5-e6: $ar-color-ch5-e6; // وَجْبَةً
+$ar-color-ch5-e7: #F44336; $en-color-ch5-e7: $ar-color-ch5-e7; // وَاحِدَةً
+$ar-color-ch5-f1: #4CAF50; $en-color-ch5-f1: $ar-color-ch5-f1; // هَذَا (تكرار للون e1)
+$ar-color-ch5-f2: #CDDC39; $en-color-ch5-f2: $ar-color-ch5-f2; // قَلِيلٌ
+$ar-color-ch5-f3: #2196F3; $en-color-ch5-f3: $ar-color-ch5-f3; // جِدًّا (تكرار للون e3)
+$ar-color-ch5-g1: #9C27B0; $en-color-ch5-g1: $ar-color-ch5-g1; // مَاذَا
+$ar-color-ch5-g2: #E91E63; $en-color-ch5-g2: $ar-color-ch5-g2; // تَأْكُلُ (تكرار للون c3)
+$ar-color-ch5-g3: #3F51B5; $en-color-ch5-g3: $ar-color-ch5-g3; // فِي (تكرار للون c4)
+$ar-color-ch5-g4: #00BCD4; $en-color-ch5-g4: $ar-color-ch5-g4; // الْغَدَاءِ
+$ar-color-ch5-h1: #8BC34A; $en-color-ch5-h1: $ar-color-ch5-h1; // آكُلُ (تكرار للون d1)
+$ar-color-ch5-h2: #FF5722; $en-color-ch5-h2: $ar-color-ch5-h2; // الْأَرُزَّ
+$ar-color-ch5-h3: #795548; $en-color-ch5-h3: $ar-color-ch5-h3; // وَالْخُبْزَ
+$ar-color-ch5-h4: #FFEB3B; $en-color-ch5-h4: $ar-color-ch5-h4; // وَمَاذَا
+$ar-color-ch5-h5: #03A9F4; $en-color-ch5-h5: $ar-color-ch5-h5; // تَأْكُلُ (تكرار للون c3)
+$ar-color-ch5-h6: #607D8B; $en-color-ch5-h6: $ar-color-ch5-h6; // أَنْتَ
+$ar-color-ch5-i1: #F44336; $en-color-ch5-i1: $ar-color-ch5-i1; // آكُلُ (تكرار للون d1)
+$ar-color-ch5-i2: #4CAF50; $en-color-ch5-i2: $ar-color-ch5-i2; // السَّمَكَ
+$ar-color-ch5-i3: #FFC107; $en-color-ch5-i3: $ar-color-ch5-i3; // وَالسَّلَطَةَ
+$ar-color-ch5-i4: #2196F3; $en-color-ch5-i4: $ar-color-ch5-i4; // وَالْفَاكِهَةَ
+$ar-color-ch5-j1: #9C27B0; $en-color-ch5-j1: $ar-color-ch5-j1; // مَا
+$ar-color-ch5-j2: #E91E63; $en-color-ch5-j2: $ar-color-ch5-j2; // وَزْنُكَ
+$ar-color-ch5-k1: #3F51B5; $en-color-ch5-k1: $ar-color-ch5-k1; // سِتُّونَ
+$ar-color-ch5-k2: #00BCD4; $en-color-ch5-k2: $ar-color-ch5-k2; // كِيلًا
+$ar-color-ch5-k3: #8BC34A; $en-color-ch5-k3: $ar-color-ch5-k3; // وَمَا
+$ar-color-ch5-k4: #FF9800; $en-color-ch5-k4: $ar-color-ch5-k4; // وَزْنُكَ (تكرار للون j2)
+$ar-color-ch5-k5: #03A9F4; $en-color-ch5-k5: $ar-color-ch5-k5; // أَنْتَ (تكرار للون h6)
+$ar-color-ch5-l1: #673AB7; $en-color-ch5-l1: $ar-color-ch5-l1; // مِائَةُ
+$ar-color-ch5-l2: #F44336; $en-color-ch5-l2: $ar-color-ch5-l2; // كِيلٍ
+$ar-color-ch5-m1: #4CAF50; $en-color-ch5-m1: $ar-color-ch5-m1; // أَنْتَ (تكرار للون h6)
+$ar-color-ch5-m2: #CDDC39; $en-color-ch5-m2: $ar-color-ch5-m2; // سَمِينٌ
+$ar-color-ch5-m3: #2196F3; $en-color-ch5-m3: $ar-color-ch5-m3; // جِدًّا (تكرار للون e3)
+$ar-color-ch5-n1: #9C27B0; $en-color-ch5-n1: $ar-color-ch5-n1; // وَأَنْتَ
+$ar-color-ch5-n2: #E91E63; $en-color-ch5-n2: $ar-color-ch5-n2; // نَحِيفٌ
+$ar-color-ch5-n3: #3F51B5; $en-color-ch5-n3: $ar-color-ch5-n3; // جِدًّا (تكرار للون e3)
+
+
+// Vocabulary Colors for Chapter 5 (ألوان مفردات الفصل الخامس)
+$ar-color-ch5-v1: #7E57C2; $en-color-ch5-v1: $ar-color-ch5-v1;   // الْمَطْعَم
+$ar-color-ch5-v2: #5C6BC0; $en-color-ch5-v2: $ar-color-ch5-v2;   // وَجْبَة
+$ar-color-ch5-v3: #42A5F5; $en-color-ch5-v3: $ar-color-ch5-v3;   // يَأْكُلُ
+$ar-color-ch5-v4: #29B6F6; $en-color-ch5-v4: $ar-color-ch5-v4;   // الْفَطُور
+$ar-color-ch5-v5: #26A69A; $en-color-ch5-v5: $ar-color-ch5-v5;   // الْغَدَاء
+$ar-color-ch5-v6: #66BB6A; $en-color-ch5-v6: $ar-color-ch5-v6;   // الْعَشَاء
+$ar-color-ch5-v7: #9CCC65; $en-color-ch5-v7: $ar-color-ch5-v7;   // كَثِير
+$ar-color-ch5-v8: #D4E157; $en-color-ch5-v8: $ar-color-ch5-v8;   // قَلِيل
+$ar-color-ch5-v9: #FFEE58; $en-color-ch5-v9: $ar-color-ch5-v9;   // الْأَرُزّ
+$ar-color-ch5-v10: #FFCA28; $en-color-ch5-v10: $ar-color-ch5-v10; // الْخُبْز
+$ar-color-ch5-v11: #FFA726; $en-color-ch5-v11: $ar-color-ch5-v11; // السَّمَك
+$ar-color-ch5-v12: #FF7043; $en-color-ch5-v12: $ar-color-ch5-v12; // السَّلَطَة
+$ar-color-ch5-v13: #EC407A; $en-color-ch5-v13: $ar-color-ch5-v13; // الْفَاكِهَة
+$ar-color-ch5-v14: #AB47BC; $en-color-ch5-v14: $ar-color-ch5-v14; // وَزْن
+$ar-color-ch5-v15: #8D6E63; $en-color-ch5-v15: $ar-color-ch5-v15; // مِيزَان
+$ar-color-ch5-v16: #78909C; $en-color-ch5-v16: $ar-color-ch5-v16; // كِيلُو
+$ar-color-ch5-v17: #BDBDBD; $en-color-ch5-v17: $ar-color-ch5-v17; // كِيلًا
+$ar-color-ch5-v18: #EF5350; $en-color-ch5-v18: $ar-color-ch5-v18; // سَمِين
+$ar-color-ch5-v19: #73c48f; $en-color-ch5-v19: $ar-color-ch5-v19; // نَحِيف
+
+
+// MCQ Option Colors for Chapter 5 (ألوان خيارات أسئلة الفصل الخامس - يمكنك تركها كما هي إذا كانت الألوان عامة للأسئلة)
+// إذا كنت تريد ألوانًا مميزة لخيارات أسئلة هذا الفصل، يمكنك تعريفها هنا:
+// $ar-color-ch5-q1-opt-a: #someColor; $en-color-ch5-q1-opt-a: $ar-color-ch5-q1-opt-a;
+// ولكن عادة ما تكون ألوان الخيارات موحدة. الكود الحالي للـ MCQ لا يستخدم كلاسات ألوان مخصصة للخيارات.
+
+// END: Chapter 5 - Food and Drink Colors
+// --------------------------------------------------------------------
+// START: Chapter 5 - Food and Drink - Dialogue 2 Colors
+// --------------------------------------------------------------------
+// Dialogue Colors for Chapter 5 - Dialogue 2 (Hostess & Traveler)
+$ar-color-ch5d2-a1: #A569BD; $en-color-ch5d2-a1: $ar-color-ch5d2-a1; // مَاذَا
+$ar-color-ch5d2-a2: #5499C7; $en-color-ch5d2-a2: $ar-color-ch5d2-a2; // تَطْلُبِينَ
+$ar-color-ch5d2-a3: #48C9B0; $en-color-ch5d2-a3: $ar-color-ch5d2-a3; // مِنَ
+$ar-color-ch5d2-a4: #F4D03F; $en-color-ch5d2-a4: $ar-color-ch5d2-a4; // الطَّعَامِ
+$ar-color-ch5d2-b1: #E67E22; $en-color-ch5d2-b1: $ar-color-ch5d2-b1; // بَعْضَ
+$ar-color-ch5d2-b2: #5DADE2; $en-color-ch5d2-b2: $ar-color-ch5d2-b2; // السَّمَكِ
+$ar-color-ch5d2-b3: #52BE80; $en-color-ch5d2-b3: $ar-color-ch5d2-b3; // وَالأَرُزِّ
+$ar-color-ch5d2-b4: #F5B041; $en-color-ch5d2-b4: $ar-color-ch5d2-b4; // مِنْ (تكرار أو لون جديد)
+$ar-color-ch5d2-b5: #DC7633; $en-color-ch5d2-b5: $ar-color-ch5d2-b5; // فَضْلِكِ
+$ar-color-ch5d2-c1: #AF7AC5; $en-color-ch5d2-c1: $ar-color-ch5d2-c1; // وَمَاذَا
+$ar-color-ch5d2-c2: #5DADE2; $en-color-ch5d2-c2: $ar-color-ch5d2-c2; // تَطْلُبِينَ (تكرار a2)
+$ar-color-ch5d2-c3: #45B39D; $en-color-ch5d2-c3: $ar-color-ch5d2-c3; // مِنَ (تكرار a3)
+$ar-color-ch5d2-c4: #F7DC6F; $en-color-ch5d2-c4: $ar-color-ch5d2-c4; // الشَّرَابِ
+$ar-color-ch5d2-d1: #EB984E; $en-color-ch5d2-d1: $ar-color-ch5d2-d1; // مَاءً
+$ar-color-ch5d2-d2: #5DADE2; $en-color-ch5d2-d2: $ar-color-ch5d2-d2; // مِنْ (تكرار b4)
+$ar-color-ch5d2-d3: #A569BD; $en-color-ch5d2-d3: $ar-color-ch5d2-d3; // فَضْلِكِ (تكرار b5)
+$ar-color-ch5d2-e1: #5499C7; $en-color-ch5d2-e1: $ar-color-ch5d2-e1; // وَمَاذَا (تكرار c1)
+$ar-color-ch5d2-e2: #48C9B0; $en-color-ch5d2-e2: $ar-color-ch5d2-e2; // تُفَضِّلِينَ
+$ar-color-ch5d2-e3: #F4D03F; $en-color-ch5d2-e3: $ar-color-ch5d2-e3; // مِنَ (تكرار a3)
+$ar-color-ch5d2-e4: #E67E22; $en-color-ch5d2-e4: $ar-color-ch5d2-e4; // الفَاكِهَةِ
+$ar-color-ch5d2-f1: #5DADE2; $en-color-ch5d2-f1: $ar-color-ch5d2-f1; // التَّمْرَ
+$ar-color-ch5d2-f2: #52BE80; $en-color-ch5d2-f2: $ar-color-ch5d2-f2; // أَوِ
+$ar-color-ch5d2-f3: #F5B041; $en-color-ch5d2-f3: $ar-color-ch5d2-f3; // العِنَبَ
+$ar-color-ch5d2-g1: #DC7633; $en-color-ch5d2-g1: $ar-color-ch5d2-g1; // هَلْ
+$ar-color-ch5d2-g2: #AF7AC5; $en-color-ch5d2-g2: $ar-color-ch5d2-g2; // تَشْرَبِينَ
+$ar-color-ch5d2-g3: #5DADE2; $en-color-ch5d2-g3: $ar-color-ch5d2-g3; // الشَّايَ
+$ar-color-ch5d2-h1: #45B39D; $en-color-ch5d2-h1: $ar-color-ch5d2-h1; // لا
+$ar-color-ch5d2-h2: #F7DC6F; $en-color-ch5d2-h2: $ar-color-ch5d2-h2; // أُفَضِّلُ
+$ar-color-ch5d2-h3: #EB984E; $en-color-ch5d2-h3: $ar-color-ch5d2-h3; // القَهْوَةَ
+$ar-color-ch5d2-i1: #5DADE2; $en-color-ch5d2-i1: $ar-color-ch5d2-i1; // القَهْوَةَ (تكرار h3)
+$ar-color-ch5d2-i2: #A569BD; $en-color-ch5d2-i2: $ar-color-ch5d2-i2; // بِالحَلِيبِ
+$ar-color-ch5d2-j1: #5499C7; $en-color-ch5d2-j1: $ar-color-ch5d2-j1; // نَعَمْ
+$ar-color-ch5d2-j2: #48C9B0; $en-color-ch5d2-j2: $ar-color-ch5d2-j2; // القَهْوَةَ (تكرار h3)
+$ar-color-ch5d2-j3: #F4D03F; $en-color-ch5d2-j3: $ar-color-ch5d2-j3; // بِالحَلِيبِ (تكرار i2)
+$ar-color-ch5d2-k1: #E67E22; $en-color-ch5d2-k1: $ar-color-ch5d2-k1; // هَلْ (تكرار g1)
+$ar-color-ch5d2-k2: #5DADE2; $en-color-ch5d2-k2: $ar-color-ch5d2-k2; // تُرِيدِينَ
+$ar-color-ch5d2-k3: #52BE80; $en-color-ch5d2-k3: $ar-color-ch5d2-k3; // شَيْئًا
+$ar-color-ch5d2-k4: #F5B041; $en-color-ch5d2-k4: $ar-color-ch5d2-k4; // آخَرَ
+$ar-color-ch5d2-l1: #DC7633; $en-color-ch5d2-l1: $ar-color-ch5d2-l1; // لا (تكرار h1)
+$ar-color-ch5d2-l2: #AF7AC5; $en-color-ch5d2-l2: $ar-color-ch5d2-l2; // وَشُكْرًا
+$ar-color-ch5d2-m1: #5DADE2; $en-color-ch5d2-m1: $ar-color-ch5d2-m1; // عَفْوًا
+
+// Vocabulary Colors for Chapter 5 - Dialogue 2 (Hostess & Traveler)
+$ar-color-ch5d2-v1: #c0392b; $en-color-ch5d2-v1: $ar-color-ch5d2-v1; // الْمُضِيفَة
+$ar-color-ch5d2-v2: #27ae60; $en-color-ch5d2-v2: $ar-color-ch5d2-v2; // الْمُسَافِرَة
+$ar-color-ch5d2-v3: #2980b9; $en-color-ch5d2-v3: $ar-color-ch5d2-v3; // تَطْلُبِينَ
+$ar-color-ch5d2-v4: #8e44ad; $en-color-ch5d2-v4: $ar-color-ch5d2-v4; // مِنْ فَضْلِكِ
+$ar-color-ch5d2-v5: #f39c12; $en-color-ch5d2-v5: $ar-color-ch5d2-v5; // مَاءً
+$ar-color-ch5d2-v6: #d35400; $en-color-ch5d2-v6: $ar-color-ch5d2-v6; // تُفَضِّلِينَ
+$ar-color-ch5d2-v7: #16a085; $en-color-ch5d2-v7: $ar-color-ch5d2-v7; // أُفَضِّلُ
+$ar-color-ch5d2-v8: #2c3e50; $en-color-ch5d2-v8: $ar-color-ch5d2-v8; // التَّمْر
+$ar-color-ch5d2-v9: #7f8c8d; $en-color-ch5d2-v9: $ar-color-ch5d2-v9; // الْعِنَب
+$ar-color-ch5d2-v10: #3498db; $en-color-ch5d2-v10: $ar-color-ch5d2-v10; // تَشْرَبِينَ
+$ar-color-ch5d2-v11: #9b59b6; $en-color-ch5d2-v11: $ar-color-ch5d2-v11; // الشَّاي
+$ar-color-ch5d2-v12: #e67e22; $en-color-ch5d2-v12: $ar-color-ch5d2-v12; // الْقَهْوَة
+$ar-color-ch5d2-v13: #1abc9c; $en-color-ch5d2-v13: $ar-color-ch5d2-v13; // الْحَلِيب
+$ar-color-ch5d2-v14: #f1c40f; $en-color-ch5d2-v14: $ar-color-ch5d2-v14; // تُرِيدِينَ
+$ar-color-ch5d2-v15: #e74c3c; $en-color-ch5d2-v15: $ar-color-ch5d2-v15; // شَيْئًا آخَرَ
+$ar-color-ch5d2-v16: #34495e; $en-color-ch5d2-v16: $ar-color-ch5d2-v16; // عَفْوًا
+// --------------------------------------------------------------------
+// END: Chapter 5 - Food and Drink - Dialogue 2 Colors
+
+// More on Telling Time
+$ar-color-tt1: #2ecc71; $en-color-tt1: $ar-color-tt1;
+// ... (بقية المتغيرات الموجودة) ...
 // More on Telling Time
 $ar-color-tt1: #2ecc71; $en-color-tt1: $ar-color-tt1;
 $ar-color-tt2: #3498db; $en-color-tt2: $ar-color-tt2;
