@@ -50,95 +50,200 @@ document.addEventListener('DOMContentLoaded', () => {
             q1_d2: 'b',
             q2_d2: 'c'
         },
-        dialogue3: { // افترض أن هذا القسم موجود ومستخدم
+        dialogue3: {
             q1_d3: 'b',
             q2_d3: 'b',
             q3_d3: 'b'
         },
-        "dialogue-chapter5": { // --- قسم جديد ---
-            q1_d_ch5: 'b', // إلى المطعم
-            q2_d_ch5: 'c', // ثلاث وجبات
-            q3_d_ch5: 'b', // السمك والسلطة والفاكهة
-            q4_d_ch5: 'b'  // مئة كيل
+        "dialogue-chapter5": {
+            q1_d_ch5: 'b',
+            q2_d_ch5: 'c',
+            q3_d_ch5: 'b',
+            q4_d_ch5: 'b'
         },
-        "dialogue-chapter5-d2": { // --- القسم الجديد للحوار الثاني من الوحدة الخامسة ---
-            q1_d_ch5d2: 'b', // بعض السمك والأرز
-            q2_d_ch5d2: 'b', // القهوة
-            q3_d_ch5d2: 'a'  // نعم (تريد القهوة بالحليب)
+        "dialogue-chapter5-d2": {
+            q1_d_ch5d2: 'b',
+            q2_d_ch5d2: 'b',
+            q3_d_ch5d2: 'a'
+        },
+        "dialogue-chapter5-d3": {
+            q1_d_ch5d3: 'b',
+            q2_d_ch5d3: 'a',
+            q3_d_ch5d3: 'c'
+        },
+        // --- START: الإجابات الجديدة للفصل السادس ---
+        "dialogue-chapter6": {
+            q1_ch6: 'b', // لأنه لا يسمع الأذان
+            q2_ch6: 'c', // بعد صلاة الفجر
+            q3_ch6: 'b'  // أن يضع المنبه بجانبه
+        },
+        // --- END: الإجابات الجديدة للفصل السادس ---
+        // --- START: الإجابات الجديدة للفصل السادس - الحوار الثاني ---
+        "dialogue-chapter6-d2": {
+            q1_ch6d2: 'a', // إلى المدينة
+            q2_ch6d2: 'a', // في المسجد الحرام
+            q3_ch6d2: 'c'  // بالطائرة
+        },
+        // --- END: الإجابات الجديدة للفصل السادس - الحوار الثاني ---
+        // --- START: الإجابات الجديدة للفصل السادس - الحوار الثالث ---
+        "dialogue-chapter6-d3": {
+            q1_ch6d3: 'b',
+            q2_ch6d3: 'c',
+            q3_ch6d3: 'a'
+        },
+        // --- END: الإجابات الجديدة للفصل السادس - الحوار الثالث ---
+        "dialogue-chapter7-d1": {
+            q1_ch7: 'b', // خمسة أيام
+            q2_ch7: 'c', // في شهر رمضان
+            q3_ch7: 'c'  // بدأت الحصة وجاء المعلم
+        },
+        // --- END: الإجابات الجديدة للفصل السابع - الحوار الأول ---
+        // --- START: الإجابات الجديدة للفصل السابع - الحوار الثاني ---
+        "dialogue-chapter7-d2": {
+            q1_ch7d2: 'b', // من سوريا
+            q2_ch7d2: 'b', // في جامعة أم القرى
+            q3_ch7d2: 'c'  // طبيبة
+        },
+        // --- END: الإجابات الجديدة للفصل السابع - الحوار الثاني ---
+        // --- START: الإجابات الجديدة للفصل السابع - الحوار الثالث ---
+        "dialogue-chapter7-d3": {
+            q1_ch7d3: 'c', // لأن المدرسة بعيدة
+            q2_ch7d3: 'b', // الساعة الواحدة ظهراً
+            q3_ch7d3: 'c'  // إلى المكتبة أو المختبر
         }
+        // --- END: الإجابات الجديدة للفصل السابع - الحوار الثالث ---
+
     };
 
     const mcqExplanations = {
         dialogue1: {
-            q1_d1: {
-                a: "خطأ. طاهر يستيقظ مبكراً جداً، عند الفجر (عِنْدَ الْفَجْرِ)، وليس بعد الظهر.",
-                c: "خطأ. الفجر (الْفَجْرِ) في الصباح الباكر، وليس في المساء (الْمَسَاءِ)."
-            },
-            q2_d1: {
-                a: "خطأ. طاهر يصلي الفجر في المسجد (فِي الْمَسْجِدِ).",
-                b: "خطأ. طاهر يصلي الفجر في المسجد، وليس في المدرسة."
-            },
-            q3_d1: {
-                a: "خطأ. طاهر يذهب إلى المدرسة بالحافلة (بِالْحَافِلَةِ).",
-                c: "خطأ. الحوار يذكر الحافلة، وليس القطار."
-            }
+            q1_d1: { a: "خطأ. طاهر يستيقظ مبكراً جداً، عند الفجر (عِنْدَ الْفَجْرِ)، وليس بعد الظهر.", c: "خطأ. الفجر (الْفَجْرِ) في الصباح الباكر، وليس في المساء (الْمَسَاءِ)." },
+            q2_d1: { a: "خطأ. طاهر يصلي الفجر في المسجد (فِي الْمَسْجِدِ).", b: "خطأ. طاهر يصلي الفجر في المسجد، وليس في المدرسة." },
+            q3_d1: { a: "خطأ. طاهر يذهب إلى المدرسة بالحافلة (بِالْحَافِلَةِ).", c: "خطأ. الحوار يذكر الحافلة، وليس القطار." }
         },
         dialogue2: {
-            q1_d2: {
-                a: "خطأ. الجدة هي التي ستغسل الأطباق.",
-                c: "خطأ. لطيفة هي التي ستكوي الملابس. طارق سيكنس غرفة الجلوس."
+            q1_d2: { a: "خطأ. الجدة هي التي ستغسل الأطباق.", c: "خطأ. لطيفة هي التي ستكوي الملابس. طارق سيكنس غرفة الجلوس." },
+            q2_d2: { a: "خطأ. طارق سيكنس غرفة الجلوس.", b: "خطأ. لطيفة ستكوي الملابس. الجدة هي التي ستغسل الأطباق." }
+        },
+        dialogue3: {
+            q1_d3: { a: "خطأ. عادل هو الذي يستيقظ متأخراً. فيصل يستيقظ مبكراً.", c: "خطأ. الحوار لا يذكر استيقاظ فيصل عند الظهر، بل مبكراً." },
+            q2_d3: { a: "خطأ جزئي. عادل يشاهد التلفاز فقط. فيصل هو من يقرأ.", c: "خطأ. فيصل هو من يقرأ صحيفة أو كتاباً. عادل يشاهد التلفاز." },
+            q3_d3: { a: "خطأ. كلاهما يصلي في المسجد الكبير.", c: "خطأ. كلاهما يصلي في المسجد الكبير، وليس في البيت." }
+        },
+        "dialogue-chapter5": {
+            q1_d_ch5: { a: "خطأ. سالم يذهب إلى المطعم وليس إلى المدرسة في هذا الحوار.", c: "خطأ. سالم يذهب إلى المطعم." },
+            q2_d_ch5: { a: "خطأ. قاسم هو من يأكل وجبة واحدة. سالم يأكل ثلاث وجبات.", b: "خطأ. سالم يأكل ثلاث وجبات، وليس وجبتين." },
+            q3_d_ch5: { a: "خطأ. سالم هو من يأكل الأرز والخبز. قاسم يأكل السمك والسلطة والفاكهة.", c: "خطأ. الدجاج والبطاطس لم يذكرا في غداء قاسم." },
+            q4_d_ch5: { a: "خطأ. قاسم وزنه ستون كيلاً. سالم وزنه مئة كيل.", c: "خطأ. وزن سالم مئة كيل، وليس سبعون." }
+        },
+        "dialogue-chapter5-d2": {
+            q1_d_ch5d2: { a: "خطأ. المسافرة طلبت السمك والأرز.", c: "خطأ. المسافرة طلبت السمك والأرز كطعام رئيسي." },
+            q2_d_ch5d2: { a: "خطأ. المسافرة قالت إنها تفضل القهوة على الشاي.", c: "خطأ. سُئلت عن الشاي أو القهوة، واختارت القهوة." },
+            q3_d_ch5d2: { b: "خطأ. المسافرة أكدت أنها تريد القهوة بالحليب." }
+        },
+        "dialogue-chapter5-d3": {
+            q1_d_ch5d3: { a: "خطأ. على الرغم من أن الزوج جائع، إلا أن كثرة الطعام كانت بسبب الضيوف.", c: "خطأ. يوم العطلة قد يكون السبب، لكن السبب المباشر المذكور هو وجود ضيوف." },
+            q2_d_ch5d3: { b: "خطأ. الحوار يذكر أن ضيوف الزوجة هم والدها ووالدتها وأخوها.", c: "خطأ. الحوار لا يذكر الجيران." },
+            q3_d_ch5d3: { a: "خطأ. الضيوف كانوا في غرفة الجلوس.", b: "خطأ. كانوا في غرفة الجلوس وليس غرفة النوم." }
+        },
+        // --- START: الشروحات الجديدة للفصل السادس ---
+        "dialogue-chapter6": {
+            q1_ch6: {
+                a: "خطأ. هذا هو سبب عدم قدرته على الاستيقاظ، ولكن السبب المباشر لصلاته في البيت هو أنه لا يسمع الأذان.",
+                c: "خطأ. العكس هو الصحيح، هو يستيقظ متأخراً."
             },
-            q2_d2: {
-                a: "خطأ. طارق سيكنس غرفة الجلوس.",
-                b: "خطأ. لطيفة ستكوي الملابس. الجدة هي التي ستغسل الأطباق."
+            q2_ch6: {
+                a: "خطأ. هو يستيقظ بعد صلاة الفجر.",
+                b: "خطأ. هو يستيقظ بعد صلاة الفجر."
+            },
+            q3_ch6: {
+                a: "خطأ. لم يقترح مصطفى أن ينام مبكراً، بل اقترح حلاً آخر.",
+                c: "خطأ. هذا هو الهدف، ولكن الاقتراح هو الوسيلة لتحقيق هذا الهدف."
             }
         },
-        dialogue3: { // افترض أن هذا القسم موجود ومستخدم
-            q1_d3: {
-                a: "خطأ. عادل هو الذي يستيقظ متأخراً. فيصل يستيقظ مبكراً.",
-                c: "خطأ. الحوار لا يذكر استيقاظ فيصل عند الظهر، بل مبكراً."
+        // --- END: الشروحات الجديدة للفصل السادس ---
+        // --- START: الشروحات الجديدة للفصل السادس - الحوار الثاني ---
+        "dialogue-chapter6-d2": {
+            q1_ch6d2: {
+                b: "خطأ. عصام يسافر إلى المدينة. صالح هو الذي يسافر إلى مكة.",
+                c: "خطأ. الحوار يذكر مكة والمدينة فقط."
             },
-            q2_d3: {
-                a: "خطأ جزئي. عادل يشاهد التلفاز فقط. فيصل هو من يقرأ.",
-                c: "خطأ. فيصل هو من يقرأ صحيفة أو كتاباً. عادل يشاهد التلفاز."
+            q2_ch6d2: {
+                b: "خطأ. صالح يصلي في المسجد الحرام. عصام هو من يصلي في المسجد النبوي.",
+                c: "خطأ. كلاهما سيصلي الجمعة في المسجد."
             },
-            q3_d3: {
-                a: "خطأ. كلاهما يصلي في المسجد الكبير.",
-                c: "خطأ. كلاهما يصلي في المسجد الكبير، وليس في البيت."
+            q3_ch6d2: {
+                a: "خطأ. الحوار لم يذكر السيارة.",
+                b: "خطأ. الحوار لم يذكر الحافلة. ذكرت الطائرة."
             }
         },
-        "dialogue-chapter5": { // --- قسم جديد ---
-            q1_d_ch5: {
-                a: "خطأ. سالم يذهب إلى المطعم وليس إلى المدرسة في هذا الحوار.",
-                c: "خطأ. سالم يذهب إلى المطعم."
+        // --- END: الشروحات الجديدة للفصل السادس - الحوار الثاني ---
+        // --- START: الشروحات الجديدة للفصل السادس - الحوار الثالث ---
+        "dialogue-chapter6-d3": {
+            q1_ch6d3: {
+                a: "خطأ. صادق لم يذكر أنه مريض، بل قال إنه بخير.",
+                c: "خطأ. هذا ليس السبب المباشر، بل كان عذره أن المسجد بعيد."
             },
-            q2_d_ch5: {
-                a: "خطأ. قاسم هو من يأكل وجبة واحدة. سالم يأكل ثلاث وجبات.",
-                b: "خطأ. سالم يأكل ثلاث وجبات، وليس وجبتين."
+            q2_ch6d3: {
+                a: "خطأ. صابر قال إن صادقاً كسلان، وليس نشيطاً.",
+                b: "خطأ. صادق أكد أنه ليس مريضاً."
             },
-            q3_d_ch5: {
-                a: "خطأ. سالم هو من يأكل الأرز والخبز. قاسم يأكل السمك والسلطة والفاكهة.",
-                c: "خطأ. الدجاج والبطاطس لم يذكرا في غداء قاسم."
+            q3_ch6d3: {
+                b: "خطأ. في النهاية، قرر الذهاب إلى المسجد.",
+                c: "خطأ. قرر الذهاب لصلاة العصر، وليس انتظار الصلاة القادمة."
+            }
+        },
+        // --- END: الشروحات الجديدة للفصل السادس - الحوار الثالث ---
+        // --- START: الشروحات الجديدة للفصل السابع - الحوار الأول ---
+        "dialogue-chapter7-d1": {
+            q1_ch7: {
+                a: "خطأ. الحوار يذكر أن الدراسة خمسة أيام.",
+                c: "خطأ. الحوار يذكر أن الدراسة خمسة أيام."
             },
-            q4_d_ch5: {
-                a: "خطأ. قاسم وزنه ستون كيلاً. سالم وزنه مئة كيل.",
-                c: "خطأ. وزن سالم مئة كيل، وليس سبعون."
+            q2_ch7: {
+                a: "خطأ. في شهر شعبان تبدأ الاختبارات، ولكن العام الدراسي ينتهي في رمضان.",
+                b: "خطأ. لم يذكر الحوار شهر شوال."
+            },
+            q3_ch7: {
+                a: "خطأ. الحوار يقول إن الحصة بدأت، ولم تنتهِ.",
+                b: "خطأ. الحوار يقول إن المعلم جاء، ولم يغادر."
+            }
+        },
+        // --- END: الشروحات الجديدة للفصل السابع - الحوار الأول ---
+       
+        // --- START: الشروحات الجديدة للفصل السابع - الحوار الثاني ---
+        "dialogue-chapter7-d2": {
+            q1_ch7d2: {
+                a: "خطأ. إلهام هي التي من السعودية. ندى من سوريا.",
+                c: "خطأ. الحوار لا يذكر مصر."
+            },
+            q2_ch7d2: {
+                a: "خطأ. ندى هي التي تدرس في جامعة دمشق. إلهام تدرس في جامعة أم القرى.",
+                c: "خطأ. الحوار لا يذكر جامعة القاهرة."
+            },
+            q3_ch7d2: {
+                a: "خطأ. إلهام هي التي ستكون مدرسة. ندى ستكون طبيبة.",
+                b: "خطأ. ندى طالبة الآن، لكنها ستكون طبيبة في المستقبل."
+            }
+        },
+        // --- END: الشروحات الجديدة للفصل السابع - الحوار الثاني ---
+        // --- START: الشروحات الجديدة للفصل السابع - الحوار الثالث ---
+        "dialogue-chapter7-d3": {
+            q1_ch7d3: {
+                a: "خطأ. غسان قال إن المدرسة بعيدة، وليست قريبة.",
+                b: "خطأ. هذا ليس السبب المذكور في الحوار."
+            },
+            q2_ch7d3: {
+                a: "خطأ. اليوم الدراسي يبدأ الساعة السابعة، وينتهي الواحدة.",
+                c: "خطأ. في الساعة السادسة، يكون غسان ذاهباً إلى المدرسة."
+            },
+            q3_ch7d3: {
+                a: "خطأ. يذهب إلى المكتبة أو المختبر وليس إلى البيت.",
+                b: "خطأ. الحوار لا يذكر المطعم."
             }
         }
-        ,
-        "dialogue-chapter5-d2": { // --- قسم الشرح الجديد للحوار الثاني من الوحدة الخامسة ---
-            q1_d_ch5d2: {
-                a: "خطأ. المسافرة طلبت السمك والأرز.",
-                c: "خطأ. المسافرة طلبت السمك والأرز كطعام رئيسي."
-            },
-            q2_d_ch5d2: {
-                a: "خطأ. المسافرة قالت إنها تفضل القهوة على الشاي.",
-                c: "خطأ. سُئلت عن الشاي أو القهوة، واختارت القهوة."
-            },
-            q3_d_ch5d2: {
-                b: "خطأ. المسافرة أكدت أنها تريد القهوة بالحليب."
-            }
-        }
+        // --- END: الشروحات الجديدة للفصل السابع - الحوار الثالث ---
+
     };
 
 
@@ -172,7 +277,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             questionsContainer.querySelectorAll('.mcq-question').forEach((questionDiv, index) => {
                 totalQuestions++;
-                // تحديد الجزء المتغير من اسم السؤال بناءً على mcqId
+
                 let questionNameSuffix;
                 if (mcqId === 'dialogue1') {
                     questionNameSuffix = 'd1';
@@ -182,12 +287,28 @@ document.addEventListener('DOMContentLoaded', () => {
                     questionNameSuffix = 'd3';
                 } else if (mcqId === 'dialogue-chapter5') {
                     questionNameSuffix = 'd_ch5';
-                } else if (mcqId === 'dialogue-chapter5-d2') { // --- إضافة شرط للقسم الجديد ---
+                } else if (mcqId === 'dialogue-chapter5-d2') {
                     questionNameSuffix = 'd_ch5d2';
+                } else if (mcqId === 'dialogue-chapter5-d3') {
+                    questionNameSuffix = 'd_ch5d3';
+                } else if (mcqId === 'dialogue-chapter6') {
+                    questionNameSuffix = 'ch6';
+                } else if (mcqId === 'dialogue-chapter6-d2') {
+                    questionNameSuffix = 'ch6d2';
+                } else if (mcqId === 'dialogue-chapter6-d3') {
+                    questionNameSuffix = 'ch6d3';
+                } else if (mcqId === 'dialogue-chapter7-d1') {
+                    questionNameSuffix = 'ch7';
                 }
+                else if (mcqId === 'dialogue-chapter7-d2') {
+                    questionNameSuffix = 'ch7d2';
+                } else if (mcqId === 'dialogue-chapter7-d3') {
+                    questionNameSuffix = 'ch7d3';
+                }
+                // ---
                 else {
                     console.warn(`Unhandled mcqId for question name suffix: ${mcqId}`);
-                    questionNameSuffix = mcqId; // fallback or handle as error
+                    questionNameSuffix = mcqId;
                 }
 
                 const questionName = `q${index + 1}_${questionNameSuffix}`;
@@ -196,28 +317,19 @@ document.addEventListener('DOMContentLoaded', () => {
                 let questionTextForFeedback = `السؤال ${index + 1}`;
 
                 if (questionStrongElement) {
+                    // يحاول استخراج النص العربي من السؤال
                     const arabicSpans = questionStrongElement.querySelectorAll('.ar-word');
                     let fullArabicQuestion = "";
                     if (arabicSpans.length > 0) {
                         arabicSpans.forEach(span => {
                             fullArabicQuestion += span.textContent + " ";
                         });
-                        let nextNode = arabicSpans[arabicSpans.length - 1].nextSibling;
-                        while (nextNode && nextNode.nodeType === Node.TEXT_NODE && !nextNode.textContent.includes('(')) {
-                            fullArabicQuestion += nextNode.textContent.trim();
-                            nextNode = nextNode.nextSibling;
-                        }
-                        questionTextForFeedback = fullArabicQuestion.trim() || questionStrongElement.textContent.replace(/^\d+\.\s*/, '').trim();
+                        questionTextForFeedback = fullArabicQuestion.trim();
                     } else {
-                        const englishTextNode = Array.from(questionStrongElement.childNodes).find(node => node.nodeType === Node.TEXT_NODE && node.textContent.trim().startsWith('('));
-                        if (englishTextNode) {
-                            questionTextForFeedback = englishTextNode.textContent.trim().replace(/[()]/g, '').trim();
-                        } else {
-                            questionTextForFeedback = questionStrongElement.textContent.replace(/^\d+\.\s*/, '').trim().split('(')[0].trim();
-                        }
+                        // fallback to full text content if no .ar-word spans
+                        questionTextForFeedback = questionStrongElement.textContent.replace(/^\d+\.\s*/, '').trim().split('(')[0].trim();
                     }
                 }
-
 
                 if (selectedOption) {
                     const userAnswer = selectedOption.value;
@@ -227,44 +339,39 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     if (userAnswer === correctAnswer) {
                         score++;
-                        feedbackHTML += `<li class="text-success"><i class="fas fa-check-circle me-2"></i>${questionTextForFeedback}: صحيح!</li>`;
+                        feedbackHTML += `<li class="text-success" dir="rtl"><i class="fas fa-check-circle ms-2"></i><strong>${questionTextForFeedback}:</strong> صحيح!</li>`;
                     } else {
                         let explanation = currentExplanations?.[questionName]?.[userAnswer] || "حاول مراجعة الحوار لمعرفة الإجابة الصحيحة.";
-                        const correctLabelElement = questionsContainer.querySelector(`input[name="${questionName}"][value="${correctAnswer}"]`);
-                        let correctAnswerText = correctAnswer;
-                        if (correctLabelElement) {
-                            const correctLabelFor = questionsContainer.querySelector(`label[for="${correctLabelElement.id}"]`);
-                            if (correctLabelFor) correctAnswerText = correctLabelFor.textContent.trim();
+                        const correctRadioInput = questionsContainer.querySelector(`input[name="${questionName}"][value="${correctAnswer}"]`);
+                        let correctAnswerText = "غير محدد";
+                        if (correctRadioInput) {
+                            const correctLabel = questionsContainer.querySelector(`label[for="${correctRadioInput.id}"]`);
+                            if (correctLabel) {
+                                correctAnswerText = correctLabel.textContent.trim();
+                            }
                         }
 
-                        feedbackHTML += `<li class="text-danger"><i class="fas fa-times-circle me-2"></i>${questionTextForFeedback}: خطأ. 
-                                         إجابتك: "${selectedLabel}". الإجابة الصحيحة: "${correctAnswerText}".
-                                         <small class="d-block text-muted">${explanation}</small></li>`;
+                        feedbackHTML += `<li class="text-danger" dir="rtl"><i class="fas fa-times-circle ms-2"></i><strong>${questionTextForFeedback}:</strong> خطأ. 
+                                         <div class="ms-4">إجابتك: "${selectedLabel}".</div>
+                                         <div class="ms-4">الإجابة الصحيحة: "${correctAnswerText}".</div>
+                                         <small class="d-block text-muted ms-4">${explanation}</small></li>`;
                     }
                 } else {
-                    feedbackHTML += `<li class="text-warning"><i class="fas fa-exclamation-circle me-2"></i>${questionTextForFeedback}: لم يتم الإجابة عليه.</li>`;
+                    feedbackHTML += `<li class="text-warning" dir="rtl"><i class="fas fa-exclamation-circle ms-2"></i><strong>${questionTextForFeedback}:</strong> لم يتم الإجابة عليه.</li>`;
                 }
             });
 
             feedbackHTML += `</ul><p class="mt-3"><strong>نتيجتك: ${score} من ${totalQuestions}</strong></p>`;
             feedbackDiv.innerHTML = feedbackHTML;
-            feedbackDiv.classList.remove('animate__fadeOut', 'animate__fadeIn'); // Reset animation classes
-            feedbackDiv.style.display = 'block'; // Make sure it's visible
+            feedbackDiv.classList.remove('animate__fadeOut', 'animate__fadeIn');
+            feedbackDiv.style.display = 'block';
             feedbackDiv.classList.add('animate__animated', 'animate__fadeIn');
 
-            // Remove animation classes after a delay to allow re-triggering
             setTimeout(() => {
                 feedbackDiv.classList.remove('animate__animated', 'animate__fadeIn');
-            }, 1000); // Adjust delay as needed
+            }, 1000);
         });
     });
-
-
-    // Animations on Scroll using Intersection Observer (If you are using it, keep it)
-    // const animatedSections = document.querySelectorAll('.animate__animated');
-    // const observerOptions = { /* ... */ };
-    // const observer = new IntersectionObserver((entries, observer) => { /* ... */ }, observerOptions);
-    // animatedSections.forEach(section => { observer.observe(section); });
 
 
     // Drag and Drop Functionality

@@ -1,9 +1,11 @@
 // scss/_components.scss
 
-// Vocabulary Lists
+// ====================================================================
+// 1. Vocabulary Lists Styles (أنماط قوائم المفردات)
+// ====================================================================
 .vocab-item {
-  margin-bottom: $spacer;
-  padding-bottom: $spacer * 0.5;
+  margin-bottom: $spacer * 1.2;
+  padding-bottom: $spacer * 0.75;
   border-bottom: 1px dashed $light-border-color;
 
   &:last-child {
@@ -18,125 +20,87 @@
 
   .translation {
     color: $light-muted-color;
-    font-size: 1.2em;
-    padding-left: $spacer; // Keep LTR for translation
+    font-size: 1.1em;
+    padding-left: $spacer;
+    font-style: italic;
   }
   
   ul { 
-    margin-top: $spacer * 0.25;
+    margin-top: $spacer * 0.5;
+    padding-left: $spacer * 1.5;
     li p {
-      font-size: 1.2em;
-      color: lighten($light-text-color, 20%);
+      font-size: 1.1em;
+      color: lighten($light-text-color, 25%);
     }
   }
 }
 
-// Dialogues
+// ====================================================================
+// 2. Dialogue Styles (أنماط الحوارات)
+// ====================================================================
 .dialogue-line {
-  margin-bottom: $spacer * 1.2;
-  padding: $spacer * 0.75;
-  // The border side will depend on the paragraph's direction if set directly on p.
-  // For a consistent visual block, the border might be better on .dialogue-line itself.
-  // We will handle text direction within the <p> tags.
-  // Let's apply the border to the .dialogue-line and adjust if needed.
+  margin-bottom: $spacer * 1.5;
+  padding: $spacer;
   border-left: 4px solid $primary-color; 
-  background-color: lighten($light-bg, 2%);
+  background-color: transparent; // Default transparent background
+  transition: $transition-base;
 
-  // Paragraphs containing primarily Arabic text
-  p:not(.translation) { // Target paragraphs that are NOT translations
+  p {
+    margin: 0; // Reset margin for paragraphs inside
+  }
+  
+  // Arabic dialogue line
+  p:not(.translation) {
     direction: rtl;
     text-align: right;
-    // If the speaker is part of this <p> and is Arabic, it will inherit RTL
-    // If speaker is English but part of this Arabic <p>, it needs special handling
   }
   
-  // Specifically for the speaker if it needs to be LTR within an RTL paragraph
-  p:not(.translation) .speaker {
-    // If speaker name is English/Transliterated and should be LTR:
-    // direction: ltr; 
-    // display: inline-block; // To enforce direction
-    // margin-left: $spacer * 0.5; // Adjust margin for RTL context
-    // margin-right: 0;
-    // For Arabic speaker names like "الأُمُّ:", RTL is fine.
-    // The default .speaker style might be sufficient if it's just text.
-    // If the speaker span itself has LTR content, this is where you'd ensure it displays correctly.
-  }
-  
-  .speaker { // General speaker style
+  .speaker {
     font-weight: 700;
     color: $light-speaker-color;
-    margin-right: $spacer * 0.5; // Default for LTR context (like in translation)
+    margin: 0 $spacer * 0.5; 
   }
 
-
-  .translation { // Translation paragraphs are LTR
-    font-size: 1.2em;
+  // English translation line
+  .translation {
+    font-size: 1.1em;
     color: $light-muted-color;
     margin-top: $spacer * 0.25;
     direction: ltr; 
     text-align: left;
 
-    .speaker { // Speaker in LTR translation
+    .speaker {
       color: $light-muted-color;
-      // margin-right is correct here due to LTR context
     }
   }
 
   .clarification {
-      font-size: 1.2em;
-      background-color: lighten($warning-color, 35%);
-      padding: $spacer * 0.25 $spacer * 0.5;
-      border-radius: $border-radius;
-      display: inline-block; 
-      // Set direction based on clarification language
-      // Assuming Arabic for now:
-      direction: rtl; 
-      text-align: right;
-  }
-}
-
-
-// Image Placeholders
-.image-placeholder {
-  img {
-    border: 1px solid $light-border-color;
-  }
-  .small {
-    font-size: 1.2em;
-    color: $light-muted-color;
-  }
-}
-
-// MCQ (Check Your Understanding)
-#mcq-dialogue1, #mcq-dialogue2 {
-  .mcq-question {
-    margin-bottom: $spacer * 1.5;
-    padding: $spacer;
-    border: 1px solid $light-border-color;
+    font-size: 1em;
+    background-color: lighten($warning-color, 38%);
+    padding: $spacer * 0.5 $spacer;
     border-radius: $border-radius;
-    background-color: lighten($light-bg, 3%);
+    display: block; // Make it a block to take full width
+    margin-top: $spacer;
+    direction: ltr; // Assuming clarification is in English
+    text-align: left;
+    border-left: 4px solid $warning-color;
+  }
+}
 
-    strong {
-      display: block;
-      margin-bottom: $spacer * 0.75;
-      // Arabic questions within strong tag
-      &:has(.ar-word) {
-        direction: rtl;
-        text-align: right;
-      }
-    }
-    .ar-word, .en-word { 
-        font-weight: normal; 
-    }
-     strong .ar-word, strong .en-word {
-         font-weight: bold; 
-     }
-     // Options with Arabic
-     .form-check-label:has(.ar-word) {
-        direction: rtl;
-        text-align: right;
-        display: block; // To make text-align effective for the whole label
-     }
+// ====================================================================
+// 3. MCQ & Interactive Exercises Styles (أنماط الاختبارات)
+// ====================================================================
+.mcq-question {
+  margin-bottom: $spacer * 1.5;
+  padding: $spacer;
+  border: 1px solid $light-border-color;
+  border-radius: $border-radius;
+  background-color: transparent;
+
+  strong {
+    display: block;
+    margin-bottom: $spacer * 0.75;
+    &[dir="rtl"] { text-align: right; }
   }
 
   .form-check {
@@ -145,60 +109,40 @@
 
   .form-check-label {
     cursor: pointer;
-    .ar-word, .en-word {
-        font-weight: normal; 
-    }
+    width: 100%; // Make label clickable area wider
+    &[dir="rtl"] { text-align: right; }
   }
+}
 
-  .feedback {
-    margin-top: $spacer;
-    padding: $spacer;
+.feedback {
+  margin-top: $spacer;
+  padding: $spacer;
+  border-radius: $border-radius;
+  
+  ul { list-style-type: none; padding-left: 0; }
+  li {
+    padding: $spacer * 0.5 $spacer;
+    margin-bottom: $spacer * 0.25;
     border-radius: $border-radius;
-    background-color: lighten($light-bg, 2%);
-    border: 1px solid $light-border-color;
-    
-    ul {
-      list-style-type: none;
-      padding-left: 0;
-    }
-    li {
-      padding: $spacer * 0.3 $spacer * 0.5;
-      margin-bottom: $spacer * 0.25;
-      border-radius: $border-radius;
-      i { vertical-align: middle; }
-      // For feedback lines that are in Arabic
-      &[lang="ar"] { // You might need to add lang="ar" to these <li> in JS
-        direction: rtl;
-        text-align: right;
-      }
-    }
-    .text-success { background-color: lighten($success-color, 45%); border-left: 4px solid $success-color; color: darken($success-color, 10%) !important; }
-    .text-danger { background-color: lighten($danger-color, 40%); border-left: 4px solid $danger-color; color: darken($danger-color, 10%) !important; }
-    .text-warning { background-color: lighten($warning-color, 40%); border-left: 4px solid $warning-color; color: darken($warning-color, 20%) !important; }
+    i { margin-right: $spacer * 0.5; }
+    &[dir="rtl"] i { margin-left: $spacer * 0.5; margin-right: 0; }
   }
+  .text-success { background-color: lighten($success-color, 45%); border-left: 4px solid $success-color; color: darken($success-color, 10%) !important; }
+  .text-danger { background-color: lighten($danger-color, 40%); border-left: 4px solid $danger-color; color: darken($danger-color, 10%) !important; }
+  .text-warning { background-color: lighten($warning-color, 40%); border-left: 4px solid $warning-color; color: darken($warning-color, 20%) !important; }
 }
 
-// Buttons
-.btn-primary { 
-  background-color: $primary-color;
-  border-color: $primary-color;
-  &:hover {
-    background-color: darken($primary-color, 10%);
-    border-color: darken($primary-color, 10%);
-  }
-}
-
-// Drag and Drop
+// ====================================================================
+// 4. Drag and Drop Exercise Styles (أنماط تمرين السحب والإفلات)
+// ====================================================================
 .drag-drop-container {
   h4 {
     color: $secondary-color;
     margin-bottom: $spacer;
-    &:has(.ar-word){ // If heading is Arabic
-        direction: rtl;
-        text-align: right;
-    }
+    &[dir="rtl"] { text-align: right; }
   }
 }
+
 .draggable-item {
   padding: $spacer * 0.75;
   margin-bottom: $spacer * 0.5;
@@ -208,21 +152,19 @@
   border-radius: $border-radius;
   cursor: grab;
   transition: $transition-base;
-  text-align: center; // Center Arabic text if item is RTL
-  &:has(.ar-word){
-    direction: rtl;
-  }
+  text-align: center;
+  &[dir="rtl"] { font-family: $font-family-arabic; }
   &:active {
     cursor: grabbing;
     opacity: 0.7;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 5px rgba($black, 0.2);
   }
 }
 
 .droppable-area {
   padding: $spacer;
   margin-bottom: $spacer * 0.5;
-  background-color: lighten($light-bg, 2%);
+  background-color: lighten($light-bg, 1%);
   border: 2px dashed $light-border-color;
   border-radius: $border-radius;
   min-height: 60px; 
@@ -230,11 +172,7 @@
   align-items: center;
   justify-content: center;
   transition: $transition-base;
-  &:has(.ar-word){ // If English meaning is Arabic (unlikely but for completeness)
-    direction: rtl;
-    text-align: right;
-  }
-
+  
   &.drag-over {
     background-color: lighten($info-color, 35%);
     border-color: $info-color;
@@ -245,11 +183,12 @@
     .draggable-item { 
       background-color: $success-color;
       color: white;
+      border-style: solid;
       border-color: darken($success-color, 10%);
       cursor: default;
     }
   }
-   &.dropped-incorrect { 
+  &.dropped-incorrect { 
     background-color: lighten($danger-color, 40%);
     border-color: $danger-color;
   }
@@ -259,134 +198,35 @@
   font-weight: bold;
   min-height: 1.5em; 
 }
-// Command Verb Lesson Styles
 
+// ====================================================================
+// 5. Command Verb Lesson Specific Styles (أنماط درس فعل الأمر)
+// ====================================================================
 #command-verb-lesson {
-  .card-body {
-    // يمكنك إضافة تنسيقات خاصة لجسم البطاقة هنا إذا أردت
-  }
-
-  .section-title { // هذا للعنوان الرئيسي للقسم "فِعْل الْأَمْر"
-    color: $command-verb-title-color; // استخدم المتغير الذي عرفته
-    font-weight: bold;
-    margin-bottom: 1.5rem;
-  }
-
   article {
-    line-height: 1.8; // لسهولة القراءة
+    line-height: 1.8;
 
-    h4, h5 { // للعناوين الفرعية داخل المقالة
-      color: $command-verb-subtitle-color;
+    h4, h5 {
+      color: $primary-color; // Make subheadings stand out
       margin-top: 1.5rem;
-      margin-bottom: 0.75rem;
-      font-weight: 600;
-    }
-
-    p {
-      color: $command-verb-text-color;
-      margin-bottom: 1rem;
-    }
-
-    .translation {
-      color: $gray-600; // لون أفتح للترجمة، يمكنك تعديله
-      font-style: italic;
-      font-size: 0.95em; // أصغر قليلاً من النص العربي
-      display: block; // لجعل الترجمة تحت النص العربي مباشرة
-      margin-top: -0.5rem; // لتقريب الترجمة من النص العربي
-      margin-bottom: 1rem;
+      border-bottom: 1px solid $light-border-color;
+      padding-bottom: $spacer * 0.25;
     }
 
     blockquote {
-      border-left: 4px solid $primary-color; // استخدم لونك الأساسي
+      border-left: 4px solid $info-color;
       padding-left: 1rem;
       margin: 1.5rem 0;
       font-size: 1.1em;
-
-      .blockquote-footer.translation {
-        font-size: 0.9em;
-        margin-top: 0.25rem;
-      }
+      background-color: lighten($info-color, 40%);
+      color: darken($info-color, 20%);
     }
 
-    table {
-      margin-top: 1rem;
-      margin-bottom: 1.5rem;
-      th {
-        background-color: lighten($primary-color, 45%); // لون خلفية خفيف لرؤوس الأعمدة
-        font-weight: bold;
-      }
-      td, th {
-        vertical-align: middle;
-      }
-    }
-
-    ol {
-      padding-left: 2rem; // مسافة بادئة للقوائم المرقمة
-      li {
-        margin-bottom: 0.75rem;
-        .translation { // لتنسيق الترجمة داخل عناصر القائمة
-            margin-top: 0.1rem;
-            margin-left: 1rem; // مسافة بادئة للترجمة داخل القائمة
-        }
-      }
-    }
-    ul:not(.list-unstyled) { // للقوائم غير المرقمة إذا استخدمت
-        padding-left: 2rem;
-         li {
-            margin-bottom: 0.5rem;
-         }
-    }
-
-    // Specific colors for command verb examples
-    .ar-color-cmd1 { color: $ar-color-cmd1; }
-    .ar-color-cmd-step1 { color: $ar-color-cmd-step1; }
-    .ar-color-cmd-step1-hamza { color: $ar-color-cmd-step1-hamza; }
-    .ar-color-cmd1-final { color: $ar-color-cmd1-final; font-weight: bold; }
-    .ar-color-cmd1-fem { color: $ar-color-cmd1-fem; font-weight: bold; }
-
-    .ar-color-cmd2 { color: $ar-color-cmd2; }
-    .ar-color-cmd-step2 { color: $ar-color-cmd-step2; }
-    .ar-color-cmd-step2-hamza { color: $ar-color-cmd-step2-hamza; }
-    .ar-color-cmd2-final { color: $ar-color-cmd2-final; font-weight: bold; }
-    .ar-color-cmd2-fem { color: $ar-color-cmd2-fem; font-weight: bold; }
-
-    .ar-color-cmd3 { color: $ar-color-cmd3; }
-    .ar-color-cmd-step3 { color: $ar-color-cmd-step3; }
-    .ar-color-cmd-step3-hamza { color: $ar-color-cmd-step3-hamza; }
-    .ar-color-cmd3-final { color: $ar-color-cmd3-final; font-weight: bold; }
-    .ar-color-cmd3-fem { color: $ar-color-cmd3-fem; font-weight: bold; }
-
-    .ar-color-cmd4 { color: $ar-color-cmd4; }
-    .ar-color-cmd-step4 { color: $ar-color-cmd-step4; }
-    .ar-color-cmd-step4-hamza { color: $ar-color-cmd-step4-hamza; }
-    .ar-color-cmd4-final { color: $ar-color-cmd4-final; font-weight: bold; }
-    .ar-color-cmd4-fem { color: $ar-color-cmd4-fem; font-weight: bold; }
-
-    .ar-color-cmd5 { color: $ar-color-cmd5; }
-    .ar-color-cmd-step5 { color: $ar-color-cmd-step5; }
-    .ar-color-cmd5-final { color: $ar-color-cmd5-final; font-weight: bold; }
-    .ar-color-cmd5-fem { color: $ar-color-cmd5-fem; font-weight: bold; }
-
-    .ar-color-cmd-other1 { color: $ar-color-cmd-other1; }
-    .ar-color-cmd-other1-fem { color: $ar-color-cmd-other1-fem; font-weight: bold; }
-    .ar-color-cmd-other2 { color: $ar-color-cmd-other2; }
-    .ar-color-cmd-other2-fem { color: $ar-color-cmd-other2-fem; font-weight: bold; }
-
-    .ar-color-emphasis { color: $ar-color-emphasis; font-weight: bold; }
-    .en-color-emphasis { color: $ar-color-emphasis; font-weight: bold; } // For English emphasis if needed
-    .ar-color-cmd-vowel { color: $ar-color-cmd-vowel; font-weight: bold; }
-    .en-color-cmd-vowel { color: $ar-color-cmd-vowel; font-weight: bold; } // For English vowel emphasis
-
-    // Styling for <code> elements (for harakat and terms)
     code {
-      background-color: $code-background-color;
-      color: $code-text-color;
+      background-color: $gray-200;
+      color: $danger-color;
       padding: 0.2em 0.4em;
-      margin: 0 0.1em;
-      font-size: 0.9em;
       border-radius: 3px;
-      border: 1px solid $code-border-color;
-      font-family: 'Courier New', Courier, monospace; // Optional: specific font for code
     }
   }
 }

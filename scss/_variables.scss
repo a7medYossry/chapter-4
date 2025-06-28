@@ -1,40 +1,31 @@
 // scss/_variables.scss
 
-// Font Stacks
+// ===================================
+// 1. الإعدادات الأساسية (Fonts, Spacing, etc.)
+// ===================================
 $font-family-sans-serif: 'Roboto', sans-serif;
 $font-family-arabic: 'Noto Naskh Arabic', serif;
 $font-family-base: $font-family-sans-serif;
+$spacer: 1rem;
+$border-radius: 0.25rem;
+$box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+$transition-base: all 0.3s ease-in-out;
 
-// Gray palette (يمكنك تعديل هذه القيم)
-$gray-100: #f8f9fa;
-$gray-200: #e9ecef;
-$gray-300: #dee2e6;
-$gray-400: #ced4da;
-$gray-500: #adb5bd;
-$gray-600: #6c757d; // <--- هذا هو المتغير المفقود
-$gray-700: #495057;
-$gray-800: #343a40;
-$gray-900: #212529;
-$black:    #000;
-$white:    #fff;
 
-// Colors - Light Mode
-$primary-color: #007bff;
-$secondary-color: #6c757d;
-$success-color: #28a745;
-$danger-color: #dc3545;
-$warning-color: #8a7536;
-$info-color: #17a2b8;
+// ===================================
+// 2. الثيمات (Light & Dark Mode)
+// ===================================
 
+// Light Mode Theme
 $light-bg: #f8f9fa;
 $light-card-bg: #ffffff;
 $light-text-color: #212529;
 $light-border-color: #dee2e6;
 $light-muted-color: #6c757d;
-$light-link-color: $primary-color;
+$light-link-color: #007bff;
 $light-speaker-color: #495057;
 
-// Colors - Dark Mode
+// Dark Mode Theme
 $dark-bg: #1a1a2e;
 $dark-card-bg: #162447;
 $dark-text-color: #e0e0e0;
@@ -42,531 +33,302 @@ $dark-border-color: #2a2a57;
 $dark-muted-color: #a0a0c0;
 $dark-link-color: #58a6ff;
 $dark-speaker-color: #c0c0e0;
-$dark-primary-color: $dark-link-color;
 
-// General Chapter/Vocab Word Colors (أمثلة - **تم التأكد من اكتمالها من 1 إلى 5 ومن 16 إلى 27**)
-$ar-color-1: #e94560; $en-color-1: $ar-color-1;
-$ar-color-2: #16c79a; $en-color-2: $ar-color-2;
-$ar-color-3: #a9780f; $en-color-3: $ar-color-3; // كان ناقصًا
-$ar-color-4: #583d72; $en-color-4: $ar-color-4; // كان ناقصًا
-$ar-color-5: #00b8a9; $en-color-5: $ar-color-5; // كان ناقصًا
+// General Purpose Colors
+$primary-color: $light-link-color;
+$secondary-color: $light-muted-color;
+$success-color: #28a745;
+$danger-color: #dc3545;
+$warning-color: #ffc107;
+$info-color: #17a2b8;
+$white: #fff;
+$black: #000;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
 
-$ar-color-16: #ff6363; $en-color-16: $ar-color-16;
-$ar-color-17: #f8a5c2; $en-color-17: $ar-color-17;
-$ar-color-18: #7868e6; $en-color-18: $ar-color-18;
-$ar-color-19: #c9d6df; $en-color-19: $ar-color-19;
-$ar-color-20: #6fedd6; $en-color-20: $ar-color-20;
-$ar-color-21: #ff7eb9; $en-color-21: $ar-color-21;
-$ar-color-22: #b71540; $en-color-22: $ar-color-22;
-$ar-color-23: #a79048; $en-color-23: $ar-color-23;
-$ar-color-24: #ff9ff3; $en-color-24: $ar-color-24;
-$ar-color-25: #70a1ff; $en-color-25: $ar-color-25;
-$ar-color-26: #1dd1a1; $en-color-26: $ar-color-26;
-$ar-color-27: #ff6b6b; $en-color-27: $ar-color-27;
+// ===================================
+// 3. خرائط الألوان للدروس (Lesson Color Maps)
+// ===================================
 
-
-// Dialogue 1 Specific Colors (يفترض أنها كاملة كما كانت في الأصل)
-$ar-color-a1: #34ace0; $en-color-a1: $ar-color-a1;
-$ar-color-a2: #b58814; $en-color-a2: $ar-color-a2;
-$ar-color-a3: #70a1ff; $en-color-a3: $ar-color-a3;
-$ar-color-a4: #ff7f50; $en-color-a4: $ar-color-a4;
-$ar-color-a5: #32ff7e; $en-color-a5: $ar-color-a5;
-$ar-color-b1: #575fcf; $en-color-b1: $ar-color-b1;
-$ar-color-b2: #0fb9b1; $en-color-b2: $ar-color-b2;
-$ar-color-b3: #fa8231; $en-color-b3: $ar-color-b3;
-$ar-color-b4: #4b4b4b; $en-color-b4: $ar-color-b4;
-$ar-color-b5: #3867d6; $en-color-b5: $ar-color-b5;
-$ar-color-b6: #8e44ad; $en-color-b6: $ar-color-b6;
-$ar-color-b7: #20bf6b; $en-color-b7: $ar-color-b7;
-$ar-color-c1: #a87a15; $en-color-c1: $ar-color-c1;
-$ar-color-c2: #a55eea; $en-color-c2: $ar-color-c2;
-$ar-color-c3: #26de81; $en-color-c3: $ar-color-c3;
-$ar-color-c4: #fc5c65; $en-color-c4: $ar-color-c4;
-$ar-color-c5: #45aaf2; $en-color-c5: $ar-color-c5;
-$ar-color-c6: #4b6584; $en-color-c6: $ar-color-c6;
-$ar-color-c7: #2d98da; $en-color-c7: $ar-color-c7;
-$ar-color-c8: #079992; $en-color-c8: $ar-color-c8;
-$ar-color-c9: #e84393; $en-color-c9: $ar-color-c9;
-$ar-color-d1: #ff9f43; $en-color-d1: $ar-color-d1;
-$ar-color-d2: #0abde3; $en-color-d2: $ar-color-d2;
-$ar-color-d3: #10ac84; $en-color-d3: $ar-color-d3;
-$ar-color-d4: #5f27cd; $en-color-d4: $ar-color-d4;
-$ar-color-d5: #ff6b81; $en-color-d5: $ar-color-d5;
-$ar-color-d6: #3c40c6; $en-color-d6: $ar-color-d6;
-$ar-color-e1: #f53b57; $en-color-e1: $ar-color-e1;
-$ar-color-e2: #3c40c6; $en-color-e2: $ar-color-e2;
-$ar-color-e3: #05c46b; $en-color-e3: $ar-color-e3;
-$ar-color-e4: #00d8d6; $en-color-e4: $ar-color-e4;
-$ar-color-e5: #8c7ae6; $en-color-e5: $ar-color-e5;
-$ar-color-e6: #0be881; $en-color-e6: $ar-color-e6;
-$ar-color-e7: #ffc048; $en-color-e7: $ar-color-e7;
-$ar-color-f1: #b49313; $en-color-f1: $ar-color-f1;
-$ar-color-f2: #30336b; $en-color-f2: $ar-color-f2;
-$ar-color-f3: #ff7979; $en-color-f3: $ar-color-f3;
-$ar-color-f4: #1e90ff; $en-color-f4: $ar-color-f4;
-$ar-color-f5: #38ada9; $en-color-f5: $ar-color-f5;
-$ar-color-f6: #e056fd; $en-color-f6: $ar-color-f6;
-$ar-color-v1: #0097e6; $en-color-v1: $ar-color-v1;
-$ar-color-v2: #8c7ae6; $en-color-v2: $ar-color-v2;
-$ar-color-v3: #e1b12c; $en-color-v3: $ar-color-v3;
-$ar-color-v4: #40739e; $en-color-v4: $ar-color-v4;
-$ar-color-v5: #c44569; $en-color-v5: $ar-color-v5;
-$ar-color-v6: #e84118; $en-color-v6: $ar-color-v6;
-$ar-color-v7: #7f8fa6; $en-color-v7: $ar-color-v7;
-$ar-color-v8: #1e3799; $en-color-v8: $ar-color-v8;
-$ar-color-v9: #be860e; $en-color-v9: $ar-color-v9;
-$ar-color-v10: #596275; $en-color-v10: $ar-color-v10;
-$ar-color-v11: #00a8ff; $en-color-v11: $ar-color-v11;
-$ar-color-v12: #9c88ff; $en-color-v12: $ar-color-v12;
-$ar-color-x1: #b08613; $en-color-x1: $ar-color-x1;
-$ar-color-x2: #4cd137; $en-color-x2: $ar-color-x2;
-$ar-color-x3: #487eb0; $en-color-x3: $ar-color-x3;
-$ar-color-q1: #e84393; $en-color-q1: $ar-color-q1;
-$ar-color-q2: #0097e6; $en-color-q2: $ar-color-q2;
-$ar-color-q3: #e1b12c; $en-color-q3: $ar-color-q3;
-$ar-color-q4: #40739e; $en-color-q4: $ar-color-q4;
-$ar-color-q5: #c44569; $en-color-q5: $ar-color-q5;
-$ar-color-q6: #e84118; $en-color-q6: $ar-color-q6;
-$ar-color-y1: #7f8fa6; $en-color-y1: $ar-color-y1;
-$ar-color-y2: #1e3799; $en-color-y2: $ar-color-y2;
-$ar-color-y3: #f5cd79; $en-color-y3: $ar-color-y3;
-$ar-color-y4: #596275; $en-color-y4: $ar-color-y4;
-$ar-color-q7: #00a8ff; $en-color-q7: $ar-color-q7;
-$ar-color-q8: #9c88ff; $en-color-q8: $ar-color-q8;
-$ar-color-q9: #bd9013; $en-color-q9: $ar-color-q9;
-$ar-color-q10: #4cd137; $en-color-q10: $ar-color-q10;
-$ar-color-q11: #487eb0; $en-color-q11: $ar-color-q11;
-$ar-color-q12: #e84393; $en-color-q12: $ar-color-q12;
-$ar-color-z1: #0097e6; $en-color-z1: $ar-color-z1;
-$ar-color-z2: #bc8f14; $en-color-z2: $ar-color-z2;
-$ar-color-z3: #40739e; $en-color-z3: $ar-color-z3;
-$ar-color-z4: #c44569; $en-color-z4: $ar-color-z4;
-$ar-color-z5: #e84118; $en-color-z5: $ar-color-z5;
-$ar-color-q13: #7f8fa6; $en-color-q13: $ar-color-q13;
-$ar-color-q14: #1e3799; $en-color-q14: $ar-color-q14;
-$ar-color-q15: #b78312; $en-color-q15: $ar-color-q15;
+// Chapter 4 (الخريطة الكاملة هنا)
+$ch4_colors: (
+  // Title
+  "1": #e94560, "2": #16c79a,
+  // Chapter Vocab
+  "16": #6a1b9a, "17": #6a1b9a, "18": #d32f2f, "19": #d32f2f, "20": #388e3c, "21": #388e3c, "22": #757575, "23": #757575, "24": #1976d2, "25": #1976d2, "26": #00897b, "27": #00897b,
+  // Dialogue 1
+  "a1": #34ace0, "a2": #b58814, "a3": #70a1ff, "a4": #ff7f50, "a5": #32ff7e,
+  "b1": #575fcf, "b2": #0fb9b1, "b3": #fa8231, "b4": #4b4b4b, "b5": #3867d6, "b6": #8e44ad, "b7": #20bf6b,
+  "c1": #f7b731, "c2": #3867d6, "c3": #8e44ad, "c4": #20bf6b, "c5": #eb3b5a, "c6": #fa8231, "c7": #4b4b4b, "c8": #3867d6, "c9": #8e44ad,
+  "d1": #20bf6b, "d2": #f7b731, "d3": #3867d6, "d4": #8e44ad, "d5": #20bf6b, "d6": #f7b731,
+  "e1": #4b4b4b, "e2": #3867d6, "e3": #8e44ad, "e4": #20bf6b, "e5": #f7b731, "e6": #4b4b4b, "e7": #3867d6,
+  "f1": #8e44ad, "f2": #20bf6b, "f3": #f7b731, "f4": #4b4b4b, "f5": #3867d6, "f6": #8e44ad,
+  // Dialogue 1 Vocab
+  "v1": #007bff, "v2": #6f42c1, "v3": #e83e8c, "v4": #fd7e14, "v5": #20c997, "v6": #6610f2, "v7": #ffc107, "v8": #28a745, "v9": #17a2b8, "v10": #dc3545, "v11": #343a40, "v12": #6c757d,
+  // Dialogue 1 MCQ
+  "x1": #007bff, "x2": #6f42c1, "x3": #e83e8c, "y1": #fd7e14, "y2": #20c997, "y3": #6610f2, "y4": #ffc107, "z1": #28a745, "z2": #17a2b8, "z3": #dc3545, "z4": #343a40, "z5": #6c757d,
+  "q1": #007bff, "q2": #6f42c1, "q3": #e83e8c, "q4": #fd7e14, "q5": #20c997, "q6": #6610f2, "q7": #ffc107, "q8": #28a745, "q9": #17a2b8, "q10": #dc3545, "q11": #343a40, "q12": #6c757d, "q13": #007bff, "q14": #6f42c1, "q15": #e83e8c,
+  // Telling Time
+  "t1": #d980fa, "t2": #f0932b, "t3": #eb4d4b, "t4": #6ab04c,
+  // Dialogue 2
+  "d2-c1": #1dd1a1, "d2-c2": #ff6b6b, "d2-c3": #feca57, "d2-d1": #5f27cd, "d2-d2": #54a0ff, "d2-d3": #ff9ff3,
+  "d2-e1": #00d2d3, "d2-e2": #f368e0, "d2-e3": #ff9f43, "d2-e4": #ee5253, "d2-f1": #0abde3, "d2-f2": #10ac84, "d2-f3": #222f3e,
+  "d2-g1": #5f27cd, "d2-g2": #54a0ff, "d2-g3": #ff9ff3, "d2-g4": #00d2d3, "d2-h1": #f368e0, "d2-h2": #ff9f43, "d2-h3": #ee5253,
+  "d2-i1": #0abde3, "d2-i2": #10ac84, "d2-i3": #222f3e, "d2-i4": #5f27cd, "d2-j1": #54a0ff, "d2-j2": #ff9ff3,
+  "d2-k1": #00d2d3, "d2-k2": #f368e0, "d2-k3": #ff9f43, "d2-k4": #ee5253, "d2-l1": #0abde3, "d2-l2": #10ac84,
+  "d2-m1": #222f3e, "d2-m2": #5f27cd, "d2-m3": #54a0ff, "d2-n1": #ff9ff3, "d2-n2": #00d2d3, "d2-n3": #f368e0,
+  // Dialogue 2 Vocab & MCQ
+  "d2-v1": #be2edd, "d2-v2": #c56cf0, "d2-v3": #ff3838, "d2-v4": #ff4d4d, "d2-v5": #ffb8b8, "d2-v6": #2e86de, "d2-v7": #3498db, "d2-v8": #ff9f1a, "d2-v9": #ffc312, "d2-v10": #12CBC4, "d2-v11": #1289A7,
+  "d2-x1": #be2edd, "d2-x2": #c56cf0, "d2-x3": #ff3838, "d2-y1": #ff4d4d, "d2-y2": #ffb8b8, "d2-y3": #2e86de,
+  "d2-z1": #3498db, "d2-z2": #ff9f1a, "d2-z3": #ffc312, "d2-z4": #12CBC4, "d2-z5": #1289A7, "d2-z6": #be2edd, "d2-z7": #c56cf0,
+  "d2-w1": #ff3838, "d2-w2": #ff4d4d, "d2-w3": #ffb8b8,
+  // Drag Drop
+  "dd1": #833471, "dd2": #B53471, "dd3": #EE5A24, "dd4": #F79F1F,
+  // Dialogue 3
+  "d3-a1": #009432, "d3-a2": #006266, "d3-a3": #1B1464, "d3-a4": #6F1E51,
+  "d3-b1": #3B3B98, "d3-b2": #82589F, "d3-c1": #009432, "d3-c2": #006266, "d3-c3": #1B1464,
+  "d3-d1": #6F1E51, "d3-d2": #3B3B98, "d3-e1": #82589F, "d3-e2": #009432, "d3-e3": #006266, "d3-e4": #1B1464,
+  "d3-f1": #6F1E51, "d3-f2": #3B3B98, "d3-g1": #82589F, "d3-g2": #009432, "d3-g3": #006266,
+  "d3-h1": #1B1464, "d3-h2": #6F1E51, "d3-h3": #3B3B98, "d3-h4": #82589F,
+  "d3-i1": #009432, "d3-i2": #006266, "d3-i3": #1B1464, "d3-j1": #6F1E51, "d3-j2": #3B3B98, "d3-j3": #82589F, "d3-j4": #009432, "d3-j5": #006266,
+  "d3-k1": #1B1464, "d3-k2": #6F1E51, "d3-k3": #3B3B98, "d3-l1": #82589F, "d3-l2": #009432, "d3-l3": #006266, "d3-l4": #1B1464, "d3-l5": #6F1E51,
+  // Dialogue 3 Vocab & MCQ
+  "d3-v1": #8e44ad, "d3-v2": #2980b9, "d3-v3": #27ae60, "d3-v4": #f1c40f, "d3-v5": #e67e22, "d3-v6": #e74c3c, "d3-v7": #95a5a6, "d3-v8": #34495e, "d3-v9": #16a085, "d3-v10": #c0392b, "d3-v11": #7f8c8d,
+  "d3-x1": #8e44ad, "d3-x2": #2980b9, "d3-x3": #27ae60, "d3-x4": #f1c40f, "d3-x5": #e67e22,
+  "d3-y1": #e74c3c, "d3-y2": #95a5a6, "d3-y3": #34495e, "d3-y4": #16a085, "d3-y5": #c0392b,
+  "d3-z1": #7f8c8d, "d3-z2": #8e44ad, "d3-z3": #2980b9, "d3-z4": #27ae60,
+  "d3-q1": #f1c40f, "d3-q2": #e67e22, "d3-q3": #e74c3c, "d3-q4": #95a5a6, "d3-q5": #34495e, "d3-q6": #16a085, "d3-q7": #c0392b, "d3-q8": #7f8c8d, "d3-q9": #8e44ad, "d3-q10": #2980b9, "d3-q11": #27ae60, "d3-q12": #f1c40f, "d3-q13": #e67e22, "d3-q14": #e74c3c,
+  "d3-q15": #95a5a6, "d3-q16": #34495e, "d3-q17": #16a085, "d3-q18": #c0392b, "d3-q19": #7f8c8d, "d3-q20": #8e44ad, "d3-q21": #2980b9, "d3-q22": #27ae60,
+  // Advanced Telling Time
+  "tt1": #00796b, "tt2": #00796b, "tt3": #f57c00, "tt4": #f57c00, "tt5": #303f9f, "tt6": #c2185b, "tt7": #512da8, "tt8": #d32f2f, "tt9": #0288d1, "tt10": #388e3c, "tt11": #388e3c, "tt12": #7b1fa2, "tt13": #7b1fa2,
+  "tt-ex1": #00796b, "tt-ex2": #f57c00, "tt-ex3": #303f9f, "tt-ex4": #c2185b, "tt-ex5": #512da8,
+  // Command Verb Lesson
+  "cmd1": #4a148c, "cmd-step1": #4a148c, "cmd-step1-hamza": #4a148c, "cmd-vowel": #4a148c, "cmd1-final": #4a148c, "cmd1-fem": #4a148c,
+  "cmd2": #b71c1c, "cmd-step2": #b71c1c, "cmd-step2-hamza": #b71c1c, "cmd-emphasis": #c62828, "cmd2-final": #b71c1c, "cmd2-fem": #b71c1c,
+  "cmd3": #1a237e, "cmd-step3": #1a237e, "cmd-step3-hamza": #1a237e, "cmd3-final": #1a237e, "cmd3-fem": #1a237e,
+  "cmd4": #004d40, "cmd-step4": #004d40, "cmd-step4-hamza": #004d40, "cmd4-final": #004d40, "cmd4-fem": #004d40,
+  "cmd5": #bf360c, "cmd-step5": #bf360c, "cmd5-final": #bf360c, "cmd5-fem": #bf360c,
+  "cmd-other1": #01579b, "cmd-other1-fem": #01579b, "cmd-other2": #33691e, "cmd-other2-fem": #33691e
+);
 
 
-// Telling Time
-$ar-color-t1: #00cec9; $en-color-t1: $ar-color-t1;
-$ar-color-t2: #6c5ce7; $en-color-t2: $ar-color-t2;
-$ar-color-t3: #fd79a8; $en-color-t3: $ar-color-t3;
-$ar-color-t4: #00b894; $en-color-t4: $ar-color-t4;
-
-// Dialogue 2 Specific Colors 
-$ar-color-d2-c1: #d63031; $en-color-d2-c1: $ar-color-d2-c1; 
-$ar-color-d2-c2: #0984e3; $en-color-d2-c2: $ar-color-d2-c2; 
-$ar-color-d2-c3: #6ab04c; $en-color-d2-c3: $ar-color-d2-c3; 
-$ar-color-d2-d1: #f0932b; $en-color-d2-d1: $ar-color-d2-d1; 
-$ar-color-d2-d2: #badc58; $en-color-d2-d2: $ar-color-d2-d2; 
-$ar-color-d2-d3: #6D214F; $en-color-d2-d3: $ar-color-d2-d3; 
-$ar-color-d2-e1: #ff7675; $en-color-d2-e1: $ar-color-d2-e1; 
-$ar-color-d2-e2: #00cec9; $en-color-d2-e2: $ar-color-d2-e2; 
-$ar-color-d2-e3: #bb8217; $en-color-d2-e3: $ar-color-d2-e3; 
-$ar-color-d2-e4: #2d3436; $en-color-d2-e4: $ar-color-d2-e4; 
-$ar-color-d2-f1: #6c5ce7; $en-color-d2-f1: $ar-color-d2-f1; 
-$ar-color-d2-f2: #fab1a0; $en-color-d2-f2: $ar-color-d2-f2; 
-$ar-color-d2-f3: #74b9ff; $en-color-d2-f3: $ar-color-d2-f3; 
-$ar-color-d2-g1: #e17055; $en-color-d2-g1: $ar-color-d2-g1; 
-$ar-color-d2-g2: #00b894; $en-color-d2-g2: $ar-color-d2-g2; 
-$ar-color-d2-g3: #c79e18; $en-color-d2-g3: $ar-color-d2-g3; 
-$ar-color-d2-g4: #d63031; $en-color-d2-g4: $ar-color-d2-g4; 
-$ar-color-d2-h1: #a29bfe; $en-color-d2-h1: $ar-color-d2-h1; 
-$ar-color-d2-h2: #fd79a8; $en-color-d2-h2: $ar-color-d2-h2; 
-$ar-color-d2-h3: #55efc4; $en-color-d2-h3: $ar-color-d2-h3; 
-$ar-color-d2-i1: #81ecec; $en-color-d2-i1: $ar-color-d2-i1; 
-$ar-color-d2-i2: #ee5253; $en-color-d2-i2: $ar-color-d2-i2; 
-$ar-color-d2-i3: #ff9f43; $en-color-d2-i3: $ar-color-d2-i3; 
-$ar-color-d2-i4: #0abde3; $en-color-d2-i4: $ar-color-d2-i4; 
-$ar-color-d2-j1: #10ac84; $en-color-d2-j1: $ar-color-d2-j1; 
-$ar-color-d2-j2: #5f27cd; $en-color-d2-j2: $ar-color-d2-j2; 
-$ar-color-d2-k1: #ff6b81; $en-color-d2-k1: $ar-color-d2-k1; 
-$ar-color-d2-k2: #3c40c6; $en-color-d2-k2: $ar-color-d2-k2; 
-$ar-color-d2-k3: #f53b57; $en-color-d2-k3: $ar-color-d2-k3; 
-$ar-color-d2-k4: #3c40c6; $en-color-d2-k4: $ar-color-d2-k4; 
-$ar-color-d2-l1: #05c46b; $en-color-d2-l1: $ar-color-d2-l1; 
-$ar-color-d2-l2: #00d8d6; $en-color-d2-l2: $ar-color-d2-l2; 
-$ar-color-d2-m1: #8c7ae6; $en-color-d2-m1: $ar-color-d2-m1; 
-$ar-color-d2-m2: #0be881; $en-color-d2-m2: $ar-color-d2-m2; 
-$ar-color-d2-m3: #ffc048; $en-color-d2-m3: $ar-color-d2-m3; 
-$ar-color-d2-n1: #c19d0f; $en-color-d2-n1: $ar-color-d2-n1; 
-$ar-color-d2-n2: #30336b; $en-color-d2-n2: $ar-color-d2-n2; 
-$ar-color-d2-n3: #ff7979; $en-color-d2-n3: $ar-color-d2-n3; 
-
-// Dialogue 2 Vocab
-$ar-color-d2-v1: #22a6b3; $en-color-d2-v1: $ar-color-d2-v1;
-$ar-color-d2-v2: #be2edd; $en-color-d2-v2: $ar-color-d2-v2;
-$ar-color-d2-v3: #60a3bc; $en-color-d2-v3: $ar-color-d2-v3;
-$ar-color-d2-v4: #e55039; $en-color-d2-v4: $ar-color-d2-v4;
-$ar-color-d2-v5: #f6b93b; $en-color-d2-v5: $ar-color-d2-v5;
-$ar-color-d2-v6: #EF5777; $en-color-d2-v6: $ar-color-d2-v6;
-$ar-color-d2-v7: #575fcf; $en-color-d2-v7: $ar-color-d2-v7;
-$ar-color-d2-v8: #0fb9b1; $en-color-d2-v8: $ar-color-d2-v8;
-$ar-color-d2-v9: #fa8231; $en-color-d2-v9: $ar-color-d2-v9;
-$ar-color-d2-v10: #4b4b4b; $en-color-d2-v10: $ar-color-d2-v10;
-$ar-color-d2-v11: #eb4d4b; $en-color-d2-v11: $ar-color-d2-v11; 
-
-// Dialogue 2 MCQ
-$ar-color-d2-x1: #f9ca24; $en-color-d2-x1: $ar-color-d2-x1;
-$ar-color-d2-x2: #7ed6df; $en-color-d2-x2: $ar-color-d2-x2;
-$ar-color-d2-x3: #e056fd; $en-color-d2-x3: $ar-color-d2-x3;
-$ar-color-d2-z1: #686de0; $en-color-d2-z1: $ar-color-d2-z1;
-$ar-color-d2-z2: #30336b; $en-color-d2-z2: $ar-color-d2-z2;
-$ar-color-d2-z3: #95afc0; $en-color-d2-z3: $ar-color-d2-z3;
-$ar-color-d2-z4: #222f3e; $en-color-d2-z4: $ar-color-d2-z4;
-$ar-color-d2-z5: #54a0ff; $en-color-d2-z5: $ar-color-d2-z5;
-$ar-color-d2-z6: #ff6b6b; $en-color-d2-z6: $ar-color-d2-z6;
-$ar-color-d2-z7: #1dd1a1; $en-color-d2-z7: $ar-color-d2-z7;
-$ar-color-d2-y1: #feca57; $en-color-d2-y1: $ar-color-d2-y1;
-$ar-color-d2-y2: #ff6b6b; $en-color-d2-y2: $ar-color-d2-y2;
-$ar-color-d2-y3: #48dbfb; $en-color-d2-y3: $ar-color-d2-y3;
-$ar-color-d2-w1: #1dd1a1; $en-color-d2-w1: $ar-color-d2-w1;
-$ar-color-d2-w2: #f368e0; $en-color-d2-w2: $ar-color-d2-w2;
-$ar-color-d2-w3: #ff9f43; $en-color-d2-w3: $ar-color-d2-w3;
-
-
-// Drag and Drop
-$ar-color-dd1: #6a89cc; $en-color-dd1: $ar-color-dd1;
-$ar-color-dd2: #4a69bd; $en-color-dd2: $ar-color-dd2;
-$ar-color-dd3: #1e3799; $en-color-dd3: $ar-color-dd3;
-$ar-color-dd4: #0c2461; $en-color-dd4: $ar-color-dd4;
-
-// Dialogue 3 Specific Colors
-// يمكنك نسخ الألوان من الحوار الثاني إذا أردت، أو اختيار ألوان جديدة
-// مثال على استخدام نفس ألوان الحوار الثاني مع تغيير البادئة:
-
-$ar-color-d3-a1: $ar-color-d2-c1; $en-color-d3-a1: $ar-color-d3-a1; // مَتَى
-$ar-color-d3-a2: $ar-color-d2-c2; $en-color-d3-a2: $ar-color-d3-a2; // تَسْتَيْقِظُ
-$ar-color-d3-a3: $ar-color-d2-c3; $en-color-d3-a3: $ar-color-d3-a3; // يَوْمَ
-$ar-color-d3-a4: $ar-color-d2-d1; $en-color-d3-a4: $ar-color-d3-a4; // الْعُطْلَةِ
-$ar-color-d3-b1: $ar-color-d2-d2; $en-color-d3-b1: $ar-color-d3-b1; // أَسْتَيْقِظُ
-$ar-color-d3-b2: $ar-color-d2-d3; $en-color-d3-b2: $ar-color-d3-b2; // مُبَكِّرًا
-$ar-color-d3-c1: $ar-color-d2-e1; $en-color-d3-c1: $ar-color-d3-c1; // وَمَتَى
-$ar-color-d3-c2: $ar-color-d2-e2; $en-color-d3-c2: $ar-color-d3-c2; // تَسْتَيْقِظُ
-$ar-color-d3-c3: $ar-color-d2-e3; $en-color-d3-c3: $ar-color-d3-c3; // أَنْتَ
-$ar-color-d3-d1: $ar-color-d2-f1; $en-color-d3-d1: $ar-color-d3-d1; // أَسْتَيْقِظُ
-$ar-color-d3-d2: $ar-color-d2-f2; $en-color-d3-d2: $ar-color-d3-d2; // مُتَأَخِّرًا
-
-$ar-color-d3-e1: $ar-color-d2-g1; $en-color-d3-e1: $ar-color-d3-e1; // مَاذَا
-$ar-color-d3-e2: $ar-color-d2-g2; $en-color-d3-e2: $ar-color-d3-e2; // تَفْعَلُ
-$ar-color-d3-e3: $ar-color-d2-g3; $en-color-d3-e3: $ar-color-d3-e3; // فِي
-$ar-color-d3-e4: $ar-color-d2-g4; $en-color-d3-e4: $ar-color-d3-e4; // الصَّبَاحِ
-$ar-color-d3-f1: $ar-color-d2-h1; $en-color-d3-f1: $ar-color-d3-f1; // أُشَاهِدُ
-$ar-color-d3-f2: $ar-color-d2-h2; $en-color-d3-f2: $ar-color-d3-f2; // التِّلْفَازَ
-$ar-color-d3-g1: $ar-color-d2-i1; $en-color-d3-g1: $ar-color-d3-g1; // وَمَاذَا
-$ar-color-d3-g2: $ar-color-d2-i2; $en-color-d3-g2: $ar-color-d3-g2; // تَفْعَلُ
-$ar-color-d3-g3: $ar-color-d2-i3; $en-color-d3-g3: $ar-color-d3-g3; // أَنْتَ
-$ar-color-d3-h1: $ar-color-d2-j1; $en-color-d3-h1: $ar-color-d3-h1; // أَقْرَأُ
-$ar-color-d3-h2: $ar-color-d2-j2; $en-color-d3-h2: $ar-color-d3-h2; // صَحِيفَةً
-$ar-color-d3-h3: $ar-color-d2-k1; $en-color-d3-h3: $ar-color-d3-h3; // أَوْ
-$ar-color-d3-h4: $ar-color-d2-k2; $en-color-d3-h4: $ar-color-d3-h4; // كِتَابًا
-
-$ar-color-d3-i1: $ar-color-d2-k3; $en-color-d3-i1: $ar-color-d3-i1; // أَيْنَ
-$ar-color-d3-i2: $ar-color-d2-k4; $en-color-d3-i2: $ar-color-d3-i2; // تُصَلِّي
-$ar-color-d3-i3: $ar-color-d2-l1; $en-color-d3-i3: $ar-color-d3-i3; // الْجُمُعَةَ
-$ar-color-d3-j1: $ar-color-d2-l2; $en-color-d3-j1: $ar-color-d3-j1; // أُصَلِّي
-$ar-color-d3-j2: $ar-color-d2-m1; $en-color-d3-j2: $ar-color-d3-j2; // الْجُمُعَةَ
-$ar-color-d3-j3: $ar-color-d2-m2; $en-color-d3-j3: $ar-color-d3-j3; // فِي
-$ar-color-d3-j4: $ar-color-d2-m3; $en-color-d3-j4: $ar-color-d3-j4; // الْمَسْجِدِ
-$ar-color-d3-j5: $ar-color-d2-n1; $en-color-d3-j5: $ar-color-d3-j5; // الْكَبِيرِ
-$ar-color-d3-k1: $ar-color-d2-n2; $en-color-d3-k1: $ar-color-d3-k1; // وَأَيْنَ
-$ar-color-d3-k2: $ar-color-d2-n3; $en-color-d3-k2: $ar-color-d3-k2; // تُصَلِّى
-$ar-color-d3-k3: $ar-color-d2-c1; $en-color-d3-k3: $ar-color-d3-k3; // أَنْتَ
-$ar-color-d3-l1: $ar-color-d2-d1; $en-color-d3-l1: $ar-color-d3-l1; // أُصَلِّي
-$ar-color-d3-l2: $ar-color-d2-e1; $en-color-d3-l2: $ar-color-d3-l2; // فِي
-$ar-color-d3-l3: $ar-color-d2-f1; $en-color-d3-l3: $ar-color-d3-l3; // الْمَسْجِدِ
-$ar-color-d3-l4: $ar-color-d2-g1; $en-color-d3-l4: $ar-color-d3-l4; // الْكَبِيرِ
-$ar-color-d3-l5: $ar-color-d2-h1; $en-color-d3-l5: $ar-color-d3-l5; // أَيْضًا
-
-// Dialogue 3 Vocab
-$ar-color-d3-v1: #00b894; $en-color-d3-v1: $ar-color-d3-v1; // مُبَكِّرًا
-$ar-color-d3-v2: #d63031; $en-color-d3-v2: $ar-color-d3-v2; // مُتَأَخِّرًا
-$ar-color-d3-v3: #e17055; $en-color-d3-v3: $ar-color-d3-v3; // الصَّبَاح
-$ar-color-d3-v4: #0984e3; $en-color-d3-v4: $ar-color-d3-v4; // أُشَاهِدُ
-$ar-color-d3-v5: #6c5ce7; $en-color-d3-v5: $ar-color-d3-v5; // التِّلْفَاز
-$ar-color-d3-v6: #fdcb6e; $en-color-d3-v6: $ar-color-d3-v6; // صَحِيفَة
-$ar-color-d3-v7: #a29bfe; $en-color-d3-v7: $ar-color-d3-v7; // كِتَاب
-$ar-color-d3-v8: #55efc4; $en-color-d3-v8: $ar-color-d3-v8; // كُتُب
-$ar-color-d3-v9: #74b9ff; $en-color-d3-v9: $ar-color-d3-v9; // الْجُمُعَة
-$ar-color-d3-v10: #fab1a0; $en-color-d3-v10: $ar-color-d3-v10; // الْكَبِير
-$ar-color-d3-v11: #00cec9; $en-color-d3-v11: $ar-color-d3-v11; // أَيْضًا
-
-// Dialogue 3 MCQ
-$ar-color-d3-x1: $ar-color-d2-x1; $en-color-d3-x1: $ar-color-d3-x1;
-$ar-color-d3-x2: $ar-color-d2-x2; $en-color-d3-x2: $ar-color-d3-x2;
-$ar-color-d3-x3: $ar-color-d2-x3; $en-color-d3-x3: $ar-color-d3-x3;
-$ar-color-d3-x4: $ar-color-d2-z1; $en-color-d3-x4: $ar-color-d3-x4;
-$ar-color-d3-x5: $ar-color-d2-z2; $en-color-d3-x5: $ar-color-d3-x5;
-$ar-color-d3-q1: $ar-color-d2-z3; $en-color-d3-q1: $ar-color-d3-q1;
-$ar-color-d3-q2: $ar-color-d2-z4; $en-color-d3-q2: $ar-color-d3-q2;
-$ar-color-d3-q3: $ar-color-d2-z5; $en-color-d3-q3: $ar-color-d3-q3;
-$ar-color-d3-q4: $ar-color-d2-z6; $en-color-d3-q4: $ar-color-d3-q4;
-$ar-color-d3-y1: $ar-color-d2-y1; $en-color-d3-y1: $ar-color-d3-y1;
-$ar-color-d3-y2: $ar-color-d2-y2; $en-color-d3-y2: $ar-color-d3-y2;
-$ar-color-d3-y3: $ar-color-d2-y3; $en-color-d3-y3: $ar-color-d3-y3;
-$ar-color-d3-y4: $ar-color-d2-w1; $en-color-d3-y4: $ar-color-d3-y4;
-$ar-color-d3-y5: $ar-color-d2-w2; $en-color-d3-y5: $ar-color-d3-y5;
-$ar-color-d3-q5: $ar-color-d2-w3; $en-color-d3-q5: $ar-color-d3-q5;
-$ar-color-d3-q6: $ar-color-d2-d1; $en-color-d3-q6: $ar-color-d3-q6;
-$ar-color-d3-q7: $ar-color-d2-e1; $en-color-d3-q7: $ar-color-d3-q7;
-$ar-color-d3-q8: $ar-color-d2-f1; $en-color-d3-q8: $ar-color-d3-q8;
-$ar-color-d3-q9: $ar-color-d2-g1; $en-color-d3-q9: $ar-color-d3-q9;
-$ar-color-d3-q10: $ar-color-d2-h1; $en-color-d3-q10: $ar-color-d3-q10;
-$ar-color-d3-q11: $ar-color-d2-i1; $en-color-d3-q11: $ar-color-d3-q11;
-$ar-color-d3-q12: $ar-color-d2-j1; $en-color-d3-q12: $ar-color-d3-q12;
-$ar-color-d3-q13: $ar-color-d2-k1; $en-color-d3-q13: $ar-color-d3-q13;
-$ar-color-d3-q14: $ar-color-d2-l1; $en-color-d3-q14: $ar-color-d3-q14;
-$ar-color-d3-z1: $ar-color-d2-m1; $en-color-d3-z1: $ar-color-d3-z1;
-$ar-color-d3-z2: $ar-color-d2-n1; $en-color-d3-z2: $ar-color-d3-z2;
-$ar-color-d3-z3: $ar-color-d2-c2; $en-color-d3-z3: $ar-color-d3-z3;
-$ar-color-d3-z4: $ar-color-d2-d2; $en-color-d3-z4: $ar-color-d3-z4;
-$ar-color-d3-q15: $ar-color-d2-e2; $en-color-d3-q15: $ar-color-d3-q15;
-$ar-color-d3-q16: $ar-color-d2-f2; $en-color-d3-q16: $ar-color-d3-q16;
-$ar-color-d3-q17: $ar-color-d2-g2; $en-color-d3-q17: $ar-color-d3-q17;
-$ar-color-d3-q18: $ar-color-d2-h2; $en-color-d3-q18: $ar-color-d3-q18;
-$ar-color-d3-q19: $ar-color-d2-i2; $en-color-d3-q19: $ar-color-d3-q19;
-$ar-color-d3-q20: $ar-color-d2-j2; $en-color-d3-q20: $ar-color-d3-q20;
-$ar-color-d3-q21: $ar-color-d2-k2; $en-color-d3-q21: $ar-color-d3-q21;
-$ar-color-d3-q22: $ar-color-d2-l2; $en-color-d3-q22: $ar-color-d3-q22;
+// Chapter 5
+$ch5_colors: (
+  // Dialogue 1
+  "ch5-a1": #d32f2f, "ch5-a2": #c2185b, "ch5-a3": #7b1fa2, "ch5-a4": #512da8,
+  "ch5-b1": #303f9f, "ch5-b2": #1976d2, "ch5-c1": #0288d1, "ch5-c2": #0097a7, "ch5-c3": #00796b, "ch5-c4": #388e3c, "ch5-c5": #558b2f,
+  "ch5-d1": #689f38, "ch5-d2": #afb42b, "ch5-d3": #fbc02d, "ch5-d4": #ffa000, "ch5-d5": #f57c00, "ch5-d6": #e64a19,
+  "ch5-e1": #5d4037, "ch5-e2": #616161, "ch5-e3": #455a64, "ch5-e4": #d32f2f, "ch5-e5": #c2185b, "ch5-e6": #7b1fa2, "ch5-e7": #512da8,
+  "ch5-f1": #303f9f, "ch5-f2": #1976d2, "ch5-f3": #0288d1,
+  "ch5-g1": #0097a7, "ch5-g2": #00796b, "ch5-g3": #388e3c, "ch5-g4": #558b2f,
+  "ch5-h1": #689f38, "ch5-h2": #afb42b, "ch5-h3": #fbc02d, "ch5-h4": #ffa000, "ch5-h5": #f57c00, "ch5-h6": #e64a19,
+  "ch5-i1": #5d4037, "ch5-i2": #616161, "ch5-i3": #455a64, "ch5-i4": #d32f2f,
+  "ch5-j1": #c2185b, "ch5-j2": #7b1fa2, "ch5-k1": #512da8, "ch5-k2": #303f9f, "ch5-k3": #1976d2, "ch5-k4": #0288d1, "ch5-k5": #0097a7,
+  "ch5-l1": #00796b, "ch5-l2": #388e3c, "ch5-m1": #558b2f, "ch5-m2": #689f38, "ch5-m3": #afb42b,
+  "ch5-n1": #fbc02d, "ch5-n2": #ffa000, "ch5-n3": #f57c00,
+  // Dialogue 1 Vocab
+  "ch5-v1": #d32f2f, "ch5-v2": #c2185b, "ch5-v3": #7b1fa2, "ch5-v4": #512da8, "ch5-v5": #303f9f, "ch5-v6": #1976d2, "ch5-v7": #0288d1, "ch5-v8": #0097a7, "ch5-v9": #00796b, "ch5-v10": #388e3c, "ch5-v11": #558b2f, "ch5-v12": #689f38, "ch5-v13": #afb42b, "ch5-v14": #fbc02d, "ch5-v15": #ffa000, "ch5-v16": #f57c00, "ch5-v17": #e64a19, "ch5-v18": #5d4037, "ch5-v19": #616161,
+  // Dialogue 2
+  "ch5d2-a1": #004d40, "ch5d2-a2": #00695c, "ch5d2-a3": #00796b, "ch5d2-a4": #00897b,
+  "ch5d2-b1": #009688, "ch5d2-b2": #26a69a, "ch5d2-b3": #4db6ac, "ch5d2-b4": #80cbc4,
+  "ch5d2-c1": #e53935, "ch5d2-c2": #d81b60, "ch5d2-c3": #c2185b, "ch5d2-c4": #ad1457,
+  "ch5d2-d1": #880e4f, "ch5d2-d2": #9c27b0, "ch5d2-e1": #ab47bc, "ch5d2-e2": #ba68c8, "ch5d2-e3": #ce93d8, "ch5d2-e4": #e1bee7,
+  "ch5d2-f1": #4527a0, "ch5d2-f2": #512da8, "ch5d2-f3": #5e35b1,
+  "ch5d2-g1": #673ab7, "ch5d2-g2": #7e57c2, "ch5d2-g3": #9575cd,
+  "ch5d2-h1": #b39ddb, "ch5d2-h2": #d1c4e9, "ch5d2-h3": #283593,
+  "ch5d2-i1": #303f9f, "ch5d2-i2": #3949ab, "ch5d2-j1": #3f51b5, "ch5d2-j2": #5c6bc0, "ch5d2-j3": #7986cb,
+  "ch5d2-k1": #9fa8da, "ch5d2-k2": #c5cae9, "ch5d2-k3": #1565c0, "ch5d2-k4": #1976d2,
+  "ch5d2-l1": #1e88e5, "ch5d2-l2": #2196f3, "ch5d2-m1": #42a5f5,
+  // Dialogue 2 Vocab
+  "ch5d2-v1": #004d40, "ch5d2-v2": #d81b60, "ch5d2-v3": #880e4f, "ch5d2-v4": #4527a0, "ch5d2-v5": #283593, "ch5d2-v6": #1565c0, "ch5d2-v7": #e65100, "ch5d2-v8": #3e2723, "ch5d2-v9": #212121, "ch5d2-v10": #bf360c, "ch5d2-v11": #2e7d32, "ch5d2-v12": #ad1457, "ch5d2-v13": #9e9d24, "ch5d2-v14": #f9a825, "ch5d2-v15": #4e342e, "ch5d2-v16": #006064,
+  // Dialogue 3
+  "ch5d3-a1": #33691e, "ch5d3-a2": #558b2f, "ch5d3-b1": #7cb342, "ch5d3-b2": #9ccc65,
+  "ch5d3-c1": #aed581, "ch5d3-c2": #c5e1a5, "ch5d3-c3": #dcedc8,
+  "ch5d3-d1": #f57f17, "ch5d3-d2": #f9a825, "ch5d3-d3": #fbc02d,
+  "ch5d3-e1": #e65100, "ch5d3-f1": #ef6c00, "ch5d3-f2": #f57c00, "ch5d3-f3": #fb8c00,
+  "ch5d3-g1": #ff8f00, "ch5d3-h1": #bf360c, "ch5d3-h2": #d84315,
+  "ch5d3-i1": #e64a19, "ch5d3-j1": #f4511e, "ch5d3-j2": #ff5722, "ch5d3-j3": #ff7043,
+  "ch5d3-k1": #ff8a65, "ch5d3-k2": #ffab91, "ch5d3-l1": #3e2723, "ch5d3-l2": #4e342e, "ch5d3-l3": #5d4037
+);
 
 
 
 
-// START: Chapter 5 - Food and Drink Colors (الوحدة الخامسة: الطعام والشراب)
-// --------------------------------------------------------------------
+// Chapter 6
+$ch6_colors: (
+  // Title & Header
+  "ch6-title-1": #e94560, "ch6-title-2": #16c79a, "ch6-title-3": #a9780f,
+  // Dialogue 1 (الألوان السابقة كما هي)
+  "ch6-a1": #4a90e2, "ch6-a2": #50e3c2, "ch6-a3": #b8e986, "ch6-a4": #f5a623,
+  "ch6-b1": #f8e71c, "ch6-b2": #7ed321, "ch6-b3": #417505, "ch6-b4": #bd10e0,
+  "ch6-c1": #9013fe, "ch6-c2": #4a4a4a, "ch6-d1": #d0021b, "ch6-d2": #b8e986,
+  "ch6-e1": #f5a623, "ch6-e2": #f8e71c, "ch6-f1": #7ed321, "ch6-f2": #417505,
+  "ch6-g1": #bd10e0, "ch6-g2": #9013fe, "ch6-g3": #4a4a4a, "ch6-h1": #d0021b,
+  "ch6-h2": #4a90e2, "ch6-i1": #50e3c2, "ch6-i2": #b8e986, "ch6-j1": #f5a623,
+  "ch6-j2": #f8e71c, "ch6-k1": #7ed321, "ch6-k2": #417505, "ch6-k3": #bd10e0,
+  "ch6-l1": #9013fe, "ch6-l2": #4a4a4a,
+  // Dialogue 1 Vocab
+  "ch6-v1": #0d47a1, "ch6-v1-ex": #1565c0, "ch6-v2": #b71c1c, "ch6-v2-ex": #c62828,
+  "ch6-v3": #2e7d32, "ch6-v3-ex": #388e3c, "ch6-v4": #ff6f00, "ch6-v5": #4a148c,
+  "ch6-v6": #3e2723, "ch6-v7": #006064, "ch6-v7-op": #bf360c, "ch6-v7-op2": #8d6e63,
+  "ch6-v8": #263238, "ch6-v8-op": #b2a429,
 
-// Dialogue Colors for Chapter 5 (ألوان حوار الفصل الخامس)
-$ar-color-ch5-a1: #4CAF50; $en-color-ch5-a1: $ar-color-ch5-a1; // أَيْنَ
-$ar-color-ch5-a2: #FFC107; $en-color-ch5-a2: $ar-color-ch5-a2; // تَذْهَبُ
-$ar-color-ch5-a3: #2196F3; $en-color-ch5-a3: $ar-color-ch5-a3; // يَا
-$ar-color-ch5-a4: #9C27B0; $en-color-ch5-a4: $ar-color-ch5-a4; // سَالِمُ
-$ar-color-ch5-b1: #E91E63; $en-color-ch5-b1: $ar-color-ch5-b1; // إِلَى
-$ar-color-ch5-b2: #3F51B5; $en-color-ch5-b2: $ar-color-ch5-b2; // الْمَطْعَمِ
-$ar-color-ch5-c1: #00BCD4; $en-color-ch5-c1: $ar-color-ch5-c1; // كَمْ
-$ar-color-ch5-c2: #8BC34A; $en-color-ch5-c2: $ar-color-ch5-c2; // وَجْبَةً
-$ar-color-ch5-c3: #FF9800; $en-color-ch5-c3: $ar-color-ch5-c3; // تَأْكُلُ
-$ar-color-ch5-c4: #03A9F4; $en-color-ch5-c4: $ar-color-ch5-c4; // فِي
-$ar-color-ch5-c5: #673AB7; $en-color-ch5-c5: $ar-color-ch5-c5; // الْيَوْمِ
-$ar-color-ch5-d1: #F44336; $en-color-ch5-d1: $ar-color-ch5-d1; // آكُلُ
-$ar-color-ch5-d2: #4CAF50; $en-color-ch5-d2: $ar-color-ch5-d2; // ثَلَاثَ
-$ar-color-ch5-d3: #FFEB3B; $en-color-ch5-d3: $ar-color-ch5-d3; // وَجَبَاتٍ
-$ar-color-ch5-d4: #2196F3; $en-color-ch5-d4: $ar-color-ch5-d4; // الْفَطُورَ
-$ar-color-ch5-d5: #9C27B0; $en-color-ch5-d5: $ar-color-ch5-d5; // وَالْغَدَاءَ
-$ar-color-ch5-d6: #E91E63; $en-color-ch5-d6: $ar-color-ch5-d6; // وَالْعَشَاءَ
-$ar-color-ch5-e1: #3F51B5; $en-color-ch5-e1: $ar-color-ch5-e1; // هَذَا
-$ar-color-ch5-e2: #00BCD4; $en-color-ch5-e2: $ar-color-ch5-e2; // كَثِيرٌ
-$ar-color-ch5-e3: #8BC34A; $en-color-ch5-e3: $ar-color-ch5-e3; // جِدًّا
-$ar-color-ch5-e4: #FF9800; $en-color-ch5-e4: $ar-color-ch5-e4; // أَنَا
-$ar-color-ch5-e5: #03A9F4; $en-color-ch5-e5: $ar-color-ch5-e5; // آكُلُ
-$ar-color-ch5-e6: #673AB7; $en-color-ch5-e6: $ar-color-ch5-e6; // وَجْبَةً
-$ar-color-ch5-e7: #F44336; $en-color-ch5-e7: $ar-color-ch5-e7; // وَاحِدَةً
-$ar-color-ch5-f1: #4CAF50; $en-color-ch5-f1: $ar-color-ch5-f1; // هَذَا (تكرار للون e1)
-$ar-color-ch5-f2: #CDDC39; $en-color-ch5-f2: $ar-color-ch5-f2; // قَلِيلٌ
-$ar-color-ch5-f3: #2196F3; $en-color-ch5-f3: $ar-color-ch5-f3; // جِدًّا (تكرار للون e3)
-$ar-color-ch5-g1: #9C27B0; $en-color-ch5-g1: $ar-color-ch5-g1; // مَاذَا
-$ar-color-ch5-g2: #E91E63; $en-color-ch5-g2: $ar-color-ch5-g2; // تَأْكُلُ (تكرار للون c3)
-$ar-color-ch5-g3: #3F51B5; $en-color-ch5-g3: $ar-color-ch5-g3; // فِي (تكرار للون c4)
-$ar-color-ch5-g4: #00BCD4; $en-color-ch5-g4: $ar-color-ch5-g4; // الْغَدَاءِ
-$ar-color-ch5-h1: #8BC34A; $en-color-ch5-h1: $ar-color-ch5-h1; // آكُلُ (تكرار للون d1)
-$ar-color-ch5-h2: #FF5722; $en-color-ch5-h2: $ar-color-ch5-h2; // الْأَرُزَّ
-$ar-color-ch5-h3: #795548; $en-color-ch5-h3: $ar-color-ch5-h3; // وَالْخُبْزَ
-$ar-color-ch5-h4: #FFEB3B; $en-color-ch5-h4: $ar-color-ch5-h4; // وَمَاذَا
-$ar-color-ch5-h5: #03A9F4; $en-color-ch5-h5: $ar-color-ch5-h5; // تَأْكُلُ (تكرار للون c3)
-$ar-color-ch5-h6: #607D8B; $en-color-ch5-h6: $ar-color-ch5-h6; // أَنْتَ
-$ar-color-ch5-i1: #F44336; $en-color-ch5-i1: $ar-color-ch5-i1; // آكُلُ (تكرار للون d1)
-$ar-color-ch5-i2: #4CAF50; $en-color-ch5-i2: $ar-color-ch5-i2; // السَّمَكَ
-$ar-color-ch5-i3: #FFC107; $en-color-ch5-i3: $ar-color-ch5-i3; // وَالسَّلَطَةَ
-$ar-color-ch5-i4: #2196F3; $en-color-ch5-i4: $ar-color-ch5-i4; // وَالْفَاكِهَةَ
-$ar-color-ch5-j1: #9C27B0; $en-color-ch5-j1: $ar-color-ch5-j1; // مَا
-$ar-color-ch5-j2: #E91E63; $en-color-ch5-j2: $ar-color-ch5-j2; // وَزْنُكَ
-$ar-color-ch5-k1: #3F51B5; $en-color-ch5-k1: $ar-color-ch5-k1; // سِتُّونَ
-$ar-color-ch5-k2: #00BCD4; $en-color-ch5-k2: $ar-color-ch5-k2; // كِيلًا
-$ar-color-ch5-k3: #8BC34A; $en-color-ch5-k3: $ar-color-ch5-k3; // وَمَا
-$ar-color-ch5-k4: #FF9800; $en-color-ch5-k4: $ar-color-ch5-k4; // وَزْنُكَ (تكرار للون j2)
-$ar-color-ch5-k5: #03A9F4; $en-color-ch5-k5: $ar-color-ch5-k5; // أَنْتَ (تكرار للون h6)
-$ar-color-ch5-l1: #673AB7; $en-color-ch5-l1: $ar-color-ch5-l1; // مِائَةُ
-$ar-color-ch5-l2: #F44336; $en-color-ch5-l2: $ar-color-ch5-l2; // كِيلٍ
-$ar-color-ch5-m1: #4CAF50; $en-color-ch5-m1: $ar-color-ch5-m1; // أَنْتَ (تكرار للون h6)
-$ar-color-ch5-m2: #CDDC39; $en-color-ch5-m2: $ar-color-ch5-m2; // سَمِينٌ
-$ar-color-ch5-m3: #2196F3; $en-color-ch5-m3: $ar-color-ch5-m3; // جِدًّا (تكرار للون e3)
-$ar-color-ch5-n1: #9C27B0; $en-color-ch5-n1: $ar-color-ch5-n1; // وَأَنْتَ
-$ar-color-ch5-n2: #E91E63; $en-color-ch5-n2: $ar-color-ch5-n2; // نَحِيفٌ
-$ar-color-ch5-n3: #3F51B5; $en-color-ch5-n3: $ar-color-ch5-n3; // جِدًّا (تكرار للون e3)
+  // =======================================================
+  // ==== ألوان الحوار الثاني للوحدة السادسة (بتباين عالي) ====
+  // =======================================================
+  // Dialogue 2
+  "ch6d2-a1": #D92B2B, "ch6d2-a2": #D92B2B,
+  "ch6d2-b1": #1A8CFF, "ch6d2-b2": #1A8CFF,
+  "ch6d2-c1": #FFD700, "ch6d2-c2": #B29600, "ch6d2-c3": #32CD32, "ch6d2-c4": #228B22, "ch6d2-c5": #FF69B4, "ch6d2-c6": #FF1493, "ch6d2-c7": #C71585, "ch6d2-c8": #DB7093,
+  "ch6d2-d1": #9932CC,
+  "ch6d2-e1": #FF4500, "ch6d2-e2": #FF4500,
+  "ch6d2-f1": #20B2AA, "ch6d2-f2": #2E8B57,
+  "ch6d2-g1": #6A5ACD, "ch6d2-g2": #483D8B,
+  "ch6d2-h1": #DC143C, "ch6d2-h2": #B22222,
+  "ch6d2-i1": #00CED1,
+  "ch6d2-j1": #FF8C00, "ch6d2-j2": #FF7F50, "ch6d2-j3": #FFA07A,
+  "ch6d2-k1": #3CB371, "ch6d2-k2": #2E8B57,
+  
+  // Dialogue 2 Vocab & MCQ
+  "ch6d2-v1": #8B008B, "ch6d2-v2": #FF8C00, "ch6d2-v3": #008080, "ch6d2-v4": #B8860B, "ch6d2-v5": #00008B, "ch6d2-v6": #006400, "ch6d2-v7": #8B0000, "ch6d2-v8": #556B2F,  
 
+  // MCQ Colors for Dialogue 2
+  "ch6d2-q1a": #D92B2B, "ch6d2-q1b": #1A8CFF, "ch6d2-q1c": #9932CC, "ch6d2-q1d": #FF4500, "ch6d2-q1e": #20B2AA,
 
-// Vocabulary Colors for Chapter 5 (ألوان مفردات الفصل الخامس)
-$ar-color-ch5-v1: #7E57C2; $en-color-ch5-v1: $ar-color-ch5-v1;   // الْمَطْعَم
-$ar-color-ch5-v2: #5C6BC0; $en-color-ch5-v2: $ar-color-ch5-v2;   // وَجْبَة
-$ar-color-ch5-v3: #42A5F5; $en-color-ch5-v3: $ar-color-ch5-v3;   // يَأْكُلُ
-$ar-color-ch5-v4: #29B6F6; $en-color-ch5-v4: $ar-color-ch5-v4;   // الْفَطُور
-$ar-color-ch5-v5: #26A69A; $en-color-ch5-v5: $ar-color-ch5-v5;   // الْغَدَاء
-$ar-color-ch5-v6: #66BB6A; $en-color-ch5-v6: $ar-color-ch5-v6;   // الْعَشَاء
-$ar-color-ch5-v7: #9CCC65; $en-color-ch5-v7: $ar-color-ch5-v7;   // كَثِير
-$ar-color-ch5-v8: #D4E157; $en-color-ch5-v8: $ar-color-ch5-v8;   // قَلِيل
-$ar-color-ch5-v9: #FFEE58; $en-color-ch5-v9: $ar-color-ch5-v9;   // الْأَرُزّ
-$ar-color-ch5-v10: #FFCA28; $en-color-ch5-v10: $ar-color-ch5-v10; // الْخُبْز
-$ar-color-ch5-v11: #FFA726; $en-color-ch5-v11: $ar-color-ch5-v11; // السَّمَك
-$ar-color-ch5-v12: #FF7043; $en-color-ch5-v12: $ar-color-ch5-v12; // السَّلَطَة
-$ar-color-ch5-v13: #EC407A; $en-color-ch5-v13: $ar-color-ch5-v13; // الْفَاكِهَة
-$ar-color-ch5-v14: #AB47BC; $en-color-ch5-v14: $ar-color-ch5-v14; // وَزْن
-$ar-color-ch5-v15: #8D6E63; $en-color-ch5-v15: $ar-color-ch5-v15; // مِيزَان
-$ar-color-ch5-v16: #78909C; $en-color-ch5-v16: $ar-color-ch5-v16; // كِيلُو
-$ar-color-ch5-v17: #BDBDBD; $en-color-ch5-v17: $ar-color-ch5-v17; // كِيلًا
-$ar-color-ch5-v18: #EF5350; $en-color-ch5-v18: $ar-color-ch5-v18; // سَمِين
-$ar-color-ch5-v19: #73c48f; $en-color-ch5-v19: $ar-color-ch5-v19; // نَحِيف
+  // =======================================================
+  // ==== START: ألوان الحوار الثالث للوحدة السادسة ====
+  // =======================================================
+  // Dialogue 3
+  "ch6d3-a1": #007bff, "ch6d3-a2": #6f42c1, "ch6d3-a3": #28a745,
+  "ch6d3-b1": #fd7e14, "ch6d3-b2": #fd7e14, "ch6d3-b3": #e83e8c, "ch6d3-b4": #20c997,
+  "ch6d3-c1": #17a2b8, "ch6d3-c2": #dc3545, "ch6d3-c3": #ffc107,
+  "ch6d3-d1": #6610f2, "ch6d3-d2": #343a40,
+  "ch6d3-e1": #007bff, "ch6d3-e2": #28a745,
+  "ch6d3-f1": #fd7e14, "ch6d3-f2": #6f42c1,
+  "ch6d3-g1": #e83e8c, "ch6d3-g2": #20c997,
+  "ch6d3-h1": #17a2b8,
+  "ch6d3-i1": #dc3545,
+  "ch6d3-j1": #ffc107, "ch6d3-j2": #6610f2,
+  "ch6d3-k1": #343a40,
+  "ch6d3-l1": #007bff, "ch6d3-l2": #28a745,
+  
+  // Dialogue 3 Vocabulary
+  "ch6d3-v1": #16a085, "ch6d3-v1-op": #c0392b,
+  "ch6d3-v2": #2980b9, "ch6d3-v2-op": #8e44ad,
+  "ch6d3-v3": #d35400, "ch6d3-v3-op": #27ae60,
+  "ch6d3-v4": #f39c12, "ch6d3-v4-op": #3498db,
+  "ch6d3-v5": #7f8c8d,
+  "ch6d3-v6": #e74c3c,
+  "ch6d3-v7": #9b59b6
+  // =======================================================
+  // ==== END: ألوان الحوار الثالث للوحدة السادسة   ====
+  // =======================================================
+);
+// =======================================================
+// ==== START: ألوان الحوار الأول للوحدة السابعة (الدراسة) ====
+// =======================================================
+$ch7_colors: (
+  // Title Colors
+  "ch7-title-1": #1a237e, // Deep Blue
+  "ch7-title-2": #388e3c, // Strong Green
+  "ch7-title-3": #fbc02d, // Bright Yellow
 
+  // Dialogue 1 Colors (high contrast)
+  "ch7-a1": #d32f2f, // Red
+  "ch7-a2": #1976d2, // Blue
+  "ch7-b1": #388e3c, // Green
+  "ch7-c1": #fbc02d, // Yellow
+  "ch7-d1": #7b1fa2, // Purple
+  "ch7-e1": #f57c00, // Orange
+  "ch7-f1": #0288d1, "ch7-f2": #c2185b, // Cyan, Magenta
+  "ch7-g1": #512da8, // Indigo
+  "ch7-h1": #c62828, // Dark Red
+  "ch7-i1": #0097a7, // Teal
+  "ch7-j1": #ffeb3b, // Bright Yellow
+  "ch7-k1": #2e7d32, // Dark Green
+  "ch7-l1": #e65100, // Deep Orange
+  "ch7-m1": #1565c0, // Strong Blue
 
-// MCQ Option Colors for Chapter 5 (ألوان خيارات أسئلة الفصل الخامس - يمكنك تركها كما هي إذا كانت الألوان عامة للأسئلة)
-// إذا كنت تريد ألوانًا مميزة لخيارات أسئلة هذا الفصل، يمكنك تعريفها هنا:
-// $ar-color-ch5-q1-opt-a: #someColor; $en-color-ch5-q1-opt-a: $ar-color-ch5-q1-opt-a;
-// ولكن عادة ما تكون ألوان الخيارات موحدة. الكود الحالي للـ MCQ لا يستخدم كلاسات ألوان مخصصة للخيارات.
+  // Dialogue 1 Vocabulary (high contrast)
+  "ch7-v1": #e53935, // Red
+  "ch7-v2": #8e24aa, // Purple
+  "ch7-v3": #3949ab, // Blue
+  "ch7-v4": #00897b, // Teal
+  "ch7-v5": #fbc02d, // Yellow
+  "ch7-v6": #43a047, // Green
+  "ch7-v7": #d81b60, // Pink
+  "ch7-v8": #5e35b1  // Violet
+);
+// =======================================================
+// ==== END: ألوان الحوار الأول للوحدة السابعة   ====
+// =======================================================
 
-// END: Chapter 5 - Food and Drink Colors
-// --------------------------------------------------------------------
-// START: Chapter 5 - Food and Drink - Dialogue 2 Colors
-// --------------------------------------------------------------------
-// Dialogue Colors for Chapter 5 - Dialogue 2 (Hostess & Traveler)
-$ar-color-ch5d2-a1: #A569BD; $en-color-ch5d2-a1: $ar-color-ch5d2-a1; // مَاذَا
-$ar-color-ch5d2-a2: #5499C7; $en-color-ch5d2-a2: $ar-color-ch5d2-a2; // تَطْلُبِينَ
-$ar-color-ch5d2-a3: #48C9B0; $en-color-ch5d2-a3: $ar-color-ch5d2-a3; // مِنَ
-$ar-color-ch5d2-a4: #F4D03F; $en-color-ch5d2-a4: $ar-color-ch5d2-a4; // الطَّعَامِ
-$ar-color-ch5d2-b1: #E67E22; $en-color-ch5d2-b1: $ar-color-ch5d2-b1; // بَعْضَ
-$ar-color-ch5d2-b2: #5DADE2; $en-color-ch5d2-b2: $ar-color-ch5d2-b2; // السَّمَكِ
-$ar-color-ch5d2-b3: #52BE80; $en-color-ch5d2-b3: $ar-color-ch5d2-b3; // وَالأَرُزِّ
-$ar-color-ch5d2-b4: #F5B041; $en-color-ch5d2-b4: $ar-color-ch5d2-b4; // مِنْ (تكرار أو لون جديد)
-$ar-color-ch5d2-b5: #DC7633; $en-color-ch5d2-b5: $ar-color-ch5d2-b5; // فَضْلِكِ
-$ar-color-ch5d2-c1: #AF7AC5; $en-color-ch5d2-c1: $ar-color-ch5d2-c1; // وَمَاذَا
-$ar-color-ch5d2-c2: #5DADE2; $en-color-ch5d2-c2: $ar-color-ch5d2-c2; // تَطْلُبِينَ (تكرار a2)
-$ar-color-ch5d2-c3: #45B39D; $en-color-ch5d2-c3: $ar-color-ch5d2-c3; // مِنَ (تكرار a3)
-$ar-color-ch5d2-c4: #F7DC6F; $en-color-ch5d2-c4: $ar-color-ch5d2-c4; // الشَّرَابِ
-$ar-color-ch5d2-d1: #EB984E; $en-color-ch5d2-d1: $ar-color-ch5d2-d1; // مَاءً
-$ar-color-ch5d2-d2: #5DADE2; $en-color-ch5d2-d2: $ar-color-ch5d2-d2; // مِنْ (تكرار b4)
-$ar-color-ch5d2-d3: #A569BD; $en-color-ch5d2-d3: $ar-color-ch5d2-d3; // فَضْلِكِ (تكرار b5)
-$ar-color-ch5d2-e1: #5499C7; $en-color-ch5d2-e1: $ar-color-ch5d2-e1; // وَمَاذَا (تكرار c1)
-$ar-color-ch5d2-e2: #48C9B0; $en-color-ch5d2-e2: $ar-color-ch5d2-e2; // تُفَضِّلِينَ
-$ar-color-ch5d2-e3: #F4D03F; $en-color-ch5d2-e3: $ar-color-ch5d2-e3; // مِنَ (تكرار a3)
-$ar-color-ch5d2-e4: #E67E22; $en-color-ch5d2-e4: $ar-color-ch5d2-e4; // الفَاكِهَةِ
-$ar-color-ch5d2-f1: #5DADE2; $en-color-ch5d2-f1: $ar-color-ch5d2-f1; // التَّمْرَ
-$ar-color-ch5d2-f2: #52BE80; $en-color-ch5d2-f2: $ar-color-ch5d2-f2; // أَوِ
-$ar-color-ch5d2-f3: #F5B041; $en-color-ch5d2-f3: $ar-color-ch5d2-f3; // العِنَبَ
-$ar-color-ch5d2-g1: #DC7633; $en-color-ch5d2-g1: $ar-color-ch5d2-g1; // هَلْ
-$ar-color-ch5d2-g2: #AF7AC5; $en-color-ch5d2-g2: $ar-color-ch5d2-g2; // تَشْرَبِينَ
-$ar-color-ch5d2-g3: #5DADE2; $en-color-ch5d2-g3: $ar-color-ch5d2-g3; // الشَّايَ
-$ar-color-ch5d2-h1: #45B39D; $en-color-ch5d2-h1: $ar-color-ch5d2-h1; // لا
-$ar-color-ch5d2-h2: #F7DC6F; $en-color-ch5d2-h2: $ar-color-ch5d2-h2; // أُفَضِّلُ
-$ar-color-ch5d2-h3: #EB984E; $en-color-ch5d2-h3: $ar-color-ch5d2-h3; // القَهْوَةَ
-$ar-color-ch5d2-i1: #5DADE2; $en-color-ch5d2-i1: $ar-color-ch5d2-i1; // القَهْوَةَ (تكرار h3)
-$ar-color-ch5d2-i2: #A569BD; $en-color-ch5d2-i2: $ar-color-ch5d2-i2; // بِالحَلِيبِ
-$ar-color-ch5d2-j1: #5499C7; $en-color-ch5d2-j1: $ar-color-ch5d2-j1; // نَعَمْ
-$ar-color-ch5d2-j2: #48C9B0; $en-color-ch5d2-j2: $ar-color-ch5d2-j2; // القَهْوَةَ (تكرار h3)
-$ar-color-ch5d2-j3: #F4D03F; $en-color-ch5d2-j3: $ar-color-ch5d2-j3; // بِالحَلِيبِ (تكرار i2)
-$ar-color-ch5d2-k1: #E67E22; $en-color-ch5d2-k1: $ar-color-ch5d2-k1; // هَلْ (تكرار g1)
-$ar-color-ch5d2-k2: #5DADE2; $en-color-ch5d2-k2: $ar-color-ch5d2-k2; // تُرِيدِينَ
-$ar-color-ch5d2-k3: #52BE80; $en-color-ch5d2-k3: $ar-color-ch5d2-k3; // شَيْئًا
-$ar-color-ch5d2-k4: #F5B041; $en-color-ch5d2-k4: $ar-color-ch5d2-k4; // آخَرَ
-$ar-color-ch5d2-l1: #DC7633; $en-color-ch5d2-l1: $ar-color-ch5d2-l1; // لا (تكرار h1)
-$ar-color-ch5d2-l2: #AF7AC5; $en-color-ch5d2-l2: $ar-color-ch5d2-l2; // وَشُكْرًا
-$ar-color-ch5d2-m1: #5DADE2; $en-color-ch5d2-m1: $ar-color-ch5d2-m1; // عَفْوًا
+// ... داخل ملف _variables.scss ...
 
-// Vocabulary Colors for Chapter 5 - Dialogue 2 (Hostess & Traveler)
-$ar-color-ch5d2-v1: #c0392b; $en-color-ch5d2-v1: $ar-color-ch5d2-v1; // الْمُضِيفَة
-$ar-color-ch5d2-v2: #27ae60; $en-color-ch5d2-v2: $ar-color-ch5d2-v2; // الْمُسَافِرَة
-$ar-color-ch5d2-v3: #2980b9; $en-color-ch5d2-v3: $ar-color-ch5d2-v3; // تَطْلُبِينَ
-$ar-color-ch5d2-v4: #8e44ad; $en-color-ch5d2-v4: $ar-color-ch5d2-v4; // مِنْ فَضْلِكِ
-$ar-color-ch5d2-v5: #f39c12; $en-color-ch5d2-v5: $ar-color-ch5d2-v5; // مَاءً
-$ar-color-ch5d2-v6: #d35400; $en-color-ch5d2-v6: $ar-color-ch5d2-v6; // تُفَضِّلِينَ
-$ar-color-ch5d2-v7: #16a085; $en-color-ch5d2-v7: $ar-color-ch5d2-v7; // أُفَضِّلُ
-$ar-color-ch5d2-v8: #2c3e50; $en-color-ch5d2-v8: $ar-color-ch5d2-v8; // التَّمْر
-$ar-color-ch5d2-v9: #7f8c8d; $en-color-ch5d2-v9: $ar-color-ch5d2-v9; // الْعِنَب
-$ar-color-ch5d2-v10: #3498db; $en-color-ch5d2-v10: $ar-color-ch5d2-v10; // تَشْرَبِينَ
-$ar-color-ch5d2-v11: #9b59b6; $en-color-ch5d2-v11: $ar-color-ch5d2-v11; // الشَّاي
-$ar-color-ch5d2-v12: #e67e22; $en-color-ch5d2-v12: $ar-color-ch5d2-v12; // الْقَهْوَة
-$ar-color-ch5d2-v13: #1abc9c; $en-color-ch5d2-v13: $ar-color-ch5d2-v13; // الْحَلِيب
-$ar-color-ch5d2-v14: #f1c40f; $en-color-ch5d2-v14: $ar-color-ch5d2-v14; // تُرِيدِينَ
-$ar-color-ch5d2-v15: #e74c3c; $en-color-ch5d2-v15: $ar-color-ch5d2-v15; // شَيْئًا آخَرَ
-$ar-color-ch5d2-v16: #34495e; $en-color-ch5d2-v16: $ar-color-ch5d2-v16; // عَفْوًا
-// --------------------------------------------------------------------
-// END: Chapter 5 - Food and Drink - Dialogue 2 Colors
+// =======================================================
+// ==== START: ألوان الحوار الثاني للوحدة السابعة (ندى وإلهام) ====
+// =======================================================
+$ch7_d2_colors: (
+  // Dialogue 2 Colors
+  "ch7d2-a1": #007bff,
+  // ... باقي ألوان الحوار
+  "ch7d2-k1": #e83e8c,
 
-// More on Telling Time
-$ar-color-tt1: #2ecc71; $en-color-tt1: $ar-color-tt1;
-// ... (بقية المتغيرات الموجودة) ...
-// More on Telling Time
-$ar-color-tt1: #2ecc71; $en-color-tt1: $ar-color-tt1;
-$ar-color-tt2: #3498db; $en-color-tt2: $ar-color-tt2;
-$ar-color-tt3: #9b59b6; $en-color-tt3: $ar-color-tt3;
-$ar-color-tt4: #e67e22; $en-color-tt4: $ar-color-tt4;
-$ar-color-tt5: #e74c3c; $en-color-tt5: $ar-color-tt5;
-$ar-color-tt6: #1abc9c; $en-color-tt6: $ar-color-tt6;
-$ar-color-tt7: #f1c40f; $en-color-tt7: $ar-color-tt7;
-$ar-color-tt8: #27ae60; $en-color-tt8: $ar-color-tt8;
-$ar-color-tt9: #2980b9; $en-color-tt9: $ar-color-tt9;
-$ar-color-tt10: #8e44ad; $en-color-tt10: $ar-color-tt10;
-$ar-color-tt11: #d35400; $en-color-tt11: $ar-color-tt11;
-$ar-color-tt12: #c0392b; $en-color-tt12: $ar-color-tt12;
-$ar-color-tt13: #16a085; $en-color-tt13: $ar-color-tt13;
-$ar-color-tt-ex1: #34495e; $en-color-tt-ex1: $ar-color-tt-ex1;
-$ar-color-tt-ex2: #2c3e50; $en-color-tt-ex2: $ar-color-tt-ex2;
-$ar-color-tt-ex3: #7f8c8d; $en-color-tt-ex3: $ar-color-tt-ex3;
-$ar-color-tt-ex4: #95a5a6; $en-color-tt-ex4: $ar-color-tt-ex4;
-$ar-color-tt-ex5: #bdc3c7; $en-color-tt-ex5: $ar-color-tt-ex5;
+  // **** أضف هذه الألوان للمفردات ****
+  "ch7d2-v1": #16a085,
+  "ch7d2-v2": #27ae60,
+  "ch7d2-v3": #2980b9,
+  "ch7d2-v4": #8e44ad,
+  "ch7d2-v5": #d35400,
+  "ch7d2-v6": #c0392b,
+  "ch7d2-v7": #f39c12,
+  "ch7d2-v8": #7f8c8d,
+  "ch7d2-v9": #34495e,
+  "ch7d2-v10": #2c3e50
+);
+// =======================================================
+// ==== END: ألوان الحوار الثاني للوحدة السابعة   ====
+// =======================================================
 
 
-// Command Verb Lesson Colors (ألوان درس فعل الأمر)
-$command-verb-title-color: #4a4a4a; // لون عنوان القسم الرئيسي
-$command-verb-subtitle-color: #5a5a5a; // لون العناوين الفرعية
-$command-verb-text-color: #333; // لون النص العادي
+// =======================================================
+// ==== START: ألوان الحوار الثالث للوحدة السابعة (قاسم وغسان) ====
+// =======================================================
+$ch7_d3_colors: (
+  // Dialogue 3 Colors
+  "ch7d3-a1": #5f27cd,
+  // ... باقي ألوان الحوار
+  "ch7d3-n1": #54a0ff, "ch7d3-n2": #10ac84,
 
-// Colors for Arabic command verb examples (يمكنك تخصيصها كما تشاء)
-$ar-color-cmd1: #007bff;         // Example: يَقْرَأُ
-$ar-color-cmd-step1: #0069d9;    // Example: قْرَأُ
-$ar-color-cmd-step1-hamza: #005cbf; // Example: ا + قْرَأُ
-$ar-color-cmd1-final: #28a745;   // Example: اِقْرَأْ (Masculine command)
-$ar-color-cmd1-fem: #218838;     // Example: اِقْرَئِي (Feminine command)
+  // **** أضف هذه الألوان للمفردات ****
+  "ch7d3-v1": #009432,
+  "ch7d3-v2": #006266,
+  "ch7d3-v3": #1B1464,
+  "ch7d3-v4": #6F1E51,
+  "ch7d3-v5": #3B3B98,
+  "ch7d3-v6": #82589F,
+  "ch7d3-v7": #EE5A24,
+  "ch7d3-v8": #F79F1F
+);
+// =======================================================
+// ==== END: ألوان الحوار الثالث للوحدة السابعة   ====
+// =======================================================
 
-$ar-color-cmd2: #17a2b8;
-$ar-color-cmd-step2: #138496;
-$ar-color-cmd-step2-hamza: #117a8b;
-$ar-color-cmd2-final: #ffc107;
-$ar-color-cmd2-fem: #e0a800;
+// لا تنس تحديث الخريطة الرئيسية إذا لم تكن قد فعلت ذلك بالفعل
+// $all-colors: map-merge($all-colors, $ch7_d2_colors); 
+// $all-colors: map-merge($all-colors, $ch7_d3_colors); 
+// ====================================================================
 
-$ar-color-cmd3: #dc3545;
-$ar-color-cmd-step3: #c82333;
-$ar-color-cmd-step3-hamza: #bd2130;
-$ar-color-cmd3-final: #6f42c1;
-$ar-color-cmd3-fem: #5a349c;
+// 4. الخريطة الرئيسية (Master Map)
+// ====================================================================
 
-$ar-color-cmd4: #fd7e14;
-$ar-color-cmd-step4: #e66a0a;
-$ar-color-cmd-step4-hamza: #d96109;
-$ar-color-cmd4-final: #20c997;
-$ar-color-cmd4-fem: #1ba97f;
+$all-colors: ();
+$all-colors: map-merge($all-colors, $ch4_colors);
+$all-colors: map-merge($all-colors, $ch5_colors);
+$all-colors: map-merge($all-colors, $ch6_colors);
+$all-colors: map-merge($all-colors, $ch7_colors); 
+$all-colors: map-merge($all-colors, $ch7_d2_colors); 
+$all-colors: map-merge($all-colors, $ch7_d3_colors); 
 
-$ar-color-cmd5: #6610f2;
-$ar-color-cmd-step5: #580dd6;
-$ar-color-cmd5-final: #e83e8c;
-$ar-color-cmd5-fem: #d2307a;
-
-// Other command verb examples
-$ar-color-cmd-other1: #6c757d;
-$ar-color-cmd-other1-fem: #5a6268;
-$ar-color-cmd-other2: #343a40;
-$ar-color-cmd-other2-fem: #23272b;
-
-// Emphasis and vowel colors
-$ar-color-emphasis: #d9534f; // لون للتركيز على الحرف الثالث
-$ar-color-cmd-vowel: #5cb85c; // لون لحركة همزة الوصل
-
-// Code (for harakat and terms)
-$code-background-color: #f8f9fa;
-$code-text-color: #e83e8c;
-$code-border-color: #dee2e6;
-
-
-// Spacing
-$spacer: 1rem;
-$border-radius: 0.25rem;
-$box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-
-// Transitions
-$transition-base: all 0.3s ease-in-out;
+// ... Add future chapters here

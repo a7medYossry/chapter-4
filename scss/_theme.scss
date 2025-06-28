@@ -1,337 +1,128 @@
 // scss/_theme.scss
+
+// ====================================================================
+// Dark Mode Styles (أنماط الوضع الليلي)
+// هذه الأنماط يتم تطبيقها فقط عند إضافة كلاس `dark-mode` إلى وسم `<body>`
+// ====================================================================
+
 body.dark-mode {
+  // ------------------------------------
+  // 1. Base Overrides (تعديلات الأنماط الأساسية)
+  // ------------------------------------
   background-color: $dark-bg;
   color: $dark-text-color;
 
   a {
     color: $dark-link-color;
-
     &:hover {
       color: lighten($dark-link-color, 10%);
     }
   }
 
-  // Layout overrides for dark mode
+  // ------------------------------------
+  // 2. Layout Overrides (تعديلات التخطيط)
+  // ------------------------------------
+  .navbar, .lesson-section.card, footer {
+    border-color: $dark-border-color;
+  }
+
   .navbar {
     background-color: $dark-card-bg;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
-    border-bottom: 1px solid $dark-border-color;
+    box-shadow: 0 0.5rem 1rem rgba($black, 0.3);
   }
 
   .navbar-brand {
-    color: $dark-primary-color !important;
+    color: $dark-link-color !important;
   }
-
-  .theme-toggle-btn {
-    border-color: $dark-border-color;
-    color: $dark-link-color;
-
-    &:hover {
-      background-color: lighten($dark-card-bg, 5%);
-    }
+  
+  .progress-bar {
+      background-color: $dark-link-color;
   }
 
   header.text-center {
-    .page-title {
-      color: lighten($dark-muted-color, 10%);
-    }
-
-    .translation {
+    .page-title, .translation {
       color: $dark-muted-color;
     }
   }
 
   .lesson-section.card {
-    border-color: $dark-border-color;
     background-color: $dark-card-bg;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
-
+    box-shadow: 0 0.5rem 1rem rgba($black, 0.25);
     .section-title {
-      color: $dark-primary-color;
-      border-bottom-color: $dark-primary-color;
+      color: $dark-link-color;
+      border-bottom-color: $dark-link-color;
     }
   }
 
   footer {
     background-color: darken($dark-bg, 3%);
     color: $dark-muted-color;
-    border-top-color: $dark-border-color;
   }
 
-  // Component overrides for dark mode
+  // ------------------------------------
+  // 3. Component Overrides (تعديلات المكونات)
+  // ------------------------------------
+  .theme-toggle-btn {
+    border-color: $dark-border-color;
+    color: $warning-color; // لون أصفر للشمس/القمر في الوضع الليلي
+    &:hover {
+      background-color: lighten($dark-card-bg, 5%);
+    }
+  }
+
   .vocab-item {
     border-bottom-color: $dark-border-color;
-
-    .translation {
-      color: $dark-muted-color;
-    }
-
-    ul li p {
-      color: darken($dark-text-color, 20%);
-    }
+    .translation { color: $dark-muted-color; }
+    ul li p { color: darken($dark-text-color, 20%); }
   }
 
   .dialogue-line {
-    border-left-color: $dark-primary-color;
-    background-color: lighten($dark-bg, 3%);
-
-    .speaker {
-      color: $dark-speaker-color;
-    }
-
-    .translation .speaker {
-      color: $dark-muted-color;
-    }
-
-    .translation {
-      color: $dark-muted-color;
-    }
-
+    border-left-color: $dark-link-color;
+    .speaker { color: $dark-speaker-color; }
+    .translation { color: $dark-muted-color; }
     .clarification {
-      background-color: lighten($warning-color, 5%);
-      color: darken($dark-bg, 15%);
-    }
-  }
-
-  .image-placeholder {
-    img {
-      border-color: $dark-border-color;
-    }
-
-    .small {
-      color: $dark-muted-color;
-    }
-  }
-
-  #mcq-dialogue1,
-  #mcq-dialogue2 {
-    .mcq-question {
-      border-color: $dark-border-color;
-      background-color: lighten($dark-bg, 4%);
-    }
-
-    .feedback {
-      background-color: lighten($dark-card-bg, 2%);
-      border-color: $dark-border-color;
-
-      .text-success {
-        background-color: darken($success-color, 35%);
-        border-left-color: $success-color;
-        color: lighten($success-color, 40%) !important;
-      }
-
-      .text-danger {
-        background-color: darken($danger-color, 45%);
-        border-left-color: $danger-color;
-        color: lighten($danger-color, 40%) !important;
-      }
-
-      .text-warning {
-        background-color: darken($warning-color, 35%);
+        background-color: lighten($warning-color, 15%);
+        color: darken($dark-bg, 10%);
         border-left-color: $warning-color;
-        color: lighten($warning-color, 40%) !important;
-      }
     }
   }
 
-  .btn-primary {
-    background-color: $dark-primary-color;
-    border-color: $dark-primary-color;
-
-    &:hover {
-      background-color: lighten($dark-primary-color, 10%);
-      border-color: lighten($dark-primary-color, 10%);
-    }
+  .mcq-question {
+    border-color: $dark-border-color;
+    background-color: lighten($dark-bg, 4%);
   }
 
+  .feedback {
+    background-color: lighten($dark-card-bg, 2%);
+    border-color: $dark-border-color;
+    li {
+        &.correct { background-color: rgba($success-color, 0.15); border-left-color: $success-color; color: lighten($success-color, 20%); }
+        &.incorrect { background-color: rgba($danger-color, 0.15); border-left-color: $danger-color; color: lighten($danger-color, 20%); }
+        &.info { background-color: rgba($info-color, 0.15); border-left-color: $info-color; color: lighten($info-color, 20%); }
+    }
+  }
+  
   .draggable-item {
-    background-color: darken($dark-primary-color, 20%);
-    border-color: $dark-primary-color;
-    color: lighten($dark-primary-color, 25%);
-
-    &:has(.ar-word) {
-      color: lighten($dark-primary-color, 35%);
-    }
+    background-color: lighten($dark-card-bg, 10%);
+    border-color: $dark-border-color;
+    color: $dark-text-color;
   }
 
   .droppable-area {
     background-color: lighten($dark-bg, 5%);
     border-color: $dark-border-color;
-
     &.drag-over {
-      // CORRECTED: Use original $info-color and lighten it for dark mode
-      background-color: lighten($info-color, 15%);
-      border-color: lighten($info-color, 5%); // Make border slightly different
+      background-color: rgba($info-color, 0.2);
+      border-color: $info-color;
     }
-
     &.dropped-correct {
-      // CORRECTED: Use original $success-color and lighten it for dark mode
-      background-color: lighten($success-color, 20%);
-      border-color: lighten($success-color, 10%); // Make border slightly different
-
+      background-color: rgba($success-color, 0.2);
+      border-color: $success-color;
       .draggable-item {
-        background-color: $success-color; // Keep original success color for the item
-        color: $light-card-bg; // Light text on success background
+        background-color: $success-color;
+        color: $white;
         border-color: darken($success-color, 10%);
       }
-    }
-  }
-
-  #command-verb-lesson {
-    article {
-      .ar-color-cmd1 {
-        color: #79c0ff;
-      }
-
-      // أفتح من #58a6ff
-      .ar-color-cmd-step1 {
-        color: #58a6ff;
-      }
-
-      // أفتح من #3a8dde
-      .ar-color-cmd-step1-hamza {
-        color: #4891d1;
-      }
-
-      // أفتح من #2a6bb3
-      .ar-color-cmd1-final {
-        color: #56d364;
-      }
-
-      // أفتح من #34ce57
-      .ar-color-cmd1-fem {
-        color: #3fb950;
-      }
-
-      // أفتح من #218838
-
-      .ar-color-cmd2 {
-        color: #67d3e4;
-      }
-
-      .ar-color-cmd-step2 {
-        color: #4cb8c9;
-      }
-
-      .ar-color-cmd-step2-hamza {
-        color: #3ca6b6;
-      }
-
-      .ar-color-cmd2-final {
-        color: #ffd03f;
-      }
-
-      .ar-color-cmd2-fem {
-        color: #ffc107;
-      }
-
-      // قد يكون هذا اللون جيدًا كما هو أو أفتح قليلاً
-
-      .ar-color-cmd3 {
-        color: #f06e7c;
-      }
-
-      .ar-color-cmd-step3 {
-        color: #e15260;
-      }
-
-      .ar-color-cmd-step3-hamza {
-        color: #d94552;
-      }
-
-      .ar-color-cmd3-final {
-        color: #ab6cf3;
-      }
-
-      .ar-color-cmd3-fem {
-        color: #934fe0;
-      }
-
-      .ar-color-cmd4 {
-        color: #ffa758;
-      }
-
-      .ar-color-cmd-step4 {
-        color: #ff8c28;
-      }
-
-      .ar-color-cmd-step4-hamza {
-        color: #f77d19;
-      }
-
-      .ar-color-cmd4-final {
-        color: #4be0aa;
-      }
-
-      .ar-color-cmd4-fem {
-        color: #3ccca0;
-      }
-
-      .ar-color-cmd5 {
-        color: #8a43f6;
-      }
-
-      .ar-color-cmd-step5 {
-        color: #7b30e7;
-      }
-
-      .ar-color-cmd5-final {
-        color: #f368a6;
-      }
-
-      .ar-color-cmd5-fem {
-        color: #e55795;
-      }
-
-      .ar-color-cmd-other1 {
-        color: #ced7e1;
-      }
-
-      // أفتح من $ar-color-cmd-other1
-      .ar-color-cmd-other1-fem {
-        color: #c5d6e3;
-      }
-
-      .ar-color-cmd-other2 {
-        color: #adbac6;
-      }
-
-      // أفتح من $ar-color-cmd-other2
-      .ar-color-cmd-other2-fem {
-        color: #a4b2c1;
-      }
-
-      .ar-color-emphasis {
-        color: #ff7b72;
-      }
-
-      // أفتح من $ar-color-emphasis
-      .en-color-emphasis {
-        color: #ff7b72;
-      }
-
-      .ar-color-cmd-vowel {
-        color: #7ee787;
-      }
-
-      // أفتح من $ar-color-cmd-vowel
-      .en-color-cmd-vowel {
-        color: #7ee787;
-      }
-
-      // Emphasis and vowel colors (Dark Mode)
-      .ar-color-emphasis {
-        color: #ff7b72;
-      }
-
-     
-
-      // <<< تمت إضافته هنا للوضع الداكن
-
-      .en-color-cmd-vowel {
-        color: #7ee787;
-      }
-
     }
   }
 }
