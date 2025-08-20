@@ -315,10 +315,51 @@ $ch7_d3_colors: (
 // ==== END: ألوان الحوار الثالث للوحدة السابعة   ====
 // =======================================================
 
-// لا تنس تحديث الخريطة الرئيسية إذا لم تكن قد فعلت ذلك بالفعل
-// $all-colors: map-merge($all-colors, $ch7_d2_colors); 
-// $all-colors: map-merge($all-colors, $ch7_d3_colors); 
-// ====================================================================
+// =======================================================
+// ==== START: ألوان الوحدة الثامنة (العمل) ====
+// =======================================================
+$ch8_colors: (
+  // Title
+  "ch8-title-1": #005f73, "ch8-title-2": #0a9396, "ch8-title-3": #94d2bd,
+
+  // Dialogue 1 (Uthman & Ali)
+  "ch8d1-a1": #0077b6, "ch8d1-a2": #0096c7, "ch8d1-a3": #00b4d8, "ch8d1-a4": #48cae4, "ch8d1-a5": #90e0ef,
+  "ch8d1-b1": #0077b6, "ch8d1-b2": #0096c7,
+  "ch8d1-c1": #00b4d8, "ch8d1-c2": #48cae4,
+  "ch8d1-d1": #90e0ef, "ch8d1-d2": #ade8f4, "ch8d1-d3": #0077b6, "ch8d1-d4": #0096c7, "ch8d1-d5": #00b4d8, "ch8d1-d6": #48cae4,
+  "ch8d1-e1": #90e0ef, "ch8d1-e2": #ade8f4, "ch8d1-e3": #0077b6,
+  "ch8d1-f1": #0096c7, "ch8d1-f2": #00b4d8, "ch8d1-f3": #48cae4, "ch8d1-f4": #90e0ef, "ch8d1-f5": #ade8f4,
+  "ch8d1-g1": #0077b6, "ch8d1-g2": #0096c7, "ch8d1-h1": #00b4d8, "ch8d1-h2": #48cae4,
+  "ch8d1-i1": #90e0ef, "ch8d1-i2": #ade8f4, "ch8d1-i3": #0077b6,
+  "ch8d1-j1": #0096c7, "ch8d1-j2": #00b4d8, "ch8d1-j3": #48cae4,
+  "ch8d1-k1": #90e0ef, "ch8d1-k2": #ade8f4, "ch8d1-k3": #0077b6, "ch8d1-k4": #0096c7,
+
+  // Dialogue 2 (Students)
+  "ch8d2-a1": #8338ec, "ch8d2-a2": #ff006e, "ch8d2-a3": #ffbe0b, "ch8d2-a4": #3a86ff,
+  "ch8d2-b1": #2ec4b6,
+  "ch8d2-c1": #8338ec,
+  "ch8d2-d1": #ff006e,
+  "ch8d2-e1": #ffbe0b,
+  "ch8d2-f1": #3a86ff,
+  "ch8d2-g1": #2ec4b6,
+
+  // Dialogue 3 (Maryam & Zaynab)
+  "ch8d3-a1": #e56b6f, "ch8d3-a2": #b56576, "ch8d3-a3": #e56b6f, "ch8d3-a4": #6d597a,
+  "ch8d3-b1": #355070,
+  "ch8d3-c1": #e8dab2, "ch8d3-c2": #e56b6f, "ch8d3-c3": #b56576,
+  "ch8d3-d1": #6d597a,
+  "ch8d3-e1": #355070,
+  "ch8d3-f1": #e8dab2,
+  "ch8d3-g1": #e56b6f,
+  "ch8d3-h1": #b56576,
+  "ch8d3-i1": #6d597a, "ch8d3-i2": #355070, "ch8d3-i3": #e8dab2,
+  "ch8d3-j1": #e56b6f, "ch8d3-j2": #b56576, "ch8d3-j3": #6d597a,
+  "ch8d3-k1": #355070, "ch8d3-k2": #e8dab2, "ch8d3-k3": #e56b6f,
+  "ch8d3-l1": #b56576, "ch8d3-l2": #6d597a, "ch8d3-l3": #355070, "ch8d3-l4": #e8dab2, "ch8d3-l5": #e56b6f, "ch8d3-l6": #b56576, "ch8d3-l7": #6d597a
+);
+// =======================================================
+// ==== END: ألوان الوحدة الثامنة (العمل) ====
+// =======================================================
 
 // 4. الخريطة الرئيسية (Master Map)
 // ====================================================================
@@ -330,5 +371,6 @@ $all-colors: map-merge($all-colors, $ch6_colors);
 $all-colors: map-merge($all-colors, $ch7_colors); 
 $all-colors: map-merge($all-colors, $ch7_d2_colors); 
 $all-colors: map-merge($all-colors, $ch7_d3_colors); 
+$all-colors: map-merge($all-colors, $ch8_colors); 
 
 // ... Add future chapters here
