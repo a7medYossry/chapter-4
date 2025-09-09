@@ -129,10 +129,37 @@ document.addEventListener('DOMContentLoaded', () => {
         "dialogue-chapter8-d3": {
             q1_ch8d3: 'b', // تدرس في المرحلة المتوسطة
             q2_ch8d3: 'c'  // لديها خمسة أطفال
-        }
+        },
         // =======================================================
         // ==== END: الإجابات الجديدة للفصل الثامن (العمل) ====
         // =======================================================
+        // --- START: Answers for Body Parts Exercises ---
+        "bp1": {
+            q1_bp: 'b',
+            q2_bp: 'a',
+            q3_bp: 'c'
+        },
+        // --- END: Answers for Body Parts Exercises ---
+        // --- START: Add this block for Professions answers ---
+        "p1": {
+            q1_p: 'c',
+            q2_p: 'a',
+            q3_p: 'b'
+        },
+        // --- END: Add this block for Professions answers ---
+        // داخل كائن correctAnswers، أضف:
+        "cl1": {
+            q1_cl: 'b',
+            q2_cl: 'c',
+            q3_cl: 'b'
+        },
+        // Inside the correctAnswers object, add:
+        "w1": {
+            q1_w: 'b',
+            q2_w: 'c',
+            q3_w: 'a'
+        },
+
 
     };
 
@@ -302,10 +329,36 @@ document.addEventListener('DOMContentLoaded', () => {
                 a: "خطأ. العدد المذكور في الحوار هو خمسة أطفال.",
                 b: "خطأ. زينب لديها خمسة أطفال."
             }
-        }
+        },
         // =======================================================
         // ==== END: الشروحات الجديدة للفصل الثامن (العمل) ====
         // =======================================================
+        // --- START: Explanations for Body Parts Exercises ---
+        "bp1": {
+            q1_bp: { a: "خطأ. نحن نشم بالأنف.", c: "خطأ. نحن نلمس باليد." },
+            q2_bp: { b: "خطأ. الصدر هو جزء من الجذع.", c: "خطأ. الذراع يربط الكتف باليد." },
+            q3_bp: { a: "خطأ. نحن نأكل بالفم.", b: "خطأ. نحن نسمع بالأذن." }
+        },
+        // --- END: Explanations for Body Parts Exercises ---
+        // --- START: Add this block for Professions explanations ---
+        "p1": {
+            q1_p: { a: "خطأ. الطباخ يطبخ الطعام.", b: "خطأ. البناء يبني البيوت." },
+            q2_p: { b: "خطأ. الجزار يبيع اللحم.", c: "خطأ. الحلاق يقص الشعر." },
+            q3_p: { a: "خطأ. المزارع يزرع الأرض.", c: "خطأ. الشرطي يساعد الناس." }
+        },
+        // --- END: Add this block for Professions explanations ---
+        // وداخل كائن mcqExplanations، أضف:
+        "cl1": {
+            q1_cl: { a: "خطأ. القفاز يُلبس في اليد.", c: "خطأ. العمامة توضع على الرأس." },
+            q2_cl: { a: "خطأ. الحزام يوضع حول الخصر.", b: "خطأ. الجلباب هو لباس خارجي طويل للجسم كله." },
+            q3_cl: { a: "خطأ. هذه ملابس خاصة بالحج والعمرة وليست للشتاء.", c: "خطأ. هذه ليست ملابس مدرسة." }
+        },
+        // Inside the mcqExplanations object, add:
+        "w1": {
+            q1_w: { a: "خطأ. الضباب يحجب الرؤية ولكنه ليس في العاصفة.", c: "خطأ. الطل هو قطرات ماء في الصباح." },
+            q2_w: { a: "خطأ. الرياح تحرك الأشياء ولكنها لا تحجب الرؤية.", b: "خطأ. الجو المشمس يعني رؤية واضحة." },
+            q3_w: { b: "خطأ. الجليد هو ماء متجمد.", c: "خطأ. الفيضان هو كثرة الماء." }
+        },
     };
 
 
@@ -377,6 +430,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
                 // --- END: أضف هذا الجزء للوحدة الثامنة ---
                 // ---
+                // --- START: Suffix for Body Parts Exercises ---
+                else if (mcqId === 'bp1') { questionNameSuffix = 'bp'; }
+                // --- END: Suffix for Body Parts Exercises ---
+                // --- START: Suffix for Professions Exercises ---
+                else if (mcqId === 'p1') { questionNameSuffix = 'p'; }
+                // --- END: Suffix for Professions Exercises ---
+                // أضف هذا الشرط الجديد
+                else if (mcqId === 'cl1') { questionNameSuffix = 'cl'; }
+                // Add this new else if condition
+                else if (mcqId === 'w1') { questionNameSuffix = 'w'; }
                 else {
                     console.warn(`Unhandled mcqId for question name suffix: ${mcqId}`);
                     questionNameSuffix = mcqId;
@@ -531,4 +594,199 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // --- START: Fill in the Blanks Functionality ---
+    const checkFillBlanksBtn = document.getElementById('check-fill-blanks-bp2');
+    if (checkFillBlanksBtn) {
+        checkFillBlanksBtn.addEventListener('click', () => {
+            const answers = {
+                fill_bp_1: "يَدِي",
+                fill_bp_2: "بَطْنِي",
+                fill_bp_3: "شَعْري",
+                fill_bp_4: "رُكْبَتِي",
+                fill_bp_5: "قَدَم"
+            };
+
+            const feedbackDiv = document.getElementById('feedback-fill-blanks-bp2');
+            let allCorrect = true;
+            let feedbackHTML = '<h4>النتائج:</h4><ul>';
+
+            Object.keys(answers).forEach(inputId => {
+                const inputElement = document.getElementById(inputId);
+                const correctAnswer = answers[inputId];
+                // Normalize user input by removing diacritics (tashkeel) for comparison
+                const userAnswer = inputElement.value.trim().normalize("NFD").replace(/[\u064B-\u0652]/g, "");
+                const normalizedCorrectAnswer = correctAnswer.normalize("NFD").replace(/[\u064B-\u0652]/g, "");
+
+
+                inputElement.classList.remove('is-valid', 'is-invalid');
+
+                if (userAnswer === normalizedCorrectAnswer) {
+                    inputElement.classList.add('is-valid');
+                    feedbackHTML += `<li class="text-success" dir="rtl"><i class="fas fa-check-circle ms-2"></i><strong>السؤال ${inputId.split('_')[2]}:</strong> صحيح!</li>`;
+                } else {
+                    allCorrect = false;
+                    inputElement.classList.add('is-invalid');
+                    feedbackHTML += `<li class="text-danger" dir="rtl"><i class="fas fa-times-circle ms-2"></i><strong>السؤال ${inputId.split('_')[2]}:</strong> خطأ. الإجابة الصحيحة هي "${correctAnswer}".</li>`;
+                }
+            });
+
+            feedbackHTML += '</ul>';
+            if (allCorrect) {
+                feedbackHTML += '<p class="fw-bold text-success">ممتاز! كل الإجابات صحيحة.</p>';
+            } else {
+                feedbackHTML += '<p class="fw-bold text-warning">بعض الإجابات خاطئة، حاول مرة أخرى.</p>';
+            }
+
+            feedbackDiv.innerHTML = feedbackHTML;
+            feedbackDiv.style.display = 'block';
+            feedbackDiv.classList.add('animate__animated', 'animate__fadeIn');
+            setTimeout(() => {
+                feedbackDiv.classList.remove('animate__animated', 'animate__fadeIn');
+            }, 1000);
+        });
+    }
+    // --- END: Fill in the Blanks Functionality ---
+    // --- START: Fill in the Blanks Functionality for Professions ---
+    const checkFillBlanksBtn_p2 = document.getElementById('check-fill-blanks-p2');
+    if (checkFillBlanksBtn_p2) {
+        checkFillBlanksBtn_p2.addEventListener('click', () => {
+            const answers = {
+                fill_p_1: "الْحَلَّاقُ",
+                fill_p_2: "السَّبَّاكُ",
+                fill_p_3: "الْمُزَارِعُ",
+                fill_p_4: "النَّجَّارُ",
+                fill_p_5: "الطَّبَّاخُ"
+            };
+
+            const feedbackDiv = document.getElementById('feedback-fill-blanks-p2');
+            let allCorrect = true;
+            let feedbackHTML = '<h4>النتائج:</h4><ul>';
+
+            Object.keys(answers).forEach(inputId => {
+                const inputElement = document.getElementById(inputId);
+                const correctAnswer = answers[inputId];
+                // Normalize user input by removing diacritics
+                const userAnswer = inputElement.value.trim().normalize("NFD").replace(/[\u064B-\u0652]/g, "");
+                const normalizedCorrectAnswer = correctAnswer.normalize("NFD").replace(/[\u064B-\u0652]/g, "");
+
+                inputElement.classList.remove('is-valid', 'is-invalid');
+
+                if (userAnswer === normalizedCorrectAnswer) {
+                    inputElement.classList.add('is-valid');
+                    feedbackHTML += `<li class="text-success" dir="rtl"><i class="fas fa-check-circle ms-2"></i><strong>السؤال ${inputId.split('_')[2]}:</strong> صحيح!</li>`;
+                } else {
+                    allCorrect = false;
+                    inputElement.classList.add('is-invalid');
+                    feedbackHTML += `<li class="text-danger" dir="rtl"><i class="fas fa-times-circle ms-2"></i><strong>السؤال ${inputId.split('_')[2]}:</strong> خطأ. الإجابة الصحيحة هي "${correctAnswer}".</li>`;
+                }
+            });
+
+            feedbackHTML += '</ul>';
+            if (allCorrect) {
+                feedbackHTML += '<p class="fw-bold text-success">ممتاز! كل الإجابات صحيحة.</p>';
+            } else {
+                feedbackHTML += '<p class="fw-bold text-warning">بعض الإجابات خاطئة، حاول مرة أخرى.</p>';
+            }
+
+            feedbackDiv.innerHTML = feedbackHTML;
+            feedbackDiv.style.display = 'block';
+        });
+    }
+    // --- END: Fill in the Blanks Functionality for Professions ---
+    // --- START: Fill in the Blanks Functionality for Clothing ---
+    const checkFillBlanksBtn_cl2 = document.getElementById('check-fill-blanks-cl2');
+    if (checkFillBlanksBtn_cl2) {
+        checkFillBlanksBtn_cl2.addEventListener('click', () => {
+            const answers = {
+                fill_cl_1: "حِزَام",
+                fill_cl_2: "الْقُفَّازَ",
+                fill_cl_3: "الْعِمَامَةَ",
+                fill_cl_4: "الْحِذَاءَ",
+                fill_cl_5: "سِرْوَال"
+            };
+
+            const feedbackDiv = document.getElementById('feedback-fill-blanks-cl2');
+            let allCorrect = true;
+            let feedbackHTML = '<h4>النتائج:</h4><ul>';
+
+            Object.keys(answers).forEach(inputId => {
+                const inputElement = document.getElementById(inputId);
+                const correctAnswer = answers[inputId];
+                // Normalization to compare without tashkeel
+                const userAnswer = inputElement.value.trim().normalize("NFD").replace(/[\u064B-\u0652]/g, "");
+                const normalizedCorrectAnswer = correctAnswer.normalize("NFD").replace(/[\u064B-\u0652]/g, "");
+
+                inputElement.classList.remove('is-valid', 'is-invalid');
+
+                if (userAnswer === normalizedCorrectAnswer) {
+                    inputElement.classList.add('is-valid');
+                    feedbackHTML += `<li class="text-success" dir="rtl"><i class="fas fa-check-circle ms-2"></i><strong>السؤال ${inputId.split('_')[2]}:</strong> صحيح!</li>`;
+                } else {
+                    allCorrect = false;
+                    inputElement.classList.add('is-invalid');
+                    feedbackHTML += `<li class="text-danger" dir="rtl"><i class="fas fa-times-circle ms-2"></i><strong>السؤال ${inputId.split('_')[2]}:</strong> خطأ. الإجابة الصحيحة هي "${correctAnswer}".</li>`;
+                }
+            });
+
+            feedbackHTML += '</ul>';
+            if (allCorrect) {
+                feedbackHTML += '<p class="fw-bold text-success">رائع! جميع الإجابات صحيحة.</p>';
+            } else {
+                feedbackHTML += '<p class="fw-bold text-warning">بعض الإجابات غير صحيحة. حاول مجدداً.</p>';
+            }
+
+            feedbackDiv.innerHTML = feedbackHTML;
+            feedbackDiv.style.display = 'block';
+        });
+    }
+    // --- END: Fill in the Blanks Functionality for Clothing ---
+    // --- START: Fill in the Blanks Functionality for Weather ---
+    const checkFillBlanksBtn_w2 = document.getElementById('check-fill-blanks-w2');
+    if (checkFillBlanksBtn_w2) {
+        checkFillBlanksBtn_w2.addEventListener('click', () => {
+            const answers = {
+                fill_w_1: "مُشْمِسٌ",
+                fill_w_2: "الرِّيَاحُ",
+                fill_w_3: "الْغُيُومِ",
+                fill_w_4: "الطَّلُّ",
+                fill_w_5: "جَلِيد"
+            };
+
+            const feedbackDiv = document.getElementById('feedback-fill-blanks-w2');
+            let allCorrect = true;
+            let feedbackHTML = '<h4>النتائج:</h4><ul>';
+
+            Object.keys(answers).forEach(inputId => {
+                const inputElement = document.getElementById(inputId);
+                const correctAnswer = answers[inputId];
+                // Normalization to compare without tashkeel
+                const userAnswer = inputElement.value.trim().normalize("NFD").replace(/[\u064B-\u0652]/g, "");
+                const normalizedCorrectAnswer = correctAnswer.normalize("NFD").replace(/[\u064B-\u0652]/g, "");
+
+                inputElement.classList.remove('is-valid', 'is-invalid');
+
+                if (userAnswer === normalizedCorrectAnswer) {
+                    inputElement.classList.add('is-valid');
+                    feedbackHTML += `<li class="text-success" dir="rtl"><i class="fas fa-check-circle ms-2"></i><strong>السؤال ${inputId.split('_')[2]}:</strong> صحيح!</li>`;
+                } else {
+                    allCorrect = false;
+                    inputElement.classList.add('is-invalid');
+                    feedbackHTML += `<li class="text-danger" dir="rtl"><i class="fas fa-times-circle ms-2"></i><strong>السؤال ${inputId.split('_')[2]}:</strong> خطأ. الإجابة الصحيحة هي "${correctAnswer}".</li>`;
+                }
+            });
+
+            feedbackHTML += '</ul>';
+            if (allCorrect) {
+                feedbackHTML += '<p class="fw-bold text-success">أحسنت! كل الإجابات صحيحة.</p>';
+            } else {
+                feedbackHTML += '<p class="fw-bold text-warning">هناك أخطاء، حاول مرة أخرى.</p>';
+            }
+
+            feedbackDiv.innerHTML = feedbackHTML;
+            feedbackDiv.style.display = 'block';
+        });
+    }
+    // --- END: Fill in the Blanks Functionality for Weather ---
+
 });

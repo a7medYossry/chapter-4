@@ -40,6 +40,23 @@
               <i class="fas fa-sun"></i>
             </button>
           </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Chapters
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#dialogue1">Chapter 4</a></li>
+              <li><a class="dropdown-item" href="#dialogue-chapter5">Chapter 5</a></li>
+              <li><a class="dropdown-item" href="#dialogue-chapter6">Chapter 6</a></li>
+              <li><a class="dropdown-item" href="#dialogue-chapter7-d1">Chapter 7</a></li>
+              <li><a class="dropdown-item" href="#dialogue-chapter8">Chapter 8</a></li>
+              <li><a class="dropdown-item" href="#past-tense-lesson">Grammar: Past Tense</a></li>
+              <li><a class="dropdown-item" href="#body-parts-vocab">Vocab: Human Body</a></li>
+              <li><a class="dropdown-item" href="#professions-vocab">Vocab: Professions</a></li>
+              <li><a class="dropdown-item" href="#clothing-vocab">Vocab: Clothing</a></li>
+            </ul>
+          </li>
         </ul>
       </div>
     </div>
@@ -1576,53 +1593,84 @@
           <p class="translation">To command a singular female, add Yā' al-Mukhāṭabah (ياء المخاطبة - the 'yaa' of
             addressing a female) to the end of the masculine command form. The letter preceding this 'ي' typically takes
             a Kasrah.</p>
-          <table class="table table-bordered text-center">
-            <thead>
+          <table class="table table-bordered text-center" style="font-size: 1.1rem;">
+            <thead class="table-light">
               <tr>
-                <th scope="col">Masculine Command</th>
-                <th scope="col">Feminine Command</th>
-                <th scope="col">English (Feminine Command)</th>
+                <th>English</th>
+                <th>أَنَا (I)</th>
+                <th>نَحْنُ (We)</th>
+                <th>أَنْتَ (You, m.)</th>
+                <th>أَنْتِ (You, f.)</th>
+                <th>هُوَ (He)</th>
+                <th>هِيَ (She)</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td><span class="ar-word ar-color-cmd1-final">اِقْرَأْ</span> (Iqra')</td>
-                <td><span class="ar-word ar-color-cmd1-fem">اِقْرَئِي</span> (Iqra'ee)</td>
-                <td>Read! (to a female)</td>
+                <td>to do</td>
+                <td class="ar-word">فَعَلْتُ</td>
+                <td class="ar-word">فَعَلْنَا</td>
+                <td class="ar-word">فَعَلْتَ</td>
+                <td class="ar-word">فَعَلْتِ</td>
+                <td class="ar-word">فَعَلَ</td>
+                <td class="ar-word">فَعَلَتْ</td>
               </tr>
               <tr>
-                <td><span class="ar-word ar-color-cmd2-final">اُكْتُبْ</span> (Uktub)</td>
-                <td><span class="ar-word ar-color-cmd2-fem">اُكْتُبِي</span> (Uktubee)</td>
-                <td>Write! (to a female)</td>
+                <td>to read</td>
+                <td class="ar-word">قَرَأْتُ</td>
+                <td class="ar-word">قَرَأْنَا</td>
+                <td class="ar-word">قَرَأْتَ</td>
+                <td class="ar-word">قَرَأْتِ</td>
+                <td class="ar-word">قَرَأَ</td>
+                <td class="ar-word">قَرَأَتْ</td>
               </tr>
               <tr>
-                <td><span class="ar-word ar-color-cmd3-final">اِغْسِلْ</span> (Ighsil)</td>
-                <td><span class="ar-word ar-color-cmd3-fem">اِغْسِلِي</span> (Ighsilee)</td>
-                <td>Wash! (to a female)</td>
+                <td>to write</td>
+                <td class="ar-word">كَتَبْتُ</td>
+                <td class="ar-word">كَتَبْنَا</td>
+                <td class="ar-word">كَتَبْتَ</td>
+                <td class="ar-word">كَتَبْتِ</td>
+                <td class="ar-word">كَتَبَ</td>
+                <td class="ar-word">كَتَبَتْ</td>
               </tr>
               <tr>
-                <td><span class="ar-word ar-color-cmd4-final">اِجْلِسْ</span> (Ijlis)</td>
-                <td><span class="ar-word ar-color-cmd4-fem">اِجْلِسِي</span> (Ijlisee)</td>
-                <td>Sit! (to a female)</td>
+                <td>to go</td>
+                <td class="ar-word">ذَهَبْتُ</td>
+                <td class="ar-word">ذَهَبْنَا</td>
+                <td class="ar-word">ذَهَبْتَ</td>
+                <td class="ar-word">ذَهَبْتِ</td>
+                <td class="ar-word">ذَهَبَ</td>
+                <td class="ar-word">ذَهَبَتْ</td>
               </tr>
               <tr>
-                <td><span class="ar-word ar-color-cmd5-final">تَوَضَّأْ</span> (Tawaḍḍa')</td>
-                <td><span class="ar-word ar-color-cmd5-fem">تَوَضَّئِي</span> (Tawaḍḍa'ee)</td>
-                <td>Perform ablution! (to a female)</td>
+                <td>to sleep</td>
+                <td class="ar-word">نِمْتُ</td>
+                <td class="ar-word">نِمْنَا</td>
+                <td class="ar-word">نِمْتَ</td>
+                <td class="ar-word">نِمْتِ</td>
+                <td class="ar-word">نَامَ</td>
+                <td class="ar-word">نَامَتْ</td>
               </tr>
               <tr>
-                <td><span class="ar-word ar-color-cmd-other1">اِعْمَلْ</span> (Iʿmal)</td>
-                <td><span class="ar-word ar-color-cmd-other1-fem">اِعْمَلِي</span> (Iʿmalee)</td>
-                <td>Work! (to a female)</td>
+                <td>to eat</td>
+                <td class="ar-word">أَكَلْتُ</td>
+                <td class="ar-word">أَكَلْنَا</td>
+                <td class="ar-word">أَكَلْتَ</td>
+                <td class="ar-word">أَكَلْتِ</td>
+                <td class="ar-word">أَكَلَ</td>
+                <td class="ar-word">أَكَلَتْ</td>
               </tr>
               <tr>
-                <td><span class="ar-word ar-color-cmd-other2">اُدْخُلْ</span> (Udkhul)</td>
-                <td><span class="ar-word ar-color-cmd-other2-fem">اُدْخُلِي</span> (Udkhulee)</td>
-                <td>Enter! (to a female)</td>
+                <td>to drink</td>
+                <td class="ar-word">شَرِبْتُ</td>
+                <td class="ar-word">شَرِبْنَا</td>
+                <td class="ar-word">شَرِبْتَ</td>
+                <td class="ar-word">شَرِبْتِ</td>
+                <td class="ar-word">شَرِبَ</td>
+                <td class="ar-word">شَرِبَتْ</td>
               </tr>
             </tbody>
           </table>
-
           <h4 class="translation mt-4">Summary of Key Rules</h4>
           <ol>
             <li>Start with the present tense verb - "he" form.</li>
@@ -4278,6 +4326,1786 @@
       </div>
     </section>
 
+    <section id="past-tense-lesson" class="lesson-section card mt-4 animate__animated animate__fadeInUp">
+      <div class="card-body">
+        <h3 class="section-title text-center">The Arabic Past Tense Verb (الْفِعْلُ الْمَاضِي)</h3>
+        <article class="translation">
+          <p class="lead">In Arabic, verbs are the engine of the language, and they are categorized by time into
+            three main types: the present tense (المضارع), the command (الأمر), and the past tense (الماضي). The
+            past tense, or <span class="ar-word">Al-Fi'l al-Māḍī</span>, is often the first one learners master because
+            of its regular patterns and its essential role in narrating events and everyday conversation.</p>
+          <p>This guide will walk you through everything you need to know to identify, understand, and use the Arabic
+            past tense verb confidently.</p>
+
+          <h4 class="mt-4">How to Identify the Past Tense Verb</h4>
+          <p>Two simple features distinguish the past tense verb from its present tense counterpart:</p>
+          <ol>
+            <li>
+              <strong>Structure and Length:</strong>
+              <p>The past tense verb is typically one letter shorter than the present tense. This is because the present
+                tense always begins with a prefix (<span class="ar-word">أ, ن, ي, ت</span>) to indicate the doer, while
+                the past tense does not have these prefixes.</p>
+              <p><em>Example:</em><br>
+                Present: <span class="ar-word ar-color-1">يَكْتُبُ</span> (yaktubu - he writes)<br>
+                Past: <span class="ar-word ar-color-2">كَتَبَ</span> (kataba - he wrote)
+              </p>
+            </li>
+            <li>
+              <strong>The Default Vowel Ending:</strong>
+              <p>The base form of a past tense verb (which corresponds to the pronoun "He") always ends with a
+                <strong>fatḥa (ـَ)</strong>. In contrast, the base form of a present tense verb ends with a
+                <strong>ḍamma (ـُ)</strong>.
+              </p>
+            </li>
+          </ol>
+          <table class="table table-bordered text-center mt-3">
+            <thead class="table-light">
+              <tr>
+                <th>The Past Tense (Al-Māḍī)</th>
+                <th>The Present Tense (Al-Muḍāriʿ)</th>
+                <th>Meaning (Past)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="ar-word">فَعَلَ</span> (faʿala)</td>
+                <td><span class="ar-word">يَفْعَلُ</span> (yafʿalu)</td>
+                <td>He did</td>
+              </tr>
+              <tr>
+                <td><span class="ar-word">قَرَأَ</span> (qaraʾa)</td>
+                <td><span class="ar-word">يَقْرَأُ</span> (yaqraʾu)</td>
+                <td>He read</td>
+              </tr>
+              <tr>
+                <td><span class="ar-word">ذَهَبَ</span> (dhahaba)</td>
+                <td><span class="ar-word">يَذْهَبُ</span> (yadhhabu)</td>
+                <td>He went</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h4 class="mt-4">Conjugating the Past Tense Verb: Adding Suffixes</h4>
+          <p>The key to using the past tense is understanding that it changes at the end, not the beginning. To show who
+            performed the action, we attach a specific pronoun suffix to the end of the verb.</p>
+
+          <div class="alert alert-info" role="alert">
+            <h5 class="alert-heading">The Golden Rule of Conjugation:</h5>
+            <p>Before adding the suffix for most pronouns, the final letter of the original verb root takes a
+              <strong>sukūn (ـْ)</strong>, making it silent.
+            </p>
+          </div>
+
+          <p>Let's use the verb <span class="ar-word">فَعَلَ</span> (faʿala - he did) as our model.</p>
+          <ul class="list-group">
+            <li class="list-group-item"><strong>أَنَا (I)</strong> &rarr; Add the suffix <span
+                class="ar-word ar-color-cmd-step1">ـتُ</span> (tu)
+              <br><span class="ar-word">فَعَلَ &rarr; فَعَلْـ + ـتُ = </span><strong
+                class="ar-word ar-color-1">فَعَلْتُ</strong> (faʿaltu - I did)
+            </li>
+            <li class="list-group-item"><strong>نَحْنُ (We)</strong> &rarr; Add the suffix <span
+                class="ar-word ar-color-cmd-step2">ـنَا</span> (nā)
+              <br><span class="ar-word">فَعَلَ &rarr; فَعَلْـ + ـنَا = </span><strong
+                class="ar-word ar-color-2">فَعَلْنَا</strong> (faʿalnā - We did)
+            </li>
+            <li class="list-group-item"><strong>أَنْتَ (You, masculine)</strong> &rarr; Add the suffix <span
+                class="ar-word ar-color-cmd-step3">ـتَ</span> (ta)
+              <br><span class="ar-word">فَعَلَ &rarr; فَعَلْـ + ـتَ = </span><strong
+                class="ar-word ar-color-3">فَعَلْتَ</strong> (faʿalta - You did)
+            </li>
+            <li class="list-group-item"><strong>أَنْتِ (You, feminine)</strong> &rarr; Add the suffix <span
+                class="ar-word ar-color-cmd-step4">ـتِ</span> (ti)
+              <br><span class="ar-word">فَعَلَ &rarr; فَعَلْـ + ـتِ = </span><strong
+                class="ar-word ar-color-4">فَعَلْتِ</strong> (faʿalti - You did)
+            </li>
+            <li class="list-group-item"><strong>هُوَ (He)</strong> &rarr; No change. This is the base form.
+              <br><strong class="ar-word ar-color-5">فَعَلَ</strong> (faʿala - He did)
+            </li>
+            <li class="list-group-item"><strong>هِيَ (She)</strong> &rarr; Add the suffix <span
+                class="ar-word ar-color-cmd-step5">ـتْ</span> (t). This is <span class="ar-word">تَاءُ
+                التَّأْنِيثِ</span>. The letter before it keeps its fatḥa.
+              <br><span class="ar-word">فَعَلَ + ـتْ = </span><strong class="ar-word ar-color-6">فَعَلَتْ</strong>
+              (faʿalat - She did)
+              <p class="small text-muted mt-2 mb-0"><strong>Pro Tip:</strong> When the verb <span
+                  class="ar-word">فَعَلَتْ</span> is followed by a word starting with "Al-" (<span
+                  class="ar-word">ال</span>), the sukūn on the <span class="ar-word">تْ</span> changes to a kasra
+                (<span class="ar-word">ـِ</span>) to make pronunciation smoother. e.g., <span class="ar-word">فَعَلَتِ
+                  الْبِنْتُ</span>.</p>
+            </li>
+          </ul>
+
+          <h4 class="mt-4">Putting It All Together: Practice Table</h4>
+          <p>Here is a table showing the conjugation patterns for several common verbs. Practice reading them aloud to
+            get used to the rhythm and sound.</p>
+
+
+          <div class="table-responsive">
+            <table class="table table-bordered text-center" style="font-size: 1.1rem;">
+              <thead class="table-light">
+                <tr>
+                  <th>English</th>
+                  <th>أَنَا (I)</th>
+                  <th>نَحْنُ (We)</th>
+                  <th>أَنْتَ (You, m.)</th>
+                  <th>أَنْتِ (You, f.)</th>
+                  <th>هُوَ (He)</th>
+                  <th>هِيَ (She)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>to do</td>
+                  <td><span class="ar-word">فَعَلْتُ</span></td>
+                  <td><span class="ar-word">فَعَلْنَا</span></td>
+                  <td><span class="ar-word">فَعَلْتَ</span></td>
+                  <td><span class="ar-word">فَعَلْتِ</span></td>
+                  <td><span class="ar-word">فَعَلَ</span></td>
+                  <td><span class="ar-word">فَعَلَتْ</span></td>
+                </tr>
+                <tr>
+                  <td>to read</td>
+                  <td><span class="ar-word">قَرَأْتُ</span></td>
+                  <td><span class="ar-word">قَرَأْنَا</span></td>
+                  <td><span class="ar-word">قَرَأْتَ</span></td>
+                  <td><span class="ar-word">قَرَأْتِ</span></td>
+                  <td><span class="ar-word">قَرَأَ</span></td>
+                  <td><span class="ar-word">قَرَأَتْ</span></td>
+                </tr>
+                <tr>
+                  <td>to write</td>
+                  <td><span class="ar-word">كَتَبْتُ</span></td>
+                  <td><span class="ar-word">كَتَبْنَا</span></td>
+                  <td><span class="ar-word">كَتَبْتَ</span></td>
+                  <td><span class="ar-word">كَتَبْتِ</span></td>
+                  <td><span class="ar-word">كَتَبَ</span></td>
+                  <td><span class="ar-word">كَتَبَتْ</span></td>
+                </tr>
+                <tr>
+                  <td>to go</td>
+                  <td><span class="ar-word">ذَهَبْتُ</span></td>
+                  <td><span class="ar-word">ذَهَبْنَا</span></td>
+                  <td><span class="ar-word">ذَهَبْتَ</span></td>
+                  <td><span class="ar-word">ذَهَبْتِ</span></td>
+                  <td><span class="ar-word">ذَهَبَ</span></td>
+                  <td><span class="ar-word">ذَهَبَتْ</span></td>
+                </tr>
+                <tr>
+                  <td>to sleep</td>
+                  <td><span class="ar-word">نِمْتُ</span></td>
+                  <td><span class="ar-word">نِمْنَا</span></td>
+                  <td><span class="ar-word">نِمْتَ</span></td>
+                  <td><span class="ar-word">نِمْتِ</span></td>
+                  <td><span class="ar-word">نَامَ</span></td>
+                  <td><span class="ar-word">نَامَتْ</span></td>
+                </tr>
+                <tr>
+                  <td>to eat</td>
+                  <td><span class="ar-word">أَكَلْتُ</span></td>
+                  <td><span class="ar-word">أَكَلْنَا</span></td>
+                  <td><span class="ar-word">أَكَلْتَ</span></td>
+                  <td><span class="ar-word">أَكَلْتِ</span></td>
+                  <td><span class="ar-word">أَكَلَ</span></td>
+                  <td><span class="ar-word">أَكَلَتْ</span></td>
+                </tr>
+                <tr>
+                  <td>to drink</td>
+                  <td><span class="ar-word">شَرِبْتُ</span></td>
+                  <td><span class="ar-word">شَرِبْنَا</span></td>
+                  <td><span class="ar-word">شَرِبْتَ</span></td>
+                  <td><span class="ar-word">شَرِبْتِ</span></td>
+                  <td><span class="ar-word">شَرِبَ</span></td>
+                  <td><span class="ar-word">شَرِبَتْ</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h4 class="mt-4">How to Practice</h4>
+          <p>The best way to master the past tense is to use it. Start talking about your day. Ask yourself:</p>
+          <p class="text-center fs-4 ar-word">"مَاذَا فَعَلْتُ الْيَوْم؟"</p>
+          <p>(Mādhā faʿaltu l-yawm? - What did I do today?)</p>
+          <p>Then, try to answer using the patterns you've learned:</p>
+          <ul>
+            <li>"I drank coffee." &rarr; <span class="ar-word">شَرِبْتُ قَهْوَةً.</span> (Sharibtu qahwatan.)</li>
+            <li>"We read the book." &rarr; <span class="ar-word">قَرَأْنَا الْكِتَاب.</span> (Qaraʾnā al-kitāb.)
+            </li>
+            <li>"You (f.) ate the food." &rarr; <span class="ar-word">أَنْتِ أَكَلْتِ الطَّعَام.</span> (Anti akalti
+              ṭ-ṭaʿām.)</li>
+          </ul>
+          <p>By consistently applying these rules, you will build a strong foundation for speaking and understanding
+            Arabic narrative and conversation.</p>
+        </article>
+      </div>
+    </section>
+
+
+    <section id="body-parts-vocab" class="lesson-section card mt-4 animate__animated animate__fadeInUp">
+      <div class="card-body">
+        <h3 class="section-title" dir="rtl">
+          Vocabulary: The Human Body - جِسْمُ الإِنْسَانِ
+        </h3>
+        <div class="image-placeholder my-3 text-center">
+          <img src="./photos/HumanBody.png" alt="Diagram of the human body" class="img-fluid rounded"
+            style="max-width: 300px;" />
+        </div>
+        <ul class="list-unstyled">
+          <li class="vocab-item">
+            <p dir="rtl">
+              <span class="ar-word ar-color-bp1">رَأْس</span> (ra's) -
+              <span class="en-word en-color-bp1">Head</span>
+            </p>
+            <ul class="list-unstyled ms-3">
+              <li>
+                <p dir="rtl">
+                  <span class="ar-word ar-color-bp2">أَشْعُرُ</span>
+                  <span class="ar-word ar-color-bp3">بِأَلَمٍ</span>
+                  <span class="ar-word ar-color-bp4">فِي</span>
+                  <span class="ar-word ar-color-bp5">رَأْسِي</span>.
+                </p>
+                <p class="translation">
+                  <span class="en-word en-color-bp2">I feel</span>
+                  <span class="en-word en-color-bp3">a pain</span>
+                  <span class="en-word en-color-bp4">in</span>
+                  <span class="en-word en-color-bp5">my head</span>.
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li class="vocab-item">
+            <p dir="rtl">
+              <span class="ar-word ar-color-bp6">شَعْر</span> (shaʿr) -
+              <span class="en-word en-color-bp6">Hair</span>
+            </p>
+            <ul class="list-unstyled ms-3">
+              <li>
+                <p dir="rtl">
+                  <span class="ar-word ar-color-bp7">لَوْنُ</span>
+                  <span class="ar-word ar-color-bp8">شَعْرِهَا</span>
+                  <span class="ar-word ar-color-bp9">أَسْوَدُ</span>.
+                </p>
+                <p class="translation">
+                  <span class="en-word en-color-bp7">The color of</span>
+                  <span class="en-word en-color-bp8">her hair</span>
+                  <span class="en-word en-color-bp9">is black</span>.
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li class="vocab-item">
+            <p dir="rtl">
+              <span class="ar-word ar-color-bp10">عَيْن</span> (ʿayn) -
+              <span class="en-word en-color-bp10">Eye</span>
+            </p>
+            <ul class="list-unstyled ms-3">
+              <li>
+                <p dir="rtl">
+                  <span class="ar-word ar-color-bp11">أَرَى</span>
+                  <span class="ar-word ar-color-bp12">بِعَيْنِي</span>.
+                </p>
+                <p class="translation">
+                  <span class="en-word en-color-bp11">I see</span>
+                  <span class="en-word en-color-bp12">with my eye</span>.
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li class="vocab-item">
+            <p dir="rtl">
+              <span class="ar-word ar-color-bp13">أُذُن</span> (udhun) -
+              <span class="en-word en-color-bp13">Ear</span>
+            </p>
+            <ul class="list-unstyled ms-3">
+              <li>
+                <p dir="rtl">
+                  <span class="ar-word ar-color-bp14">أَسْمَعُ</span>
+                  <span class="ar-word ar-color-bp15">الصَّوْتَ</span>
+                  <span class="ar-word ar-color-bp16">بِأُذُنِي</span>.
+                </p>
+                <p class="translation">
+                  <span class="en-word en-color-bp14">I hear</span>
+                  <span class="en-word en-color-bp15">the sound</span>
+                  <span class="en-word en-color-bp16">with my ear</span>.
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li class="vocab-item">
+            <p dir="rtl">
+              <span class="ar-word ar-color-bp17">أَنْف</span> (anf) -
+              <span class="en-word en-color-bp17">Nose</span>
+            </p>
+            <ul class="list-unstyled ms-3">
+              <li>
+                <p dir="rtl">
+                  <span class="ar-word ar-color-bp18">أَشُمُّ</span>
+                  <span class="ar-word ar-color-bp19">الْوَرْدَةَ</span>
+                  <span class="ar-word ar-color-bp20">بِأَنْفِي</span>.
+                </p>
+                <p class="translation">
+                  <span class="en-word en-color-bp18">I smell</span>
+                  <span class="en-word en-color-bp19">the rose</span>
+                  <span class="en-word en-color-bp20">with my nose</span>.
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li class="vocab-item">
+            <p dir="rtl">
+              <span class="ar-word ar-color-bp21">فَم</span> (fam) -
+              <span class="en-word en-color-bp21">Mouth</span>
+            </p>
+            <ul class="list-unstyled ms-3">
+              <li>
+                <p dir="rtl">
+                  <span class="ar-word ar-color-bp22">آكُلُ</span>
+                  <span class="ar-word ar-color-bp23">الطَّعَامَ</span>
+                  <span class="ar-word ar-color-bp24">بِفَمِي</span>.
+                </p>
+                <p class="translation">
+                  <span class="en-word en-color-bp22">I eat</span>
+                  <span class="en-word en-color-bp23">the food</span>
+                  <span class="en-word en-color-bp24">with my mouth</span>.
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li class="vocab-item">
+            <p dir="rtl">
+              <span class="ar-word ar-color-bp25">شَفَة</span> (shafah) -
+              <span class="en-word en-color-bp25">Lip</span>
+            </p>
+            <ul class="list-unstyled ms-3">
+              <li>
+                <p dir="rtl">
+                  <span class="ar-word ar-color-bp26">هُوَ</span>
+                  <span class="ar-word ar-color-bp27">يَبْتَسِمُ</span>
+                  <span class="ar-word ar-color-bp28">بِشَفَتَيْهِ</span>.
+                </p>
+                <p class="translation">
+                  <span class="en-word en-color-bp26">He</span>
+                  <span class="en-word en-color-bp27">is smiling</span>
+                  <span class="en-word en-color-bp28">with his lips</span>.
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li class="vocab-item">
+            <p dir="rtl">
+              <span class="ar-word ar-color-bp29">رَقَبَة</span> (raqabah) -
+              <span class="en-word en-color-bp29">Neck</span>
+            </p>
+            <ul class="list-unstyled ms-3">
+              <li>
+                <p dir="rtl">
+                  <span class="ar-word ar-color-bp30">الزَّرَافَةُ</span>
+                  <span class="ar-word ar-color-bp31">لَهَا</span>
+                  <span class="ar-word ar-color-bp32">رَقَبَةٌ</span>
+                  <span class="ar-word ar-color-bp33">طَوِيلَةٌ</span>.
+                </p>
+                <p class="translation">
+                  <span class="en-word en-color-bp30">The giraffe</span>
+                  <span class="en-word en-color-bp31">has</span>
+                  <span class="en-word en-color-bp32">a long</span>
+                  <span class="en-word en-color-bp33">neck</span>.
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li class="vocab-item">
+            <p dir="rtl">
+              <span class="ar-word ar-color-bp34">صَدْر</span> (ṣadr) -
+              <span class="en-word en-color-bp34">Chest</span>
+            </p>
+            <ul class="list-unstyled ms-3">
+              <li>
+                <p dir="rtl">
+                  <span class="ar-word ar-color-bp35">وَضَعَ</span>
+                  <span class="ar-word ar-color-bp36">يَدَهُ</span>
+                  <span class="ar-word ar-color-bp37">عَلَى</span>
+                  <span class="ar-word ar-color-bp38">صَدْرِهِ</span>.
+                </p>
+                <p class="translation">
+                  <span class="en-word en-color-bp35">He put</span>
+                  <span class="en-word en-color-bp36">his hand</span>
+                  <span class="en-word en-color-bp37">on</span>
+                  <span class="en-word en-color-bp38">his chest</span>.
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li class="vocab-item">
+            <p dir="rtl">
+              <span class="ar-word ar-color-bp39">بَطْن</span> (baṭn) -
+              <span class="en-word en-color-bp39">Stomach / Abdomen</span>
+            </p>
+            <ul class="list-unstyled ms-3">
+              <li>
+                <p dir="rtl">
+                  <span class="ar-word ar-color-bp40">بَطْنِي</span>
+                  <span class="ar-word ar-color-bp41">يُؤْلِمُنِي</span>
+                  <span class="ar-word ar-color-bp42">بَعْدَ</span>
+                  <span class="ar-word ar-color-bp43">الأَكْلِ</span>.
+                </p>
+                <p class="translation">
+                  <span class="en-word en-color-bp40">My stomach</span>
+                  <span class="en-word en-color-bp41">hurts me</span>
+                  <span class="en-word en-color-bp42">after</span>
+                  <span class="en-word en-color-bp43">eating</span>.
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li class="vocab-item">
+            <p dir="rtl">
+              <span class="ar-word ar-color-bp44">ذِرَاع</span> (dhirāʿ) -
+              <span class="en-word en-color-bp44">Arm</span>
+            </p>
+            <ul class="list-unstyled ms-3">
+              <li>
+                <p dir="rtl">
+                  <span class="ar-word ar-color-bp45">هُوَ</span>
+                  <span class="ar-word ar-color-bp46">يَحْمِلُ</span>
+                  <span class="ar-word ar-color-bp47">الصُّنْدُوقَ</span>
+                  <span class="ar-word ar-color-bp48">بِذِرَاعَيْهِ</span>.
+                </p>
+                <p class="translation">
+                  <span class="en-word en-color-bp45">He</span>
+                  <span class="en-word en-color-bp46">is carrying</span>
+                  <span class="en-word en-color-bp47">the box</span>
+                  <span class="en-word en-color-bp48">with his arms</span>.
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li class="vocab-item">
+            <p dir="rtl">
+              <span class="ar-word ar-color-bp49">يَد</span> (yad) -
+              <span class="en-word en-color-bp49">Hand</span>
+            </p>
+            <ul class="list-unstyled ms-3">
+              <li>
+                <p dir="rtl">
+                  <span class="ar-word ar-color-bp50">أَكْتُبُ</span>
+                  <span class="ar-word ar-color-bp51">بِيَدِي</span>
+                  <span class="ar-word ar-color-bp52">الْيُمْنَى</span>.
+                </p>
+                <p class="translation">
+                  <span class="en-word en-color-bp50">I write</span>
+                  <span class="en-word en-color-bp51">with my right</span>
+                  <span class="en-word en-color-bp52">hand</span>.
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li class="vocab-item">
+            <p dir="rtl">
+              <span class="ar-word ar-color-bp53">إِصْبَع</span> (iṣbaʿ) -
+              <span class="en-word en-color-bp53">Finger</span>
+            </p>
+            <ul class="list-unstyled ms-3">
+              <li>
+                <p dir="rtl">
+                  <span class="ar-word ar-color-bp54">لَدَيْنَا</span>
+                  <span class="ar-word ar-color-bp55">خَمْسَةُ</span>
+                  <span class="ar-word ar-color-bp56">أَصَابِعَ</span>
+                  <span class="ar-word ar-color-bp57">فِي كُلِّ يَدٍ</span>.
+                </p>
+                <p class="translation">
+                  <span class="en-word en-color-bp54">We have</span>
+                  <span class="en-word en-color-bp55">five</span>
+                  <span class="en-word en-color-bp56">fingers</span>
+                  <span class="en-word en-color-bp57">on each hand</span>.
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li class="vocab-item">
+            <p dir="rtl">
+              <span class="ar-word ar-color-bp58">فَخِذ</span> (fakhidh) -
+              <span class="en-word en-color-bp58">Thigh</span>
+            </p>
+            <ul class="list-unstyled ms-3">
+              <li>
+                <p dir="rtl">
+                  <span class="ar-word ar-color-bp59">عَضَلَةُ</span>
+                  <span class="ar-word ar-color-bp60">الْفَخِذِ</span>
+                  <span class="ar-word ar-color-bp61">كَبِيرَةٌ</span>.
+                </p>
+                <p class="translation">
+                  <span class="en-word en-color-bp59">The thigh</span>
+                  <span class="en-word en-color-bp60">muscle is</span>
+                  <span class="en-word en-color-bp61">big</span>.
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li class="vocab-item">
+            <p dir="rtl">
+              <span class="ar-word ar-color-bp62">رُكْبَة</span> (rukbah) -
+              <span class="en-word en-color-bp62">Knee</span>
+            </p>
+            <ul class="list-unstyled ms-3">
+              <li>
+                <p dir="rtl">
+                  <span class="ar-word ar-color-bp63">جَرَحْتُ</span>
+                  <span class="ar-word ar-color-bp64">رُكْبَتِي</span>
+                  <span class="ar-word ar-color-bp65">عِنْدَمَا</span>
+                  <span class="ar-word ar-color-bp66">سَقَطْتُ</span>.
+                </p>
+                <p class="translation">
+                  <span class="en-word en-color-bp63">I hurt</span>
+                  <span class="en-word en-color-bp64">my knee</span>
+                  <span class="en-word en-color-bp65">when</span>
+                  <span class="en-word en-color-bp66">I fell</span>.
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li class="vocab-item">
+            <p dir="rtl">
+              <span class="ar-word ar-color-bp67">سَاق</span> (sāq) -
+              <span class="en-word en-color-bp67">Leg / Shin</span>
+            </p>
+            <ul class="list-unstyled ms-3">
+              <li>
+                <p dir="rtl">
+                  <span class="ar-word ar-color-bp68">سَاقُهُ</span>
+                  <span class="ar-word ar-color-bp69">طَوِيلَةٌ</span>
+                  <span class="ar-word ar-color-bp70">وَقَوِيَّةٌ</span>.
+                </p>
+                <p class="translation">
+                  <span class="en-word en-color-bp68">His leg</span>
+                  <span class="en-word en-color-bp69">is long</span>
+                  <span class="en-word en-color-bp70">and strong</span>.
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li class="vocab-item">
+            <p dir="rtl">
+              <span class="ar-word ar-color-bp71">قَدَم</span> (qadam) -
+              <span class="en-word en-color-bp71">Foot</span>
+            </p>
+            <ul class="list-unstyled ms-3">
+              <li>
+                <p dir="rtl">
+                  <span class="ar-word ar-color-bp72">أَلْبَسُ</span>
+                  <span class="ar-word ar-color-bp73">الْحِذَاءَ</span>
+                  <span class="ar-word ar-color-bp74">فِي</span>
+                  <span class="ar-word ar-color-bp75">قَدَمِي</span>.
+                </p>
+                <p class="translation">
+                  <span class="en-word en-color-bp72">I wear</span>
+                  <span class="en-word en-color-bp73">the shoe</span>
+                  <span class="en-word en-color-bp74">on</span>
+                  <span class="en-word en-color-bp75">my foot</span>.
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li class="vocab-item">
+            <p dir="rtl">
+              <span class="ar-word ar-color-bp76">كَعْب</span> (kaʿb) -
+              <span class="en-word en-color-bp76">Ankle</span>
+            </p>
+            <ul class="list-unstyled ms-3">
+              <li>
+                <p dir="rtl">
+                  <span class="ar-word ar-color-bp77">الْتَوَى</span>
+                  <span class="ar-word ar-color-bp78">كَعْبُهُ</span>
+                  <span class="ar-word ar-color-bp79">وَهُوَ</span>
+                  <span class="ar-word ar-color-bp80">يَلْعَبُ</span>.
+                </p>
+                <p class="translation">
+                  <span class="en-word en-color-bp77">He twisted</span>
+                  <span class="en-word en-color-bp78">his ankle</span>
+                  <span class="en-word en-color-bp79">while</span>
+                  <span class="en-word en-color-bp80">playing</span>.
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li class="vocab-item">
+            <p dir="rtl">
+              <span class="ar-word ar-color-bp81">عَقِب</span> (ʿaqib) -
+              <span class="en-word en-color-bp81">Heel</span>
+            </p>
+            <ul class="list-unstyled ms-3">
+              <li>
+                <p dir="rtl">
+                  <span class="ar-word ar-color-bp82">عَقِبُ</span>
+                  <span class="ar-word ar-color-bp83">الْقَدَمِ</span>
+                  <span class="ar-word ar-color-bp84">مُهِمٌّ</span>
+                  <span class="ar-word ar-color-bp85">لِلْمَشْيِ</span>.
+                </p>
+                <p class="translation">
+                  <span class="en-word en-color-bp82">The heel of</span>
+                  <span class="en-word en-color-bp83">the foot</span>
+                  <span class="en-word en-color-bp84">is important</span>
+                  <span class="en-word en-color-bp85">for walking</span>.
+                </p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- ======================================================= -->
+    <!-- START OF EXERCISES FOR HUMAN BODY VOCABULARY -->
+    <!-- ======================================================= -->
+    <section id="body-parts-exercises" class="lesson-section card mt-4 animate__animated animate__fadeInUp">
+      <div class="card-body">
+        <h3 class="section-title text-center">Exercises: The Human Body - تَمْرِينَاتٌ</h3>
+
+        <!-- Exercise 1: Multiple Choice Questions -->
+        <div class="exercise-block mt-4">
+          <h4 class="sub-section-title" dir="rtl">Exercise 1: Multiple Choice - اِخْتَرْ الْإِجَابَةَ الصَّحِيحَةَ</h4>
+          <div id="mcq-container-bp1" dir="rtl">
+            <div class="mcq-question mb-3">
+              <p><strong>1. نَسْمَعُ الصَّوْتَ بِـ...؟</strong> (We hear sound with the...?)</p>
+              <div class="form-check"><input class="form-check-input" type="radio" name="q1_bp" value="a"><label
+                  class="form-check-label">الْأَنْفِ</label></div>
+              <div class="form-check"><input class="form-check-input" type="radio" name="q1_bp" value="b"><label
+                  class="form-check-label">الْأُذُنِ</label></div>
+              <div class="form-check"><input class="form-check-input" type="radio" name="q1_bp" value="c"><label
+                  class="form-check-label">الْيَدِ</label></div>
+            </div>
+            <div class="mcq-question mb-3">
+              <p><strong>2. الْجُزْءُ الَّذِي يَرْبِطُ الرَّأْسَ بِالْجِسْمِ هُوَ...؟</strong> (The part that connects
+                the head to the body is the...?)</p>
+              <div class="form-check"><input class="form-check-input" type="radio" name="q2_bp" value="a"><label
+                  class="form-check-label">الرَّقَبَةُ</label></div>
+              <div class="form-check"><input class="form-check-input" type="radio" name="q2_bp" value="b"><label
+                  class="form-check-label">الصَّدْرُ</label></div>
+              <div class="form-check"><input class="form-check-input" type="radio" name="q2_bp" value="c"><label
+                  class="form-check-label">الذِّرَاعُ</label></div>
+            </div>
+            <div class="mcq-question mb-3">
+              <p><strong>3. نَرَى الْأَشْيَاءَ بِـ...؟</strong> (We see things with the...?)</p>
+              <div class="form-check"><input class="form-check-input" type="radio" name="q3_bp" value="a"><label
+                  class="form-check-label">الْفَمِ</label></div>
+              <div class="form-check"><input class="form-check-input" type="radio" name="q3_bp" value="b"><label
+                  class="form-check-label">الْأُذُنِ</label></div>
+              <div class="form-check"><input class="form-check-input" type="radio" name="q3_bp" value="c"><label
+                  class="form-check-label">الْعَيْنِ</label></div>
+            </div>
+            <button class="btn btn-primary check-answers-btn" data-mcq-id="bp1">Check Answers</button>
+            <div class="feedback mt-2"></div>
+          </div>
+        </div>
+
+        <hr class="my-4">
+
+        <!-- Exercise 2: Fill in the Blanks -->
+        <div class="exercise-block mt-4">
+          <h4 class="sub-section-title" dir="rtl">Exercise 2: Fill in the Blanks - اِمْلَأ الْفَرَاغَاتِ</h4>
+          <div class="word-bank p-3 mb-4 rounded bg-light" dir="rtl">
+            <strong>الكلمات المساعدة (Word Bank):</strong><br>
+            <span class="badge bg-secondary m-1 fs-6">شَعْري</span>
+            <span class="badge bg-secondary m-1 fs-6">يَدِي</span>
+            <span class="badge bg-secondary m-1 fs-6">رُكْبَتِي</span>
+            <span class="badge bg-secondary m-1 fs-6">بَطْنِي</span>
+            <span class="badge bg-secondary m-1 fs-6">قَدَم</span>
+          </div>
+          <div id="fill-blanks-container-bp2">
+            <ol dir="rtl" class="fs-5">
+              <li class="mb-3">أَكْتُبُ الْوَاجِبَ بِـ <input type="text" id="fill_bp_1"
+                  class="form-control d-inline-block" style="width: 150px;"> . (I write the homework with my _______.)
+              </li>
+              <li class="mb-3">أَنَا جَائِعٌ، <input type="text" id="fill_bp_2" class="form-control d-inline-block"
+                  style="width: 150px;"> يُؤْلِمُنِي. (I am hungry, my _______ hurts me.)</li>
+              <li class="mb-3">لَوْنُ <input type="text" id="fill_bp_3" class="form-control d-inline-block"
+                  style="width: 150px;"> أَسْوَدُ. (The color of my _______ is black.)</li>
+              <li class="mb-3">سَقَطْتُ وَجَرَحْتُ <input type="text" id="fill_bp_4" class="form-control d-inline-block"
+                  style="width: 150px;"> . (I fell and hurt my _______.)</li>
+              <li class="mb-3">أَلْبَسُ الْجَوْرَبَ فِي <input type="text" id="fill_bp_5"
+                  class="form-control d-inline-block" style="width: 150px;"> . (I wear the sock on my _______.)</li>
+            </ol>
+            <button class="btn btn-primary" id="check-fill-blanks-bp2">Check Answers</button>
+            <div class="feedback mt-2" id="feedback-fill-blanks-bp2"></div>
+          </div>
+        </div>
+
+
+        <hr class="my-4">
+
+        <!-- Exercise 3: Drag and Drop Matching -->
+        <div class="exercise-block mt-4">
+          <h4 class="sub-section-title" dir="rtl">Exercise 3: Matching - طَابِقْ بَيْنَ الْكَلِمَةِ وَمَعْنَاهَا</h4>
+          <p>Drag the Arabic word to its correct English meaning.</p>
+          <div class="drag-drop-container row">
+            <div class="col-md-6">
+              <h5 dir="rtl">الْكَلِمَاتُ الْعَرَبِيَّة</h5>
+              <div id="ar-bp1" class="draggable-item" draggable="true">صَدْر</div>
+              <div id="ar-bp2" class="draggable-item" draggable="true">سَاق</div>
+              <div id="ar-bp3" class="draggable-item" draggable="true">رَأْس</div>
+              <div id="ar-bp4" class="draggable-item" draggable="true">إِصْبَع</div>
+            </div>
+            <div class="col-md-6">
+              <h5>English Meanings</h5>
+              <div id="en-bp1" class="droppable-area" data-match="ar-bp4">Finger</div>
+              <div id="en-bp2" class="droppable-area" data-match="ar-bp1">Chest</div>
+              <div id="en-bp3" class="droppable-area" data-match="ar-bp3">Head</div>
+              <div id="en-bp4" class="droppable-area" data-match="ar-bp2">Leg</div>
+            </div>
+          </div>
+          <p id="drag-drop-feedback-bp" class="mt-3"></p>
+        </div>
+
+      </div>
+    </section>
+    <!-- ======================================================= -->
+    <!-- END OF EXERCISES FOR HUMAN BODY VOCABULARY -->
+    <!-- ======================================================= -->
+
+    <section id="professions-vocab" class="lesson-section card mt-4">
+      <div class="card-body">
+        <h3 class="section-title" dir="rtl">
+          Vocabulary: Professions - الْمِهَنُ
+        </h3>
+        <div class="image-placeholder my-3 text-center">
+          <img src="./photos/professions.png" alt="Images of various professions" class="img-fluid rounded"
+            style="max-width: 600px;" />
+        </div>
+        <ul class="list-unstyled">
+
+          <li class="vocab-item">
+            <p dir="rtl">
+              <span class="ar-word ar-color-p1">نَجَّار</span> (najjār) -
+              <span class="en-word en-color-p1">Carpenter</span>
+            </p>
+            <ul class="list-unstyled ms-3">
+              <li>
+                <p dir="rtl">
+                  <span class="ar-word ar-color-p2">النَّجَّارُ</span>
+                  <span class="ar-word ar-color-p3">يَصْنَعُ</span>
+                  <span class="ar-word ar-color-p4">الْأَثَاثَ</span>.
+                </p>
+                <p class="translation">
+                  <span class="en-word en-color-p2">The carpenter</span>
+                  <span class="en-word en-color-p3">makes</span>
+                  <span class="en-word en-color-p4">the furniture</span>.
+                </p>
+              </li>
+            </ul>
+          </li>
+
+          <li class="vocab-item">
+            <p dir="rtl">
+              <span class="ar-word ar-color-p5">حَدَّاد</span> (ḥaddād) -
+              <span class="en-word en-color-p5">Blacksmith</span>
+            </p>
+            <ul class="list-unstyled ms-3">
+              <li>
+                <p dir="rtl">
+                  <span class="ar-word ar-color-p6">الْحَدَّادُ</span>
+                  <span class="ar-word ar-color-p7">يَسْتَخْدِمُ</span>
+                  <span class="ar-word ar-color-p8">الْمِطْرَقَةَ</span>.
+                </p>
+                <p class="translation">
+                  <span class="en-word en-color-p6">The blacksmith</span>
+                  <span class="en-word en-color-p7">uses</span>
+                  <span class="en-word en-color-p8">the hammer</span>.
+                </p>
+              </li>
+            </ul>
+          </li>
+
+          <li class="vocab-item">
+            <p dir="rtl">
+              <span class="ar-word ar-color-p9">سَبَّاك</span> (sabbāk) -
+              <span class="en-word en-color-p9">Plumber</span>
+            </p>
+            <ul class="list-unstyled ms-3">
+              <li>
+                <p dir="rtl">
+                  <span class="ar-word ar-color-p10">السَّبَّاكُ</span>
+                  <span class="ar-word ar-color-p11">يُصْلِحُ</span>
+                  <span class="ar-word ar-color-p12">الْأَنَابِيبَ</span>.
+                </p>
+                <p class="translation">
+                  <span class="en-word en-color-p10">The plumber</span>
+                  <span class="en-word en-color-p11">fixes</span>
+                  <span class="en-word en-color-p12">the pipes</span>.
+                </p>
+              </li>
+            </ul>
+          </li>
+
+          <li class="vocab-item">
+            <p dir="rtl">
+              <span class="ar-word ar-color-p13">كَهْرَبَائِيّ</span> (kahrabāʾiyy) -
+              <span class="en-word en-color-p13">Electrician</span>
+            </p>
+            <ul class="list-unstyled ms-3">
+              <li>
+                <p dir="rtl">
+                  <span class="ar-word ar-color-p14">الْكَهْرَبَائِيُّ</span>
+                  <span class="ar-word ar-color-p15">يَتَعَامَلُ</span>
+                  <span class="ar-word ar-color-p16">مَعَ الْكَهْرَبَاءِ</span>.
+                </p>
+                <p class="translation">
+                  <span class="en-word en-color-p14">The electrician</span>
+                  <span class="en-word en-color-p15">deals</span>
+                  <span class="en-word en-color-p16">with electricity</span>.
+                </p>
+              </li>
+            </ul>
+          </li>
+
+          <li class="vocab-item">
+            <p dir="rtl">
+              <span class="ar-word ar-color-p17">بَنَّاء</span> (bannāʾ) -
+              <span class="en-word en-color-p17">Builder</span>
+            </p>
+            <ul class="list-unstyled ms-3">
+              <li>
+                <p dir="rtl">
+                  <span class="ar-word ar-color-p18">الْبَنَّاءُ</span>
+                  <span class="ar-word ar-color-p19">يَبْنِي</span>
+                  <span class="ar-word ar-color-p20">الْبُيُوتَ</span>.
+                </p>
+                <p class="translation">
+                  <span class="en-word en-color-p18">The builder</span>
+                  <span class="en-word en-color-p19">builds</span>
+                  <span class="en-word en-color-p20">the houses</span>.
+                </p>
+              </li>
+            </ul>
+          </li>
+
+          <li class="vocab-item">
+            <p dir="rtl">
+              <span class="ar-word ar-color-p21">مُزَارِع</span> (muzāriʿ) -
+              <span class="en-word en-color-p21">Farmer</span>
+            </p>
+            <ul class="list-unstyled ms-3">
+              <li>
+                <p dir="rtl">
+                  <span class="ar-word ar-color-p22">الْمُزَارِعُ</span>
+                  <span class="ar-word ar-color-p23">يَزْرَعُ</span>
+                  <span class="ar-word ar-color-p24">النَّبَاتَاتِ</span>.
+                </p>
+                <p class="translation">
+                  <span class="en-word en-color-p22">The farmer</span>
+                  <span class="en-word en-color-p23">plants</span>
+                  <span class="en-word en-color-p24">the plants</span>.
+                </p>
+              </li>
+            </ul>
+          </li>
+
+          <li class="vocab-item">
+            <p dir="rtl">
+              <span class="ar-word ar-color-p25">بَقَّال</span> (baqqāl) -
+              <span class="en-word en-color-p25">Grocer</span>
+            </p>
+            <ul class="list-unstyled ms-3">
+              <li>
+                <p dir="rtl">
+                  <span class="ar-word ar-color-p26">الْبَقَّالُ</span>
+                  <span class="ar-word ar-color-p27">يَبِيعُ</span>
+                  <span class="ar-word ar-color-p28">الطَّعَامَ</span>.
+                </p>
+                <p class="translation">
+                  <span class="en-word en-color-p26">The grocer</span>
+                  <span class="en-word en-color-p27">sells</span>
+                  <span class="en-word en-color-p28">the food</span>.
+                </p>
+              </li>
+            </ul>
+          </li>
+
+          <li class="vocab-item">
+            <p dir="rtl">
+              <span class="ar-word ar-color-p29">حَلَّاق</span> (ḥallāq) -
+              <span class="en-word en-color-p29">Barber</span>
+            </p>
+            <ul class="list-unstyled ms-3">
+              <li>
+                <p dir="rtl">
+                  <span class="ar-word ar-color-p30">الْحَلَّاقُ</span>
+                  <span class="ar-word ar-color-p31">يَقُصُّ</span>
+                  <span class="ar-word ar-color-p32">الشَّعْرَ</span>.
+                </p>
+                <p class="translation">
+                  <span class="en-word en-color-p30">The barber</span>
+                  <span class="en-word en-color-p31">cuts</span>
+                  <span class="en-word en-color-p32">the hair</span>.
+                </p>
+              </li>
+            </ul>
+          </li>
+
+          <li class="vocab-item">
+            <p dir="rtl">
+              <span class="ar-word ar-color-p33">طَبَّاخ</span> (ṭabbākh) -
+              <span class="en-word en-color-p33">Cook / Chef</span>
+            </p>
+            <ul class="list-unstyled ms-3">
+              <li>
+                <p dir="rtl">
+                  <span class="ar-word ar-color-p34">الطَّبَّاخُ</span>
+                  <span class="ar-word ar-color-p35">يُعِدُّ</span>
+                  <span class="ar-word ar-color-p36">وَجَبَاتٍ لَذِيذَةٍ</span>.
+                </p>
+                <p class="translation">
+                  <span class="en-word en-color-p34">The cook</span>
+                  <span class="en-word en-color-p35">prepares</span>
+                  <span class="en-word en-color-p36">delicious meals</span>.
+                </p>
+              </li>
+            </ul>
+          </li>
+
+          <li class="vocab-item">
+            <p dir="rtl">
+              <span class="ar-word ar-color-p37">شُرْطِيّ</span> (shurṭiyy) -
+              <span class="en-word en-color-p37">Policeman</span>
+            </p>
+            <ul class="list-unstyled ms-3">
+              <li>
+                <p dir="rtl">
+                  <span class="ar-word ar-color-p38">الشُّرْطِيُّ</span>
+                  <span class="ar-word ar-color-p39">يُسَاعِدُ</span>
+                  <span class="ar-word ar-color-p40">النَّاسَ</span>.
+                </p>
+                <p class="translation">
+                  <span class="en-word en-color-p38">The policeman</span>
+                  <span class="en-word en-color-p39">helps</span>
+                  <span class="en-word en-color-p40">the people</span>.
+                </p>
+              </li>
+            </ul>
+          </li>
+
+          <li class="vocab-item">
+            <p dir="rtl">
+              <span class="ar-word ar-color-p41">سَائِق</span> (sāʾiq) -
+              <span class="en-word en-color-p41">Driver</span>
+            </p>
+            <ul class="list-unstyled ms-3">
+              <li>
+                <p dir="rtl">
+                  <span class="ar-word ar-color-p42">السَّائِقُ</span>
+                  <span class="ar-word ar-color-p43">يَقُودُ</span>
+                  <span class="ar-word ar-color-p44">السَّيَّارَةَ</span>.
+                </p>
+                <p class="translation">
+                  <span class="en-word en-color-p42">The driver</span>
+                  <span class="en-word en-color-p43">drives</span>
+                  <span class="en-word en-color-p44">the car</span>.
+                </p>
+              </li>
+            </ul>
+          </li>
+
+          <li class="vocab-item">
+            <p dir="rtl">
+              <span class="ar-word ar-color-p45">جَزَّار</span> (jazzār) -
+              <span class="en-word en-color-p45">Butcher</span>
+            </p>
+            <ul class="list-unstyled ms-3">
+              <li>
+                <p dir="rtl">
+                  <span class="ar-word ar-color-p46">الْجَزَّارُ</span>
+                  <span class="ar-word ar-color-p47">يَقْطَعُ</span>
+                  <span class="ar-word ar-color-p48">اللَّحْمَ</span>.
+                </p>
+                <p class="translation">
+                  <span class="en-word en-color-p46">The butcher</span>
+                  <span class="en-word en-color-p47">cuts</span>
+                  <span class="en-word en-color-p48">the meat</span>.
+                </p>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+    <section id="professions-exercises" class="lesson-section card mt-4">
+      <div class="card-body">
+        <h3 class="section-title text-center">Exercises: Professions - تَمْرِينَاتٌ</h3>
+
+        <div class="exercise-block mt-4">
+          <h4 class="sub-section-title" dir="rtl">Exercise 1: Multiple Choice - اِخْتَرْ الْإِجَابَةَ الصَّحِيحَةَ</h4>
+          <div id="mcq-container-p1" dir="rtl">
+            <div class="mcq-question mb-3">
+              <p><strong>1. مَنْ يَقُودُ السَّيَّارَةَ؟</strong> (Who drives the car?)</p>
+              <div class="form-check"><input class="form-check-input" type="radio" name="q1_p" value="a"><label
+                  class="form-check-label">الطَّبَّاخُ</label></div>
+              <div class="form-check"><input class="form-check-input" type="radio" name="q1_p" value="b"><label
+                  class="form-check-label">الْبَنَّاءُ</label></div>
+              <div class="form-check"><input class="form-check-input" type="radio" name="q1_p" value="c"><label
+                  class="form-check-label">السَّائِقُ</label></div>
+            </div>
+            <div class="mcq-question mb-3">
+              <p><strong>2. مَنْ يَبْنِي الْبُيُوتَ؟</strong> (Who builds houses?)</p>
+              <div class="form-check"><input class="form-check-input" type="radio" name="q2_p" value="a"><label
+                  class="form-check-label">الْبَنَّاءُ</label></div>
+              <div class="form-check"><input class="form-check-input" type="radio" name="q2_p" value="b"><label
+                  class="form-check-label">الْجَزَّارُ</label></div>
+              <div class="form-check"><input class="form-check-input" type="radio" name="q2_p" value="c"><label
+                  class="form-check-label">الْحَلَّاقُ</label></div>
+            </div>
+            <div class="mcq-question mb-3">
+              <p><strong>3. مَنْ يَبِيعُ اللَّحْمَ؟</strong> (Who sells meat?)</p>
+              <div class="form-check"><input class="form-check-input" type="radio" name="q3_p" value="a"><label
+                  class="form-check-label">الْمُزَارِعُ</label></div>
+              <div class="form-check"><input class="form-check-input" type="radio" name="q3_p" value="b"><label
+                  class="form-check-label">الْجَزَّارُ</label></div>
+              <div class="form-check"><input class="form-check-input" type="radio" name="q3_p" value="c"><label
+                  class="form-check-label">الشُّرْطِيُّ</label></div>
+            </div>
+            <button class="btn btn-primary check-answers-btn" data-mcq-id="p1">Check Answers</button>
+            <div class="feedback mt-2"></div>
+          </div>
+        </div>
+
+        <hr class="my-4">
+
+        <div class="exercise-block mt-4">
+          <h4 class="sub-section-title" dir="rtl">Exercise 2: Fill in the Blanks - اِمْلَأ الْفَرَاغَاتِ</h4>
+          <div class="word-bank p-3 mb-4 rounded bg-light" dir="rtl">
+            <strong>الكلمات المساعدة (Word Bank):</strong><br>
+            <span class="badge bg-secondary m-1 fs-6">النَّجَّارُ</span>
+            <span class="badge bg-secondary m-1 fs-6">الطَّبَّاخُ</span>
+            <span class="badge bg-secondary m-1 fs-6">الْحَلَّاقُ</span>
+            <span class="badge bg-secondary m-1 fs-6">الْمُزَارِعُ</span>
+            <span class="badge bg-secondary m-1 fs-6">السَّبَّاكُ</span>
+          </div>
+          <div id="fill-blanks-container-p2">
+            <ol dir="rtl" class="fs-5">
+              <li class="mb-3">يَقُصُّ <input type="text" id="fill_p_1" class="form-control d-inline-block"
+                  style="width: 150px;"> الشَّعْرَ. (The _______ cuts the hair.)</li>
+              <li class="mb-3">يُصْلِحُ <input type="text" id="fill_p_2" class="form-control d-inline-block"
+                  style="width: 150px;"> أَنَابِيبَ الْمَاءِ. (The _______ fixes the water pipes.)</li>
+              <li class="mb-3">يَزْرَعُ <input type="text" id="fill_p_3" class="form-control d-inline-block"
+                  style="width: 150px;"> الْخُضْرَوَاتِ فِي الْحَقْلِ. (The _______ plants vegetables in the
+                field.)</li>
+              <li class="mb-3">يَصْنَعُ <input type="text" id="fill_p_4" class="form-control d-inline-block"
+                  style="width: 150px;"> طَاوِلَةً خَشَبِيَّةً. (The _______ makes a wooden table.)</li>
+              <li class="mb-3">يَطْبُخُ <input type="text" id="fill_p_5" class="form-control d-inline-block"
+                  style="width: 150px;"> الطَّعَامَ فِي الْمَطْعَمِ. (The _______ cooks the food in the
+                restaurant.)</li>
+            </ol>
+            <button class="btn btn-primary" id="check-fill-blanks-p2">Check Answers</button>
+            <div class="feedback mt-2" id="feedback-fill-blanks-p2"></div>
+          </div>
+        </div>
+
+        <hr class="my-4">
+
+        <div class="exercise-block mt-4">
+          <h4 class="sub-section-title" dir="rtl">Exercise 3: Matching - طَابِقْ بَيْنَ الْكَلِمَةِ وَمَعْنَاهَا</h4>
+          <p>Drag the Arabic word to its correct English meaning.</p>
+          <div class="drag-drop-container row">
+            <div class="col-md-6">
+              <h5 dir="rtl">الْكَلِمَاتُ الْعَرَبِيَّة</h5>
+              <div id="ar-p1" class="draggable-item" draggable="true">شُرْطِيّ</div>
+              <div id="ar-p2" class="draggable-item" draggable="true">بَقَّال</div>
+              <div id="ar-p3" class="draggable-item" draggable="true">حَدَّاد</div>
+              <div id="ar-p4" class="draggable-item" draggable="true">كَهْرَبَائِيّ</div>
+            </div>
+            <div class="col-md-6">
+              <h5>English Meanings</h5>
+              <div id="en-p1" class="droppable-area" data-match="ar-p3">Blacksmith</div>
+              <div id="en-p2" class="droppable-area" data-match="ar-p1">Policeman</div>
+              <div id="en-p3" class="droppable-area" data-match="ar-p4">Electrician</div>
+              <div id="en-p4" class="droppable-area" data-match="ar-p2">Grocer</div>
+            </div>
+          </div>
+          <p id="drag-drop-feedback-p" class="mt-3"></p>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="clothing-vocab" class="lesson-section card mt-4">
+      <div class="card-body">
+        <h3 class="section-title" dir="rtl">
+          Vocabulary: Clothing - الْمَلَابِسُ
+        </h3>
+        <div class="image-placeholder my-3 text-center">
+          <img src="./photos/clothing.png" alt="Images of various clothing items" class="img-fluid rounded"
+            style="max-width: 600px;" />
+        </div>
+        <ul class="list-unstyled">
+
+          <li class="vocab-item">
+            <p dir="rtl">
+              <span class="ar-word cl-1">جَوْرَب</span> (jawrab) -
+              <span class="en-word cl-1">Sock</span>
+            </p>
+            <ul class="list-unstyled ms-3">
+              <li>
+                <p dir="rtl">
+                  <span class="ar-word cl-2">أَلْبَسُ</span>
+                  <span class="ar-word cl-3">الْجَوْرَبَ</span>
+                  <span class="ar-word cl-4">فِي قَدَمِي</span>.
+                </p>
+                <p class="translation">
+                  <span class="en-word cl-2">I wear</span>
+                  <span class="en-word cl-3">the sock</span>
+                  <span class="en-word cl-4">on my foot</span>.
+                </p>
+              </li>
+            </ul>
+          </li>
+
+          <li class="vocab-item">
+            <p dir="rtl">
+              <span class="ar-word cl-5">خُفّ</span> (khuff) -
+              <span class="en-word cl-5">Leather Sock (Khuff)</span>
+            </p>
+            <ul class="list-unstyled ms-3">
+              <li>
+                <p dir="rtl">
+                  <span class="ar-word cl-6">الْخُفُّ</span>
+                  <span class="ar-word cl-7">يُصْنَعُ</span>
+                  <span class="ar-word cl-8">مِنَ الْجِلْدِ</span>.
+                </p>
+                <p class="translation">
+                  <span class="en-word cl-6">The Khuff</span>
+                  <span class="en-word cl-7">is made</span>
+                  <span class="en-word cl-8">of leather</span>.
+                </p>
+              </li>
+            </ul>
+          </li>
+
+          <li class="vocab-item">
+            <p dir="rtl">
+              <span class="ar-word cl-9">حِذَاء</span> (ḥidhāʾ) -
+              <span class="en-word cl-9">Shoe</span>
+            </p>
+            <ul class="list-unstyled ms-3">
+              <li>
+                <p dir="rtl">
+                  <span class="ar-word cl-10">هَذَا</span>
+                  <span class="ar-word cl-11">حِذَاءٌ</span>
+                  <span class="ar-word cl-12">جَدِيدٌ</span>.
+                </p>
+                <p class="translation">
+                  <span class="en-word cl-10">This is</span>
+                  <span class="en-word cl-11">a new</span>
+                  <span class="en-word cl-12">shoe</span>.
+                </p>
+              </li>
+            </ul>
+          </li>
+
+          <li class="vocab-item">
+            <p dir="rtl">
+              <span class="ar-word cl-13">عِمَامَة</span> (ʿimāmah) -
+              <span class="en-word cl-13">Turban</span>
+            </p>
+            <ul class="list-unstyled ms-3">
+              <li>
+                <p dir="rtl">
+                  <span class="ar-word cl-14">الْعِمَامَةُ</span>
+                  <span class="ar-word cl-15">تُوضَعُ</span>
+                  <span class="ar-word cl-16">عَلَى الرَّأْسِ</span>.
+                </p>
+                <p class="translation">
+                  <span class="en-word cl-14">The turban</span>
+                  <span class="en-word cl-15">is placed</span>
+                  <span class="en-word cl-16">on the head</span>.
+                </p>
+              </li>
+            </ul>
+          </li>
+
+          <li class="vocab-item">
+            <p dir="rtl">
+              <span class="ar-word cl-17">إِزَار</span> (izār) & <span class="ar-word cl-18">رِدَاء</span> (ridāʾ) -
+              <span class="en-word cl-17">Waist-wrapper</span> & <span class="en-word cl-18">Upper Garment</span>
+            </p>
+            <ul class="list-unstyled ms-3">
+              <li>
+                <p dir="rtl">
+                  <span class="ar-word cl-19">الْحَاجُّ</span>
+                  <span class="ar-word cl-20">يَلْبَسُ</span>
+                  <span class="ar-word cl-21">الْإِزَارَ وَالرِّدَاءَ</span>.
+                </p>
+                <p class="translation">
+                  <span class="en-word cl-19">The pilgrim</span>
+                  <span class="en-word cl-20">wears</span>
+                  <span class="en-word cl-21">the Izar and Rida</span>.
+                </p>
+              </li>
+            </ul>
+          </li>
+
+          <li class="vocab-item">
+            <p dir="rtl">
+              <span class="ar-word cl-22">جِلْبَاب</span> (jilbāb) -
+              <span class="en-word cl-22">Jilbab</span>
+            </p>
+            <ul class="list-unstyled ms-3">
+              <li>
+                <p dir="rtl">
+                  <span class="ar-word cl-23">تَرْتَدِي</span>
+                  <span class="ar-word cl-24">الْمَرْأَةُ</span>
+                  <span class="ar-word cl-25">الْجِلْبَابَ</span>.
+                </p>
+                <p class="translation">
+                  <span class="en-word cl-23">The woman</span>
+                  <span class="en-word cl-24">wears</span>
+                  <span class="en-word cl-25">the Jilbab</span>.
+                </p>
+              </li>
+            </ul>
+          </li>
+
+          <li class="vocab-item">
+            <p dir="rtl">
+              <span class="ar-word cl-26">عَبَاءَة</span> (ʿabāʾah) -
+              <span class="en-word cl-26">Abaya</span>
+            </p>
+            <ul class="list-unstyled ms-3">
+              <li>
+                <p dir="rtl">
+                  <span class="ar-word cl-27">الْعَبَاءَةُ</span>
+                  <span class="ar-word cl-28">السَّوْدَاءُ</span>
+                  <span class="ar-word cl-29">وَاسِعَةٌ</span>.
+                </p>
+                <p class="translation">
+                  <span class="en-word cl-27">The black</span>
+                  <span class="en-word cl-28">Abaya</span>
+                  <span class="en-word cl-29">is wide</span>.
+                </p>
+              </li>
+            </ul>
+          </li>
+
+          <li class="vocab-item">
+            <p dir="rtl">
+              <span class="ar-word cl-30">حِجَاب</span> (ḥijāb) -
+              <span class="en-word cl-30">Hijab</span>
+            </p>
+            <ul class="list-unstyled ms-3">
+              <li>
+                <p dir="rtl">
+                  <span class="ar-word cl-31">الْحِجَابُ</span>
+                  <span class="ar-word cl-32">يُغَطِّي</span>
+                  <span class="ar-word cl-33">شَعْرَ الْمَرْأَةِ</span>.
+                </p>
+                <p class="translation">
+                  <span class="en-word cl-31">The Hijab</span>
+                  <span class="en-word cl-32">covers</span>
+                  <span class="en-word cl-33">the woman's hair</span>.
+                </p>
+              </li>
+            </ul>
+          </li>
+
+          <li class="vocab-item">
+            <p dir="rtl">
+              <span class="ar-word cl-34">قُفَّاز</span> (quffāz) -
+              <span class="en-word cl-34">Gloves</span>
+            </p>
+            <ul class="list-unstyled ms-3">
+              <li>
+                <p dir="rtl">
+                  <span class="ar-word cl-35">أَلْبَسُ</span>
+                  <span class="ar-word cl-36">الْقُفَّازَ</span>
+                  <span class="ar-word cl-37">فِي يَدِي</span>.
+                </p>
+                <p class="translation">
+                  <span class="en-word cl-35">I wear</span>
+                  <span class="en-word cl-36">the gloves</span>
+                  <span class="en-word cl-37">on my hand</span>.
+                </p>
+              </li>
+            </ul>
+          </li>
+
+          <li class="vocab-item">
+            <p dir="rtl">
+              <span class="ar-word cl-38">حِزَام</span> (ḥizām) -
+              <span class="en-word cl-38">Belt</span>
+            </p>
+            <ul class="list-unstyled ms-3">
+              <li>
+                <p dir="rtl">
+                  <span class="ar-word cl-39">الْحِزَامُ</span>
+                  <span class="ar-word cl-40">مَصْنُوعٌ</span>
+                  <span class="ar-word cl-41">مِنَ الْجِلْدِ</span>.
+                </p>
+                <p class="translation">
+                  <span class="en-word cl-39">The belt</span>
+                  <span class="en-word cl-40">is made</span>
+                  <span class="en-word cl-41">of leather</span>.
+                </p>
+              </li>
+            </ul>
+          </li>
+
+          <li class="vocab-item">
+            <p dir="rtl">
+              <span class="ar-word cl-42">سِرْوَال</span> (sirwāl) -
+              <span class="en-word cl-42">Trousers</span>
+            </p>
+            <ul class="list-unstyled ms-3">
+              <li>
+                <p dir="rtl">
+                  <span class="ar-word cl-43">أُرِيدُ</span>
+                  <span class="ar-word cl-44">شِرَاءَ</span>
+                  <span class="ar-word cl-45">سِرْوَالٍ جَدِيدٍ</span>.
+                </p>
+                <p class="translation">
+                  <span class="en-word cl-43">I want</span>
+                  <span class="en-word cl-44">to buy</span>
+                  <span class="en-word cl-45">new trousers</span>.
+                </p>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <section id="clothing-exercises" class="lesson-section card mt-4">
+      <div class="card-body">
+        <h3 class="section-title text-center">Exercises: Clothing - تَمْرِينَاتٌ</h3>
+
+        <div class="exercise-block mt-4">
+          <h4 class="sub-section-title" dir="rtl">Exercise 1: Multiple Choice - اِخْتَرْ الْإِجَابَةَ الصَّحِيحَةَ</h4>
+          <div id="mcq-cl1" dir="rtl">
+            <div class="mcq-question mb-3">
+              <p><strong>1. مَاذَا نَلْبَسُ فِي الْقَدَمِ؟</strong> (What do we wear on the foot?)</p>
+              <div class="form-check"><input class="form-check-input" type="radio" name="q1_cl" value="a"><label
+                  class="form-check-label">الْقُفَّاز</label></div>
+              <div class="form-check"><input class="form-check-input" type="radio" name="q1_cl" value="b"><label
+                  class="form-check-label">الْجَوْرَب</label></div>
+              <div class="form-check"><input class="form-check-input" type="radio" name="q1_cl" value="c"><label
+                  class="form-check-label">الْعِمَامَة</label></div>
+            </div>
+            <div class="mcq-question mb-3">
+              <p><strong>2. مَاذَا تَرْتَدِي الْمَرْأَةُ الْمُسْلِمَةُ عَلَى رَأْسِهَا؟</strong> (What does a Muslim
+                woman wear on her head?)</p>
+              <div class="form-check"><input class="form-check-input" type="radio" name="q2_cl" value="a"><label
+                  class="form-check-label">الْحِزَام</label></div>
+              <div class="form-check"><input class="form-check-input" type="radio" name="q2_cl" value="b"><label
+                  class="form-check-label">الْجِلْبَاب</label></div>
+              <div class="form-check"><input class="form-check-input" type="radio" name="q2_cl" value="c"><label
+                  class="form-check-label">الْحِجَاب</label></div>
+            </div>
+            <div class="mcq-question mb-3">
+              <p><strong>3. الْإِزَارُ وَالرِّدَاءُ هُمَا لِبَاسُ...؟</strong> (The Izar and Rida are the clothing
+                for...?)</p>
+              <div class="form-check"><input class="form-check-input" type="radio" name="q3_cl" value="a"><label
+                  class="form-check-label">الشِّتَاءِ</label></div>
+              <div class="form-check"><input class="form-check-input" type="radio" name="q3_cl" value="b"><label
+                  class="form-check-label">الْحَجِّ</label></div>
+              <div class="form-check"><input class="form-check-input" type="radio" name="q3_cl" value="c"><label
+                  class="form-check-label">الْمَدْرَسَةِ</label></div>
+            </div>
+            <button class="btn btn-primary check-answers-btn" data-mcq-id="cl1">Check Answers</button>
+            <div class="feedback mt-2"></div>
+          </div>
+        </div>
+
+        <hr class="my-4">
+
+        <div class="exercise-block mt-4">
+          <h4 class="sub-section-title" dir="rtl">Exercise 2: Fill in the Blanks - اِمْلَأ الْفَرَاغَاتِ</h4>
+          <div class="word-bank p-3 mb-4 rounded bg-light" dir="rtl">
+            <strong>الكلمات المساعدة (Word Bank):</strong><br>
+            <span class="badge bg-secondary m-1 fs-6">الْحِذَاءَ</span>
+            <span class="badge bg-secondary m-1 fs-6">سِرْوَال</span>
+            <span class="badge bg-secondary m-1 fs-6">حِزَام</span>
+            <span class="badge bg-secondary m-1 fs-6">الْعِمَامَةَ</span>
+            <span class="badge bg-secondary m-1 fs-6">الْقُفَّازَ</span>
+          </div>
+          <div id="fill-blanks-container-cl2">
+            <ol dir="rtl" class="fs-5">
+              <li class="mb-3">أَرْبِطُ بِنْطَالِي بِـ <input type="text" id="fill_cl_1"
+                  class="form-control d-inline-block" style="width: 150px;"> . (I fasten my pants with a _______.)
+              </li>
+              <li class="mb-3">فِي الْبَرْدِ، أَلْبَسُ <input type="text" id="fill_cl_2"
+                  class="form-control d-inline-block" style="width: 150px;"> لِتَدْفِئَةِ يَدِي. (In the cold, I wear
+                _______ to warm my hand.)</li>
+              <li class="mb-3">يَلْبَسُ الشَّيْخُ <input type="text" id="fill_cl_3" class="form-control d-inline-block"
+                  style="width: 150px;"> عَلَى رَأْسِهِ. (The Sheikh wears the _______ on his head.)</li>
+              <li class="mb-3">أَلْبَسُ <input type="text" id="fill_cl_4" class="form-control d-inline-block"
+                  style="width: 150px;"> فِي قَدَمِي لِأَمْشِيَ. (I wear the _______ on my foot to walk.)</li>
+              <li class="mb-3">هَذَا <input type="text" id="fill_cl_5" class="form-control d-inline-block"
+                  style="width: 150px;"> لَوْنُهُ أَسْوَدُ. (This is a black _______.)</li>
+            </ol>
+            <button class="btn btn-primary" id="check-fill-blanks-cl2">Check Answers</button>
+            <div class="feedback mt-2" id="feedback-fill-blanks-cl2"></div>
+          </div>
+        </div>
+
+        <hr class="my-4">
+
+        <div class="exercise-block mt-4">
+          <h4 class="sub-section-title" dir="rtl">Exercise 3: Matching - طَابِقْ بَيْنَ الْكَلِمَةِ وَمَعْنَاهَا</h4>
+          <p>Drag the Arabic word to its correct English meaning.</p>
+          <div class="drag-drop-container row">
+            <div class="col-md-6">
+              <h5 dir="rtl">الْكَلِمَاتُ الْعَرَبِيَّة</h5>
+              <div id="ar-cl1" class="draggable-item" draggable="true">جِلْبَاب</div>
+              <div id="ar-cl2" class="draggable-item" draggable="true">قُفَّاز</div>
+              <div id="ar-cl3" class="draggable-item" draggable="true">حِذَاء</div>
+              <div id="ar-cl4" class="draggable-item" draggable="true">عَبَاءَة</div>
+            </div>
+            <div class="col-md-6">
+              <h5>English Meanings</h5>
+              <div id="en-cl1" class="droppable-area" data-match="ar-cl3">Shoe</div>
+              <div id="en-cl2" class="droppable-area" data-match="ar-cl1">Jilbab</div>
+              <div id="en-cl3" class="droppable-area" data-match="ar-cl4">Abaya</div>
+              <div id="en-cl4" class="droppable-area" data-match="ar-cl2">Gloves</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="weather-vocab" class="lesson-section card mt-4">
+  <div class="card-body">
+    <h3 class="section-title" dir="rtl">
+      Vocabulary: The Weather - الْجَوُّ
+    </h3>
+    <div class="image-placeholder my-3 text-center">
+      <img src="./photos/weather.jpg" alt="Images of various weather conditions" class="img-fluid rounded"
+        style="max-width: 600px;" />
+    </div>
+    <ul class="list-unstyled">
+
+      <li class="vocab-item">
+        <p dir="rtl">
+          <span class="ar-word w-1">بَرْق</span> (barq) -
+          <span class="en-word w-1">Lightning</span>
+        </p>
+        <ul class="list-unstyled ms-3">
+          <li>
+            <p dir="rtl">
+              <span class="ar-word w-2">أَرَى</span>
+              <span class="ar-word w-3">الْبَرْقَ</span>
+              <span class="ar-word w-4">فِي السَّمَاءِ</span>.
+            </p>
+            <p class="translation">
+              <span class="en-word w-2">I see</span>
+              <span class="en-word w-3">the lightning</span>
+              <span class="en-word w-4">in the sky</span>.
+            </p>
+          </li>
+        </ul>
+      </li>
+
+      <li class="vocab-item">
+        <p dir="rtl">
+          <span class="ar-word w-5">رَعْد</span> (raʿd) -
+          <span class="en-word w-5">Thunder</span>
+        </p>
+        <ul class="list-unstyled ms-3">
+          <li>
+            <p dir="rtl">
+              <span class="ar-word w-6">أَسْمَعُ</span>
+              <span class="ar-word w-7">صَوْتَ</span>
+              <span class="ar-word w-8">الرَّعْدِ</span>.
+            </p>
+            <p class="translation">
+              <span class="en-word w-6">I hear</span>
+              <span class="en-word w-7">the sound of</span>
+              <span class="en-word w-8">the thunder</span>.
+            </p>
+          </li>
+        </ul>
+      </li>
+
+      <li class="vocab-item">
+        <p dir="rtl">
+          <span class="ar-word w-9">غُيُوم</span> (ghuyūm) -
+          <span class="en-word w-9">Clouds</span>
+        </p>
+        <ul class="list-unstyled ms-3">
+          <li>
+            <p dir="rtl">
+              <span class="ar-word w-10">السَّمَاءُ</span>
+              <span class="ar-word w-11">مَلِيئَةٌ</span>
+              <span class="ar-word w-12">بِالْغُيُومِ</span>.
+            </p>
+            <p class="translation">
+              <span class="en-word w-10">The sky</span>
+              <span class="en-word w-11">is full</span>
+              <span class="en-word w-12">of clouds</span>.
+            </p>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="vocab-item">
+        <p dir="rtl">
+          <span class="ar-word w-13">رِيَاح</span> (riyāḥ) -
+          <span class="en-word w-13">Wind</span>
+        </p>
+        <ul class="list-unstyled ms-3">
+          <li>
+            <p dir="rtl">
+              <span class="ar-word w-14">الرِّيَاحُ</span>
+              <span class="ar-word w-15">قَوِيَّةٌ</span>
+              <span class="ar-word w-16">الْيَوْمَ</span>.
+            </p>
+            <p class="translation">
+              <span class="en-word w-14">The wind</span>
+              <span class="en-word w-15">is strong</span>
+              <span class="en-word w-16">today</span>.
+            </p>
+          </li>
+        </ul>
+      </li>
+
+      <li class="vocab-item">
+        <p dir="rtl">
+          <span class="ar-word w-17">مُشْمِس</span> (mushmis) -
+          <span class="en-word w-17">Sunny</span>
+        </p>
+        <ul class="list-unstyled ms-3">
+          <li>
+            <p dir="rtl">
+              <span class="ar-word w-18">الْجَوُّ</span>
+              <span class="ar-word w-19">مُشْمِسٌ</span>
+              <span class="ar-word w-20">وَجَمِيلٌ</span>.
+            </p>
+            <p class="translation">
+              <span class="en-word w-18">The weather</span>
+              <span class="en-word w-19">is sunny</span>
+              <span class="en-word w-20">and beautiful</span>.
+            </p>
+          </li>
+        </ul>
+      </li>
+
+      <li class="vocab-item">
+        <p dir="rtl">
+          <span class="ar-word w-21">مُقْمِر</span> (muqmir) -
+          <span class="en-word w-21">Moonlit</span>
+        </p>
+        <ul class="list-unstyled ms-3">
+          <li>
+            <p dir="rtl">
+              <span class="ar-word w-22">اللَّيْلَةُ</span>
+              <span class="ar-word w-23">مُقْمِرَةٌ</span>
+              <span class="ar-word w-24">وَهَادِئَةٌ</span>.
+            </p>
+            <p class="translation">
+              <span class="en-word w-22">The night</span>
+              <span class="en-word w-23">is moonlit</span>
+              <span class="en-word w-24">and calm</span>.
+            </p>
+          </li>
+        </ul>
+      </li>
+
+      <li class="vocab-item">
+        <p dir="rtl">
+          <span class="ar-word w-25">رَذَاذ</span> (radhādh) -
+          <span class="en-word w-25">Drizzle</span>
+        </p>
+        <ul class="list-unstyled ms-3">
+          <li>
+            <p dir="rtl">
+              <span class="ar-word w-26">يَتَسَاقَطُ</span>
+              <span class="ar-word w-27">رَذَاذُ</span>
+              <span class="ar-word w-28">الْمَطَرِ</span>.
+            </p>
+            <p class="translation">
+              <span class="en-word w-26">A drizzle</span>
+              <span class="en-word w-27">of rain</span>
+              <span class="en-word w-28">is falling</span>.
+            </p>
+          </li>
+        </ul>
+      </li>
+
+      <li class="vocab-item">
+        <p dir="rtl">
+          <span class="ar-word w-29">صَقِيع</span> (ṣaqīʿ) -
+          <span class="en-word w-29">Frost</span>
+        </p>
+        <ul class="list-unstyled ms-3">
+          <li>
+            <p dir="rtl">
+              <span class="ar-word w-30">يُغَطِّي</span>
+              <span class="ar-word w-31">الصَّقِيعُ</span>
+              <span class="ar-word w-32">الْأَرْضَ</span>.
+            </p>
+            <p class="translation">
+              <span class="en-word w-30">The frost</span>
+              <span class="en-word w-31">covers</span>
+              <span class="en-word w-32">the ground</span>.
+            </p>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="vocab-item">
+        <p dir="rtl">
+          <span class="ar-word w-33">فَيَضَان</span> (fayaḍān) -
+          <span class="en-word w-33">Flood</span>
+        </p>
+        <ul class="list-unstyled ms-3">
+          <li>
+            <p dir="rtl">
+              <span class="ar-word w-34">تَسَبَّبَ</span>
+              <span class="ar-word w-35">الْمَطَرُ</span>
+              <span class="ar-word w-36">فِي فَيَضَانٍ</span>.
+            </p>
+            <p class="translation">
+              <span class="en-word w-34">The rain</span>
+              <span class="en-word w-35">caused</span>
+              <span class="en-word w-36">a flood</span>.
+            </p>
+          </li>
+        </ul>
+      </li>
+
+      <li class="vocab-item">
+        <p dir="rtl">
+          <span class="ar-word w-37">ضَبَاب</span> (ḍabāb) -
+          <span class="en-word w-37">Fog</span>
+        </p>
+        <ul class="list-unstyled ms-3">
+          <li>
+            <p dir="rtl">
+              <span class="ar-word w-38">الضَّبَابُ</span>
+              <span class="ar-word w-39">يَحْجُبُ</span>
+              <span class="ar-word w-40">الرُّؤْيَةَ</span>.
+            </p>
+            <p class="translation">
+              <span class="en-word w-38">The fog</span>
+              <span class="en-word w-39">obstructs</span>
+              <span class="en-word w-40">the view</span>.
+            </p>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="vocab-item">
+        <p dir="rtl">
+          <span class="ar-word w-41">طَلّ</span> (ṭall) -
+          <span class="en-word w-41">Dew</span>
+        </p>
+        <ul class="list-unstyled ms-3">
+          <li>
+            <p dir="rtl">
+              <span class="ar-word w-42">أَرَى</span>
+              <span class="ar-word w-43">الطَّلَّ</span>
+              <span class="ar-word w-44">عَلَى الْأَوْرَاقِ</span>.
+            </p>
+            <p class="translation">
+              <span class="en-word w-42">I see</span>
+              <span class="en-word w-43">the dew</span>
+              <span class="en-word w-44">on the leaves</span>.
+            </p>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="vocab-item">
+        <p dir="rtl">
+          <span class="ar-word w-45">جَلِيد</span> (jalīd) -
+          <span class="en-word w-45">Ice</span>
+        </p>
+        <ul class="list-unstyled ms-3">
+          <li>
+            <p dir="rtl">
+              <span class="ar-word w-46">تَجَمَّدَتِ</span>
+              <span class="ar-word w-47">الْبُحَيْرَةُ</span>
+              <span class="ar-word w-48">وَصَارَتْ جَلِيدًا</span>.
+            </p>
+            <p class="translation">
+              <span class="en-word w-46">The lake</span>
+              <span class="en-word w-47">froze and</span>
+              <span class="en-word w-48">became ice</span>.
+            </p>
+          </li>
+        </ul>
+      </li>
+
+    </ul>
+  </div>
+</section>
+
+<section id="weather-exercises" class="lesson-section card mt-4">
+  <div class="card-body">
+    <h3 class="section-title text-center">Exercises: The Weather - تَمْرِينَاتٌ</h3>
+
+    <div class="exercise-block mt-4">
+      <h4 class="sub-section-title" dir="rtl">Exercise 1: Multiple Choice - اِخْتَرْ الْإِجَابَةَ الصَّحِيحَةَ</h4>
+      <div id="mcq-w1" dir="rtl">
+        <div class="mcq-question mb-3">
+          <p><strong>1. مَاذَا نَرَى فِي السَّمَاءِ أَثْنَاءَ الْعَاصِفَةِ؟</strong> (What do we see in the sky during a storm?)</p>
+          <div class="form-check"><input class="form-check-input" type="radio" name="q1_w" value="a"><label
+              class="form-check-label">ضَبَاب</label></div>
+          <div class="form-check"><input class="form-check-input" type="radio" name="q1_w" value="b"><label
+              class="form-check-label">بَرْق</label></div>
+          <div class="form-check"><input class="form-check-input" type="radio" name="q1_w" value="c"><label
+              class="form-check-label">طَلّ</label></div>
+        </div>
+        <div class="mcq-question mb-3">
+          <p><strong>2. مَا الَّذِي يَحْجُبُ الرُّؤْيَةَ فِي الصَّبَاحِ الْبَاكِرِ؟</strong> (What obstructs the view in the early morning?)</p>
+          <div class="form-check"><input class="form-check-input" type="radio" name="q2_w" value="a"><label
+              class="form-check-label">رِيَاح</label></div>
+          <div class="form-check"><input class="form-check-input" type="radio" name="q2_w" value="b"><label
+              class="form-check-label">مُشْمِس</label></div>
+          <div class="form-check"><input class="form-check-input" type="radio" name="q2_w" value="c"><label
+              class="form-check-label">ضَبَاب</label></div>
+        </div>
+        <div class="mcq-question mb-3">
+          <p><strong>3. مَاذَا نَسْمَعُ مَعَ الْبَرْقِ؟</strong> (What do we hear with lightning?)</p>
+          <div class="form-check"><input class="form-check-input" type="radio" name="q3_w" value="a"><label
+              class="form-check-label">رَعْد</label></div>
+          <div class="form-check"><input class="form-check-input" type="radio" name="q3_w" value="b"><label
+              class="form-check-label">جَلِيد</label></div>
+          <div class="form-check"><input class="form-check-input" type="radio" name="q3_w" value="c"><label
+              class="form-check-label">فَيَضَان</label></div>
+        </div>
+        <button class="btn btn-primary check-answers-btn" data-mcq-id="w1">Check Answers</button>
+        <div class="feedback mt-2"></div>
+      </div>
+    </div>
+
+    <hr class="my-4">
+
+    <div class="exercise-block mt-4">
+      <h4 class="sub-section-title" dir="rtl">Exercise 2: Fill in the Blanks - اِمْلَأ الْفَرَاغَاتِ</h4>
+      <div class="word-bank p-3 mb-4 rounded bg-light" dir="rtl">
+        <strong>الكلمات المساعدة (Word Bank):</strong><br>
+        <span class="badge bg-secondary m-1 fs-6">الْغُيُومِ</span>
+        <span class="badge bg-secondary m-1 fs-6">جَلِيد</span>
+        <span class="badge bg-secondary m-1 fs-6">مُشْمِسٌ</span>
+        <span class="badge bg-secondary m-1 fs-6">الرِّيَاحُ</span>
+        <span class="badge bg-secondary m-1 fs-6">الطَّلُّ</span>
+      </div>
+      <div id="fill-blanks-container-w2">
+        <ol dir="rtl" class="fs-5">
+          <li class="mb-3">الْيَوْمُ جَمِيلٌ وَ <input type="text" id="fill_w_1"
+              class="form-control d-inline-block" style="width: 150px;"> . (Today is beautiful and _______.)
+          </li>
+          <li class="mb-3">تُحَرِّكُ <input type="text" id="fill_w_2" class="form-control d-inline-block"
+              style="width: 150px;"> أَغْصَانَ الشَّجَرِ. (The _______ moves the tree branches.)</li>
+          <li class="mb-3">السَّمَاءُ زَرْقَاءُ بِدُونِ <input type="text" id="fill_w_3" class="form-control d-inline-block"
+              style="width: 150px;"> . (The sky is blue without _______.)</li>
+          <li class="mb-3">فِي الصَّبَاحِ، كَانَ <input type="text" id="fill_w_4" class="form-control d-inline-block"
+              style="width: 150px;"> عَلَى الزُّهُورِ. (In the morning, there was _______ on the flowers.)</li>
+          <li class="mb-3">تَجَمَّدَ الْمَاءُ وَأَصْبَحَ <input type="text" id="fill_w_5"
+              class="form-control d-inline-block" style="width: 150px;"> . (The water froze and became _______.)</li>
+        </ol>
+        <button class="btn btn-primary" id="check-fill-blanks-w2">Check Answers</button>
+        <div class="feedback mt-2" id="feedback-fill-blanks-w2"></div>
+      </div>
+    </div>
+    
+  </div>
+</section>
 
   </main>
 

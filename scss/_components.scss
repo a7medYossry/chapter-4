@@ -24,10 +24,11 @@
     padding-left: $spacer;
     font-style: italic;
   }
-  
-  ul { 
+
+  ul {
     margin-top: $spacer * 0.5;
     padding-left: $spacer * 1.5;
+
     li p {
       font-size: 1.1em;
       color: lighten($light-text-color, 25%);
@@ -41,24 +42,24 @@
 .dialogue-line {
   margin-bottom: $spacer * 1.5;
   padding: $spacer;
-  border-left: 4px solid $primary-color; 
+  border-left: 4px solid $primary-color;
   background-color: transparent; // Default transparent background
   transition: $transition-base;
 
   p {
     margin: 0; // Reset margin for paragraphs inside
   }
-  
+
   // Arabic dialogue line
   p:not(.translation) {
     direction: rtl;
     text-align: right;
   }
-  
+
   .speaker {
     font-weight: 700;
     color: $light-speaker-color;
-    margin: 0 $spacer * 0.5; 
+    margin: 0 $spacer * 0.5;
   }
 
   // English translation line
@@ -66,7 +67,7 @@
     font-size: 1.1em;
     color: $light-muted-color;
     margin-top: $spacer * 0.25;
-    direction: ltr; 
+    direction: ltr;
     text-align: left;
 
     .speaker {
@@ -100,7 +101,10 @@
   strong {
     display: block;
     margin-bottom: $spacer * 0.75;
-    &[dir="rtl"] { text-align: right; }
+
+    &[dir="rtl"] {
+      text-align: right;
+    }
   }
 
   .form-check {
@@ -110,7 +114,10 @@
   .form-check-label {
     cursor: pointer;
     width: 100%; // Make label clickable area wider
-    &[dir="rtl"] { text-align: right; }
+
+    &[dir="rtl"] {
+      text-align: right;
+    }
   }
 }
 
@@ -118,18 +125,44 @@
   margin-top: $spacer;
   padding: $spacer;
   border-radius: $border-radius;
-  
-  ul { list-style-type: none; padding-left: 0; }
+
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
   li {
     padding: $spacer * 0.5 $spacer;
     margin-bottom: $spacer * 0.25;
     border-radius: $border-radius;
-    i { margin-right: $spacer * 0.5; }
-    &[dir="rtl"] i { margin-left: $spacer * 0.5; margin-right: 0; }
+
+    i {
+      margin-right: $spacer * 0.5;
+    }
+
+    &[dir="rtl"] i {
+      margin-left: $spacer * 0.5;
+      margin-right: 0;
+    }
   }
-  .text-success { background-color: lighten($success-color, 45%); border-left: 4px solid $success-color; color: darken($success-color, 10%) !important; }
-  .text-danger { background-color: lighten($danger-color, 40%); border-left: 4px solid $danger-color; color: darken($danger-color, 10%) !important; }
-  .text-warning { background-color: lighten($warning-color, 40%); border-left: 4px solid $warning-color; color: darken($warning-color, 20%) !important; }
+
+  .text-success {
+    background-color: lighten($success-color, 45%);
+    border-left: 4px solid $success-color;
+    color: darken($success-color, 10%) !important;
+  }
+
+  .text-danger {
+    background-color: lighten($danger-color, 40%);
+    border-left: 4px solid $danger-color;
+    color: darken($danger-color, 10%) !important;
+  }
+
+  .text-warning {
+    background-color: lighten($warning-color, 40%);
+    border-left: 4px solid $warning-color;
+    color: darken($warning-color, 20%) !important;
+  }
 }
 
 // ====================================================================
@@ -139,7 +172,10 @@
   h4 {
     color: $secondary-color;
     margin-bottom: $spacer;
-    &[dir="rtl"] { text-align: right; }
+
+    &[dir="rtl"] {
+      text-align: right;
+    }
   }
 }
 
@@ -153,7 +189,11 @@
   cursor: grab;
   transition: $transition-base;
   text-align: center;
-  &[dir="rtl"] { font-family: $font-family-arabic; }
+
+  &[dir="rtl"] {
+    font-family: $font-family-arabic;
+  }
+
   &:active {
     cursor: grabbing;
     opacity: 0.7;
@@ -167,20 +207,22 @@
   background-color: lighten($light-bg, 1%);
   border: 2px dashed $light-border-color;
   border-radius: $border-radius;
-  min-height: 60px; 
+  min-height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: $transition-base;
-  
+
   &.drag-over {
     background-color: lighten($info-color, 35%);
     border-color: $info-color;
   }
+
   &.dropped-correct {
     background-color: lighten($success-color, 45%);
     border-color: $success-color;
-    .draggable-item { 
+
+    .draggable-item {
       background-color: $success-color;
       color: white;
       border-style: solid;
@@ -188,7 +230,8 @@
       cursor: default;
     }
   }
-  &.dropped-incorrect { 
+
+  &.dropped-incorrect {
     background-color: lighten($danger-color, 40%);
     border-color: $danger-color;
   }
@@ -196,7 +239,7 @@
 
 #drag-drop-feedback {
   font-weight: bold;
-  min-height: 1.5em; 
+  min-height: 1.5em;
 }
 
 // ====================================================================
@@ -206,7 +249,8 @@
   article {
     line-height: 1.8;
 
-    h4, h5 {
+    h4,
+    h5 {
       color: $primary-color; // Make subheadings stand out
       margin-top: 1.5rem;
       border-bottom: 1px solid $light-border-color;
@@ -227,6 +271,89 @@
       color: $danger-color;
       padding: 0.2em 0.4em;
       border-radius: 3px;
+    }
+  }
+}
+
+
+// ====================================================================
+// 6. Navbar Dropdown Styles (أنماط القائمة المنسدلة)
+// ====================================================================
+.navbar-nav .dropdown-menu {
+  background-color: $light-card-bg;
+  border-color: $light-border-color;
+  border-radius: $border-radius * 2; // Slightly more rounded corners to look modern
+  box-shadow: $box-shadow;
+  margin-top: $spacer * 0.5; // Add a little space from the navbar
+}
+
+.dropdown-item {
+  color: $light-text-color;
+  padding: ($spacer * 0.5) $spacer; // Adjust padding for a cleaner look
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+
+  &:hover,
+  &:focus {
+    background-color: $light-link-color;
+    color: $white;
+  }
+}
+
+.dropdown-divider {
+  border-top: 1px solid $light-border-color;
+}
+
+/* ============================================= */
+/* Styling for Arabic Past Tense Verb Lesson     */
+/* ============================================= */
+#past-tense-lesson {
+  // Style for the main conjugation table
+  .table {
+    font-size: 1.1rem;
+    border: 1px solid #dee2e6;
+
+    // Table Header Styling
+    thead {
+      background-color: #eef3f9;
+      color: #0d47a1;
+      font-weight: 600;
+    }
+
+    // Centering text and improving alignment in all cells
+    td,
+    th {
+      text-align: center;
+      vertical-align: middle;
+      padding: 0.8rem 0.5rem;
+    }
+
+    // Specific styling for Arabic text to make it stand out in BOTH tables
+    td.ar-word,
+    td .ar-word {
+      font-family: 'Noto Naskh Arabic', serif;
+      font-size: 1.25rem; // Make Arabic font larger
+      font-weight: 500;
+      color: #333;
+    }
+
+    // Adding alternating row colors (Zebra-striping) for easier reading
+    tbody tr:nth-of-type(odd) {
+      background-color: rgba(0, 0, 0, 0.03);
+    }
+
+    tbody tr:hover {
+      background-color: #dceaff; // Highlight row on hover
+    }
+  }
+
+  // Adding some color to the pronoun lists
+  .list-group-item {
+    .ar-word {
+      font-weight: bold;
+    }
+
+    strong.ar-word {
+      color: #1a237e; // Dark indigo color for conjugated verbs
     }
   }
 }

@@ -2886,6 +2886,938 @@ img {
   color: #6d597a;
 }
 
+.ar-color-bp1, .en-color-bp1 {
+  color: #8d5524;
+}
+
+.ar-color-bp2, .en-color-bp2 {
+  color: #c68642;
+}
+
+.ar-color-bp3, .en-color-bp3 {
+  color: #e0ac69;
+}
+
+.ar-color-bp4, .en-color-bp4 {
+  color: #f1c27d;
+}
+
+.ar-color-bp5, .en-color-bp5 {
+  color: #ffdbac;
+}
+
+.ar-color-bp6, .en-color-bp6 {
+  color: #3d2314;
+}
+
+.ar-color-bp7, .en-color-bp7 {
+  color: #4a2b1a;
+}
+
+.ar-color-bp8, .en-color-bp8 {
+  color: #5a3420;
+}
+
+.ar-color-bp9, .en-color-bp9 {
+  color: #2c1b0e;
+}
+
+.ar-color-bp10, .en-color-bp10 {
+  color: #6dc5d1;
+}
+
+.ar-color-bp11, .en-color-bp11 {
+  color: #87ceeb;
+}
+
+.ar-color-bp12, .en-color-bp12 {
+  color: #5b92e5;
+}
+
+.ar-color-bp13, .en-color-bp13 {
+  color: #ffb6c1;
+}
+
+.ar-color-bp14, .en-color-bp14 {
+  color: #ffc0cb;
+}
+
+.ar-color-bp15, .en-color-bp15 {
+  color: #ffa6b3;
+}
+
+.ar-color-bp16, .en-color-bp16 {
+  color: #f08080;
+}
+
+.ar-color-bp17, .en-color-bp17 {
+  color: #d2b48c;
+}
+
+.ar-color-bp18, .en-color-bp18 {
+  color: #c3a67d;
+}
+
+.ar-color-bp19, .en-color-bp19 {
+  color: #b4986e;
+}
+
+.ar-color-bp20, .en-color-bp20 {
+  color: #a58a5f;
+}
+
+.ar-color-bp21, .en-color-bp21 {
+  color: #d14f4f;
+}
+
+.ar-color-bp22, .en-color-bp22 {
+  color: #c23b22;
+}
+
+.ar-color-bp23, .en-color-bp23 {
+  color: #b32821;
+}
+
+.ar-color-bp24, .en-color-bp24 {
+  color: #a4161a;
+}
+
+.ar-color-bp25, .en-color-bp25 {
+  color: #ff6b6b;
+}
+
+.ar-color-bp26, .en-color-bp26 {
+  color: #ff4f4f;
+}
+
+.ar-color-bp27, .en-color-bp27 {
+  color: #ff3333;
+}
+
+.ar-color-bp28, .en-color-bp28 {
+  color: #e60000;
+}
+
+.ar-color-bp29, .en-color-bp29 {
+  color: #c4aead;
+}
+
+.ar-color-bp30, .en-color-bp30 {
+  color: #b69c9b;
+}
+
+.ar-color-bp31, .en-color-bp31 {
+  color: #a88b8a;
+}
+
+.ar-color-bp32, .en-color-bp32 {
+  color: #9a7a79;
+}
+
+.ar-color-bp33, .en-color-bp33 {
+  color: #8c6968;
+}
+
+.ar-color-bp34, .en-color-bp34 {
+  color: #0077b6;
+}
+
+.ar-color-bp35, .en-color-bp35 {
+  color: #0096c7;
+}
+
+.ar-color-bp36, .en-color-bp36 {
+  color: #00b4d8;
+}
+
+.ar-color-bp37, .en-color-bp37 {
+  color: #48cae4;
+}
+
+.ar-color-bp38, .en-color-bp38 {
+  color: #90e0ef;
+}
+
+.ar-color-bp39, .en-color-bp39 {
+  color: #2a9d8f;
+}
+
+.ar-color-bp40, .en-color-bp40 {
+  color: #264653;
+}
+
+.ar-color-bp41, .en-color-bp41 {
+  color: #e9c46a;
+}
+
+.ar-color-bp42, .en-color-bp42 {
+  color: #f4a261;
+}
+
+.ar-color-bp43, .en-color-bp43 {
+  color: #e76f51;
+}
+
+.ar-color-bp44, .en-color-bp44 {
+  color: #8338ec;
+}
+
+.ar-color-bp45, .en-color-bp45 {
+  color: #7209b7;
+}
+
+.ar-color-bp46, .en-color-bp46 {
+  color: #5e60ce;
+}
+
+.ar-color-bp47, .en-color-bp47 {
+  color: #480ca8;
+}
+
+.ar-color-bp48, .en-color-bp48 {
+  color: #3a0ca3;
+}
+
+.ar-color-bp49, .en-color-bp49 {
+  color: #f72585;
+}
+
+.ar-color-bp50, .en-color-bp50 {
+  color: #b5179e;
+}
+
+.ar-color-bp51, .en-color-bp51 {
+  color: #7209b7;
+}
+
+.ar-color-bp52, .en-color-bp52 {
+  color: #560bad;
+}
+
+.ar-color-bp53, .en-color-bp53 {
+  color: #480ca8;
+}
+
+.ar-color-bp54, .en-color-bp54 {
+  color: #3f37c9;
+}
+
+.ar-color-bp55, .en-color-bp55 {
+  color: #4361ee;
+}
+
+.ar-color-bp56, .en-color-bp56 {
+  color: #4895ef;
+}
+
+.ar-color-bp57, .en-color-bp57 {
+  color: #4cc9f0;
+}
+
+.ar-color-bp58, .en-color-bp58 {
+  color: #52796f;
+}
+
+.ar-color-bp59, .en-color-bp59 {
+  color: #84a98c;
+}
+
+.ar-color-bp60, .en-color-bp60 {
+  color: #cad2c5;
+}
+
+.ar-color-bp61, .en-color-bp61 {
+  color: #2f3e46;
+}
+
+.ar-color-bp62, .en-color-bp62 {
+  color: #354f52;
+}
+
+.ar-color-bp63, .en-color-bp63 {
+  color: #4a4e69;
+}
+
+.ar-color-bp64, .en-color-bp64 {
+  color: #9a8c98;
+}
+
+.ar-color-bp65, .en-color-bp65 {
+  color: #c9ada7;
+}
+
+.ar-color-bp66, .en-color-bp66 {
+  color: #f2e9e4;
+}
+
+.ar-color-bp67, .en-color-bp67 {
+  color: #22223b;
+}
+
+.ar-color-bp68, .en-color-bp68 {
+  color: #6d6875;
+}
+
+.ar-color-bp69, .en-color-bp69 {
+  color: #b5838d;
+}
+
+.ar-color-bp70, .en-color-bp70 {
+  color: #e5989b;
+}
+
+.ar-color-bp71, .en-color-bp71 {
+  color: #ffcdb2;
+}
+
+.ar-color-bp72, .en-color-bp72 {
+  color: #ffb4a2;
+}
+
+.ar-color-bp73, .en-color-bp73 {
+  color: #e5989b;
+}
+
+.ar-color-bp74, .en-color-bp74 {
+  color: #b5838d;
+}
+
+.ar-color-bp75, .en-color-bp75 {
+  color: #6d6875;
+}
+
+.ar-color-bp76, .en-color-bp76 {
+  color: #585858;
+}
+
+.ar-color-bp77, .en-color-bp77 {
+  color: #4a4a4a;
+}
+
+.ar-color-bp78, .en-color-bp78 {
+  color: #3c3c3c;
+}
+
+.ar-color-bp79, .en-color-bp79 {
+  color: #2e2e2e;
+}
+
+.ar-color-bp80, .en-color-bp80 {
+  color: #212121;
+}
+
+.ar-color-bp81, .en-color-bp81 {
+  color: #705d56;
+}
+
+.ar-color-bp82, .en-color-bp82 {
+  color: #877670;
+}
+
+.ar-color-bp83, .en-color-bp83 {
+  color: #9e8f8a;
+}
+
+.ar-color-bp84, .en-color-bp84 {
+  color: #b5a8a4;
+}
+
+.ar-color-bp85, .en-color-bp85 {
+  color: #ccc1bd;
+}
+
+.ar-color-p1, .en-color-p1 {
+  color: #2c3e50;
+}
+
+.ar-color-p2, .en-color-p2 {
+  color: #34495e;
+}
+
+.ar-color-p3, .en-color-p3 {
+  color: #2c3e50;
+}
+
+.ar-color-p4, .en-color-p4 {
+  color: #34495e;
+}
+
+.ar-color-p5, .en-color-p5 {
+  color: #8c7b75;
+}
+
+.ar-color-p6, .en-color-p6 {
+  color: #736357;
+}
+
+.ar-color-p7, .en-color-p7 {
+  color: #8c7b75;
+}
+
+.ar-color-p8, .en-color-p8 {
+  color: #736357;
+}
+
+.ar-color-p9, .en-color-p9 {
+  color: #0077b6;
+}
+
+.ar-color-p10, .en-color-p10 {
+  color: #0096c7;
+}
+
+.ar-color-p11, .en-color-p11 {
+  color: #0077b6;
+}
+
+.ar-color-p12, .en-color-p12 {
+  color: #0096c7;
+}
+
+.ar-color-p13, .en-color-p13 {
+  color: #fca311;
+}
+
+.ar-color-p14, .en-color-p14 {
+  color: #e85d04;
+}
+
+.ar-color-p15, .en-color-p15 {
+  color: #fca311;
+}
+
+.ar-color-p16, .en-color-p16 {
+  color: #e85d04;
+}
+
+.ar-color-p17, .en-color-p17 {
+  color: #a06c3b;
+}
+
+.ar-color-p18, .en-color-p18 {
+  color: #8d5b4c;
+}
+
+.ar-color-p19, .en-color-p19 {
+  color: #a06c3b;
+}
+
+.ar-color-p20, .en-color-p20 {
+  color: #8d5b4c;
+}
+
+.ar-color-p21, .en-color-p21 {
+  color: #52796f;
+}
+
+.ar-color-p22, .en-color-p22 {
+  color: #354f52;
+}
+
+.ar-color-p23, .en-color-p23 {
+  color: #52796f;
+}
+
+.ar-color-p24, .en-color-p24 {
+  color: #354f52;
+}
+
+.ar-color-p25, .en-color-p25 {
+  color: #2a9d8f;
+}
+
+.ar-color-p26, .en-color-p26 {
+  color: #264653;
+}
+
+.ar-color-p27, .en-color-p27 {
+  color: #2a9d8f;
+}
+
+.ar-color-p28, .en-color-p28 {
+  color: #264653;
+}
+
+.ar-color-p29, .en-color-p29 {
+  color: #6c757d;
+}
+
+.ar-color-p30, .en-color-p30 {
+  color: #495057;
+}
+
+.ar-color-p31, .en-color-p31 {
+  color: #6c757d;
+}
+
+.ar-color-p32, .en-color-p32 {
+  color: #495057;
+}
+
+.ar-color-p33, .en-color-p33 {
+  color: #e76f51;
+}
+
+.ar-color-p34, .en-color-p34 {
+  color: #f4a261;
+}
+
+.ar-color-p35, .en-color-p35 {
+  color: #e76f51;
+}
+
+.ar-color-p36, .en-color-p36 {
+  color: #f4a261;
+}
+
+.ar-color-p37, .en-color-p37 {
+  color: #1d3557;
+}
+
+.ar-color-p38, .en-color-p38 {
+  color: #457b9d;
+}
+
+.ar-color-p39, .en-color-p39 {
+  color: #1d3557;
+}
+
+.ar-color-p40, .en-color-p40 {
+  color: #457b9d;
+}
+
+.ar-color-p41, .en-color-p41 {
+  color: #6a040f;
+}
+
+.ar-color-p42, .en-color-p42 {
+  color: #9d0208;
+}
+
+.ar-color-p43, .en-color-p43 {
+  color: #6a040f;
+}
+
+.ar-color-p44, .en-color-p44 {
+  color: #9d0208;
+}
+
+.ar-color-p45, .en-color-p45 {
+  color: #d00000;
+}
+
+.ar-color-p46, .en-color-p46 {
+  color: #dc2f02;
+}
+
+.ar-color-p47, .en-color-p47 {
+  color: #d00000;
+}
+
+.ar-color-p48, .en-color-p48 {
+  color: #dc2f02;
+}
+
+.ar-color-p-mcq-1a, .en-color-p-mcq-1a {
+  color: #1d3557;
+}
+
+.ar-color-p-mcq-1b, .en-color-p-mcq-1b {
+  color: #a06c3b;
+}
+
+.ar-color-p-mcq-1c, .en-color-p-mcq-1c {
+  color: #6a040f;
+}
+
+.ar-color-p-dd-1, .en-color-p-dd-1 {
+  color: #52796f;
+}
+
+.ar-color-p-dd-2, .en-color-p-dd-2 {
+  color: #2a9d8f;
+}
+
+.ar-color-p-dd-3, .en-color-p-dd-3 {
+  color: #8c7b75;
+}
+
+.ar-color-p-dd-4, .en-color-p-dd-4 {
+  color: #fca311;
+}
+
+.ar-color-cl-1, .en-color-cl-1 {
+  color: #4a4e69;
+}
+
+.ar-color-cl-2, .en-color-cl-2 {
+  color: #6A7FDB;
+}
+
+.ar-color-cl-3, .en-color-cl-3 {
+  color: #4a4e69;
+}
+
+.ar-color-cl-4, .en-color-cl-4 {
+  color: #6A7FDB;
+}
+
+.ar-color-cl-5, .en-color-cl-5 {
+  color: #a1887f;
+}
+
+.ar-color-cl-6, .en-color-cl-6 {
+  color: #8d6e63;
+}
+
+.ar-color-cl-7, .en-color-cl-7 {
+  color: #a1887f;
+}
+
+.ar-color-cl-8, .en-color-cl-8 {
+  color: #8d6e63;
+}
+
+.ar-color-cl-9, .en-color-cl-9 {
+  color: #795548;
+}
+
+.ar-color-cl-10, .en-color-cl-10 {
+  color: #8d6e63;
+}
+
+.ar-color-cl-11, .en-color-cl-11 {
+  color: #795548;
+}
+
+.ar-color-cl-12, .en-color-cl-12 {
+  color: #8d6e63;
+}
+
+.ar-color-cl-13, .en-color-cl-13 {
+  color: #f5f5f5;
+}
+
+.ar-color-cl-14, .en-color-cl-14 {
+  color: #e0e0e0;
+}
+
+.ar-color-cl-15, .en-color-cl-15 {
+  color: #f5f5f5;
+}
+
+.ar-color-cl-16, .en-color-cl-16 {
+  color: #e0e0e0;
+}
+
+.ar-color-cl-17, .en-color-cl-17 {
+  color: #ffffff;
+}
+
+.ar-color-cl-18, .en-color-cl-18 {
+  color: #f8f9fa;
+}
+
+.ar-color-cl-19, .en-color-cl-19 {
+  color: #eeeeee;
+}
+
+.ar-color-cl-20, .en-color-cl-20 {
+  color: #f8f9fa;
+}
+
+.ar-color-cl-21, .en-color-cl-21 {
+  color: #ffffff;
+}
+
+.ar-color-cl-22, .en-color-cl-22 {
+  color: #d2b48c;
+}
+
+.ar-color-cl-23, .en-color-cl-23 {
+  color: #a1887f;
+}
+
+.ar-color-cl-24, .en-color-cl-24 {
+  color: #d2b48c;
+}
+
+.ar-color-cl-25, .en-color-cl-25 {
+  color: #a1887f;
+}
+
+.ar-color-cl-26, .en-color-cl-26 {
+  color: #212529;
+}
+
+.ar-color-cl-27, .en-color-cl-27 {
+  color: #343a40;
+}
+
+.ar-color-cl-28, .en-color-cl-28 {
+  color: #212529;
+}
+
+.ar-color-cl-29, .en-color-cl-29 {
+  color: #343a40;
+}
+
+.ar-color-cl-30, .en-color-cl-30 {
+  color: #607d8b;
+}
+
+.ar-color-cl-31, .en-color-cl-31 {
+  color: #455a64;
+}
+
+.ar-color-cl-32, .en-color-cl-32 {
+  color: #607d8b;
+}
+
+.ar-color-cl-33, .en-color-cl-33 {
+  color: #455a64;
+}
+
+.ar-color-cl-34, .en-color-cl-34 {
+  color: #00695c;
+}
+
+.ar-color-cl-35, .en-color-cl-35 {
+  color: #00897b;
+}
+
+.ar-color-cl-36, .en-color-cl-36 {
+  color: #00695c;
+}
+
+.ar-color-cl-37, .en-color-cl-37 {
+  color: #00897b;
+}
+
+.ar-color-cl-38, .en-color-cl-38 {
+  color: #5d4037;
+}
+
+.ar-color-cl-39, .en-color-cl-39 {
+  color: #4e342e;
+}
+
+.ar-color-cl-40, .en-color-cl-40 {
+  color: #5d4037;
+}
+
+.ar-color-cl-41, .en-color-cl-41 {
+  color: #4e342e;
+}
+
+.ar-color-cl-42, .en-color-cl-42 {
+  color: #1a237e;
+}
+
+.ar-color-cl-43, .en-color-cl-43 {
+  color: #303f9f;
+}
+
+.ar-color-cl-44, .en-color-cl-44 {
+  color: #1a237e;
+}
+
+.ar-color-cl-45, .en-color-cl-45 {
+  color: #303f9f;
+}
+
+.ar-color-w-1, .en-color-w-1 {
+  color: #f1c40f;
+}
+
+.ar-color-w-2, .en-color-w-2 {
+  color: #f39c12;
+}
+
+.ar-color-w-3, .en-color-w-3 {
+  color: #f1c40f;
+}
+
+.ar-color-w-4, .en-color-w-4 {
+  color: #f39c12;
+}
+
+.ar-color-w-5, .en-color-w-5 {
+  color: #34495e;
+}
+
+.ar-color-w-6, .en-color-w-6 {
+  color: #2c3e50;
+}
+
+.ar-color-w-7, .en-color-w-7 {
+  color: #34495e;
+}
+
+.ar-color-w-8, .en-color-w-8 {
+  color: #2c3e50;
+}
+
+.ar-color-w-9, .en-color-w-9 {
+  color: #bdc3c7;
+}
+
+.ar-color-w-10, .en-color-w-10 {
+  color: #ecf0f1;
+}
+
+.ar-color-w-11, .en-color-w-11 {
+  color: #bdc3c7;
+}
+
+.ar-color-w-12, .en-color-w-12 {
+  color: #ecf0f1;
+}
+
+.ar-color-w-13, .en-color-w-13 {
+  color: #95a5a6;
+}
+
+.ar-color-w-14, .en-color-w-14 {
+  color: #7f8c8d;
+}
+
+.ar-color-w-15, .en-color-w-15 {
+  color: #95a5a6;
+}
+
+.ar-color-w-16, .en-color-w-16 {
+  color: #7f8c8d;
+}
+
+.ar-color-w-17, .en-color-w-17 {
+  color: #e67e22;
+}
+
+.ar-color-w-18, .en-color-w-18 {
+  color: #d35400;
+}
+
+.ar-color-w-19, .en-color-w-19 {
+  color: #e67e22;
+}
+
+.ar-color-w-20, .en-color-w-20 {
+  color: #d35400;
+}
+
+.ar-color-w-21, .en-color-w-21 {
+  color: #2c3e50;
+}
+
+.ar-color-w-22, .en-color-w-22 {
+  color: #ecf0f1;
+}
+
+.ar-color-w-23, .en-color-w-23 {
+  color: #2c3e50;
+}
+
+.ar-color-w-24, .en-color-w-24 {
+  color: #ecf0f1;
+}
+
+.ar-color-w-25, .en-color-w-25 {
+  color: #81ecec;
+}
+
+.ar-color-w-26, .en-color-w-26 {
+  color: #00cec9;
+}
+
+.ar-color-w-27, .en-color-w-27 {
+  color: #81ecec;
+}
+
+.ar-color-w-28, .en-color-w-28 {
+  color: #00cec9;
+}
+
+.ar-color-w-29, .en-color-w-29 {
+  color: #a29bfe;
+}
+
+.ar-color-w-30, .en-color-w-30 {
+  color: #dfe6e9;
+}
+
+.ar-color-w-31, .en-color-w-31 {
+  color: #a29bfe;
+}
+
+.ar-color-w-32, .en-color-w-32 {
+  color: #dfe6e9;
+}
+
+.ar-color-w-33, .en-color-w-33 {
+  color: #0984e3;
+}
+
+.ar-color-w-34, .en-color-w-34 {
+  color: #74b9ff;
+}
+
+.ar-color-w-35, .en-color-w-35 {
+  color: #0984e3;
+}
+
+.ar-color-w-36, .en-color-w-36 {
+  color: #74b9ff;
+}
+
+.ar-color-w-37, .en-color-w-37 {
+  color: #b2bec3;
+}
+
+.ar-color-w-38, .en-color-w-38 {
+  color: #636e72;
+}
+
+.ar-color-w-39, .en-color-w-39 {
+  color: #b2bec3;
+}
+
+.ar-color-w-40, .en-color-w-40 {
+  color: #636e72;
+}
+
+.ar-color-w-41, .en-color-w-41 {
+  color: #1abc9c;
+}
+
+.ar-color-w-42, .en-color-w-42 {
+  color: #16a085;
+}
+
+.ar-color-w-43, .en-color-w-43 {
+  color: #1abc9c;
+}
+
+.ar-color-w-44, .en-color-w-44 {
+  color: #16a085;
+}
+
+.ar-color-w-45, .en-color-w-45 {
+  color: #3498db;
+}
+
+.ar-color-w-46, .en-color-w-46 {
+  color: #2980b9;
+}
+
+.ar-color-w-47, .en-color-w-47 {
+  color: #3498db;
+}
+
+.ar-color-w-48, .en-color-w-48 {
+  color: #2980b9;
+}
+
 .progress-container {
   width: 100%;
   height: 8px;
@@ -3163,7 +4095,8 @@ footer p {
 #command-verb-lesson article {
   line-height: 1.8;
 }
-#command-verb-lesson article h4, #command-verb-lesson article h5 {
+#command-verb-lesson article h4,
+#command-verb-lesson article h5 {
   color: #007bff;
   margin-top: 1.5rem;
   border-bottom: 1px solid #dee2e6;
@@ -3182,6 +4115,66 @@ footer p {
   color: #dc3545;
   padding: 0.2em 0.4em;
   border-radius: 3px;
+}
+
+.navbar-nav .dropdown-menu {
+  background-color: #ffffff;
+  border-color: #dee2e6;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  margin-top: 0.5rem;
+}
+
+.dropdown-item {
+  color: #212529;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+.dropdown-item:hover, .dropdown-item:focus {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.dropdown-divider {
+  border-top: 1px solid #dee2e6;
+}
+
+/* ============================================= */
+/* Styling for Arabic Past Tense Verb Lesson     */
+/* ============================================= */
+#past-tense-lesson .table {
+  font-size: 1.1rem;
+  border: 1px solid #dee2e6;
+}
+#past-tense-lesson .table thead {
+  background-color: #eef3f9;
+  color: #0d47a1;
+  font-weight: 600;
+}
+#past-tense-lesson .table td,
+#past-tense-lesson .table th {
+  text-align: center;
+  vertical-align: middle;
+  padding: 0.8rem 0.5rem;
+}
+#past-tense-lesson .table td.ar-word,
+#past-tense-lesson .table td .ar-word {
+  font-family: "Noto Naskh Arabic", serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #333;
+}
+#past-tense-lesson .table tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+#past-tense-lesson .table tbody tr:hover {
+  background-color: #dceaff;
+}
+#past-tense-lesson .list-group-item .ar-word {
+  font-weight: bold;
+}
+#past-tense-lesson .list-group-item strong.ar-word {
+  color: #1a237e;
 }
 
 body.dark-mode {
@@ -3296,4 +4289,29 @@ body.dark-mode .droppable-area.dropped-correct .draggable-item {
   background-color: #28a745;
   color: #fff;
   border-color: rgb(30.1449275362, 125.8550724638, 52);
+}
+
+.navbar-nav .dropdown-menu {
+  background-color: #ffffff;
+  border-color: #dee2e6;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.dropdown-item {
+  color: #212529;
+}
+.dropdown-item:hover, .dropdown-item:focus {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.dropdown-divider {
+  border-top-color: #dee2e6;
+}
+
+.navbar .nav-link.dropdown-toggle {
+  color: #e0e0e0;
+}
+.navbar .nav-link.dropdown-toggle:hover {
+  color: #58a6ff;
 }/*# sourceMappingURL=style.css.map */
