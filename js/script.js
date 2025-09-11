@@ -359,6 +359,20 @@ document.addEventListener('DOMContentLoaded', () => {
             q2_w: { a: "خطأ. الرياح تحرك الأشياء ولكنها لا تحجب الرؤية.", b: "خطأ. الجو المشمس يعني رؤية واضحة." },
             q3_w: { b: "خطأ. الجليد هو ماء متجمد.", c: "خطأ. الفيضان هو كثرة الماء." }
         },
+        // --- START: Add this block for Food answers ---
+        "f1": {
+            q1_f: 'b',
+            q2_f: 'a',
+            q3_f: 'c'
+        },
+        // --- END: Add this block for Food answers ---
+        // --- START: Add this block for Food explanations ---
+        "f1": {
+            q1_f: { a: "خطأ. الزبدة تصنع من الحليب.", c: "خطأ. الجبن أيضاً يصنع من الحليب." },
+            q2_f: { b: "خطأ. الفول نبات يزرع في الأرض.", c: "خطأ. العدس هو نوع من الحبوب." },
+            q3_f: { a: "خطأ. الفطيرة يمكن أن تكون وجبة رئيسية، لكن الحلوى هي الإجابة الأنسب.", b: "خطأ. الزيت يستخدم في الطبخ وليس كوجبة بعد الطعام." }
+        },
+        // --- END: Add this block for Food explanations ---
     };
 
 
@@ -440,6 +454,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 else if (mcqId === 'cl1') { questionNameSuffix = 'cl'; }
                 // Add this new else if condition
                 else if (mcqId === 'w1') { questionNameSuffix = 'w'; }
+                // --- START: Add this new condition for Food ---
+                else if (mcqId === 'f1') { questionNameSuffix = 'f'; }
+                // --- END: Add this new condition for Food ---
                 else {
                     console.warn(`Unhandled mcqId for question name suffix: ${mcqId}`);
                     questionNameSuffix = mcqId;
@@ -789,4 +806,128 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     // --- END: Fill in the Blanks Functionality for Weather ---
 
+    // --- START: Fill in the Blanks Functionality for Food ---
+    const checkFillBlanksBtn_f2 = document.getElementById('check-fill-blanks-f2');
+    if (checkFillBlanksBtn_f2) {
+        checkFillBlanksBtn_f2.addEventListener('click', () => {
+            const answers = {
+                fill_f_1: "الْمُرَبَّىٰ",
+                fill_f_2: "الْعَدَسِ",
+                fill_f_3: "فَطِيرَةَ",
+                fill_f_4: "الْجُبْنَ",
+                fill_f_5: "الزَّيْتِ"
+            };
+
+            const feedbackDiv = document.getElementById('feedback-fill-blanks-f2');
+            let allCorrect = true;
+            let feedbackHTML = '<h4>النتائج:</h4><ul>';
+
+            Object.keys(answers).forEach(inputId => {
+                const inputElement = document.getElementById(inputId);
+                const correctAnswer = answers[inputId];
+                const userAnswer = inputElement.value.trim().normalize("NFD").replace(/[\u064B-\u0652]/g, "");
+                const normalizedCorrectAnswer = correctAnswer.normalize("NFD").replace(/[\u064B-\u0652]/g, "");
+
+                inputElement.classList.remove('is-valid', 'is-invalid');
+
+                if (userAnswer === normalizedCorrectAnswer) {
+                    inputElement.classList.add('is-valid');
+                    feedbackHTML += `<li class="text-success" dir="rtl"><i class="fas fa-check-circle ms-2"></i><strong>السؤال ${inputId.split('_')[2]}:</strong> صحيح!</li>`;
+                } else {
+                    allCorrect = false;
+                    inputElement.classList.add('is-invalid');
+                    feedbackHTML += `<li class="text-danger" dir="rtl"><i class="fas fa-times-circle ms-2"></i><strong>السؤال ${inputId.split('_')[2]}:</strong> خطأ. الإجابة الصحيحة هي "${correctAnswer}".</li>`;
+                }
+            });
+
+            feedbackHTML += '</ul>';
+            if (allCorrect) {
+                feedbackHTML += '<p class="fw-bold text-success">أحسنت! كل الإجابات صحيحة.</p>';
+            } else {
+                feedbackHTML += '<p class="fw-bold text-warning">هناك أخطاء، حاول مرة أخرى.</p>';
+            }
+
+            feedbackDiv.innerHTML = feedbackHTML;
+            feedbackDiv.style.display = 'block';
+        });
+    }
+    // --- END: Fill in the Blanks Functionality for Food ---
+
+    // --- START: True/False Functionality for Food ---
+    const checkTrueFalseBtn_f1 = document.getElementById('check-tf-f1');
+    if (checkTrueFalseBtn_f1) {
+        checkTrueFalseBtn_f1.addEventListener('click', () => {
+            const answers = {
+                q1_tf_f: 'true', // Correct answer is 'false', but the value of the 'false' radio is 'true'
+                q2_tf_f: 'true', // Correct answer is 'false', but the value of the 'false' radio is 'true'
+                q3_tf_f: 'true'
+            };
+
+            const feedbackDiv = document.getElementById('feedback-tf-f1');
+            let score = 0;
+            let feedbackHTML = '<h4>النتائج:</h4><ul>';
+
+            Object.keys(answers).forEach((questionName, index) => {
+                const selectedOption = document.querySelector(`input[name="${questionName}"]:checked`);
+
+                if (selectedOption) {
+                    if (selectedOption.value === answers[questionName]) {
+                        score++;
+                        feedbackHTML += `<li class="text-success" dir="rtl"><i class="fas fa-check-circle ms-2"></i><strong>السؤال ${index + 1}:</strong> صحيح!</li>`;
+                    } else {
+                        feedbackHTML += `<li class="text-danger" dir="rtl"><i class="fas fa-times-circle ms-2"></i><strong>السؤال ${index + 1}:</strong> خطأ.</li>`;
+                    }
+                } else {
+                    feedbackHTML += `<li class="text-warning" dir="rtl"><i class="fas fa-exclamation-circle ms-2"></i><strong>السؤال ${index + 1}:</strong> لم يتم الإجابة عليه.</li>`;
+                }
+            });
+
+            feedbackHTML += `</ul><p class="mt-3"><strong>نتيجتك: ${score} من 3</strong></p>`;
+            feedbackDiv.innerHTML = feedbackHTML;
+            feedbackDiv.style.display = 'block';
+        });
+    }
+    // --- END: True/False Functionality for Food ---
+
+    // --- START: Word Scramble Functionality for Food ---
+    const checkScrambleBtn_f1 = document.getElementById('check-scramble-f1');
+    if (checkScrambleBtn_f1) {
+        checkScrambleBtn_f1.addEventListener('click', () => {
+            const answers = {
+                scramble_f_1: "زبدة",
+                scramble_f_2: "عسل",
+                scramble_f_3: "فطيرة"
+            };
+            const feedbackDiv = document.getElementById('feedback-scramble-f1');
+            let allCorrect = true;
+            let feedbackHTML = '<h4>النتائج:</h4><ul>';
+
+            Object.keys(answers).forEach((inputId, index) => {
+                const inputElement = document.getElementById(inputId);
+                const correctAnswer = answers[inputId];
+                const userAnswer = inputElement.value.trim().normalize("NFD").replace(/[\u064B-\u0652]/g, "");
+                const normalizedCorrectAnswer = correctAnswer.normalize("NFD").replace(/[\u064B-\u0652]/g, "");
+
+                inputElement.classList.remove('is-valid', 'is-invalid');
+
+                if (userAnswer === normalizedCorrectAnswer) {
+                    inputElement.classList.add('is-valid');
+                    feedbackHTML += `<li class="text-success" dir="rtl"><i class="fas fa-check-circle ms-2"></i><strong>الكلمة ${index + 1}:</strong> صحيحة!</li>`;
+                } else {
+                    allCorrect = false;
+                    inputElement.classList.add('is-invalid');
+                    feedbackHTML += `<li class="text-danger" dir="rtl"><i class="fas fa-times-circle ms-2"></i><strong>الكلمة ${index + 1}:</strong> خطأ.</li>`;
+                }
+            });
+
+            feedbackHTML += '</ul>';
+            if (allCorrect) {
+                feedbackHTML += '<p class="fw-bold text-success">أحسنت! كل الكلمات صحيحة.</p>';
+            }
+
+            feedbackDiv.innerHTML = feedbackHTML;
+            feedbackDiv.style.display = 'block';
+        });
+    }
+    // --- END: Word Scramble Functionality for Food ---
 });
