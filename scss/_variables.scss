@@ -492,34 +492,168 @@ $food_colors: (
 // ==== START: ألوان الأدوات المنزلية (Household Tools) - نسخة كاملة ====
 // =======================================================
 $home_tools_colors: (
-  // Spoon (Dark metallic grey)
-  "ht-1": #495057, "ht-2": #343a40, "ht-3": #495057, "ht-4": #343a40,
-  // Fork (Slightly lighter steel grey)
-  "ht-5": #6c757d, "ht-6": #5a6268, "ht-7": #6c757d, "ht-8": #5a6268,
-  // Knife (Darker steel)
-  "ht-9": #343a40, "ht-10": #212529, "ht-11": #343a40, "ht-12": #212529,
-  // Iron (Deep red)
-  "ht-13": #8B0000, "ht-14": #a11d1d, "ht-15": #8B0000, "ht-16": #a11d1d,
-  // Pot (Dark stainless steel)
-  "ht-17": #5D4037, "ht-18": #4E342E, "ht-19": #5D4037, "ht-20": #4E342E,
-  // Glass (Deep water blue)
-  "ht-21": #005f73, "ht-22": #0a9396, "ht-23": #005f73, "ht-24": #0a9396,
-  // Mug (Dark teal)
-  "ht-25": #006064, "ht-26": #004d40, "ht-27": #006064, "ht-28": #004d40,
-  // Jug (Rich orange for juice)
-  "ht-29": #e65100, "ht-30": #bf360c, "ht-31": #e65100, "ht-32": #bf360c,
-  // Dining Table (Dark wood brown)
-  "ht-33": #3E2723, "ht-34": #5d4037, "ht-35": #3E2723, "ht-36": #5d4037,
-  // Vacuum Cleaner (Dark navy blue)
-  "ht-37": #1A237E, "ht-38": #283593, "ht-39": #1A237E, "ht-40": #283593,
-  // Washing Machine (Strong medium blue)
-  "ht-41": #1565C0, "ht-42": #1976D2, "ht-43": #1565C0, "ht-44": #1976D2,
-  // Trash Can (Forest green)
-  "ht-45": #2E7D32, "ht-46": #1B5E20, "ht-47": #2E7D32, "ht-48": #1B5E20
+  // Spoon (Distinct, highly contrasting colors)
+  "ht-1": #e94560, // Vivid Red
+  "ht-2": #16c79a, // Bright Teal
+  "ht-3": #fbc02d, // Strong Yellow
+  "ht-4": #1a237e, // Deep Blue
+  // Fork (High contrast: Silver & Charcoal)
+  "ht-5": #bfc9ca, "ht-6": #23272b, "ht-7": #bfc9ca, "ht-8": #23272b,
+  // Knife (Very dark steel, almost black)
+  "ht-9": #23272b, "ht-10": #0a0c0d, "ht-11": #23272b, "ht-12": #0a0c0d,
+  // Iron (Deep, dark red / maroon vs. bright red)
+  "ht-13": #800000, "ht-14": #e94560, "ht-15": #800000, "ht-16": #e94560,
+  // Pot (Dark cast iron brown vs. light brown)
+  "ht-17": #3E2723, "ht-18": #bfa77a, "ht-19": #3E2723, "ht-20": #bfa77a,
+  // Glass (Deep ocean blue vs. light blue)
+  "ht-21": #004953, "ht-22": #90e0ef, "ht-23": #004953, "ht-24": #90e0ef,
+  // Mug (Very dark teal green vs. bright teal)
+  "ht-25": #004D40, "ht-26": #16c79a, "ht-27": #004D40, "ht-28": #16c79a,
+  // Jug (Dark burnt orange vs. vivid orange)
+  "ht-29": #bf360c, "ht-30": #ffbe0b, "ht-31": #bf360c, "ht-32": #ffbe0b,
+  // Dining Table (Dark espresso wood vs. light wood)
+  "ht-33": #3E2723, "ht-34": #bfa77a, "ht-35": #3E2723, "ht-36": #bfa77a,
+  // Vacuum Cleaner (Deep navy blue vs. bright blue)
+  "ht-37": #1A237E, "ht-38": #54a0ff, "ht-39": #1A237E, "ht-40": #54a0ff,
+  // Washing Machine (Dark charcoal vs. light grey)
+  "ht-41": #23272b, "ht-42": #bdbdbd, "ht-43": #23272b, "ht-44": #bdbdbd,
+  // Trash Can (Dark forest green vs. bright green)
+  "ht-45": #1B5E20, "ht-46": #16c79a, "ht-47": #1B5E20, "ht-48": #16c79a
 );
 // =======================================================
 // ==== END: ألوان الأدوات المنزلية (Household Tools) ====
 // =======================================================
+// =======================================================
+// ==== START: ألوان مفردات الفواكه (Fruits) ====
+// =======================================================
+$fruits_colors: (
+  // Apple (Reds & Greens)
+  "fr-1": #c0392b, "fr-2": #27ae60, "fr-3": #c0392b, "fr-4": #16a085,
+  // Orange (Oranges)
+  "fr-5": #d35400, "fr-6": #e67e22, "fr-7": #d35400, "fr-8": #f39c12,
+  // Lemon (Yellows & Greens)
+  "fr-9": #f1c40f, "fr-10": #f1c40f, "fr-11": #2ecc71, "fr-12": #27ae60,
+  // Banana (Yellows)
+  "fr-13": #f9a825, "fr-14": #8d6e63, "fr-15": #f9a825, "fr-16": #fbc02d,
+  // Raspberry (Pinks & Reds)
+  "fr-17": #e91e63, "fr-18": #c2185b, "fr-19": #e91e63, "fr-20": #d81b60,
+  // Peach (Peachy tones)
+  "fr-21": #ff7043, "fr-22": #ff8a65, "fr-23": #ff7043, "fr-24": #ffab91,
+  // Pomegranate (Deep Reds)
+  "fr-25": #9b2226, "fr-26": #ae2012, "fr-27": #9b2226, "fr-28": #bb3e03,
+  // Apricot (Apricot tones)
+  "fr-29": #fb8c00, "fr-30": #ffa726, "fr-31": #fb8c00, "fr-32": #ffb74d,
+  // Fig (Purples)
+  "fr-33": #5d3b66, "fr-34": #6a040f, "fr-35": #5d3b66, "fr-36": #370617,
+  // Mandarin (Bright Oranges)
+  "fr-37": #ef6c00, "fr-38": #f57c00, "fr-39": #ef6c00, "fr-40": #fb8c00,
+  // Mango (Mango tones)
+  "fr-41": #ffc300, "fr-42": #ff5733, "fr-43": #ffc300, "fr-44": #c70039,
+  // Grapes (Purples & Greens)
+  "fr-45": #8e44ad, "fr-46": #8e44ad, "fr-47": #9b59b6, "fr-48": #27ae60
+);
+// =======================================================
+// ==== END: ألوان مفردات الفواكه (Fruits) ====
+// =======================================================
+// =======================================================
+// ==== START: ألوان مفردات الخضروات (Vegetables) ====
+// =======================================================
+$vegetables_colors: (
+  // Vocabulary & Example Sentence Colors (Dark, earthy tones)
+  // Potatoes (Earthy Browns)
+  "veg-1": #5d4037, "veg-2": #4e342e, "veg-3": #5d4037, "veg-4": #4e342e,
+  // Pumpkin (Deep Oranges)
+  "veg-5": #bf360c, "veg-6": #e65100, "veg-7": #bf360c, "veg-8": #e65100,
+  // Zucchini (Dark Greens)
+  "veg-9": #1b5e20, "veg-10": #2e7d32, "veg-11": #1b5e20, "veg-12": #2e7d32,
+  // Parsley (Rich Greens)
+  "veg-13": #004d40, "veg-14": #00695c, "veg-15": #004d40, "veg-16": #00695c,
+  // Leek (Greens & Greys)
+  "veg-17": #33691e, "veg-18": #424242, "veg-19": #33691e, "veg-20": #424242,
+  // Lettuce (Leafy Greens)
+  "veg-21": #2e7d32, "veg-22": #388e3c, "veg-23": #2e7d32, "veg-24": #388e3c,
+  // White Beans (Dark Greys)
+  "veg-25": #616161, "veg-26": #757575, "veg-27": #616161, "veg-28": #757575,
+  // Chili Pepper (Deep Reds)
+  "veg-29": #9d0208, "veg-30": #b71c1c, "veg-31": #9d0208, "veg-32": #b71c1c,
+  // Garlic (Dark, muted purple/grey)
+  "veg-33": #4a4a6a, "veg-34": #5d5d7d, "veg-35": #4a4a6a, "veg-36": #5d5d7d,
+  // Green Beans (Dark Greens)
+  "veg-37": #1b5e20, "veg-38": #2e7d32, "veg-39": #1b5e20, "veg-40": #2e7d32,
+  // Eggplant (Deep Purples)
+  "veg-41": #3d1a4d, "veg-42": #4a148c, "veg-43": #3d1a4d, "veg-44": #4a148c,
+  // Okra (Dark Olive Greens)
+  "veg-45": #33691e, "veg-46": #558b2f, "veg-47": #33691e, "veg-48": #558b2f
+);
+// =======================================================
+// ==== END: ألوان مفردات الخضروات (Vegetables) ====
+// =======================================================
+
+// =======================================================
+// ==== START: ألوان مفردات الْأَثَاثُ (Furniture) ====
+// =======================================================
+$furniture_colors: (
+  // Vocabulary & Example Sentence Colors (Interior/Home Tones)
+  // Air conditioner (Cool Blues)
+  "furn-1": #0077b6, "furn-2": #0284c7, "furn-3": #0077b6, "furn-4": #0284c7,
+  // Fan (Metallic Grays)
+  "furn-5": #6c757d, "furn-6": #5a6268, "furn-7": #6c757d, "furn-8": #5a6268,
+  // Telephone (Dark Grays/Blacks)
+  "furn-9": #343a40, "furn-10": #212529, "furn-11": #343a40,
+  // Blanket / Cover (Warm Burgundy)
+  "furn-12": #800020, "furn-13": #a50026, "furn-14": #800020, "furn-15": #a50026,
+  // Bed (Wood Browns)
+  "furn-16": #5d4037, "furn-17": #4e342e, "furn-18": #5d4037, "furn-19": #4e342e,
+  // Mattress (Light Off-Whites/Grays)
+  "furn-20": #d7ccc8, "furn-21": #bcaaa4, "furn-22": #d7ccc8, "furn-23": #bcaaa4,
+  // Wardrobe / Closet (Dark Wood Tones)
+  "furn-24": #3e2723, "furn-25": #2d1b18, "furn-26": #3e2723, "furn-27": #2d1b18,
+  // Pillow (Soft, Muted Purples)
+  "furn-28": #6a5acd, "furn-29": #7b68ee, "furn-30": #6a5acd, "furn-31": #7b68ee,
+  // Chair (Medium Wood Browns)
+  "furn-32": #8d6e63, "furn-33": #795548, "furn-34": #8d6e63, "furn-35": #795548,
+  // Table (Rich Wood Browns)
+  "furn-36": #6d4c41, "furn-37": #5d4037, "furn-38": #6d4c41, "furn-39": #5d4037,
+  // Heater (Warm Oranges)
+  "furn-40": #e65100, "furn-41": #d9480f, "furn-42": #e65100, "furn-43": #d9480f,
+  // Shelf (Simple Grays)
+  "furn-44": #9e9e9e, "furn-45": #757575, "furn-46": #9e9e9e, "furn-47": #757575
+);
+// =======================================================
+// ==== END: ألوان مفردات الْأَثَاثُ (Furniture) ====
+// =======================================================
+
+$travel_colors: (
+  // Vocabulary & Example Sentence Colors (Travel/Transport Tones)
+  // Wallet (Leather Browns)
+  "travel-1": #8B4513, "travel-2": #A0522D, "travel-3": #8B4513, "travel-4": #A0522D,
+  // Motorcycle (Yellow & Gray)
+  "travel-5": #FFD700, "travel-6": #808080, "travel-7": #FFD700, "travel-8": #808080,
+  // Money / Cash (Currency Greens)
+  "travel-9": #006400, "travel-10": #228B22, "travel-11": #006400, "travel-12": #228B22,
+  // Customs (Official Blues)
+  "travel-13": #000080, "travel-14": #4169E1, "travel-15": #000080, "travel-16": #4169E1,
+  // Ship (Deep Sea Blues)
+  "travel-17": #191970, "travel-18": #0000CD, "travel-19": #191970, "travel-20": #0000CD,
+  // Boat (Gondola Black/Wood)
+  "travel-21": #2F4F4F, "travel-22": #5D4037, "travel-23": #2F4F4F, "travel-24": #5D4037,
+  // Departure (Signal Reds/Oranges)
+  "travel-25": #DC143C, "travel-26": #FF4500, "travel-27": #DC143C, "travel-28": #FF4500,
+  // Arrival (Signal Greens)
+  "travel-29": #008000, "travel-30": #32CD32, "travel-31": #008000, "travel-32": #32CD32,
+  // Station (Concrete & Track Grays)
+  "travel-33": #696969, "travel-34": #808080, "travel-35": #696969, "travel-36": #808080,
+  // Taxi (Classic Yellows)
+  "travel-37": #FFC300, "travel-38": #FFD700, "travel-39": #FFC300, "travel-40": #FFD700,
+  // Takeoff (Sky Blues)
+  "travel-41": #87CEEB, "travel-42": #00BFFF, "travel-43": #87CEEB, "travel-44": #00BFFF,
+  // Landing (Runway Grays)
+  "travel-45": #708090, "travel-46": #778899, "travel-47": #708090, "travel-48": #778899
+);
+// =======================================================
+// ==== END: ألوان مفردات السَّفَرُ (Traveling) ====
+// =======================================================
+
 
 $all-colors: ();
 $all-colors: map-merge($all-colors, $ch4_colors);
@@ -535,3 +669,7 @@ $all-colors: map-merge($all-colors, $clothing_colors);
 $all-colors: map-merge($all-colors, $weather_colors);
 $all-colors: map-merge($all-colors, $food_colors);
 $all-colors: map-merge($all-colors, $home_tools_colors);
+$all-colors: map-merge($all-colors, $fruits_colors);
+$all-colors: map-merge($all-colors, $vegetables_colors);
+$all-colors: map-merge($all-colors, $furniture_colors);
+$all-colors: map-merge($all-colors, $travel_colors);

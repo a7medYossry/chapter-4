@@ -159,8 +159,49 @@ document.addEventListener('DOMContentLoaded', () => {
             q2_w: 'c',
             q3_w: 'a'
         },
+        // --- START: Add this block for Food answers ---
+        "f1": {
+            q1_f: 'b',
+            q2_f: 'a',
+            q3_f: 'c'
+        },
+        // --- END: Add this block for Food answers ---
+        // --- START: Add this block for Household Tools answers ---
+        "ht1": {
+            q1_ht: 'a',
+            q2_ht: 'c',
+            q3_ht: 'b'
+        },
+        // --- END: Add this block for Household Tools answers ---
+        // --- START: Add this block for Fruits answers ---
+        "fr1": {
+            q1_fr: 'b',
+            q2_fr: 'a',
+            q3_fr: 'b'
+        },
+        // --- END: Add this block for Fruits answers ---
 
-
+        // --- START: Add this block for NEW Vegetables answers ---
+        "veg1": {
+            q1_veg: 'b',
+            q2_veg: 'a',
+            q3_veg: 'c'
+        },
+        // --- END: Add this block for NEW Vegetables answers ---
+        // --- START: Add this block for Furniture answers ---
+        "furn1": {
+            q1_furn: 'b', // الْخِزَانَة
+            q2_furn: 'a', // الْمِدْفَأَة
+            q3_furn: 'c'  // الْكُرْسِيّ
+        },
+        // --- END: Add this block for Furniture answers ---
+        // --- START: Add this block for Travel answers ---
+        "travel1": {
+            q1_travel: 'b', // الْمَحَطَّة
+            q2_travel: 'c', // إِقْلَاع
+            q3_travel: 'a'  // الْمَحْفَظَة
+        },
+        // --- END: Add this block for Travel answers ---
     };
 
     const mcqExplanations = {
@@ -359,13 +400,6 @@ document.addEventListener('DOMContentLoaded', () => {
             q2_w: { a: "خطأ. الرياح تحرك الأشياء ولكنها لا تحجب الرؤية.", b: "خطأ. الجو المشمس يعني رؤية واضحة." },
             q3_w: { b: "خطأ. الجليد هو ماء متجمد.", c: "خطأ. الفيضان هو كثرة الماء." }
         },
-        // --- START: Add this block for Food answers ---
-        "f1": {
-            q1_f: 'b',
-            q2_f: 'a',
-            q3_f: 'c'
-        },
-        // --- END: Add this block for Food answers ---
         // --- START: Add this block for Food explanations ---
         "f1": {
             q1_f: { a: "خطأ. الزبدة تصنع من الحليب.", c: "خطأ. الجبن أيضاً يصنع من الحليب." },
@@ -373,6 +407,42 @@ document.addEventListener('DOMContentLoaded', () => {
             q3_f: { a: "خطأ. الفطيرة يمكن أن تكون وجبة رئيسية، لكن الحلوى هي الإجابة الأنسب.", b: "خطأ. الزيت يستخدم في الطبخ وليس كوجبة بعد الطعام." }
         },
         // --- END: Add this block for Food explanations ---
+        // --- START: Add this block for Household Tools explanations ---
+        "ht1": {
+            q1_ht: { b: "خطأ. الشوكة تستخدم لأكل الطعام الصلب.", c: "خطأ. السكين يستخدم للتقطيع." },
+            q2_ht: { a: "خطأ. المكنسة تستخدم لتنظيف الأرض.", b: "خطأ. المكواة تستخدم لكي الملابس." },
+            q3_ht: { a: "خطأ. القدر يستخدم للطبخ.", c: "خطأ. الإبريق يستخدم لغلي الماء." }
+        },
+        // --- END: Add this block for Household Tools explanations ---
+        // --- START: Add this block for Fruits explanations ---
+        "fr1": {
+            q1_fr: { a: "خطأ. لون الموز أصفر.", c: "خطأ. لون الموز أصفر وليس أخضر." },
+            q2_fr: { b: "خطأ. العنب حلو الطعم.", c: "خطأ. التفاح يمكن أن يكون حلواً أو حامضاً، لكن الليمون هو الأكثر حموضة." },
+            q3_fr: { a: "خطأ. الخوخ والمشمش لهما نواة واحدة.", c: "خطأ. الرمان مليء بالحبوب." }
+        },
+        // --- END: Add this block for Fruits explanations ---
+
+        // --- START: Add this block for NEW Vegetables explanations ---
+        "veg1": {
+            q1_veg: { a: "خطأ. الكوسة خضراء وليست حارة.", c: "خطأ. الخس أخضر وليس حاراً." },
+            q2_veg: { b: "خطأ. البامية تستخدم في أطباق أخرى.", c: "خطأ. القرع يستخدم في أطباق أخرى مثل الفطائر." },
+            q3_veg: { a: "خطأ. البقدونس أخضر.", b: "خطأ. الثوم أبيض." }
+        },
+        // --- END: Add this block for NEW Vegetables explanations ---
+        // --- START: Add this block for Furniture explanations ---
+        "furn1": {
+            q1_furn: { a: "خطأ. الْكُرْسِيّ للجلوس.", c: "خطأ. الْهَاتِف للاتصال." },
+            q2_furn: { b: "خطأ. الْمِرْوَحَة تُبَرِّد الغرفة.", c: "خطأ. الْمُكَيِّف يُبَرِّد الغرفة أيضاً." },
+            q3_furn: { a: "خطأ. الْفِرَاش للنوم.", b: "خطأ. الطَّاوِلَة لوضع الأشياء عليها." }
+        },
+        // --- END: Add this block for Furniture explanations ---
+        // --- START: Add this block for Travel explanations ---
+        "travel1": {
+            q1_travel: { a: "خطأ. الْمَرْكَبُ يستخدم في الماء.", c: "خطأ. الْجَمَارِكُ هي نقطة تفتيش عند السفر دولياً." },
+            q2_travel: { a: "خطأ. الْهُبُوطُ يكون في نهاية الرحلة.", b: "خطأ. الْوُصُولُ هو النتيجة النهائية للرحلة." },
+            q3_travel: { b: "خطأ. السَّفِينَةُ وسيلة نقل بحرية.", c: "خطأ. الدَّرَّاجَةُ وسيلة نقل برية." }
+        },
+        // --- END: Add this block for Travel explanations ---
     };
 
 
@@ -457,6 +527,22 @@ document.addEventListener('DOMContentLoaded', () => {
                 // --- START: Add this new condition for Food ---
                 else if (mcqId === 'f1') { questionNameSuffix = 'f'; }
                 // --- END: Add this new condition for Food ---
+                // --- START: Add this new condition for Household Tools ---
+                else if (mcqId === 'ht1') { questionNameSuffix = 'ht'; }
+                // --- END: Add this new condition for Household Tools ---
+                // --- START: Add this new condition for Fruits ---
+                else if (mcqId === 'fr1') { questionNameSuffix = 'fr'; }
+                // --- END: Add this new condition for Fruits ---
+
+                // --- START: Add this new condition for NEW Vegetables ---
+                else if (mcqId === 'veg1') { questionNameSuffix = 'veg'; }
+                // --- END: Add this new condition for NEW Vegetables ---
+                // --- START: Add this new condition for Furniture ---
+                else if (mcqId === 'furn1') { questionNameSuffix = 'furn'; }
+                // --- END: Add this new condition for Furniture ---
+                // --- START: Add this new condition for Travel ---
+                else if (mcqId === 'travel1') { questionNameSuffix = 'travel'; }
+                // --- END: Add this new condition for Travel ---
                 else {
                     console.warn(`Unhandled mcqId for question name suffix: ${mcqId}`);
                     questionNameSuffix = mcqId;
@@ -930,4 +1016,638 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
     // --- END: Word Scramble Functionality for Food ---
-});
+
+    // --- START: True/False Functionality for Home Tools (Exercise 4) ---
+    const checkTrueFalseBtn_ht4 = document.getElementById('check-tf-ht4');
+    if (checkTrueFalseBtn_ht4) {
+        checkTrueFalseBtn_ht4.addEventListener('click', () => {
+            const answers = {
+                q1_tf_ht: 'true', // Correct answer is 'false', so the value of the 'false' radio is 'true'
+                q2_tf_ht: 'true',
+                q3_tf_ht: 'true'  // Correct answer is 'false', so the value of the 'false' radio is 'true'
+            };
+
+            const feedbackDiv = document.getElementById('feedback-tf-ht4');
+            let score = 0;
+            let feedbackHTML = '<h4>النتائج:</h4><ul>';
+
+            Object.keys(answers).forEach((questionName, index) => {
+                const selectedOption = document.querySelector(`input[name="${questionName}"]:checked`);
+
+                if (selectedOption) {
+                    if (selectedOption.value === answers[questionName]) {
+                        score++;
+                        feedbackHTML += `<li class="text-success" dir="rtl"><i class="fas fa-check-circle ms-2"></i><strong>السؤال ${index + 1}:</strong> صحيح!</li>`;
+                    } else {
+                        feedbackHTML += `<li class="text-danger" dir="rtl"><i class="fas fa-times-circle ms-2"></i><strong>السؤال ${index + 1}:</strong> خطأ.</li>`;
+                    }
+                } else {
+                    feedbackHTML += `<li class="text-warning" dir="rtl"><i class="fas fa-exclamation-circle ms-2"></i><strong>السؤال ${index + 1}:</strong> لم يتم الإجابة عليه.</li>`;
+                }
+            });
+
+            feedbackHTML += `</ul><p class="mt-3"><strong>نتيجتك: ${score} من 3</strong></p>`;
+            feedbackDiv.innerHTML = feedbackHTML;
+            feedbackDiv.style.display = 'block';
+        });
+    }
+    // --- END: True/False Functionality for Home Tools ---
+
+    // --- START: Word Scramble Functionality for Home Tools (Exercise 5) ---
+    const checkScrambleBtn_ht5 = document.getElementById('check-scramble-ht5');
+    if (checkScrambleBtn_ht5) {
+        checkScrambleBtn_ht5.addEventListener('click', () => {
+            const answers = {
+                scramble_ht_1: "شوكة",
+                scramble_ht_2: "غسالة",
+                scramble_ht_3: "كأس"
+            };
+            const feedbackDiv = document.getElementById('feedback-scramble-ht5');
+            let allCorrect = true;
+            let feedbackHTML = '<h4>النتائج:</h4><ul>';
+
+            Object.keys(answers).forEach((inputId, index) => {
+                const inputElement = document.getElementById(inputId);
+                const correctAnswer = answers[inputId];
+                // Normalize user input to ignore tashkeel (diacritics)
+                const userAnswer = inputElement.value.trim().normalize("NFD").replace(/[\u064B-\u0652]/g, "");
+                const normalizedCorrectAnswer = correctAnswer.normalize("NFD").replace(/[\u064B-\u0652]/g, "");
+
+                inputElement.classList.remove('is-valid', 'is-invalid');
+
+                if (userAnswer === normalizedCorrectAnswer) {
+                    inputElement.classList.add('is-valid');
+                    feedbackHTML += `<li class="text-success" dir="rtl"><i class="fas fa-check-circle ms-2"></i><strong>الكلمة ${index + 1}:</strong> صحيحة!</li>`;
+                } else {
+                    allCorrect = false;
+                    inputElement.classList.add('is-invalid');
+                    feedbackHTML += `<li class="text-danger" dir="rtl"><i class="fas fa-times-circle ms-2"></i><strong>الكلمة ${index + 1}:</strong> خطأ. الإجابة الصحيحة هي "${correctAnswer}".</li>`;
+                }
+            });
+
+            feedbackHTML += '</ul>';
+            if (allCorrect) {
+                feedbackHTML += '<p class="fw-bold text-success">رائع! كل الكلمات صحيحة.</p>';
+            }
+
+            feedbackDiv.innerHTML = feedbackHTML;
+            feedbackDiv.style.display = 'block';
+        });
+    }
+    // --- END: Word Scramble Functionality for Home Tools ---
+    // --- START: Fill in the Blanks Functionality for Household Tools (Exercise 2) ---
+    const checkFillBlanksBtn_ht2 = document.getElementById('check-fill-blanks-ht2');
+    if (checkFillBlanksBtn_ht2) {
+        checkFillBlanksBtn_ht2.addEventListener('click', () => {
+            const answers = {
+                fill_ht_1: "السِّكِّينَ",
+                fill_ht_2: "الْقِدْرِ",
+                fill_ht_3: "الْمِكْنَسَةِ",
+                fill_ht_4: "الْمِكْوَاةِ",
+                fill_ht_5: "السُّفْرَةِ"
+            };
+
+            const feedbackDiv = document.getElementById('feedback-fill-blanks-ht2');
+            let allCorrect = true;
+            let feedbackHTML = '<h4>النتائج:</h4><ul>';
+
+            Object.keys(answers).forEach(inputId => {
+                const inputElement = document.getElementById(inputId);
+                const correctAnswer = answers[inputId];
+                // Normalize user input to ignore tashkeel (diacritics)
+                const userAnswer = inputElement.value.trim().normalize("NFD").replace(/[\u064B-\u0652]/g, "");
+                const normalizedCorrectAnswer = correctAnswer.normalize("NFD").replace(/[\u064B-\u0652]/g, "");
+
+                inputElement.classList.remove('is-valid', 'is-invalid');
+
+                if (userAnswer === normalizedCorrectAnswer) {
+                    inputElement.classList.add('is-valid');
+                    feedbackHTML += `<li class="text-success" dir="rtl"><i class="fas fa-check-circle ms-2"></i><strong>السؤال ${inputId.split('_')[2]}:</strong> صحيح!</li>`;
+                } else {
+                    allCorrect = false;
+                    inputElement.classList.add('is-invalid');
+                    feedbackHTML += `<li class="text-danger" dir="rtl"><i class="fas fa-times-circle ms-2"></i><strong>السؤال ${inputId.split('_')[2]}:</strong> خطأ. الإجابة الصحيحة هي "${correctAnswer}".</li>`;
+                }
+            });
+
+            feedbackHTML += '</ul>';
+            if (allCorrect) {
+                feedbackHTML += '<p class="fw-bold text-success">ممتاز! كل الإجابات صحيحة.</p>';
+            } else {
+                feedbackHTML += '<p class="fw-bold text-warning">بعض الإجابات خاطئة، حاول مرة أخرى.</p>';
+            }
+
+            feedbackDiv.innerHTML = feedbackHTML;
+            feedbackDiv.style.display = 'block';
+            feedbackDiv.classList.add('animate__animated', 'animate__fadeIn');
+            setTimeout(() => {
+                feedbackDiv.classList.remove('animate__animated', 'animate__fadeIn');
+            }, 1000);
+        });
+    }
+    // --- END: Fill in the Blanks Functionality for Household Tools ---
+
+    // --- START: Fill in the Blanks Functionality for Fruits (Exercise 2) ---
+    const checkFillBlanksBtn_fr2 = document.getElementById('check-fill-blanks-fr2');
+    if (checkFillBlanksBtn_fr2) {
+        checkFillBlanksBtn_fr2.addEventListener('click', () => {
+            const answers = {
+                fill_fr_1: "التُّفَّاحِ",
+                fill_fr_2: "الْعِنَبِ",
+                fill_fr_3: "الْمَوْزَ",
+                fill_fr_4: "الْبُرْتُقَالِ",
+                fill_fr_5: "الرُّمَّانِ"
+            };
+
+            const feedbackDiv = document.getElementById('feedback-fill-blanks-fr2');
+            let allCorrect = true;
+            let feedbackHTML = '<h4>النتائج:</h4><ul>';
+
+            Object.keys(answers).forEach(inputId => {
+                const inputElement = document.getElementById(inputId);
+                const correctAnswer = answers[inputId];
+                const userAnswer = inputElement.value.trim().normalize("NFD").replace(/[\u064B-\u0652]/g, "");
+                const normalizedCorrectAnswer = correctAnswer.normalize("NFD").replace(/[\u064B-\u0652]/g, "");
+
+                inputElement.classList.remove('is-valid', 'is-invalid');
+
+                if (userAnswer === normalizedCorrectAnswer) {
+                    inputElement.classList.add('is-valid');
+                    feedbackHTML += `<li class="text-success" dir="rtl"><i class="fas fa-check-circle ms-2"></i><strong>السؤال ${inputId.split('_')[2]}:</strong> صحيح!</li>`;
+                } else {
+                    allCorrect = false;
+                    inputElement.classList.add('is-invalid');
+                    feedbackHTML += `<li class="text-danger" dir="rtl"><i class="fas fa-times-circle ms-2"></i><strong>السؤال ${inputId.split('_')[2]}:</strong> خطأ. الإجابة الصحيحة هي "${correctAnswer}".</li>`;
+                }
+            });
+
+            feedbackHTML += '</ul>';
+            if (allCorrect) {
+                feedbackHTML += '<p class="fw-bold text-success">ممتاز! كل الإجابات صحيحة.</p>';
+            } else {
+                feedbackHTML += '<p class="fw-bold text-warning">بعض الإجابات خاطئة، حاول مرة أخرى.</p>';
+            }
+
+            feedbackDiv.innerHTML = feedbackHTML;
+            feedbackDiv.style.display = 'block';
+        });
+    }
+    // --- END: Fill in the Blanks Functionality for Fruits ---
+
+    // --- START: True/False Functionality for Fruits (Exercise 4) ---
+    const checkTrueFalseBtn_fr1 = document.getElementById('check-tf-fr1');
+    if (checkTrueFalseBtn_fr1) {
+        checkTrueFalseBtn_fr1.addEventListener('click', () => {
+            const answers = {
+                q1_tf_fr: 'true', // Correct is 'false', so radio value is 'true'
+                q2_tf_fr: 'true', // Correct is 'false', so radio value is 'true'
+                q3_tf_fr: 'true'  // Correct is 'true'
+            };
+
+            const feedbackDiv = document.getElementById('feedback-tf-fr1');
+            let score = 0;
+            let feedbackHTML = '<h4>النتائج:</h4><ul>';
+
+            Object.keys(answers).forEach((questionName, index) => {
+                const selectedOption = document.querySelector(`input[name="${questionName}"]:checked`);
+
+                if (selectedOption) {
+                    if (selectedOption.value === answers[questionName]) {
+                        score++;
+                        feedbackHTML += `<li class="text-success" dir="rtl"><i class="fas fa-check-circle ms-2"></i><strong>السؤال ${index + 1}:</strong> صحيح!</li>`;
+                    } else {
+                        feedbackHTML += `<li class="text-danger" dir="rtl"><i class="fas fa-times-circle ms-2"></i><strong>السؤال ${index + 1}:</strong> خطأ.</li>`;
+                    }
+                } else {
+                    feedbackHTML += `<li class="text-warning" dir="rtl"><i class="fas fa-exclamation-circle ms-2"></i><strong>السؤال ${index + 1}:</strong> لم يتم الإجابة عليه.</li>`;
+                }
+            });
+
+            feedbackHTML += `</ul><p class="mt-3"><strong>نتيجتك: ${score} من 3</strong></p>`;
+            feedbackDiv.innerHTML = feedbackHTML;
+            feedbackDiv.style.display = 'block';
+        });
+    }
+    // --- END: True/False Functionality for Fruits ---
+
+    // --- START: Word Scramble Functionality for Fruits (Exercise 5) ---
+    const checkScrambleBtn_fr1 = document.getElementById('check-scramble-fr1');
+    if (checkScrambleBtn_fr1) {
+        checkScrambleBtn_fr1.addEventListener('click', () => {
+            const answers = {
+                scramble_fr_1: "عنب",
+                scramble_fr_2: "خوخ",
+                scramble_fr_3: "موز"
+            };
+            const feedbackDiv = document.getElementById('feedback-scramble-fr1');
+            let allCorrect = true;
+            let feedbackHTML = '<h4>النتائج:</h4><ul>';
+
+            Object.keys(answers).forEach((inputId, index) => {
+                const inputElement = document.getElementById(inputId);
+                const correctAnswer = answers[inputId];
+                const userAnswer = inputElement.value.trim().normalize("NFD").replace(/[\u064B-\u0652]/g, "");
+                const normalizedCorrectAnswer = correctAnswer.normalize("NFD").replace(/[\u064B-\u0652]/g, "");
+
+                inputElement.classList.remove('is-valid', 'is-invalid');
+
+                if (userAnswer === normalizedCorrectAnswer) {
+                    inputElement.classList.add('is-valid');
+                    feedbackHTML += `<li class="text-success" dir="rtl"><i class="fas fa-check-circle ms-2"></i><strong>الكلمة ${index + 1}:</strong> صحيحة!</li>`;
+                } else {
+                    allCorrect = false;
+                    inputElement.classList.add('is-invalid');
+                    feedbackHTML += `<li class="text-danger" dir="rtl"><i class="fas fa-times-circle ms-2"></i><strong>الكلمة ${index + 1}:</strong> خطأ. الإجابة الصحيحة هي "${correctAnswer}".</li>`;
+                }
+            });
+
+            feedbackHTML += '</ul>';
+            if (allCorrect) {
+                feedbackHTML += '<p class="fw-bold text-success">رائع! كل الكلمات صحيحة.</p>';
+            }
+
+            feedbackDiv.innerHTML = feedbackHTML;
+            feedbackDiv.style.display = 'block';
+        });
+    }
+    // --- END: Word Scramble Functionality for Fruits ---
+    // --- START: Fill in the Blanks Functionality for Vegetables (Exercise 2) ---
+    const checkFillBlanksBtn_veg2 = document.getElementById('check-fill-blanks-veg2');
+    if (checkFillBlanksBtn_veg2) {
+        checkFillBlanksBtn_veg2.addEventListener('click', () => {
+            const answers = {
+                fill_veg_1: "الْخَسَّ",
+                fill_veg_2: "الْقَرْعُ",
+                fill_veg_3: "الثُّومِ",
+                fill_veg_4: "الْفَاصُولِيَاءُ",
+                fill_veg_5: "الْبَامِيَا"
+            };
+
+            const feedbackDiv = document.getElementById('feedback-fill-blanks-veg2');
+            let allCorrect = true;
+            let feedbackHTML = '<h4>النتائج:</h4><ul>';
+
+            Object.keys(answers).forEach(inputId => {
+                const inputElement = document.getElementById(inputId);
+                const correctAnswer = answers[inputId];
+                const userAnswer = inputElement.value.trim().normalize("NFD").replace(/[\u064B-\u0652]/g, "");
+                const normalizedCorrectAnswer = correctAnswer.normalize("NFD").replace(/[\u064B-\u0652]/g, "");
+
+                inputElement.classList.remove('is-valid', 'is-invalid');
+
+                if (userAnswer === normalizedCorrectAnswer) {
+                    inputElement.classList.add('is-valid');
+                    feedbackHTML += `<li class="text-success" dir="rtl"><i class="fas fa-check-circle ms-2"></i><strong>السؤال ${inputId.split('_')[2]}:</strong> صحيح!</li>`;
+                } else {
+                    allCorrect = false;
+                    inputElement.classList.add('is-invalid');
+                    feedbackHTML += `<li class="text-danger" dir="rtl"><i class="fas fa-times-circle ms-2"></i><strong>السؤال ${inputId.split('_')[2]}:</strong> خطأ. الإجابة الصحيحة هي "${correctAnswer}".</li>`;
+                }
+            });
+
+            feedbackHTML += '</ul>';
+            if (allCorrect) {
+                feedbackHTML += '<p class="fw-bold text-success">ممتاز! كل الإجابات صحيحة.</p>';
+            } else {
+                feedbackHTML += '<p class="fw-bold text-warning">بعض الإجابات خاطئة، حاول مرة أخرى.</p>';
+            }
+
+            feedbackDiv.innerHTML = feedbackHTML;
+            feedbackDiv.style.display = 'block';
+        });
+    }
+    // --- END: Fill in the Blanks Functionality for Vegetables ---
+
+    // --- START: True/False Functionality for Vegetables (Exercise 4) ---
+    const checkTrueFalseBtn_veg4 = document.getElementById('check-tf-veg4');
+    if (checkTrueFalseBtn_veg4) {
+        checkTrueFalseBtn_veg4.addEventListener('click', () => {
+            const answers = {
+                q1_tf_veg: 'true', // Correct answer is 'false'
+                q2_tf_veg: 'true', // Correct answer is 'true'
+                q3_tf_veg: 'true'  // Correct answer is 'false'
+            };
+
+            const feedbackDiv = document.getElementById('feedback-tf-veg4');
+            let score = 0;
+            let feedbackHTML = '<h4>النتائج:</h4><ul>';
+
+            Object.keys(answers).forEach((questionName, index) => {
+                const selectedOption = document.querySelector(`input[name="${questionName}"]:checked`);
+
+                if (selectedOption) {
+                    if (selectedOption.value === answers[questionName]) {
+                        score++;
+                        feedbackHTML += `<li class="text-success" dir="rtl"><i class="fas fa-check-circle ms-2"></i><strong>السؤال ${index + 1}:</strong> صحيح!</li>`;
+                    } else {
+                        feedbackHTML += `<li class="text-danger" dir="rtl"><i class="fas fa-times-circle ms-2"></i><strong>السؤال ${index + 1}:</strong> خطأ.</li>`;
+                    }
+                } else {
+                    feedbackHTML += `<li class="text-warning" dir="rtl"><i class="fas fa-exclamation-circle ms-2"></i><strong>السؤال ${index + 1}:</strong> لم يتم الإجابة عليه.</li>`;
+                }
+            });
+
+            feedbackHTML += `</ul><p class="mt-3"><strong>نتيجتك: ${score} من 3</strong></p>`;
+            feedbackDiv.innerHTML = feedbackHTML;
+            feedbackDiv.style.display = 'block';
+        });
+    }
+    // --- END: True/False Functionality for Vegetables ---
+
+    // --- START: Word Scramble Functionality for Vegetables (Exercise 5) ---
+    const checkScrambleBtn_veg5 = document.getElementById('check-scramble-veg5');
+    if (checkScrambleBtn_veg5) {
+        checkScrambleBtn_veg5.addEventListener('click', () => {
+            const answers = {
+                scramble_veg_1: "ثوم",
+                scramble_veg_2: "خس",
+                scramble_veg_3: "قرع"
+            };
+            const feedbackDiv = document.getElementById('feedback-scramble-veg5');
+            let allCorrect = true;
+            let feedbackHTML = '<h4>النتائج:</h4><ul>';
+
+            Object.keys(answers).forEach((inputId, index) => {
+                const inputElement = document.getElementById(inputId);
+                const correctAnswer = answers[inputId];
+                const userAnswer = inputElement.value.trim().normalize("NFD").replace(/[\u064B-\u0652]/g, "");
+                const normalizedCorrectAnswer = correctAnswer.normalize("NFD").replace(/[\u064B-\u0652]/g, "");
+
+                inputElement.classList.remove('is-valid', 'is-invalid');
+
+                if (userAnswer === normalizedCorrectAnswer) {
+                    inputElement.classList.add('is-valid');
+                    feedbackHTML += `<li class="text-success" dir="rtl"><i class="fas fa-check-circle ms-2"></i><strong>الكلمة ${index + 1}:</strong> صحيحة!</li>`;
+                } else {
+                    allCorrect = false;
+                    inputElement.classList.add('is-invalid');
+                    feedbackHTML += `<li class="text-danger" dir="rtl"><i class="fas fa-times-circle ms-2"></i><strong>الكلمة ${index + 1}:</strong> خطأ. الإجابة الصحيحة هي "${correctAnswer}".</li>`;
+                }
+            });
+
+            feedbackHTML += '</ul>';
+            if (allCorrect) {
+                feedbackHTML += '<p class="fw-bold text-success">أحسنت! كل الكلمات صحيحة.</p>';
+            }
+
+            feedbackDiv.innerHTML = feedbackHTML;
+            feedbackDiv.style.display = 'block';
+        });
+    }
+    // --- END: Word Scramble Functionality for Vegetables ---
+    // --- START: Fill in the Blanks Functionality for Furniture (Exercise 2) ---
+    const checkFillBlanksBtn_furn2 = document.getElementById('check-fill-blanks-furn2');
+    if (checkFillBlanksBtn_furn2) {
+        checkFillBlanksBtn_furn2.addEventListener('click', () => {
+            const answers = {
+                fill_furn_1: "الْفِرَاشِ",
+                fill_furn_2: "الْوِسَادَةِ",
+                fill_furn_3: "الرَّفِّ",
+                fill_furn_4: "الطَّاوِلَةِ",
+                fill_furn_5: "الْهَاتِفُ"
+            };
+
+            const feedbackDiv = document.getElementById('feedback-fill-blanks-furn2');
+            let allCorrect = true;
+            let feedbackHTML = '<h4>النتائج:</h4><ul>';
+
+            Object.keys(answers).forEach(inputId => {
+                const inputElement = document.getElementById(inputId);
+                const correctAnswer = answers[inputId];
+                const userAnswer = inputElement.value.trim().normalize("NFD").replace(/[\u064B-\u0652]/g, "");
+                const normalizedCorrectAnswer = correctAnswer.normalize("NFD").replace(/[\u064B-\u0652]/g, "");
+
+                inputElement.classList.remove('is-valid', 'is-invalid');
+
+                if (userAnswer === normalizedCorrectAnswer) {
+                    inputElement.classList.add('is-valid');
+                    feedbackHTML += `<li class="text-success" dir="rtl"><i class="fas fa-check-circle ms-2"></i><strong>السؤال ${inputId.split('_')[2]}:</strong> صحيح!</li>`;
+                } else {
+                    allCorrect = false;
+                    inputElement.classList.add('is-invalid');
+                    feedbackHTML += `<li class="text-danger" dir="rtl"><i class="fas fa-times-circle ms-2"></i><strong>السؤال ${inputId.split('_')[2]}:</strong> خطأ. الإجابة الصحيحة هي "${correctAnswer}".</li>`;
+                }
+            });
+
+            feedbackHTML += '</ul>';
+            if (allCorrect) {
+                feedbackHTML += '<p class="fw-bold text-success">ممتاز! كل الإجابات صحيحة.</p>';
+            } else {
+                feedbackHTML += '<p class="fw-bold text-warning">بعض الإجابات خاطئة، حاول مرة أخرى.</p>';
+            }
+
+            feedbackDiv.innerHTML = feedbackHTML;
+            feedbackDiv.style.display = 'block';
+        });
+    }
+    // --- END: Fill in the Blanks Functionality for Furniture ---
+    // --- START: True/False Functionality for Furniture (Exercise 4) ---
+    const checkTrueFalseBtn_furn4 = document.getElementById('check-tf-furn4');
+    if (checkTrueFalseBtn_furn4) {
+        checkTrueFalseBtn_furn4.addEventListener('click', () => {
+            const answers = {
+                q1_tf_furn: 'true', // Correct answer is 'false'
+                q2_tf_furn: 'true', // Correct answer is 'true'
+                q3_tf_furn: 'true'  // Correct answer is 'false'
+            };
+
+            const feedbackDiv = document.getElementById('feedback-tf-furn4');
+            let score = 0;
+            let feedbackHTML = '<h4>النتائج:</h4><ul>';
+
+            Object.keys(answers).forEach((questionName, index) => {
+                const selectedOption = document.querySelector(`input[name="${questionName}"]:checked`);
+
+                if (selectedOption) {
+                    if (selectedOption.value === answers[questionName]) {
+                        score++;
+                        feedbackHTML += `<li class="text-success" dir="rtl"><i class="fas fa-check-circle ms-2"></i><strong>السؤال ${index + 1}:</strong> صحيح!</li>`;
+                    } else {
+                        feedbackHTML += `<li class="text-danger" dir="rtl"><i class="fas fa-times-circle ms-2"></i><strong>السؤال ${index + 1}:</strong> خطأ.</li>`;
+                    }
+                } else {
+                    feedbackHTML += `<li class="text-warning" dir="rtl"><i class="fas fa-exclamation-circle ms-2"></i><strong>السؤال ${index + 1}:</strong> لم يتم الإجابة عليه.</li>`;
+                }
+            });
+
+            feedbackHTML += `</ul><p class="mt-3"><strong>نتيجتك: ${score} من 3</strong></p>`;
+            feedbackDiv.innerHTML = feedbackHTML;
+            feedbackDiv.style.display = 'block';
+        });
+    }
+    // --- END: True/False Functionality for Furniture ---
+    // --- START: Word Scramble Functionality for Furniture (Exercise 5) ---
+    const checkScrambleBtn_furn5 = document.getElementById('check-scramble-furn5');
+    if (checkScrambleBtn_furn5) {
+        checkScrambleBtn_furn5.addEventListener('click', () => {
+            const answers = {
+                scramble_furn_1: "رَفّ",
+                scramble_furn_2: "هَاتِف",
+                scramble_furn_3: "كُرْسِيّ"
+            };
+            const feedbackDiv = document.getElementById('feedback-scramble-furn5');
+            let allCorrect = true;
+            let feedbackHTML = '<h4>النتائج:</h4><ul>';
+
+            Object.keys(answers).forEach((inputId, index) => {
+                const inputElement = document.getElementById(inputId);
+                const correctAnswer = answers[inputId];
+                const userAnswer = inputElement.value.trim().normalize("NFD").replace(/[\u064B-\u0652]/g, "");
+                const normalizedCorrectAnswer = correctAnswer.normalize("NFD").replace(/[\u064B-\u0652]/g, "");
+
+                inputElement.classList.remove('is-valid', 'is-invalid');
+
+                if (userAnswer === normalizedCorrectAnswer) {
+                    inputElement.classList.add('is-valid');
+                    feedbackHTML += `<li class="text-success" dir="rtl"><i class="fas fa-check-circle ms-2"></i><strong>الكلمة ${index + 1}:</strong> صحيحة!</li>`;
+                } else {
+                    allCorrect = false;
+                    inputElement.classList.add('is-invalid');
+                    feedbackHTML += `<li class="text-danger" dir="rtl"><i class="fas fa-times-circle ms-2"></i><strong>الكلمة ${index + 1}:</strong> خطأ. الإجابة الصحيحة هي "${correctAnswer}".</li>`;
+                }
+            });
+
+            feedbackHTML += '</ul>';
+            if (allCorrect) {
+                feedbackHTML += '<p class="fw-bold text-success">أحسنت! كل الكلمات صحيحة.</p>';
+            }
+
+            feedbackDiv.innerHTML = feedbackHTML;
+            feedbackDiv.style.display = 'block';
+        });
+    }
+    // --- END: Word Scramble Functionality for Furniture ---
+
+    // ===================================================================
+// ==== START: EXERCISE HANDLERS FOR TRAVELING (السَّفَرُ) ====
+// ===================================================================
+
+// --- START: Fill in the Blanks Functionality for Traveling (Exercise 2) ---
+const checkFillBlanksBtn_travel2 = document.getElementById('check-fill-blanks-travel2');
+if (checkFillBlanksBtn_travel2) {
+    checkFillBlanksBtn_travel2.addEventListener('click', () => {
+        const answers = {
+            fill_travel_1: "الْمُغَادَرَةِ",
+            fill_travel_2: "السَّفِينَةُ",
+            fill_travel_3: "الْجَمَارِكِ",
+            fill_travel_4: "سَيَّارَةَ أُجْرَةٍ",
+            fill_travel_5: "الْوُصُولِ"
+        };
+
+        const feedbackDiv = document.getElementById('feedback-fill-blanks-travel2');
+        let allCorrect = true;
+        let feedbackHTML = '<h4>النتائج:</h4><ul>';
+
+        Object.keys(answers).forEach(inputId => {
+            const inputElement = document.getElementById(inputId);
+            const correctAnswer = answers[inputId];
+            const userAnswer = inputElement.value.trim().normalize("NFD").replace(/[\u064B-\u0652]/g, "");
+            const normalizedCorrectAnswer = correctAnswer.normalize("NFD").replace(/[\u064B-\u0652]/g, "");
+
+            inputElement.classList.remove('is-valid', 'is-invalid');
+
+            if (userAnswer === normalizedCorrectAnswer) {
+                inputElement.classList.add('is-valid');
+                feedbackHTML += `<li class="text-success" dir="rtl"><i class="fas fa-check-circle ms-2"></i><strong>السؤال ${inputId.split('_')[2]}:</strong> صحيح!</li>`;
+            } else {
+                allCorrect = false;
+                inputElement.classList.add('is-invalid');
+                feedbackHTML += `<li class="text-danger" dir="rtl"><i class="fas fa-times-circle ms-2"></i><strong>السؤال ${inputId.split('_')[2]}:</strong> خطأ. الإجابة الصحيحة هي "${correctAnswer}".</li>`;
+            }
+        });
+
+        feedbackHTML += '</ul>';
+        if (allCorrect) {
+            feedbackHTML += '<p class="fw-bold text-success">ممتاز! كل الإجابات صحيحة.</p>';
+        } else {
+            feedbackHTML += '<p class="fw-bold text-warning">بعض الإجابات خاطئة، حاول مرة أخرى.</p>';
+        }
+
+        feedbackDiv.innerHTML = feedbackHTML;
+        feedbackDiv.style.display = 'block';
+    });
+}
+// --- END: Fill in the Blanks Functionality for Traveling ---
+
+// --- START: True/False Functionality for Traveling (Exercise 4) ---
+const checkTrueFalseBtn_travel4 = document.getElementById('check-tf-travel4');
+if (checkTrueFalseBtn_travel4) {
+    checkTrueFalseBtn_travel4.addEventListener('click', () => {
+        const answers = {
+            q1_tf_travel: 'true', // Correct answer is 'true'
+            q2_tf_travel: 'true', // Correct answer is 'false'
+            q3_tf_travel: 'true'  // Correct answer is 'false'
+        };
+
+        const feedbackDiv = document.getElementById('feedback-tf-travel4');
+        let score = 0;
+        let feedbackHTML = '<h4>النتائج:</h4><ul>';
+
+        Object.keys(answers).forEach((questionName, index) => {
+            const selectedOption = document.querySelector(`input[name="${questionName}"]:checked`);
+
+            if (selectedOption) {
+                if (selectedOption.value === answers[questionName]) {
+                    score++;
+                    feedbackHTML += `<li class="text-success" dir="rtl"><i class="fas fa-check-circle ms-2"></i><strong>السؤال ${index + 1}:</strong> صحيح!</li>`;
+                } else {
+                    feedbackHTML += `<li class="text-danger" dir="rtl"><i class="fas fa-times-circle ms-2"></i><strong>السؤال ${index + 1}:</strong> خطأ.</li>`;
+                }
+            } else {
+                feedbackHTML += `<li class="text-warning" dir="rtl"><i class="fas fa-exclamation-circle ms-2"></i><strong>السؤال ${index + 1}:</strong> لم يتم الإجابة عليه.</li>`;
+            }
+        });
+
+        feedbackHTML += `</ul><p class="mt-3"><strong>نتيجتك: ${score} من 3</strong></p>`;
+        feedbackDiv.innerHTML = feedbackHTML;
+        feedbackDiv.style.display = 'block';
+    });
+}
+// --- END: True/False Functionality for Traveling ---
+
+// --- START: Word Scramble Functionality for Traveling (Exercise 5) ---
+const checkScrambleBtn_travel5 = document.getElementById('check-scramble-travel5');
+if (checkScrambleBtn_travel5) {
+    checkScrambleBtn_travel5.addEventListener('click', () => {
+        const answers = {
+            scramble_travel_1: "جَمَارِك",
+            scramble_travel_2: "دَرَّاجَة",
+            scramble_travel_3: "وُصُول"
+        };
+        const feedbackDiv = document.getElementById('feedback-scramble-travel5');
+        let allCorrect = true;
+        let feedbackHTML = '<h4>النتائج:</h4><ul>';
+
+        Object.keys(answers).forEach((inputId, index) => {
+            const inputElement = document.getElementById(inputId);
+            const correctAnswer = answers[inputId];
+            const userAnswer = inputElement.value.trim().normalize("NFD").replace(/[\u064B-\u0652]/g, "");
+            const normalizedCorrectAnswer = correctAnswer.normalize("NFD").replace(/[\u064B-\u0652]/g, "");
+
+            inputElement.classList.remove('is-valid', 'is-invalid');
+
+            if (userAnswer === normalizedCorrectAnswer) {
+                inputElement.classList.add('is-valid');
+                feedbackHTML += `<li class="text-success" dir="rtl"><i class="fas fa-check-circle ms-2"></i><strong>الكلمة ${index + 1}:</strong> صحيحة!</li>`;
+            } else {
+                allCorrect = false;
+                inputElement.classList.add('is-invalid');
+                feedbackHTML += `<li class="text-danger" dir="rtl"><i class="fas fa-times-circle ms-2"></i><strong>الكلمة ${index + 1}:</strong> خطأ. الإجابة الصحيحة هي "${correctAnswer}".</li>`;
+            }
+        });
+
+        feedbackHTML += '</ul>';
+        if (allCorrect) {
+            feedbackHTML += '<p class="fw-bold text-success">أحسنت! كل الكلمات صحيحة.</p>';
+        }
+
+        feedbackDiv.innerHTML = feedbackHTML;
+        feedbackDiv.style.display = 'block';
+    });
+}
+// --- END: Word Scramble Functionality for Traveling ---
+
+// ===================================================================
+// ==== END: EXERCISE HANDLERS FOR TRAVELING (السَّفَرُ) ====
+// ===================================================================
+}); 
