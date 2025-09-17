@@ -655,6 +655,38 @@ $travel_colors: (
 // =======================================================
 
 
+$health_colors: (
+  // Vocabulary & Example Sentence Colors (Health/Medical Tones)
+  // Abdominal pain (Sickly Greens)
+  "health-1": #9ACD32, "health-2": #6B8E23, "health-3": #9ACD32, "health-4": #6B8E23,
+  // Constipation (Earthy Browns)
+  "health-5": #A0522D, "health-6": #8B4513, "health-7": #A0522D, "health-8": #8B4513,
+  // Cold / Flu (Muted, Cool Blues)
+  "health-9": #B0C4DE, "health-10": #778899, "health-11": #B0C4DE, "health-12": #778899,
+  // Surgeon (Medical Scrubs Greens)
+  "health-13": #20B2AA, "health-14": #008080, "health-15": #20B2AA, "health-16": #008080,
+  // Wound (Red & Skin Tones)
+  "health-17": #CD5C5C, "health-18": #E9967A, "health-19": #CD5C5C, "health-20": #E9967A,
+  // Fracture (X-Ray & Bone Grays)
+  "health-21": #DCDCDC, "health-22": #696969, "health-23": #DCDCDC, "health-24": #696969,
+  // Nosebleed (Bright Reds)
+  "health-25": #FF0000, "health-26": #B22222, "health-27": #FF0000, "health-28": #B22222,
+  // Diarrhea (Unpleasant Yellows/Browns)
+  "health-29": #DAA520, "health-30": #B8860B, "health-31": #DAA520, "health-32": #B8860B,
+  // Fever (Hot Reds & Oranges)
+  "health-33": #FF6347, "health-34": #FF4500, "health-35": #FF6347, "health-36": #FF4500,
+  // Vomiting (Sickly Yellow-Greens)
+  "health-37": #ADFF2F, "health-38": #9ACD32, "health-39": #ADFF2F, "health-40": #9ACD32,
+  // Fainting (Faded Grays/Blacks)
+  "health-41": #708090, "health-42": #2F4F4F, "health-43": #708090, "health-44": #2F4F4F,
+  // Bleeding (Deep Blood Reds)
+  "health-45": #A52A2A, "health-46": #800000, "health-47": #A52A2A, "health-48": #800000
+);
+// =======================================================
+// ==== END: ألوان مفردات الصِّحَّةُ وَالْمَرَضُ (Health & Illness) ====
+// =======================================================
+
+
 $all-colors: ();
 $all-colors: map-merge($all-colors, $ch4_colors);
 $all-colors: map-merge($all-colors, $ch5_colors);
@@ -673,3 +705,4 @@ $all-colors: map-merge($all-colors, $fruits_colors);
 $all-colors: map-merge($all-colors, $vegetables_colors);
 $all-colors: map-merge($all-colors, $furniture_colors);
 $all-colors: map-merge($all-colors, $travel_colors);
+$all-colors: map-merge($all-colors, $health_colors);

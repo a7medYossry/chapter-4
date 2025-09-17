@@ -202,6 +202,13 @@ document.addEventListener('DOMContentLoaded', () => {
             q3_travel: 'a'  // الْمَحْفَظَة
         },
         // --- END: Add this block for Travel answers ---
+        // --- START: Add this block for Health answers ---
+        "health1": {
+            q1_health: 'b', // جَرَّاح
+            q2_health: 'c', // حُمَّى
+            q3_health: 'a'  // كَسْر
+        },
+        // --- END: Add this block for Health answers ---
     };
 
     const mcqExplanations = {
@@ -443,6 +450,22 @@ document.addEventListener('DOMContentLoaded', () => {
             q3_travel: { b: "خطأ. السَّفِينَةُ وسيلة نقل بحرية.", c: "خطأ. الدَّرَّاجَةُ وسيلة نقل برية." }
         },
         // --- END: Add this block for Travel explanations ---
+        // --- START: Add this block for Health explanations ---
+        "health1": {
+            q1_health: {
+                a: "خطأ. الممرض يساعد الطبيب ولكنه لا يجري العمليات.",
+                c: "خطأ. الصيدلي يبيع الدواء."
+            },
+            q2_health: {
+                a: "خطأ. الزكام هو مرض يسبب العطس والسعال، وقد يسبب الحمى أحياناً، لكن ارتفاع الحرارة تحديداً هو الحمى.",
+                b: "خطأ. الإسهال هو مشكلة في المعدة."
+            },
+            q3_health: {
+                b: "خطأ. الجرح هو قطع في الجلد.",
+                c: "خطأ. النزف هو خروج الدم من الجرح."
+            }
+        },
+        // --- END: Add this block for Health explanations ---
     };
 
 
@@ -543,6 +566,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 // --- START: Add this new condition for Travel ---
                 else if (mcqId === 'travel1') { questionNameSuffix = 'travel'; }
                 // --- END: Add this new condition for Travel ---
+                // --- START: Add this new condition for Health ---
+                else if (mcqId === 'health1') { questionNameSuffix = 'health'; }
+                // --- END: Add this new condition for Health ---
                 else {
                     console.warn(`Unhandled mcqId for question name suffix: ${mcqId}`);
                     questionNameSuffix = mcqId;
@@ -1519,28 +1545,163 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- END: Word Scramble Functionality for Furniture ---
 
     // ===================================================================
-// ==== START: EXERCISE HANDLERS FOR TRAVELING (السَّفَرُ) ====
+    // ==== START: EXERCISE HANDLERS FOR TRAVELING (السَّفَرُ) ====
+    // ===================================================================
+
+    // --- START: Fill in the Blanks Functionality for Traveling (Exercise 2) ---
+    const checkFillBlanksBtn_travel2 = document.getElementById('check-fill-blanks-travel2');
+    if (checkFillBlanksBtn_travel2) {
+        checkFillBlanksBtn_travel2.addEventListener('click', () => {
+            const answers = {
+                fill_travel_1: "الْمُغَادَرَةِ",
+                fill_travel_2: "السَّفِينَةُ",
+                fill_travel_3: "الْجَمَارِكِ",
+                fill_travel_4: "سَيَّارَةَ أُجْرَةٍ",
+                fill_travel_5: "الْوُصُولِ"
+            };
+
+            const feedbackDiv = document.getElementById('feedback-fill-blanks-travel2');
+            let allCorrect = true;
+            let feedbackHTML = '<h4>النتائج:</h4><ul>';
+
+            Object.keys(answers).forEach(inputId => {
+                const inputElement = document.getElementById(inputId);
+                const correctAnswer = answers[inputId];
+                const userAnswer = inputElement.value.trim().normalize("NFD").replace(/[\u064B-\u0652]/g, "");
+                const normalizedCorrectAnswer = correctAnswer.normalize("NFD").replace(/[\u064B-\u0652]/g, "");
+
+                inputElement.classList.remove('is-valid', 'is-invalid');
+
+                if (userAnswer === normalizedCorrectAnswer) {
+                    inputElement.classList.add('is-valid');
+                    feedbackHTML += `<li class="text-success" dir="rtl"><i class="fas fa-check-circle ms-2"></i><strong>السؤال ${inputId.split('_')[2]}:</strong> صحيح!</li>`;
+                } else {
+                    allCorrect = false;
+                    inputElement.classList.add('is-invalid');
+                    feedbackHTML += `<li class="text-danger" dir="rtl"><i class="fas fa-times-circle ms-2"></i><strong>السؤال ${inputId.split('_')[2]}:</strong> خطأ. الإجابة الصحيحة هي "${correctAnswer}".</li>`;
+                }
+            });
+
+            feedbackHTML += '</ul>';
+            if (allCorrect) {
+                feedbackHTML += '<p class="fw-bold text-success">ممتاز! كل الإجابات صحيحة.</p>';
+            } else {
+                feedbackHTML += '<p class="fw-bold text-warning">بعض الإجابات خاطئة، حاول مرة أخرى.</p>';
+            }
+
+            feedbackDiv.innerHTML = feedbackHTML;
+            feedbackDiv.style.display = 'block';
+        });
+    }
+    // --- END: Fill in the Blanks Functionality for Traveling ---
+
+    // --- START: True/False Functionality for Traveling (Exercise 4) ---
+    const checkTrueFalseBtn_travel4 = document.getElementById('check-tf-travel4');
+    if (checkTrueFalseBtn_travel4) {
+        checkTrueFalseBtn_travel4.addEventListener('click', () => {
+            const answers = {
+                q1_tf_travel: 'true', // Correct answer is 'true'
+                q2_tf_travel: 'true', // Correct answer is 'false'
+                q3_tf_travel: 'true'  // Correct answer is 'false'
+            };
+
+            const feedbackDiv = document.getElementById('feedback-tf-travel4');
+            let score = 0;
+            let feedbackHTML = '<h4>النتائج:</h4><ul>';
+
+            Object.keys(answers).forEach((questionName, index) => {
+                const selectedOption = document.querySelector(`input[name="${questionName}"]:checked`);
+
+                if (selectedOption) {
+                    if (selectedOption.value === answers[questionName]) {
+                        score++;
+                        feedbackHTML += `<li class="text-success" dir="rtl"><i class="fas fa-check-circle ms-2"></i><strong>السؤال ${index + 1}:</strong> صحيح!</li>`;
+                    } else {
+                        feedbackHTML += `<li class="text-danger" dir="rtl"><i class="fas fa-times-circle ms-2"></i><strong>السؤال ${index + 1}:</strong> خطأ.</li>`;
+                    }
+                } else {
+                    feedbackHTML += `<li class="text-warning" dir="rtl"><i class="fas fa-exclamation-circle ms-2"></i><strong>السؤال ${index + 1}:</strong> لم يتم الإجابة عليه.</li>`;
+                }
+            });
+
+            feedbackHTML += `</ul><p class="mt-3"><strong>نتيجتك: ${score} من 3</strong></p>`;
+            feedbackDiv.innerHTML = feedbackHTML;
+            feedbackDiv.style.display = 'block';
+        });
+    }
+    // --- END: True/False Functionality for Traveling ---
+
+    // --- START: Word Scramble Functionality for Traveling (Exercise 5) ---
+    const checkScrambleBtn_travel5 = document.getElementById('check-scramble-travel5');
+    if (checkScrambleBtn_travel5) {
+        checkScrambleBtn_travel5.addEventListener('click', () => {
+            const answers = {
+                scramble_travel_1: "جَمَارِك",
+                scramble_travel_2: "دَرَّاجَة",
+                scramble_travel_3: "وُصُول"
+            };
+            const feedbackDiv = document.getElementById('feedback-scramble-travel5');
+            let allCorrect = true;
+            let feedbackHTML = '<h4>النتائج:</h4><ul>';
+
+            Object.keys(answers).forEach((inputId, index) => {
+                const inputElement = document.getElementById(inputId);
+                const correctAnswer = answers[inputId];
+                const userAnswer = inputElement.value.trim().normalize("NFD").replace(/[\u064B-\u0652]/g, "");
+                const normalizedCorrectAnswer = correctAnswer.normalize("NFD").replace(/[\u064B-\u0652]/g, "");
+
+                inputElement.classList.remove('is-valid', 'is-invalid');
+
+                if (userAnswer === normalizedCorrectAnswer) {
+                    inputElement.classList.add('is-valid');
+                    feedbackHTML += `<li class="text-success" dir="rtl"><i class="fas fa-check-circle ms-2"></i><strong>الكلمة ${index + 1}:</strong> صحيحة!</li>`;
+                } else {
+                    allCorrect = false;
+                    inputElement.classList.add('is-invalid');
+                    feedbackHTML += `<li class="text-danger" dir="rtl"><i class="fas fa-times-circle ms-2"></i><strong>الكلمة ${index + 1}:</strong> خطأ. الإجابة الصحيحة هي "${correctAnswer}".</li>`;
+                }
+            });
+
+            feedbackHTML += '</ul>';
+            if (allCorrect) {
+                feedbackHTML += '<p class="fw-bold text-success">أحسنت! كل الكلمات صحيحة.</p>';
+            }
+
+            feedbackDiv.innerHTML = feedbackHTML;
+            feedbackDiv.style.display = 'block';
+        });
+    }
+    // --- END: Word Scramble Functionality for Traveling ---
+
+    // ===================================================================
+    // ==== END: EXERCISE HANDLERS FOR TRAVELING (السَّفَرُ) ====
+    // ===================================================================
+
+
+    // ===================================================================
+// ==== START: EXERCISE HANDLERS FOR HEALTH & ILLNESS (الصِّحَّةُ وَالْمَرَضُ) ====
 // ===================================================================
 
-// --- START: Fill in the Blanks Functionality for Traveling (Exercise 2) ---
-const checkFillBlanksBtn_travel2 = document.getElementById('check-fill-blanks-travel2');
-if (checkFillBlanksBtn_travel2) {
-    checkFillBlanksBtn_travel2.addEventListener('click', () => {
+// --- START: Fill in the Blanks Functionality for Health (Exercise 2) ---
+const checkFillBlanksBtn_health2 = document.getElementById('check-fill-blanks-health2');
+if (checkFillBlanksBtn_health2) {
+    checkFillBlanksBtn_health2.addEventListener('click', () => {
         const answers = {
-            fill_travel_1: "الْمُغَادَرَةِ",
-            fill_travel_2: "السَّفِينَةُ",
-            fill_travel_3: "الْجَمَارِكِ",
-            fill_travel_4: "سَيَّارَةَ أُجْرَةٍ",
-            fill_travel_5: "الْوُصُولِ"
+            fill_health_1: "زُكَامٌ",
+            fill_health_2: "الْجُرْحَ",
+            fill_health_3: "مَغَصٌ",
+            fill_health_4: "إِغْمَاءٍ",
+            fill_health_5: "الْقَيْءِ"
         };
 
-        const feedbackDiv = document.getElementById('feedback-fill-blanks-travel2');
+        const feedbackDiv = document.getElementById('feedback-fill-blanks-health2');
         let allCorrect = true;
         let feedbackHTML = '<h4>النتائج:</h4><ul>';
 
         Object.keys(answers).forEach(inputId => {
             const inputElement = document.getElementById(inputId);
             const correctAnswer = answers[inputId];
+            // Normalize both user and correct answers by removing Tashkeel for comparison
             const userAnswer = inputElement.value.trim().normalize("NFD").replace(/[\u064B-\u0652]/g, "");
             const normalizedCorrectAnswer = correctAnswer.normalize("NFD").replace(/[\u064B-\u0652]/g, "");
 
@@ -1567,19 +1728,19 @@ if (checkFillBlanksBtn_travel2) {
         feedbackDiv.style.display = 'block';
     });
 }
-// --- END: Fill in the Blanks Functionality for Traveling ---
+// --- END: Fill in the Blanks Functionality for Health ---
 
-// --- START: True/False Functionality for Traveling (Exercise 4) ---
-const checkTrueFalseBtn_travel4 = document.getElementById('check-tf-travel4');
-if (checkTrueFalseBtn_travel4) {
-    checkTrueFalseBtn_travel4.addEventListener('click', () => {
+// --- START: True/False Functionality for Health (Exercise 4) ---
+const checkTrueFalseBtn_health4 = document.getElementById('check-tf-health4');
+if (checkTrueFalseBtn_health4) {
+    checkTrueFalseBtn_health4.addEventListener('click', () => {
         const answers = {
-            q1_tf_travel: 'true', // Correct answer is 'true'
-            q2_tf_travel: 'true', // Correct answer is 'false'
-            q3_tf_travel: 'true'  // Correct answer is 'false'
+            q1_tf_health: 'true', // Correct answer is 'false' (خَطَأ)
+            q2_tf_health: 'true', // Correct answer is 'false' (خَطَأ)
+            q3_tf_health: 'true'  // Correct answer is 'true'  (صَحِيح)
         };
 
-        const feedbackDiv = document.getElementById('feedback-tf-travel4');
+        const feedbackDiv = document.getElementById('feedback-tf-health4');
         let score = 0;
         let feedbackHTML = '<h4>النتائج:</h4><ul>';
 
@@ -1587,6 +1748,7 @@ if (checkTrueFalseBtn_travel4) {
             const selectedOption = document.querySelector(`input[name="${questionName}"]:checked`);
 
             if (selectedOption) {
+                // The correct radio button has value="true"
                 if (selectedOption.value === answers[questionName]) {
                     score++;
                     feedbackHTML += `<li class="text-success" dir="rtl"><i class="fas fa-check-circle ms-2"></i><strong>السؤال ${index + 1}:</strong> صحيح!</li>`;
@@ -1603,18 +1765,18 @@ if (checkTrueFalseBtn_travel4) {
         feedbackDiv.style.display = 'block';
     });
 }
-// --- END: True/False Functionality for Traveling ---
+// --- END: True/False Functionality for Health ---
 
-// --- START: Word Scramble Functionality for Traveling (Exercise 5) ---
-const checkScrambleBtn_travel5 = document.getElementById('check-scramble-travel5');
-if (checkScrambleBtn_travel5) {
-    checkScrambleBtn_travel5.addEventListener('click', () => {
+// --- START: Word Scramble Functionality for Health (Exercise 5) ---
+const checkScrambleBtn_health5 = document.getElementById('check-scramble-health5');
+if (checkScrambleBtn_health5) {
+    checkScrambleBtn_health5.addEventListener('click', () => {
         const answers = {
-            scramble_travel_1: "جَمَارِك",
-            scramble_travel_2: "دَرَّاجَة",
-            scramble_travel_3: "وُصُول"
+            scramble_health_1: "جُرْح",
+            scramble_health_2: "مَغَص",
+            scramble_health_3: "كَسْر"
         };
-        const feedbackDiv = document.getElementById('feedback-scramble-travel5');
+        const feedbackDiv = document.getElementById('feedback-scramble-health5');
         let allCorrect = true;
         let feedbackHTML = '<h4>النتائج:</h4><ul>';
 
@@ -1645,9 +1807,9 @@ if (checkScrambleBtn_travel5) {
         feedbackDiv.style.display = 'block';
     });
 }
-// --- END: Word Scramble Functionality for Traveling ---
+// --- END: Word Scramble Functionality for Health ---
 
 // ===================================================================
-// ==== END: EXERCISE HANDLERS FOR TRAVELING (السَّفَرُ) ====
+// ==== END: EXERCISE HANDLERS FOR HEALTH & ILLNESS (الصِّحَّةُ وَالْمَرَضُ) ====
 // ===================================================================
 }); 
