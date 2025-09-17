@@ -276,20 +276,29 @@
 }
 
 
-// ====================================================================
-// 6. Navbar Dropdown Styles (أنماط القائمة المنسدلة)
-// ====================================================================
+/* ====================================================================
+// 6. Navbar Dropdown Styles (أنماط القائمة المنسدلة) - UPDATED FOR SCROLL
+// ==================================================================== */
 .navbar-nav .dropdown-menu {
+  /* Your original styling */
   background-color: $light-card-bg;
   border-color: $light-border-color;
-  border-radius: $border-radius * 2; // Slightly more rounded corners to look modern
+  border-radius: $border-radius * 2;
   box-shadow: $box-shadow;
-  margin-top: $spacer * 0.5; // Add a little space from the navbar
+  margin-top: $spacer * 0.5;
+
+  /* --- NEW STYLES FOR SCROLLING --- */
+  
+  /* 1. Set a maximum height for the menu */
+  max-height: 400px; /* Adjust this value to your liking */
+  
+  /* 2. Add a vertical scrollbar only when needed */
+  overflow-y: auto;
 }
 
 .dropdown-item {
   color: $light-text-color;
-  padding: ($spacer * 0.5) $spacer; // Adjust padding for a cleaner look
+  padding: ($spacer * 0.5) $spacer;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 
   &:hover,
@@ -302,7 +311,6 @@
 .dropdown-divider {
   border-top: 1px solid $light-border-color;
 }
-
 /* ============================================= */
 /* Styling for Arabic Past Tense Verb Lesson     */
 /* ============================================= */

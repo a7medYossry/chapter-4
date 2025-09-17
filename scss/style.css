@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;700&family=Roboto:wght@400;700&display=swap");
 *, *::before, *::after {
   box-sizing: border-box;
@@ -5249,12 +5250,21 @@ footer p {
   border-radius: 3px;
 }
 
+/* ====================================================================
+// 6. Navbar Dropdown Styles (أنماط القائمة المنسدلة) - UPDATED FOR SCROLL
+// ==================================================================== */
 .navbar-nav .dropdown-menu {
+  /* Your original styling */
   background-color: #ffffff;
   border-color: #dee2e6;
   border-radius: 0.5rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   margin-top: 0.5rem;
+  /* --- NEW STYLES FOR SCROLLING --- */
+  /* 1. Set a maximum height for the menu */
+  max-height: 400px; /* Adjust this value to your liking */
+  /* 2. Add a vertical scrollbar only when needed */
+  overflow-y: auto;
 }
 
 .dropdown-item {
