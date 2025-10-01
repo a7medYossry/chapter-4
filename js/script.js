@@ -209,6 +209,27 @@ document.addEventListener('DOMContentLoaded', () => {
             q3_health: 'a'  // كَسْر
         },
         // --- END: Add this block for Health answers ---
+        // --- START: Add this block for Characteristics answers ---
+        "char1": {
+            q1_char: 'b', // The opposite of "fast" is "slow" (بَطِيء)
+            q2_char: 'c', // The elephant is a "heavy" (ثَقِيل) animal
+            q3_char: 'a'  // An athlete is "strong" (قَوِيّ)
+        },
+        // --- END: Add this block for Characteristics answers ---
+        // --- START: Add this block for Commonly Used Things answers ---
+        "ci1": {
+            q1_ci: 'b', // فُرْشَاةُ أَسْنَانٍ
+            q2_ci: 'b', // مِفْتَاح
+            q3_ci: 'a'  // مِنْشَفَة
+        },
+        // --- END: Add this block for Commonly Used Things answers ---
+        // --- START: Add this block for Personal Information answers ---
+        "pi1": {
+            q1_pi: 'b', // الْمِهْنَة
+            q2_pi: 'c', // الْجِنْس
+            q3_pi: 'b'  // مَحَلُّ الْمِيلاَد
+        },
+        // --- END: Add this block for Personal Information answers ---
     };
 
     const mcqExplanations = {
@@ -466,6 +487,55 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         },
         // --- END: Add this block for Health explanations ---
+        // --- START: Add this block for Characteristics explanations ---
+        "char1": {
+            q1_char: {
+                a: "خطأ. 'واسع' هو عكس 'ضيق'.",
+                c: "خطأ. 'ثقيل' هو عكس 'خفيف'."
+            },
+            q2_char: {
+                a: "خطأ. الفيل حيوان ثقيل جداً وليس خفيفاً.",
+                b: "خطأ. صفة 'ضيق' تستخدم لوصف الأماكن، وليس الحيوانات بهذا السياق."
+            },
+            q3_char: {
+                b: "خطأ. 'ضعيف' هو عكس 'قوي'، والرياضي عادة ما يكون قوياً.",
+                c: "خطأ. صفة 'متسخ' لا علاقة لها بكون الشخص رياضياً."
+            }
+        },
+        // --- END: Add this block for Characteristics explanations ---
+        // --- START: Add this block for Commonly Used Things explanations ---
+        "ci1": {
+            q1_ci: {
+                a: "خطأ. الْمِشْطُ يستخدم لتسريح الشعر.",
+                c: "خطأ. الصَّابُونُ يستخدم لغسل الجسم واليدين."
+            },
+            q2_ci: {
+                a: "خطأ. الْمِنْدِيلُ يستخدم للتنظيف أو التجفيف.",
+                c: "خطأ. الْخَاتَمُ يُلبس في الإصبع للزينة."
+            },
+            q3_ci: {
+                b: "خطأ. الْوَرَقَةُ تستخدم للكتابة.",
+                c: "خطأ. الْقُفْلُ يستخدم لإغلاق الأبواب."
+            }
+        },
+        // --- END: Add this block for Commonly Used Things explanations ---
+        // --- START: Add this block for Personal Information explanations ---
+        "pi1": {
+            q1_pi: {
+                a: "خطأ. 'الْعُمْرُ' يُستخدم للسؤال عن السن وليس المهنة.",
+                c: "خطأ. 'الطُّولُ' يستخدم للسؤال عن قامة الشخص."
+            },
+            q2_pi: {
+                a: "خطأ. 'الْجِنْسِيَّةُ' تحدد البلد الذي تنتمي إليه.",
+                b: "خطأ. 'الْحَالَةُ الاجْتِمَاعِيَّةُ' توضح إذا كان الشخص متزوجاً أم لا."
+            },
+            q3_pi: {
+                a: "خطأ. 'الْعُنْوَانُ' هو المكان الذي تسكن فيه الآن.",
+                c: "خطأ. 'اسْمُ الْعَائِلَةِ' هو لقب العائلة."
+            }
+        },
+        // --- END: Add this block for Personal Information explanations ---
+
     };
 
 
@@ -569,6 +639,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 // --- START: Add this new condition for Health ---
                 else if (mcqId === 'health1') { questionNameSuffix = 'health'; }
                 // --- END: Add this new condition for Health ---
+                // --- START: Add this new condition for Characteristics ---
+                else if (mcqId === 'char1') { questionNameSuffix = 'char'; }
+                // --- END: Add this new condition for Characteristics ---
+                // --- START: Add this new condition for Commonly Used Things ---
+                else if (mcqId === 'ci1') { questionNameSuffix = 'ci'; }
+                // --- END: Add this new condition for Commonly Used Things ---
+                // --- START: Add this new condition for Personal Information ---
+                else if (mcqId === 'pi1') { questionNameSuffix = 'pi'; }
+                // --- END: Add this new condition for Personal Information ---
                 else {
                     console.warn(`Unhandled mcqId for question name suffix: ${mcqId}`);
                     questionNameSuffix = mcqId;
@@ -1679,137 +1758,535 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     // ===================================================================
-// ==== START: EXERCISE HANDLERS FOR HEALTH & ILLNESS (الصِّحَّةُ وَالْمَرَضُ) ====
-// ===================================================================
+    // ==== START: EXERCISE HANDLERS FOR HEALTH & ILLNESS (الصِّحَّةُ وَالْمَرَضُ) ====
+    // ===================================================================
 
-// --- START: Fill in the Blanks Functionality for Health (Exercise 2) ---
-const checkFillBlanksBtn_health2 = document.getElementById('check-fill-blanks-health2');
-if (checkFillBlanksBtn_health2) {
-    checkFillBlanksBtn_health2.addEventListener('click', () => {
-        const answers = {
-            fill_health_1: "زُكَامٌ",
-            fill_health_2: "الْجُرْحَ",
-            fill_health_3: "مَغَصٌ",
-            fill_health_4: "إِغْمَاءٍ",
-            fill_health_5: "الْقَيْءِ"
-        };
+    // --- START: Fill in the Blanks Functionality for Health (Exercise 2) ---
+    const checkFillBlanksBtn_health2 = document.getElementById('check-fill-blanks-health2');
+    if (checkFillBlanksBtn_health2) {
+        checkFillBlanksBtn_health2.addEventListener('click', () => {
+            const answers = {
+                fill_health_1: "زُكَامٌ",
+                fill_health_2: "الْجُرْحَ",
+                fill_health_3: "مَغَصٌ",
+                fill_health_4: "إِغْمَاءٍ",
+                fill_health_5: "الْقَيْءِ"
+            };
 
-        const feedbackDiv = document.getElementById('feedback-fill-blanks-health2');
-        let allCorrect = true;
-        let feedbackHTML = '<h4>النتائج:</h4><ul>';
+            const feedbackDiv = document.getElementById('feedback-fill-blanks-health2');
+            let allCorrect = true;
+            let feedbackHTML = '<h4>النتائج:</h4><ul>';
 
-        Object.keys(answers).forEach(inputId => {
-            const inputElement = document.getElementById(inputId);
-            const correctAnswer = answers[inputId];
-            // Normalize both user and correct answers by removing Tashkeel for comparison
-            const userAnswer = inputElement.value.trim().normalize("NFD").replace(/[\u064B-\u0652]/g, "");
-            const normalizedCorrectAnswer = correctAnswer.normalize("NFD").replace(/[\u064B-\u0652]/g, "");
+            Object.keys(answers).forEach(inputId => {
+                const inputElement = document.getElementById(inputId);
+                const correctAnswer = answers[inputId];
+                // Normalize both user and correct answers by removing Tashkeel for comparison
+                const userAnswer = inputElement.value.trim().normalize("NFD").replace(/[\u064B-\u0652]/g, "");
+                const normalizedCorrectAnswer = correctAnswer.normalize("NFD").replace(/[\u064B-\u0652]/g, "");
 
-            inputElement.classList.remove('is-valid', 'is-invalid');
+                inputElement.classList.remove('is-valid', 'is-invalid');
 
-            if (userAnswer === normalizedCorrectAnswer) {
-                inputElement.classList.add('is-valid');
-                feedbackHTML += `<li class="text-success" dir="rtl"><i class="fas fa-check-circle ms-2"></i><strong>السؤال ${inputId.split('_')[2]}:</strong> صحيح!</li>`;
-            } else {
-                allCorrect = false;
-                inputElement.classList.add('is-invalid');
-                feedbackHTML += `<li class="text-danger" dir="rtl"><i class="fas fa-times-circle ms-2"></i><strong>السؤال ${inputId.split('_')[2]}:</strong> خطأ. الإجابة الصحيحة هي "${correctAnswer}".</li>`;
-            }
-        });
-
-        feedbackHTML += '</ul>';
-        if (allCorrect) {
-            feedbackHTML += '<p class="fw-bold text-success">ممتاز! كل الإجابات صحيحة.</p>';
-        } else {
-            feedbackHTML += '<p class="fw-bold text-warning">بعض الإجابات خاطئة، حاول مرة أخرى.</p>';
-        }
-
-        feedbackDiv.innerHTML = feedbackHTML;
-        feedbackDiv.style.display = 'block';
-    });
-}
-// --- END: Fill in the Blanks Functionality for Health ---
-
-// --- START: True/False Functionality for Health (Exercise 4) ---
-const checkTrueFalseBtn_health4 = document.getElementById('check-tf-health4');
-if (checkTrueFalseBtn_health4) {
-    checkTrueFalseBtn_health4.addEventListener('click', () => {
-        const answers = {
-            q1_tf_health: 'true', // Correct answer is 'false' (خَطَأ)
-            q2_tf_health: 'true', // Correct answer is 'false' (خَطَأ)
-            q3_tf_health: 'true'  // Correct answer is 'true'  (صَحِيح)
-        };
-
-        const feedbackDiv = document.getElementById('feedback-tf-health4');
-        let score = 0;
-        let feedbackHTML = '<h4>النتائج:</h4><ul>';
-
-        Object.keys(answers).forEach((questionName, index) => {
-            const selectedOption = document.querySelector(`input[name="${questionName}"]:checked`);
-
-            if (selectedOption) {
-                // The correct radio button has value="true"
-                if (selectedOption.value === answers[questionName]) {
-                    score++;
-                    feedbackHTML += `<li class="text-success" dir="rtl"><i class="fas fa-check-circle ms-2"></i><strong>السؤال ${index + 1}:</strong> صحيح!</li>`;
+                if (userAnswer === normalizedCorrectAnswer) {
+                    inputElement.classList.add('is-valid');
+                    feedbackHTML += `<li class="text-success" dir="rtl"><i class="fas fa-check-circle ms-2"></i><strong>السؤال ${inputId.split('_')[2]}:</strong> صحيح!</li>`;
                 } else {
-                    feedbackHTML += `<li class="text-danger" dir="rtl"><i class="fas fa-times-circle ms-2"></i><strong>السؤال ${index + 1}:</strong> خطأ.</li>`;
+                    allCorrect = false;
+                    inputElement.classList.add('is-invalid');
+                    feedbackHTML += `<li class="text-danger" dir="rtl"><i class="fas fa-times-circle ms-2"></i><strong>السؤال ${inputId.split('_')[2]}:</strong> خطأ. الإجابة الصحيحة هي "${correctAnswer}".</li>`;
                 }
+            });
+
+            feedbackHTML += '</ul>';
+            if (allCorrect) {
+                feedbackHTML += '<p class="fw-bold text-success">ممتاز! كل الإجابات صحيحة.</p>';
             } else {
-                feedbackHTML += `<li class="text-warning" dir="rtl"><i class="fas fa-exclamation-circle ms-2"></i><strong>السؤال ${index + 1}:</strong> لم يتم الإجابة عليه.</li>`;
+                feedbackHTML += '<p class="fw-bold text-warning">بعض الإجابات خاطئة، حاول مرة أخرى.</p>';
             }
+
+            feedbackDiv.innerHTML = feedbackHTML;
+            feedbackDiv.style.display = 'block';
         });
+    }
+    // --- END: Fill in the Blanks Functionality for Health ---
 
-        feedbackHTML += `</ul><p class="mt-3"><strong>نتيجتك: ${score} من 3</strong></p>`;
-        feedbackDiv.innerHTML = feedbackHTML;
-        feedbackDiv.style.display = 'block';
-    });
-}
-// --- END: True/False Functionality for Health ---
+    // --- START: True/False Functionality for Health (Exercise 4) ---
+    const checkTrueFalseBtn_health4 = document.getElementById('check-tf-health4');
+    if (checkTrueFalseBtn_health4) {
+        checkTrueFalseBtn_health4.addEventListener('click', () => {
+            const answers = {
+                q1_tf_health: 'true', // Correct answer is 'false' (خَطَأ)
+                q2_tf_health: 'true', // Correct answer is 'false' (خَطَأ)
+                q3_tf_health: 'true'  // Correct answer is 'true'  (صَحِيح)
+            };
 
-// --- START: Word Scramble Functionality for Health (Exercise 5) ---
-const checkScrambleBtn_health5 = document.getElementById('check-scramble-health5');
-if (checkScrambleBtn_health5) {
-    checkScrambleBtn_health5.addEventListener('click', () => {
-        const answers = {
-            scramble_health_1: "جُرْح",
-            scramble_health_2: "مَغَص",
-            scramble_health_3: "كَسْر"
-        };
-        const feedbackDiv = document.getElementById('feedback-scramble-health5');
-        let allCorrect = true;
-        let feedbackHTML = '<h4>النتائج:</h4><ul>';
+            const feedbackDiv = document.getElementById('feedback-tf-health4');
+            let score = 0;
+            let feedbackHTML = '<h4>النتائج:</h4><ul>';
 
-        Object.keys(answers).forEach((inputId, index) => {
-            const inputElement = document.getElementById(inputId);
-            const correctAnswer = answers[inputId];
-            const userAnswer = inputElement.value.trim().normalize("NFD").replace(/[\u064B-\u0652]/g, "");
-            const normalizedCorrectAnswer = correctAnswer.normalize("NFD").replace(/[\u064B-\u0652]/g, "");
+            Object.keys(answers).forEach((questionName, index) => {
+                const selectedOption = document.querySelector(`input[name="${questionName}"]:checked`);
 
-            inputElement.classList.remove('is-valid', 'is-invalid');
+                if (selectedOption) {
+                    // The correct radio button has value="true"
+                    if (selectedOption.value === answers[questionName]) {
+                        score++;
+                        feedbackHTML += `<li class="text-success" dir="rtl"><i class="fas fa-check-circle ms-2"></i><strong>السؤال ${index + 1}:</strong> صحيح!</li>`;
+                    } else {
+                        feedbackHTML += `<li class="text-danger" dir="rtl"><i class="fas fa-times-circle ms-2"></i><strong>السؤال ${index + 1}:</strong> خطأ.</li>`;
+                    }
+                } else {
+                    feedbackHTML += `<li class="text-warning" dir="rtl"><i class="fas fa-exclamation-circle ms-2"></i><strong>السؤال ${index + 1}:</strong> لم يتم الإجابة عليه.</li>`;
+                }
+            });
 
-            if (userAnswer === normalizedCorrectAnswer) {
-                inputElement.classList.add('is-valid');
-                feedbackHTML += `<li class="text-success" dir="rtl"><i class="fas fa-check-circle ms-2"></i><strong>الكلمة ${index + 1}:</strong> صحيحة!</li>`;
+            feedbackHTML += `</ul><p class="mt-3"><strong>نتيجتك: ${score} من 3</strong></p>`;
+            feedbackDiv.innerHTML = feedbackHTML;
+            feedbackDiv.style.display = 'block';
+        });
+    }
+    // --- END: True/False Functionality for Health ---
+
+    // --- START: Word Scramble Functionality for Health (Exercise 5) ---
+    const checkScrambleBtn_health5 = document.getElementById('check-scramble-health5');
+    if (checkScrambleBtn_health5) {
+        checkScrambleBtn_health5.addEventListener('click', () => {
+            const answers = {
+                scramble_health_1: "جُرْح",
+                scramble_health_2: "مَغَص",
+                scramble_health_3: "كَسْر"
+            };
+            const feedbackDiv = document.getElementById('feedback-scramble-health5');
+            let allCorrect = true;
+            let feedbackHTML = '<h4>النتائج:</h4><ul>';
+
+            Object.keys(answers).forEach((inputId, index) => {
+                const inputElement = document.getElementById(inputId);
+                const correctAnswer = answers[inputId];
+                const userAnswer = inputElement.value.trim().normalize("NFD").replace(/[\u064B-\u0652]/g, "");
+                const normalizedCorrectAnswer = correctAnswer.normalize("NFD").replace(/[\u064B-\u0652]/g, "");
+
+                inputElement.classList.remove('is-valid', 'is-invalid');
+
+                if (userAnswer === normalizedCorrectAnswer) {
+                    inputElement.classList.add('is-valid');
+                    feedbackHTML += `<li class="text-success" dir="rtl"><i class="fas fa-check-circle ms-2"></i><strong>الكلمة ${index + 1}:</strong> صحيحة!</li>`;
+                } else {
+                    allCorrect = false;
+                    inputElement.classList.add('is-invalid');
+                    feedbackHTML += `<li class="text-danger" dir="rtl"><i class="fas fa-times-circle ms-2"></i><strong>الكلمة ${index + 1}:</strong> خطأ. الإجابة الصحيحة هي "${correctAnswer}".</li>`;
+                }
+            });
+
+            feedbackHTML += '</ul>';
+            if (allCorrect) {
+                feedbackHTML += '<p class="fw-bold text-success">أحسنت! كل الكلمات صحيحة.</p>';
+            }
+
+            feedbackDiv.innerHTML = feedbackHTML;
+            feedbackDiv.style.display = 'block';
+        });
+    }
+    // --- END: Word Scramble Functionality for Health ---
+
+    // ===================================================================
+    // ==== END: EXERCISE HANDLERS FOR HEALTH & ILLNESS (الصِّحَّةُ وَالْمَرَضُ) ====
+    // ===================================================================
+
+    // ===================================================================
+    // ==== START: EXERCISE HANDLERS FOR CHARACTERISTICS (الصِّفَاتُ) ====
+    // ===================================================================
+
+    // --- START: Fill in the Blanks Functionality for Characteristics (Exercise 2) ---
+    const checkFillBlanksBtn_char2 = document.getElementById('check-fill-blanks-char2');
+    if (checkFillBlanksBtn_char2) {
+        checkFillBlanksBtn_char2.addEventListener('click', () => {
+            const answers = {
+                fill_char_1: "مُرْتَفِعٌ",
+                fill_char_2: "نَظِيفًا",
+                fill_char_3: "ضَيِّقٌ",
+                fill_char_4: "مُتَّسِخًا",
+                fill_char_5: "مُنْخَفِضٌ"
+            };
+
+            const feedbackDiv = document.getElementById('feedback-fill-blanks-char2');
+            let allCorrect = true;
+            let feedbackHTML = '<h4>النتائج:</h4><ul>';
+
+            Object.keys(answers).forEach(inputId => {
+                const inputElement = document.getElementById(inputId);
+                const correctAnswer = answers[inputId];
+                // Normalize both user and correct answers by removing Tashkeel for comparison
+                const userAnswer = inputElement.value.trim().normalize("NFD").replace(/[\u064B-\u0652]/g, "");
+                const normalizedCorrectAnswer = correctAnswer.normalize("NFD").replace(/[\u064B-\u0652]/g, "");
+
+                inputElement.classList.remove('is-valid', 'is-invalid');
+
+                if (userAnswer === normalizedCorrectAnswer) {
+                    inputElement.classList.add('is-valid');
+                    feedbackHTML += `<li class="text-success" dir="rtl"><i class="fas fa-check-circle ms-2"></i><strong>السؤال ${inputId.split('_')[2]}:</strong> صحيح!</li>`;
+                } else {
+                    allCorrect = false;
+                    inputElement.classList.add('is-invalid');
+                    feedbackHTML += `<li class="text-danger" dir="rtl"><i class="fas fa-times-circle ms-2"></i><strong>السؤال ${inputId.split('_')[2]}:</strong> خطأ. الإجابة الصحيحة هي "${correctAnswer}".</li>`;
+                }
+            });
+
+            feedbackHTML += '</ul>';
+            if (allCorrect) {
+                feedbackHTML += '<p class="fw-bold text-success">ممتاز! كل الإجابات صحيحة.</p>';
             } else {
-                allCorrect = false;
-                inputElement.classList.add('is-invalid');
-                feedbackHTML += `<li class="text-danger" dir="rtl"><i class="fas fa-times-circle ms-2"></i><strong>الكلمة ${index + 1}:</strong> خطأ. الإجابة الصحيحة هي "${correctAnswer}".</li>`;
+                feedbackHTML += '<p class="fw-bold text-warning">بعض الإجابات خاطئة، حاول مرة أخرى.</p>';
             }
+
+            feedbackDiv.innerHTML = feedbackHTML;
+            feedbackDiv.style.display = 'block';
         });
+    }
+    // --- END: Fill in the Blanks Functionality for Characteristics ---
 
-        feedbackHTML += '</ul>';
-        if (allCorrect) {
-            feedbackHTML += '<p class="fw-bold text-success">أحسنت! كل الكلمات صحيحة.</p>';
-        }
+    // --- START: True/False Functionality for Characteristics (Exercise 4) ---
+    const checkTrueFalseBtn_char4 = document.getElementById('check-tf-char4');
+    if (checkTrueFalseBtn_char4) {
+        checkTrueFalseBtn_char4.addEventListener('click', () => {
+            const answers = {
+                q1_tf_char: 'true', // Correct answer is 'false' (خَطَأ)
+                q2_tf_char: 'true', // Correct answer is 'true'  (صَحِيح)
+                q3_tf_char: 'true'  // Correct answer is 'true'  (صَحِيح)
+            };
 
-        feedbackDiv.innerHTML = feedbackHTML;
-        feedbackDiv.style.display = 'block';
-    });
-}
-// --- END: Word Scramble Functionality for Health ---
+            const feedbackDiv = document.getElementById('feedback-tf-char4');
+            let score = 0;
+            let feedbackHTML = '<h4>النتائج:</h4><ul>';
 
-// ===================================================================
-// ==== END: EXERCISE HANDLERS FOR HEALTH & ILLNESS (الصِّحَّةُ وَالْمَرَضُ) ====
-// ===================================================================
+            Object.keys(answers).forEach((questionName, index) => {
+                const selectedOption = document.querySelector(`input[name="${questionName}"]:checked`);
+
+                if (selectedOption) {
+                    // The correct radio button has value="true"
+                    if (selectedOption.value === answers[questionName]) {
+                        score++;
+                        feedbackHTML += `<li class="text-success" dir="rtl"><i class="fas fa-check-circle ms-2"></i><strong>السؤال ${index + 1}:</strong> صحيح!</li>`;
+                    } else {
+                        feedbackHTML += `<li class="text-danger" dir="rtl"><i class="fas fa-times-circle ms-2"></i><strong>السؤال ${index + 1}:</strong> خطأ.</li>`;
+                    }
+                } else {
+                    feedbackHTML += `<li class="text-warning" dir="rtl"><i class="fas fa-exclamation-circle ms-2"></i><strong>السؤال ${index + 1}:</strong> لم يتم الإجابة عليه.</li>`;
+                }
+            });
+
+            feedbackHTML += `</ul><p class="mt-3"><strong>نتيجتك: ${score} من 3</strong></p>`;
+            feedbackDiv.innerHTML = feedbackHTML;
+            feedbackDiv.style.display = 'block';
+        });
+    }
+    // --- END: True/False Functionality for Characteristics ---
+
+    // --- START: Word Scramble Functionality for Characteristics (Exercise 5) ---
+    const checkScrambleBtn_char5 = document.getElementById('check-scramble-char5');
+    if (checkScrambleBtn_char5) {
+        checkScrambleBtn_char5.addEventListener('click', () => {
+            const answers = {
+                scramble_char_1: "خَفِيف",
+                scramble_char_2: "ثَقِيل",
+                scramble_char_3: "سَرِيع"
+            };
+            const feedbackDiv = document.getElementById('feedback-scramble-char5');
+            let allCorrect = true;
+            let feedbackHTML = '<h4>النتائج:</h4><ul>';
+
+            Object.keys(answers).forEach((inputId, index) => {
+                const inputElement = document.getElementById(inputId);
+                const correctAnswer = answers[inputId];
+                const userAnswer = inputElement.value.trim().normalize("NFD").replace(/[\u064B-\u0652]/g, "");
+                const normalizedCorrectAnswer = correctAnswer.normalize("NFD").replace(/[\u064B-\u0652]/g, "");
+
+                inputElement.classList.remove('is-valid', 'is-invalid');
+
+                if (userAnswer === normalizedCorrectAnswer) {
+                    inputElement.classList.add('is-valid');
+                    feedbackHTML += `<li class="text-success" dir="rtl"><i class="fas fa-check-circle ms-2"></i><strong>الكلمة ${index + 1}:</strong> صحيحة!</li>`;
+                } else {
+                    allCorrect = false;
+                    inputElement.classList.add('is-invalid');
+                    feedbackHTML += `<li class="text-danger" dir="rtl"><i class="fas fa-times-circle ms-2"></i><strong>الكلمة ${index + 1}:</strong> خطأ. الإجابة الصحيحة هي "${correctAnswer}".</li>`;
+                }
+            });
+
+            feedbackHTML += '</ul>';
+            if (allCorrect) {
+                feedbackHTML += '<p class="fw-bold text-success">أحسنت! كل الكلمات صحيحة.</p>';
+            }
+
+            feedbackDiv.innerHTML = feedbackHTML;
+            feedbackDiv.style.display = 'block';
+        });
+    }
+    // --- END: Word Scramble Functionality for Characteristics ---
+
+    // ===================================================================
+    // ==== END: EXERCISE HANDLERS FOR CHARACTERISTICS (الصِّفَاتُ) ====
+    // ===================================================================
+
+    // ===================================================================
+    // ==== START: EXERCISE HANDLERS FOR COMMONLY USED THINGS (أَشْيَاءُ مُسْتَعْمَلَةٌ) ====
+    // ===================================================================
+
+    // --- START: Fill in the Blanks Functionality for Common Items (Exercise 2) ---
+    const checkFillBlanksBtn_ci2 = document.getElementById('check-fill-blanks-ci2');
+    if (checkFillBlanksBtn_ci2) {
+        checkFillBlanksBtn_ci2.addEventListener('click', () => {
+            const answers = {
+                fill_ci_1: "الصَّابُون",
+                fill_ci_2: "الْخَاتَمَ",
+                fill_ci_3: "مِشْط",
+                fill_ci_4: "الْقُفْل",
+                fill_ci_5: "مَعْجُون"
+            };
+            const feedbackDiv = document.getElementById('feedback-fill-blanks-ci2');
+            let allCorrect = true;
+            let feedbackHTML = '<h4>النتائج:</h4><ul>';
+
+            Object.keys(answers).forEach(inputId => {
+                const inputElement = document.getElementById(inputId);
+                const correctAnswer = answers[inputId];
+                const userAnswer = inputElement.value.trim().normalize("NFD").replace(/[\u064B-\u0652]/g, "");
+                const normalizedCorrectAnswer = correctAnswer.normalize("NFD").replace(/[\u064B-\u0652]/g, "");
+
+                inputElement.classList.remove('is-valid', 'is-invalid');
+
+                if (userAnswer === normalizedCorrectAnswer) {
+                    inputElement.classList.add('is-valid');
+                    feedbackHTML += `<li class="text-success" dir="rtl"><i class="fas fa-check-circle ms-2"></i><strong>السؤال ${inputId.split('_')[2]}:</strong> صحيح!</li>`;
+                } else {
+                    allCorrect = false;
+                    inputElement.classList.add('is-invalid');
+                    feedbackHTML += `<li class="text-danger" dir="rtl"><i class="fas fa-times-circle ms-2"></i><strong>السؤال ${inputId.split('_')[2]}:</strong> خطأ. الإجابة الصحيحة هي "${correctAnswer}".</li>`;
+                }
+            });
+
+            feedbackHTML += '</ul>';
+            if (allCorrect) {
+                feedbackHTML += '<p class="fw-bold text-success">ممتاز! كل الإجابات صحيحة.</p>';
+            } else {
+                feedbackHTML += '<p class="fw-bold text-warning">بعض الإجابات خاطئة، حاول مرة أخرى.</p>';
+            }
+
+            feedbackDiv.innerHTML = feedbackHTML;
+            feedbackDiv.style.display = 'block';
+        });
+    }
+    // --- END: Fill in the Blanks Functionality for Common Items ---
+
+    // --- START: True/False Functionality for Common Items (Exercise 4) ---
+    const checkTrueFalseBtn_ci4 = document.getElementById('check-tf-ci4');
+    if (checkTrueFalseBtn_ci4) {
+        checkTrueFalseBtn_ci4.addEventListener('click', () => {
+            const answers = {
+                q1_tf_ci: 'true', // Correct answer is 'false'
+                q2_tf_ci: 'true', // Correct answer is 'true'
+                q3_tf_ci: 'true'  // Correct answer is 'false'
+            };
+            const feedbackDiv = document.getElementById('feedback-tf-ci4');
+            let score = 0;
+            let feedbackHTML = '<h4>النتائج:</h4><ul>';
+
+            Object.keys(answers).forEach((questionName, index) => {
+                const selectedOption = document.querySelector(`input[name="${questionName}"]:checked`);
+                if (selectedOption) {
+                    if (selectedOption.value === answers[questionName]) {
+                        score++;
+                        feedbackHTML += `<li class="text-success" dir="rtl"><i class="fas fa-check-circle ms-2"></i><strong>السؤال ${index + 1}:</strong> صحيح!</li>`;
+                    } else {
+                        feedbackHTML += `<li class="text-danger" dir="rtl"><i class="fas fa-times-circle ms-2"></i><strong>السؤال ${index + 1}:</strong> خطأ.</li>`;
+                    }
+                } else {
+                    feedbackHTML += `<li class="text-warning" dir="rtl"><i class="fas fa-exclamation-circle ms-2"></i><strong>السؤال ${index + 1}:</strong> لم يتم الإجابة عليه.</li>`;
+                }
+            });
+
+            feedbackHTML += `</ul><p class="mt-3"><strong>نتيجتك: ${score} من 3</strong></p>`;
+            feedbackDiv.innerHTML = feedbackHTML;
+            feedbackDiv.style.display = 'block';
+        });
+    }
+    // --- END: True/False Functionality for Common Items ---
+
+    // --- START: Word Scramble Functionality for Common Items (Exercise 5) ---
+    const checkScrambleBtn_ci5 = document.getElementById('check-scramble-ci5');
+    if (checkScrambleBtn_ci5) {
+        checkScrambleBtn_ci5.addEventListener('click', () => {
+            const answers = {
+                scramble_ci_1: "قُفْل",
+                scramble_ci_2: "صَابُون",
+                scramble_ci_3: "خَاتَم"
+            };
+            const feedbackDiv = document.getElementById('feedback-scramble-ci5');
+            let allCorrect = true;
+            let feedbackHTML = '<h4>النتائج:</h4><ul>';
+
+            Object.keys(answers).forEach((inputId, index) => {
+                const inputElement = document.getElementById(inputId);
+                const correctAnswer = answers[inputId];
+                const userAnswer = inputElement.value.trim().normalize("NFD").replace(/[\u064B-\u0652]/g, "");
+                const normalizedCorrectAnswer = correctAnswer.normalize("NFD").replace(/[\u064B-\u0652]/g, "");
+
+                inputElement.classList.remove('is-valid', 'is-invalid');
+
+                if (userAnswer === normalizedCorrectAnswer) {
+                    inputElement.classList.add('is-valid');
+                    feedbackHTML += `<li class="text-success" dir="rtl"><i class="fas fa-check-circle ms-2"></i><strong>الكلمة ${index + 1}:</strong> صحيحة!</li>`;
+                } else {
+                    allCorrect = false;
+                    inputElement.classList.add('is-invalid');
+                    feedbackHTML += `<li class="text-danger" dir="rtl"><i class="fas fa-times-circle ms-2"></i><strong>الكلمة ${index + 1}:</strong> خطأ. الإجابة الصحيحة هي "${correctAnswer}".</li>`;
+                }
+            });
+
+            feedbackHTML += '</ul>';
+            if (allCorrect) {
+                feedbackHTML += '<p class="fw-bold text-success">أحسنت! كل الكلمات صحيحة.</p>';
+            }
+
+            feedbackDiv.innerHTML = feedbackHTML;
+            feedbackDiv.style.display = 'block';
+        });
+    }
+    // --- END: Word Scramble Functionality for Common Items ---
+
+    // ===================================================================
+    // ==== END: EXERCISE HANDLERS FOR COMMONLY USED THINGS (أَشْيَاءُ مُسْتَعْمَلَةٌ) ====
+    // ===================================================================
+
+    // ===================================================================
+    // ==== START: EXERCISE HANDLERS FOR PERSONAL INFORMATION (الْبِطَاقَةُ الشَّخْصِيَّةُ) ====
+    // ===================================================================
+
+    // --- START: Fill in the Blanks Functionality for Personal Info (Exercise 2) ---
+    const checkFillBlanksBtn_pi2 = document.getElementById('check-fill-blanks-pi2');
+    if (checkFillBlanksBtn_pi2) {
+        checkFillBlanksBtn_pi2.addEventListener('click', () => {
+            const answers = {
+                fill_pi_1: "الْعُنْوَان",
+                fill_pi_2: "الْعُمْر",
+                fill_pi_3: "الْجِنْسِيَّة",
+                fill_pi_4: "مُتَزَوِّج",
+                fill_pi_5: "هَاتِف"
+            };
+            const feedbackDiv = document.getElementById('feedback-fill-blanks-pi2');
+            let allCorrect = true;
+            let feedbackHTML = '<h4>النتائج:</h4><ul>';
+
+            Object.keys(answers).forEach(inputId => {
+                const inputElement = document.getElementById(inputId);
+                const correctAnswer = answers[inputId];
+                // Normalize both user and correct answers by removing Tashkeel for comparison
+                const userAnswer = inputElement.value.trim().normalize("NFD").replace(/[\u064B-\u0652]/g, "");
+                const normalizedCorrectAnswer = correctAnswer.normalize("NFD").replace(/[\u064B-\u0652]/g, "");
+
+                inputElement.classList.remove('is-valid', 'is-invalid');
+
+                if (userAnswer === normalizedCorrectAnswer) {
+                    inputElement.classList.add('is-valid');
+                    feedbackHTML += `<li class="text-success" dir="rtl"><i class="fas fa-check-circle ms-2"></i><strong>السؤال ${inputId.split('_')[2]}:</strong> صحيح!</li>`;
+                } else {
+                    allCorrect = false;
+                    inputElement.classList.add('is-invalid');
+                    feedbackHTML += `<li class="text-danger" dir="rtl"><i class="fas fa-times-circle ms-2"></i><strong>السؤال ${inputId.split('_')[2]}:</strong> خطأ. الإجابة الصحيحة هي "${correctAnswer}".</li>`;
+                }
+            });
+
+            feedbackHTML += '</ul>';
+            if (allCorrect) {
+                feedbackHTML += '<p class="fw-bold text-success">ممتاز! كل الإجابات صحيحة.</p>';
+            } else {
+                feedbackHTML += '<p class="fw-bold text-warning">بعض الإجابات خاطئة، حاول مرة أخرى.</p>';
+            }
+
+            feedbackDiv.innerHTML = feedbackHTML;
+            feedbackDiv.style.display = 'block';
+        });
+    }
+    // --- END: Fill in the Blanks Functionality for Personal Info ---
+
+    // --- START: True/False Functionality for Personal Info (Exercise 4) ---
+    const checkTrueFalseBtn_pi4 = document.getElementById('check-tf-pi4');
+    if (checkTrueFalseBtn_pi4) {
+        checkTrueFalseBtn_pi4.addEventListener('click', () => {
+            const answers = {
+                q1_tf_pi: 'true', // Correct answer is 'false' (خَطَأ)
+                q2_tf_pi: 'true', // Correct answer is 'true'  (صَحِيح)
+                q3_tf_pi: 'true'  // Correct answer is 'false' (خَطَأ)
+            };
+
+            const feedbackDiv = document.getElementById('feedback-tf-pi4');
+            let score = 0;
+            let feedbackHTML = '<h4>النتائج:</h4><ul>';
+
+            Object.keys(answers).forEach((questionName, index) => {
+                const selectedOption = document.querySelector(`input[name="${questionName}"]:checked`);
+                if (selectedOption) {
+                    // The correct radio button has value="true"
+                    if (selectedOption.value === answers[questionName]) {
+                        score++;
+                        feedbackHTML += `<li class="text-success" dir="rtl"><i class="fas fa-check-circle ms-2"></i><strong>السؤال ${index + 1}:</strong> صحيح!</li>`;
+                    } else {
+                        feedbackHTML += `<li class="text-danger" dir="rtl"><i class="fas fa-times-circle ms-2"></i><strong>السؤال ${index + 1}:</strong> خطأ.</li>`;
+                    }
+                } else {
+                    feedbackHTML += `<li class="text-warning" dir="rtl"><i class="fas fa-exclamation-circle ms-2"></i><strong>السؤال ${index + 1}:</strong> لم يتم الإجابة عليه.</li>`;
+                }
+            });
+
+            feedbackHTML += `</ul><p class="mt-3"><strong>نتيجتك: ${score} من 3</strong></p>`;
+            feedbackDiv.innerHTML = feedbackHTML;
+            feedbackDiv.style.display = 'block';
+        });
+    }
+    // --- END: True/False Functionality for Personal Info ---
+
+    // --- START: Word Scramble Functionality for Personal Info (Exercise 5) ---
+    const checkScrambleBtn_pi5 = document.getElementById('check-scramble-pi5');
+    if (checkScrambleBtn_pi5) {
+        checkScrambleBtn_pi5.addEventListener('click', () => {
+            const answers = {
+                scramble_pi_1: "عُمْر",
+                scramble_pi_2: "عُنْوَان",
+                scramble_pi_3: "مِهْنَة"
+            };
+            const feedbackDiv = document.getElementById('feedback-scramble-pi5');
+            let allCorrect = true;
+            let feedbackHTML = '<h4>النتائج:</h4><ul>';
+
+            Object.keys(answers).forEach((inputId, index) => {
+                const inputElement = document.getElementById(inputId);
+                const correctAnswer = answers[inputId];
+                const userAnswer = inputElement.value.trim().normalize("NFD").replace(/[\u064B-\u0652]/g, "");
+                const normalizedCorrectAnswer = correctAnswer.normalize("NFD").replace(/[\u064B-\u0652]/g, "");
+
+                inputElement.classList.remove('is-valid', 'is-invalid');
+
+                if (userAnswer === normalizedCorrectAnswer) {
+                    inputElement.classList.add('is-valid');
+                    feedbackHTML += `<li class="text-success" dir="rtl"><i class="fas fa-check-circle ms-2"></i><strong>الكلمة ${index + 1}:</strong> صحيحة!</li>`;
+                } else {
+                    allCorrect = false;
+                    inputElement.classList.add('is-invalid');
+                    feedbackHTML += `<li class="text-danger" dir="rtl"><i class="fas fa-times-circle ms-2"></i><strong>الكلمة ${index + 1}:</strong> خطأ. الإجابة الصحيحة هي "${correctAnswer}".</li>`;
+                }
+            });
+
+            feedbackHTML += '</ul>';
+            if (allCorrect) {
+                feedbackHTML += '<p class="fw-bold text-success">أحسنت! كل الكلمات صحيحة.</p>';
+            }
+
+            feedbackDiv.innerHTML = feedbackHTML;
+            feedbackDiv.style.display = 'block';
+        });
+    }
+    // --- END: Word Scramble Functionality for Personal Info ---
+
+    // ===================================================================
+    // ==== END: EXERCISE HANDLERS FOR PERSONAL INFORMATION (الْبِطَاقَةُ الشَّخْصِيَّةُ) ====
+    // ===================================================================
 }); 

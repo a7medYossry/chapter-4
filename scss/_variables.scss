@@ -687,6 +687,151 @@ $health_colors: (
 // =======================================================
 
 
+// =======================================================
+// ==== START: ألوان مفردات الصِّفَاتُ (Characteristics) ====
+// =======================================================
+$characteristics_colors: (
+  // Vocabulary & Example Sentence Colors (Thematic Tones)
+  // Wide (Darker Sky Blues)
+  "char-1": #4682b4, "char-2": #274472, "char-3": #4682b4, "char-4": #274472,
+  // Narrow (Darker Grays)
+  "char-5": #696969, "char-6": #363636, "char-7": #696969, "char-8": #363636,
+  // Fast (Darker Yellows/Oranges)
+  "char-9": #b8860b, "char-10": #ff8c00, "char-11": #b8860b, "char-12": #ff8c00,
+  // Slow (Darker Greens)
+  "char-13": #556b2f, "char-14": #2e4a1d, "char-15": #556b2f, "char-16": #2e4a1d,
+  // High (Darker Purples)
+  "char-17": #6a5acd, "char-18": #4b0082, "char-19": #6a5acd, "char-20": #4b0082,
+  // Low (Darker Browns)
+  "char-21": #8b4513, "char-22": #5c3310, "char-23": #8b4513, "char-24": #5c3310,
+  // Strong (Darker Reds)
+  "char-25": #8b0000, "char-26": #5c1a1a, "char-27": #8b0000, "char-28": #5c1a1a,
+  // Weak (Darker Grays)
+  "char-29": #bebebe, "char-30": #7d7d7d, "char-31": #bebebe, "char-32": #7d7d7d,
+  // Clean (Darker Blues)
+  "char-33": #4682b4, "char-34": #274472, "char-35": #4682b4, "char-36": #274472,
+  // Dirty (Darker Browns)
+  "char-37": #654321, "char-38": #3e2723, "char-39": #654321, "char-40": #3e2723,
+  // Heavy (Darker Metallic Grays)
+  "char-41": #2f4f4f, "char-42": #1a2323, "char-43": #2f4f4f, "char-44": #1a2323,
+  // Light (Darker Yellows)
+  "char-45": #bdb76b, "char-46": #a9a932, "char-47": #bdb76b, "char-48": #a9a932
+);
+// =======================================================
+// ==== END: ألوان مفردات الصِّفَاتُ (Characteristics) ====
+// =======================================================
+
+// =======================================================
+// ==== START: ألوان مفردات أَشْيَاءُ مُسْتَعْمَلَةٌ (Commonly Used Things) ====
+// =======================================================
+$common_items_colors: (
+  // Vocabulary & Example Sentence Colors (Thematic Tones)
+  // Toothpaste (Minty Greens/Blues)
+  "ci-1": #98FF98, "ci-2": #40E0D0, "ci-3": #98FF98, "ci-4": #40E0D0,
+  // Toothbrush (Pinks)
+  "ci-5": #FFC0CB, "ci-6": #FF69B4, "ci-7": #FFC0CB, "ci-8": #FF69B4,
+  // Lock (Dark Grays)
+  "ci-9": #696969, "ci-10": #2F4F4F, "ci-11": #696969, "ci-12": #2F4F4F,
+  // Key (Silvers)
+  "ci-13": #C0C0C0, "ci-14": #A9A9A9, "ci-15": #C0C0C0, "ci-16": #A9A9A9,
+  // Towel (Teals)
+  "ci-17": #008080, "ci-18": #20B2AA, "ci-19": #008080, "ci-20": #20B2AA,
+  // Soap (Creamy Yellows)
+  "ci-21": #FFFACD, "ci-22": #F0E68C, "ci-23": #FFFACD, "ci-24": #F0E68C,
+  // Comb (Browns)
+  "ci-25": #8B4513, "ci-26": #A0522D, "ci-27": #8B4513, "ci-28": #A0522D,
+  // Hairbrush (Darker Browns)
+  "ci-29": #5C4033, "ci-30": #800000, "ci-31": #5C4033, "ci-32": #800000,
+  // Paper (Off-Whites)
+  "ci-33": #F5F5DC, "ci-34": #D3D3D3, "ci-35": #F5F5DC, "ci-36": #D3D3D3,
+  // Tissue (Light Blues)
+  "ci-37": #ADD8E6, "ci-38": #B0E0E6, "ci-39": #ADD8E6, "ci-40": #B0E0E6,
+  // Ring (Gemstone/Silver Tones)
+  "ci-41": #E6E8FA, "ci-42": #B0C4DE, "ci-43": #E6E8FA, "ci-44": #B0C4DE,
+  // Miswak (Beiges)
+  "ci-45": #F5DEB3, "ci-46": #D2B48C, "ci-47": #F5DEB3, "ci-48": #D2B48C
+);
+// =======================================================
+// ==== END: ألوان مفردات أَشْيَاءُ مُسْتَعْمَلَةٌ (Commonly Used Things) ====
+// =======================================================
+
+
+// =======================================================
+// ==== START: ألوان مفردات الْبِطَاقَةُ الشَّخْصِيَّةُ (Personal Information) ====
+// =======================================================
+$personal_info_colors: (
+  // Vocabulary & Example Sentence Colors (Official Document Tones)
+  // Name (Official Blues)
+  "pi-1": #27408b, "pi-2": #1a2c5c, "pi-3": #27408b,
+  // Family Name (Deeper Blues)
+  "pi-4": #00005c, "pi-5": #00003a, "pi-6": #00005c, "pi-7": #00003a,
+  // Nationality (Earthy/Flag Tones)
+  "pi-8": #8b7355, "pi-9": #6b5a3f, "pi-10": #8b7355,
+  // Profession (Professional Grays)
+  "pi-11": #363d42, "pi-12": #23272b, "pi-13": #363d42, "pi-14": #23272b,
+  // Date of Birth (Calendar/Paper Tones)
+  "pi-15": #b2a429, "pi-16": #a9a932, "pi-17": #b2a429, "pi-18": #a9a932,
+  // Place of Birth (Map/Geography Greens)
+  "pi-19": #2e4a1d, "pi-20": #1a2e13, "pi-21": #2e4a1d, "pi-22": #1a2e13,
+  // Gender (Neutral Purples)
+  "pi-23": #4b0082, "pi-24": #2e1c4d, "pi-25": #4b0082, "pi-26": #2e1c4d,
+  // Age (Muted Oranges)
+  "pi-27": #b8860b, "pi-28": #7a5a0a, "pi-29": #b8860b,
+  // Marital Status (Warm Reds/Maroons)
+  "pi-30": #801818, "pi-31": #4d0f0f, "pi-32": #801818,
+  // Address (Asphalt Grays)
+  "pi-33": #232323, "pi-34": #141414, "pi-35": #232323, "pi-36": #141414,
+  // Home Phone (Old Telephone Beige)
+  "pi-37": #8b7355, "pi-38": #6b5a3f, "pi-39": #8b7355, "pi-40": #6b5a3f,
+  // Work Phone (Corporate Blues)
+  "pi-41": #274472, "pi-42": #1a2c47, "pi-43": #274472, "pi-44": #1a2c47,
+  // Mobile Number (Modern Tech Teals)
+  "pi-45": #167d77, "pi-46": #0c3d3a, "pi-47": #167d77, "pi-48": #0c3d3a,
+  // Height (Measuring Tape Yellows)
+  "pi-49": #bdb76b, "pi-50": #a9a932, "pi-51": #bdb76b, "pi-52": #a9a932,
+  // Language (Ink Grays)
+  "pi-53": #1f3434, "pi-54": #141e1e, "pi-55": #1f3434, "pi-56": #141e1e,
+  // Religion (Spiritual Golds)
+  "pi-57": #b39700, "pi-58": #7a5a00, "pi-59": #b39700, "pi-60": #7a5a00
+);
+// =======================================================
+// ==== END: ألوان مفردات الْبِطَاقَةُ الشَّخْصِيَّةُ (Personal Information) ====
+// =======================================================
+
+
+// =======================================================
+// ==== START: ألوان مفردات شَجَرَةُ الْعَائِلَة (Family Tree) ====
+// =======================================================
+$family_tree_colors: (
+  // Vocabulary & Example Sentence Colors (Warm, Earthy Tones)
+  // Grandfather (Warm Browns)
+  "ft-1": #8B4513, "ft-2": #5C3317, "ft-3": #8B4513, "ft-4": #5C3317,
+  // Grandmother (Soft Lavenders)
+  "ft-5": #E6E6FA, "ft-6": #B57EDC, "ft-7": #E6E6FA, "ft-8": #B57EDC,
+  // Father (Stable Dark Greens)
+  "ft-9": #006400, "ft-10": #004d00, "ft-11": #006400, "ft-12": #004d00,
+  // Mother (Nurturing Maroons)
+  "ft-13": #800000, "ft-14": #660000, "ft-15": #800000, "ft-16": #660000,
+  // Son (Bright Blues)
+  "ft-17": #4682B4, "ft-18": #315a7d, "ft-19": #4682B4, "ft-20": #315a7d,
+  // Daughter (Bright Pinks)
+  "ft-21": #FF69B4, "ft-22": #d9579b, "ft-23": #FF69B4, "ft-24": #d9579b,
+  // Brother (Friendly Teals)
+  "ft-25": #20B2AA, "ft-26": #177e7a, "ft-27": #20B2AA, "ft-28": #177e7a,
+  // Sister (Warm Oranges)
+  "ft-29": #FFA500, "ft-30": #d98c00, "ft-31": #FFA500, "ft-32": #d98c00,
+  // Paternal Uncle (Earthy Siennas)
+  "ft-33": #A0522D, "ft-34": #783f21, "ft-35": #A0522D, "ft-36": #783f21,
+  // Grandson (Playful Light Greens)
+  "ft-37": #9ACD32, "ft-38": #739a25, "ft-39": #9ACD32, "ft-40": #739a25,
+  // Granddaughter (Playful Light Purples)
+  "ft-41": #BA55D3, "ft-42": #9b47b0, "ft-43": #BA55D3, "ft-44": #9b47b0
+);
+// =======================================================
+// ==== END: ألوان مفردات شَجَرَةُ الْعَائِلَة (Family Tree) ====
+// =======================================================
+
+
 $all-colors: ();
 $all-colors: map-merge($all-colors, $ch4_colors);
 $all-colors: map-merge($all-colors, $ch5_colors);
@@ -706,3 +851,7 @@ $all-colors: map-merge($all-colors, $vegetables_colors);
 $all-colors: map-merge($all-colors, $furniture_colors);
 $all-colors: map-merge($all-colors, $travel_colors);
 $all-colors: map-merge($all-colors, $health_colors);
+$all-colors: map-merge($all-colors, $characteristics_colors);
+$all-colors: map-merge($all-colors, $common_items_colors);
+$all-colors: map-merge($all-colors, $personal_info_colors);
+$all-colors: map-merge($all-colors, $family_tree_colors);

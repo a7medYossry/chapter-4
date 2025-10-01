@@ -5143,6 +5143,806 @@ img {
   color: #800000;
 }
 
+.ar-color-char-1, .en-color-char-1 {
+  color: #4682b4;
+}
+
+.ar-color-char-2, .en-color-char-2 {
+  color: #274472;
+}
+
+.ar-color-char-3, .en-color-char-3 {
+  color: #4682b4;
+}
+
+.ar-color-char-4, .en-color-char-4 {
+  color: #274472;
+}
+
+.ar-color-char-5, .en-color-char-5 {
+  color: #696969;
+}
+
+.ar-color-char-6, .en-color-char-6 {
+  color: #363636;
+}
+
+.ar-color-char-7, .en-color-char-7 {
+  color: #696969;
+}
+
+.ar-color-char-8, .en-color-char-8 {
+  color: #363636;
+}
+
+.ar-color-char-9, .en-color-char-9 {
+  color: #b8860b;
+}
+
+.ar-color-char-10, .en-color-char-10 {
+  color: #ff8c00;
+}
+
+.ar-color-char-11, .en-color-char-11 {
+  color: #b8860b;
+}
+
+.ar-color-char-12, .en-color-char-12 {
+  color: #ff8c00;
+}
+
+.ar-color-char-13, .en-color-char-13 {
+  color: #556b2f;
+}
+
+.ar-color-char-14, .en-color-char-14 {
+  color: #2e4a1d;
+}
+
+.ar-color-char-15, .en-color-char-15 {
+  color: #556b2f;
+}
+
+.ar-color-char-16, .en-color-char-16 {
+  color: #2e4a1d;
+}
+
+.ar-color-char-17, .en-color-char-17 {
+  color: #6a5acd;
+}
+
+.ar-color-char-18, .en-color-char-18 {
+  color: #4b0082;
+}
+
+.ar-color-char-19, .en-color-char-19 {
+  color: #6a5acd;
+}
+
+.ar-color-char-20, .en-color-char-20 {
+  color: #4b0082;
+}
+
+.ar-color-char-21, .en-color-char-21 {
+  color: #8b4513;
+}
+
+.ar-color-char-22, .en-color-char-22 {
+  color: #5c3310;
+}
+
+.ar-color-char-23, .en-color-char-23 {
+  color: #8b4513;
+}
+
+.ar-color-char-24, .en-color-char-24 {
+  color: #5c3310;
+}
+
+.ar-color-char-25, .en-color-char-25 {
+  color: #8b0000;
+}
+
+.ar-color-char-26, .en-color-char-26 {
+  color: #5c1a1a;
+}
+
+.ar-color-char-27, .en-color-char-27 {
+  color: #8b0000;
+}
+
+.ar-color-char-28, .en-color-char-28 {
+  color: #5c1a1a;
+}
+
+.ar-color-char-29, .en-color-char-29 {
+  color: #bebebe;
+}
+
+.ar-color-char-30, .en-color-char-30 {
+  color: #7d7d7d;
+}
+
+.ar-color-char-31, .en-color-char-31 {
+  color: #bebebe;
+}
+
+.ar-color-char-32, .en-color-char-32 {
+  color: #7d7d7d;
+}
+
+.ar-color-char-33, .en-color-char-33 {
+  color: #4682b4;
+}
+
+.ar-color-char-34, .en-color-char-34 {
+  color: #274472;
+}
+
+.ar-color-char-35, .en-color-char-35 {
+  color: #4682b4;
+}
+
+.ar-color-char-36, .en-color-char-36 {
+  color: #274472;
+}
+
+.ar-color-char-37, .en-color-char-37 {
+  color: #654321;
+}
+
+.ar-color-char-38, .en-color-char-38 {
+  color: #3e2723;
+}
+
+.ar-color-char-39, .en-color-char-39 {
+  color: #654321;
+}
+
+.ar-color-char-40, .en-color-char-40 {
+  color: #3e2723;
+}
+
+.ar-color-char-41, .en-color-char-41 {
+  color: #2f4f4f;
+}
+
+.ar-color-char-42, .en-color-char-42 {
+  color: #1a2323;
+}
+
+.ar-color-char-43, .en-color-char-43 {
+  color: #2f4f4f;
+}
+
+.ar-color-char-44, .en-color-char-44 {
+  color: #1a2323;
+}
+
+.ar-color-char-45, .en-color-char-45 {
+  color: #bdb76b;
+}
+
+.ar-color-char-46, .en-color-char-46 {
+  color: #a9a932;
+}
+
+.ar-color-char-47, .en-color-char-47 {
+  color: #bdb76b;
+}
+
+.ar-color-char-48, .en-color-char-48 {
+  color: #a9a932;
+}
+
+.ar-color-ci-1, .en-color-ci-1 {
+  color: #98FF98;
+}
+
+.ar-color-ci-2, .en-color-ci-2 {
+  color: #40E0D0;
+}
+
+.ar-color-ci-3, .en-color-ci-3 {
+  color: #98FF98;
+}
+
+.ar-color-ci-4, .en-color-ci-4 {
+  color: #40E0D0;
+}
+
+.ar-color-ci-5, .en-color-ci-5 {
+  color: #FFC0CB;
+}
+
+.ar-color-ci-6, .en-color-ci-6 {
+  color: #FF69B4;
+}
+
+.ar-color-ci-7, .en-color-ci-7 {
+  color: #FFC0CB;
+}
+
+.ar-color-ci-8, .en-color-ci-8 {
+  color: #FF69B4;
+}
+
+.ar-color-ci-9, .en-color-ci-9 {
+  color: #696969;
+}
+
+.ar-color-ci-10, .en-color-ci-10 {
+  color: #2F4F4F;
+}
+
+.ar-color-ci-11, .en-color-ci-11 {
+  color: #696969;
+}
+
+.ar-color-ci-12, .en-color-ci-12 {
+  color: #2F4F4F;
+}
+
+.ar-color-ci-13, .en-color-ci-13 {
+  color: #C0C0C0;
+}
+
+.ar-color-ci-14, .en-color-ci-14 {
+  color: #A9A9A9;
+}
+
+.ar-color-ci-15, .en-color-ci-15 {
+  color: #C0C0C0;
+}
+
+.ar-color-ci-16, .en-color-ci-16 {
+  color: #A9A9A9;
+}
+
+.ar-color-ci-17, .en-color-ci-17 {
+  color: #008080;
+}
+
+.ar-color-ci-18, .en-color-ci-18 {
+  color: #20B2AA;
+}
+
+.ar-color-ci-19, .en-color-ci-19 {
+  color: #008080;
+}
+
+.ar-color-ci-20, .en-color-ci-20 {
+  color: #20B2AA;
+}
+
+.ar-color-ci-21, .en-color-ci-21 {
+  color: #FFFACD;
+}
+
+.ar-color-ci-22, .en-color-ci-22 {
+  color: #F0E68C;
+}
+
+.ar-color-ci-23, .en-color-ci-23 {
+  color: #FFFACD;
+}
+
+.ar-color-ci-24, .en-color-ci-24 {
+  color: #F0E68C;
+}
+
+.ar-color-ci-25, .en-color-ci-25 {
+  color: #8B4513;
+}
+
+.ar-color-ci-26, .en-color-ci-26 {
+  color: #A0522D;
+}
+
+.ar-color-ci-27, .en-color-ci-27 {
+  color: #8B4513;
+}
+
+.ar-color-ci-28, .en-color-ci-28 {
+  color: #A0522D;
+}
+
+.ar-color-ci-29, .en-color-ci-29 {
+  color: #5C4033;
+}
+
+.ar-color-ci-30, .en-color-ci-30 {
+  color: #800000;
+}
+
+.ar-color-ci-31, .en-color-ci-31 {
+  color: #5C4033;
+}
+
+.ar-color-ci-32, .en-color-ci-32 {
+  color: #800000;
+}
+
+.ar-color-ci-33, .en-color-ci-33 {
+  color: #F5F5DC;
+}
+
+.ar-color-ci-34, .en-color-ci-34 {
+  color: #D3D3D3;
+}
+
+.ar-color-ci-35, .en-color-ci-35 {
+  color: #F5F5DC;
+}
+
+.ar-color-ci-36, .en-color-ci-36 {
+  color: #D3D3D3;
+}
+
+.ar-color-ci-37, .en-color-ci-37 {
+  color: #ADD8E6;
+}
+
+.ar-color-ci-38, .en-color-ci-38 {
+  color: #B0E0E6;
+}
+
+.ar-color-ci-39, .en-color-ci-39 {
+  color: #ADD8E6;
+}
+
+.ar-color-ci-40, .en-color-ci-40 {
+  color: #B0E0E6;
+}
+
+.ar-color-ci-41, .en-color-ci-41 {
+  color: #E6E8FA;
+}
+
+.ar-color-ci-42, .en-color-ci-42 {
+  color: #B0C4DE;
+}
+
+.ar-color-ci-43, .en-color-ci-43 {
+  color: #E6E8FA;
+}
+
+.ar-color-ci-44, .en-color-ci-44 {
+  color: #B0C4DE;
+}
+
+.ar-color-ci-45, .en-color-ci-45 {
+  color: #F5DEB3;
+}
+
+.ar-color-ci-46, .en-color-ci-46 {
+  color: #D2B48C;
+}
+
+.ar-color-ci-47, .en-color-ci-47 {
+  color: #F5DEB3;
+}
+
+.ar-color-ci-48, .en-color-ci-48 {
+  color: #D2B48C;
+}
+
+.ar-color-pi-1, .en-color-pi-1 {
+  color: #27408b;
+}
+
+.ar-color-pi-2, .en-color-pi-2 {
+  color: #1a2c5c;
+}
+
+.ar-color-pi-3, .en-color-pi-3 {
+  color: #27408b;
+}
+
+.ar-color-pi-4, .en-color-pi-4 {
+  color: #00005c;
+}
+
+.ar-color-pi-5, .en-color-pi-5 {
+  color: #00003a;
+}
+
+.ar-color-pi-6, .en-color-pi-6 {
+  color: #00005c;
+}
+
+.ar-color-pi-7, .en-color-pi-7 {
+  color: #00003a;
+}
+
+.ar-color-pi-8, .en-color-pi-8 {
+  color: #8b7355;
+}
+
+.ar-color-pi-9, .en-color-pi-9 {
+  color: #6b5a3f;
+}
+
+.ar-color-pi-10, .en-color-pi-10 {
+  color: #8b7355;
+}
+
+.ar-color-pi-11, .en-color-pi-11 {
+  color: #363d42;
+}
+
+.ar-color-pi-12, .en-color-pi-12 {
+  color: #23272b;
+}
+
+.ar-color-pi-13, .en-color-pi-13 {
+  color: #363d42;
+}
+
+.ar-color-pi-14, .en-color-pi-14 {
+  color: #23272b;
+}
+
+.ar-color-pi-15, .en-color-pi-15 {
+  color: #b2a429;
+}
+
+.ar-color-pi-16, .en-color-pi-16 {
+  color: #a9a932;
+}
+
+.ar-color-pi-17, .en-color-pi-17 {
+  color: #b2a429;
+}
+
+.ar-color-pi-18, .en-color-pi-18 {
+  color: #a9a932;
+}
+
+.ar-color-pi-19, .en-color-pi-19 {
+  color: #2e4a1d;
+}
+
+.ar-color-pi-20, .en-color-pi-20 {
+  color: #1a2e13;
+}
+
+.ar-color-pi-21, .en-color-pi-21 {
+  color: #2e4a1d;
+}
+
+.ar-color-pi-22, .en-color-pi-22 {
+  color: #1a2e13;
+}
+
+.ar-color-pi-23, .en-color-pi-23 {
+  color: #4b0082;
+}
+
+.ar-color-pi-24, .en-color-pi-24 {
+  color: #2e1c4d;
+}
+
+.ar-color-pi-25, .en-color-pi-25 {
+  color: #4b0082;
+}
+
+.ar-color-pi-26, .en-color-pi-26 {
+  color: #2e1c4d;
+}
+
+.ar-color-pi-27, .en-color-pi-27 {
+  color: #b8860b;
+}
+
+.ar-color-pi-28, .en-color-pi-28 {
+  color: #7a5a0a;
+}
+
+.ar-color-pi-29, .en-color-pi-29 {
+  color: #b8860b;
+}
+
+.ar-color-pi-30, .en-color-pi-30 {
+  color: #801818;
+}
+
+.ar-color-pi-31, .en-color-pi-31 {
+  color: #4d0f0f;
+}
+
+.ar-color-pi-32, .en-color-pi-32 {
+  color: #801818;
+}
+
+.ar-color-pi-33, .en-color-pi-33 {
+  color: #232323;
+}
+
+.ar-color-pi-34, .en-color-pi-34 {
+  color: #141414;
+}
+
+.ar-color-pi-35, .en-color-pi-35 {
+  color: #232323;
+}
+
+.ar-color-pi-36, .en-color-pi-36 {
+  color: #141414;
+}
+
+.ar-color-pi-37, .en-color-pi-37 {
+  color: #8b7355;
+}
+
+.ar-color-pi-38, .en-color-pi-38 {
+  color: #6b5a3f;
+}
+
+.ar-color-pi-39, .en-color-pi-39 {
+  color: #8b7355;
+}
+
+.ar-color-pi-40, .en-color-pi-40 {
+  color: #6b5a3f;
+}
+
+.ar-color-pi-41, .en-color-pi-41 {
+  color: #274472;
+}
+
+.ar-color-pi-42, .en-color-pi-42 {
+  color: #1a2c47;
+}
+
+.ar-color-pi-43, .en-color-pi-43 {
+  color: #274472;
+}
+
+.ar-color-pi-44, .en-color-pi-44 {
+  color: #1a2c47;
+}
+
+.ar-color-pi-45, .en-color-pi-45 {
+  color: #167d77;
+}
+
+.ar-color-pi-46, .en-color-pi-46 {
+  color: #0c3d3a;
+}
+
+.ar-color-pi-47, .en-color-pi-47 {
+  color: #167d77;
+}
+
+.ar-color-pi-48, .en-color-pi-48 {
+  color: #0c3d3a;
+}
+
+.ar-color-pi-49, .en-color-pi-49 {
+  color: #bdb76b;
+}
+
+.ar-color-pi-50, .en-color-pi-50 {
+  color: #a9a932;
+}
+
+.ar-color-pi-51, .en-color-pi-51 {
+  color: #bdb76b;
+}
+
+.ar-color-pi-52, .en-color-pi-52 {
+  color: #a9a932;
+}
+
+.ar-color-pi-53, .en-color-pi-53 {
+  color: #1f3434;
+}
+
+.ar-color-pi-54, .en-color-pi-54 {
+  color: #141e1e;
+}
+
+.ar-color-pi-55, .en-color-pi-55 {
+  color: #1f3434;
+}
+
+.ar-color-pi-56, .en-color-pi-56 {
+  color: #141e1e;
+}
+
+.ar-color-pi-57, .en-color-pi-57 {
+  color: #b39700;
+}
+
+.ar-color-pi-58, .en-color-pi-58 {
+  color: #7a5a00;
+}
+
+.ar-color-pi-59, .en-color-pi-59 {
+  color: #b39700;
+}
+
+.ar-color-pi-60, .en-color-pi-60 {
+  color: #7a5a00;
+}
+
+.ar-color-ft-1, .en-color-ft-1 {
+  color: #8B4513;
+}
+
+.ar-color-ft-2, .en-color-ft-2 {
+  color: #5C3317;
+}
+
+.ar-color-ft-3, .en-color-ft-3 {
+  color: #8B4513;
+}
+
+.ar-color-ft-4, .en-color-ft-4 {
+  color: #5C3317;
+}
+
+.ar-color-ft-5, .en-color-ft-5 {
+  color: #E6E6FA;
+}
+
+.ar-color-ft-6, .en-color-ft-6 {
+  color: #B57EDC;
+}
+
+.ar-color-ft-7, .en-color-ft-7 {
+  color: #E6E6FA;
+}
+
+.ar-color-ft-8, .en-color-ft-8 {
+  color: #B57EDC;
+}
+
+.ar-color-ft-9, .en-color-ft-9 {
+  color: #006400;
+}
+
+.ar-color-ft-10, .en-color-ft-10 {
+  color: #004d00;
+}
+
+.ar-color-ft-11, .en-color-ft-11 {
+  color: #006400;
+}
+
+.ar-color-ft-12, .en-color-ft-12 {
+  color: #004d00;
+}
+
+.ar-color-ft-13, .en-color-ft-13 {
+  color: #800000;
+}
+
+.ar-color-ft-14, .en-color-ft-14 {
+  color: #660000;
+}
+
+.ar-color-ft-15, .en-color-ft-15 {
+  color: #800000;
+}
+
+.ar-color-ft-16, .en-color-ft-16 {
+  color: #660000;
+}
+
+.ar-color-ft-17, .en-color-ft-17 {
+  color: #4682B4;
+}
+
+.ar-color-ft-18, .en-color-ft-18 {
+  color: #315a7d;
+}
+
+.ar-color-ft-19, .en-color-ft-19 {
+  color: #4682B4;
+}
+
+.ar-color-ft-20, .en-color-ft-20 {
+  color: #315a7d;
+}
+
+.ar-color-ft-21, .en-color-ft-21 {
+  color: #FF69B4;
+}
+
+.ar-color-ft-22, .en-color-ft-22 {
+  color: #d9579b;
+}
+
+.ar-color-ft-23, .en-color-ft-23 {
+  color: #FF69B4;
+}
+
+.ar-color-ft-24, .en-color-ft-24 {
+  color: #d9579b;
+}
+
+.ar-color-ft-25, .en-color-ft-25 {
+  color: #20B2AA;
+}
+
+.ar-color-ft-26, .en-color-ft-26 {
+  color: #177e7a;
+}
+
+.ar-color-ft-27, .en-color-ft-27 {
+  color: #20B2AA;
+}
+
+.ar-color-ft-28, .en-color-ft-28 {
+  color: #177e7a;
+}
+
+.ar-color-ft-29, .en-color-ft-29 {
+  color: #FFA500;
+}
+
+.ar-color-ft-30, .en-color-ft-30 {
+  color: #d98c00;
+}
+
+.ar-color-ft-31, .en-color-ft-31 {
+  color: #FFA500;
+}
+
+.ar-color-ft-32, .en-color-ft-32 {
+  color: #d98c00;
+}
+
+.ar-color-ft-33, .en-color-ft-33 {
+  color: #A0522D;
+}
+
+.ar-color-ft-34, .en-color-ft-34 {
+  color: #783f21;
+}
+
+.ar-color-ft-35, .en-color-ft-35 {
+  color: #A0522D;
+}
+
+.ar-color-ft-36, .en-color-ft-36 {
+  color: #783f21;
+}
+
+.ar-color-ft-37, .en-color-ft-37 {
+  color: #9ACD32;
+}
+
+.ar-color-ft-38, .en-color-ft-38 {
+  color: #739a25;
+}
+
+.ar-color-ft-39, .en-color-ft-39 {
+  color: #9ACD32;
+}
+
+.ar-color-ft-40, .en-color-ft-40 {
+  color: #739a25;
+}
+
+.ar-color-ft-41, .en-color-ft-41 {
+  color: #BA55D3;
+}
+
+.ar-color-ft-42, .en-color-ft-42 {
+  color: #9b47b0;
+}
+
+.ar-color-ft-43, .en-color-ft-43 {
+  color: #BA55D3;
+}
+
+.ar-color-ft-44, .en-color-ft-44 {
+  color: #9b47b0;
+}
+
 .progress-container {
   width: 100%;
   height: 8px;
